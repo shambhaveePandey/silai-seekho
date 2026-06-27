@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" role="img" aria-label="ब्लाउज़ के नाप — Blouse Measurement Points">
+  <style>
+    .lbl{font:700 10px 'Noto Sans Devanagari','Work Sans',sans-serif;fill:#2a1a0a}
+    .lbl-en{font:500 8px 'Work Sans',sans-serif;fill:#7a5c3a}
+    .dim-line{stroke:#b35c00;stroke-width:1.2;fill:none}
+    .dim-dot{fill:#b35c00}
+    @keyframes pulse{0%,100%{r:3}50%{r:4.5}}
+    .apex-dot{animation:pulse 1.8s ease-in-out infinite}
+  </style>
+  <defs>
+    <marker id="ah2" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L5,3 L0,6" fill="none" stroke="#b35c00" stroke-width="1.2"/>
+    </marker>
+    <marker id="ah2r" markerWidth="7" markerHeight="7" refX="1" refY="3" orient="auto-start-reverse">
+      <path d="M0,0 L5,3 L0,6" fill="none" stroke="#b35c00" stroke-width="1.2"/>
+    </marker>
+  </defs>
+
+  <rect width="520" height="280" fill="#fff9f3"/>
+
+  <text x="260" y="18" text-anchor="middle" font-family="'Noto Sans Devanagari','Work Sans'" font-size="13" font-weight="700" fill="#2a1a0a">ब्लाउज़ के 8 मुख्य नाप</text>
+  <text x="260" y="32" text-anchor="middle" font-family="'Work Sans'" font-size="9" fill="#7a5c3a">8 Essential Blouse Measurements</text>
+
+  <!-- FRONT BODY SILHOUETTE (left) -->
+  <g transform="translate(80,45)">
+    <!-- Neck -->
+    <ellipse cx="80" cy="12" rx="18" ry="12" fill="#e8c8a0" stroke="#c4a882" stroke-width="1.2"/>
+    <!-- Shoulders -->
+    <path d="M30,28 Q55,18 62,24 L62,38 Q55,32 30,38 Z" fill="#e8c8a0" stroke="#c4a882" stroke-width="1"/>
+    <path d="M130,28 Q105,18 98,24 L98,38 Q105,32 130,38 Z" fill="#e8c8a0" stroke="#c4a882" stroke-width="1"/>
+    <!-- Upper body/torso -->
+    <path d="M30,38 C20,55 18,100 22,140 L138,140 C142,100 140,55 130,38 Q105,32 98,24 L98,38 Q92,42 80,42 Q68,42 62,38 L62,24 Q55,18 30,28 Z" fill="#e8c8a0" stroke="#c4a882" stroke-width="1.5"/>
+    <!-- Waist curve -->
+    <path d="M22,140 Q80,125 138,140" fill="none" stroke="#c4a882" stroke-width="1" stroke-dasharray="3,2"/>
+
+    <!-- Neckline -->
+    <path d="M62,24 Q80,50 98,24" fill="#fdf8f2" stroke="#c4a882" stroke-width="1.2"/>
+
+    <!-- Apex dots -->
+    <circle cx="62" cy="80" r="4" fill="#b35c00" class="apex-dot"/>
+    <circle cx="98" cy="80" r="4" fill="#b35c00" class="apex-dot"/>
+
+    <!-- Sleeve outlines (short) -->
+    <path d="M30,38 L14,56 L22,70 L30,58 Z" fill="#e8c8a0" stroke="#c4a882" stroke-width="1"/>
+    <path d="M130,38 L146,56 L138,70 L130,58 Z" fill="#e8c8a0" stroke="#c4a882" stroke-width="1"/>
+
+    <!-- ── MEASUREMENT LINES ── -->
+    <!-- 1. Blouse Length (left side, vertical) -->
+    <line x1="-8" y1="24" x2="-8" y2="140" stroke="#b35c00" stroke-width="1.2" marker-start="url(#ah2r)" marker-end="url(#ah2)"/>
+    <text x="-32" y="82" text-anchor="middle" class="lbl" transform="rotate(-90 -32 82)">लंबाई</text>
+    <text x="-44" y="82" text-anchor="middle" class="lbl-en" transform="rotate(-90 -44 82)">Length</text>
+
+    <!-- 2. Chest (horizontal at bust) -->
+    <line x1="22" y1="72" x2="138" y2="72" stroke="#b35c00" stroke-width="1.2" stroke-dasharray="4,2"/>
+    <line x1="22" y1="67" x2="22" y2="77" stroke="#b35c00" stroke-width="1.2"/>
+    <line x1="138" y1="67" x2="138" y2="77" stroke="#b35c00" stroke-width="1.2"/>
+    <text x="80" y="65" text-anchor="middle" class="lbl">छाती / Chest</text>
+
+    <!-- 3. Shoulder width (at top) -->
+    <line x1="30" y1="35" x2="130" y2="35" stroke="#016b6f" stroke-width="1.2" stroke-dasharray="4,2"/>
+    <line x1="30" y1="30" x2="30" y2="40" stroke="#016b6f" stroke-width="1.2"/>
+    <line x1="130" y1="30" x2="130" y2="40" stroke="#016b6f" stroke-width="1.2"/>
+    <text x="80" y="52" text-anchor="middle" font-family="'Noto Sans Devanagari'" font-size="9" fill="#014e52">कंधा (Shoulder)</text>
+
+    <!-- 4. Waist -->
+    <line x1="25" y1="130" x2="135" y2="130" stroke="#9b2424" stroke-width="1.2" stroke-dasharray="4,2"/>
+    <line x1="25" y1="125" x2="25" y2="135" stroke="#9b2424" stroke-width="1.2"/>
+    <line x1="135" y1="125" x2="135" y2="135" stroke="#9b2424" stroke-width="1.2"/>
+    <text x="80" y="148" text-anchor="middle" font-family="'Noto Sans Devanagari'" font-size="9" fill="#9b2424">कमर (Waist)</text>
+
+    <!-- Apex label -->
+    <line x1="62" y1="80" x2="30" y2="96" stroke="#b35c00" stroke-width="1"/>
+    <text x="-5" y="100" class="lbl" fill="#b35c00">एपेक्स</text>
+    <text x="-5" y="110" class="lbl-en">Apex / Bust point</text>
+
+    <!-- Front label -->
+    <text x="80" y="168" text-anchor="middle" font-family="'Work Sans'" font-size="9" font-weight="600" fill="#7a5c3a">सामने / Front</text>
+  </g>
+
+  <!-- BACK BODY SILHOUETTE (right) -->
+  <g transform="translate(300,45)">
+    <!-- Neck -->
+    <ellipse cx="70" cy="14" rx="14" ry="9" fill="#e8c8a0" stroke="#c4a882" stroke-width="1.2"/>
+    <!-- Body -->
+    <path d="M20,32 C10,55 8,100 12,140 L128,140 C132,100 130,55 120,32 Q100,24 88,22 L88,30 Q78,36 62,36 Q52,36 42,30 L42,22 Q30,24 20,32 Z" fill="#e8d0b0" stroke="#c4a882" stroke-width="1.5"/>
+    <!-- Back neck (shallower) -->
+    <path d="M42,22 Q70,32 88,22" fill="#fdf8f2" stroke="#c4a882" stroke-width="1.2"/>
+    <!-- Shoulder blades hint -->
+    <ellipse cx="42" cy="68" rx="12" ry="16" fill="none" stroke="#c4a882" stroke-width="0.8" stroke-dasharray="2,2"/>
+    <ellipse cx="98" cy="68" rx="12" ry="16" fill="none" stroke="#c4a882" stroke-width="0.8" stroke-dasharray="2,2"/>
+    <!-- Sleeves -->
+    <path d="M20,32 L4,50 L12,64 L20,52 Z" fill="#e8d0b0" stroke="#c4a882" stroke-width="1"/>
+    <path d="M120,32 L136,50 L128,64 L120,52 Z" fill="#e8d0b0" stroke="#c4a882" stroke-width="1"/>
+
+    <!-- 5. Armhole depth -->
+    <line x1="135" y1="32" x2="135" y2="68" stroke="#016b6f" stroke-width="1.2" marker-start="url(#ah2r)" marker-end="url(#ah2)"/>
+    <text x="152" y="50" class="lbl" fill="#014e52" font-size="8">आर्महोल</text>
+    <text x="152" y="60" class="lbl-en">Armhole depth</text>
+
+    <!-- 6. Apex-to-Apex (shown on back as reference) -->
+    <line x1="42" y1="78" x2="98" y2="78" stroke="#b35c00" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="70" y="92" text-anchor="middle" font-family="'Work Sans'" font-size="8" fill="#b35c00">एपेक्स-टू-एपेक्स</text>
+
+    <!-- Back label -->
+    <text x="70" y="168" text-anchor="middle" font-family="'Work Sans'" font-size="9" font-weight="600" fill="#7a5c3a">पीछे / Back</text>
+  </g>
+
+  <!-- Sleeve measurement callout -->
+  <rect x="30" y="228" width="460" height="42" rx="6" fill="#b35c00" opacity="0.07" stroke="#b35c00" stroke-width="1" opacity="0.3"/>
+  <text x="260" y="245" text-anchor="middle" font-family="'Noto Sans Devanagari'" font-size="10" fill="#6a3500">💡 स्लीव की लंबाई अलग से नापें: कंधे से कोहनी तक (हाफ) या कलाई तक (फुल)</text>
+  <text x="260" y="260" text-anchor="middle" font-family="'Work Sans'" font-size="9" fill="#b35c00">Sleeve length: shoulder to elbow (half) or wrist (full). Take with arm relaxed.</text>
+</svg>

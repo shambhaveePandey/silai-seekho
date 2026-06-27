@@ -200,6 +200,59 @@ function openLesson(id) {
   const objEn = (l.objectives.en || []).map((o) => `<li class="en-only">${o}</li>`).join('');
   document.getElementById('modalObjectives').innerHTML = objHi + objEn;
 
+  // Inline lesson content (intro + steps + tips)
+  const contentEl = document.getElementById('modalContent');
+  if (l.content) {
+    const { intro, steps = [], tips = [] } = l.content;
+    let html = '';
+
+    // Intro paragraph
+    if (intro) {
+      html += `<div class="modal-section lesson-intro">
+        <p class="hi-only">${intro.hi}</p>
+        <p class="en-only">${intro.en}</p>
+      </div>`;
+    }
+
+    // Steps
+    if (steps.length) {
+      const stepsHtml = steps.map((s, i) =>
+        `<div class="lesson-step">
+          <div class="lesson-step-num">${i + 1}</div>
+          <div class="lesson-step-body">
+            <h5 class="hi-only">${s.title.hi}</h5>
+            <h5 class="en-only">${s.title.en}</h5>
+            <p class="hi-only">${s.hi}</p>
+            <p class="en-only">${s.en}</p>
+          </div>
+        </div>`
+      ).join('');
+      html += `<div class="modal-section">
+        <h4>📋 <span class="hi-only">चरण-दर-चरण मार्गदर्शिका</span><span class="en-only">Step-by-Step Guide</span></h4>
+        <div class="lesson-steps">${stepsHtml}</div>
+      </div>`;
+    }
+
+    // Tips
+    if (tips.length) {
+      const tipsHtml = tips.map((tip) =>
+        `<div class="lesson-tip">
+          <span class="tip-icon">💡</span>
+          <span class="hi-only">${tip.hi}</span>
+          <span class="en-only">${tip.en}</span>
+        </div>`
+      ).join('');
+      html += `<div class="modal-section">
+        <h4>💡 <span class="hi-only">उपयोगी सुझाव</span><span class="en-only">Helpful Tips</span></h4>
+        <div class="lesson-tips">${tipsHtml}</div>
+      </div>`;
+    }
+
+    contentEl.innerHTML = html;
+  } else {
+    contentEl.innerHTML = '';
+  }
+
   // Videos
   const vids = l.videos
     .map((v, i) => {

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 260" role="img" aria-label="ब्लाउज़ पैटर्न ड्राफ्ट — Blouse Pattern Draft">
+  <style>
+    .lbl{font:700 9px 'Noto Sans Devanagari','Work Sans',sans-serif;fill:#2a1a0a}
+    .lbl-en{font:400 7.5px 'Work Sans',sans-serif;fill:#7a5c3a}
+    .dim{stroke:#b35c00;stroke-width:1;fill:none}
+    .grain{stroke:#016b6f;stroke-width:1.5;stroke-dasharray:6,3;fill:none;marker-end:url(#gah);marker-start:url(#gah2)}
+    .seam{stroke:#888;stroke-width:0.8;stroke-dasharray:3,2;fill:none}
+    .cut{stroke:#2a1a0a;stroke-width:1.5;fill:none}
+    .dart{stroke:#9b2424;stroke-width:1.2;fill:none}
+  </style>
+  <defs>
+    <marker id="gah" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
+      <path d="M0,0 L4,3 L0,6" fill="none" stroke="#016b6f" stroke-width="1"/>
+    </marker>
+    <marker id="gah2" markerWidth="6" markerHeight="6" refX="1" refY="3" orient="auto-start-reverse">
+      <path d="M0,0 L4,3 L0,6" fill="none" stroke="#016b6f" stroke-width="1"/>
+    </marker>
+    <!-- Graph paper pattern -->
+    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#e0d0c0" stroke-width="0.4"/>
+    </pattern>
+    <pattern id="grid5" width="50" height="50" patternUnits="userSpaceOnUse">
+      <rect width="50" height="50" fill="url(#grid)"/>
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#d0c0a0" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="540" height="260" fill="#fff9f3"/>
+  <text x="270" y="16" text-anchor="middle" font-family="'Noto Sans Devanagari','Work Sans'" font-size="12" font-weight="700" fill="#2a1a0a">ब्लाउज़ पैटर्न ड्राफ्ट (36" साइज़)</text>
+  <text x="270" y="28" text-anchor="middle" font-family="'Work Sans'" font-size="9" fill="#7a5c3a">Blouse Pattern Draft — 36" Size · Chart Paper Layout</text>
+
+  <!-- FRONT PIECE -->
+  <g transform="translate(30,40)">
+    <text x="80" y="-6" text-anchor="middle" class="lbl">फ्रंट बॉडिस (Front Bodice)</text>
+    <!-- Graph paper background -->
+    <rect x="0" y="0" width="160" height="195" fill="url(#grid5)" stroke="#c4a882" stroke-width="1"/>
+    <!-- Cut line (outer) - front pattern shape -->
+    <path d="M20,0 L140,0 L148,20 L152,60 L148,100 L144,140 L140,175 L20,175 L16,140 L12,100 L8,60 L12,20 Z" class="cut" fill="rgba(179,92,0,0.05)"/>
+    <!-- Seam allowance (inner dashed) -->
+    <path d="M22,8 L138,8 L144,25 L148,65 L144,105 L140,145 L136,168 L24,168 L20,145 L16,105 L12,65 L16,25 Z" class="seam"/>
+    <!-- Neckline curve -->
+    <path d="M55,0 Q80,30 105,0" class="cut" fill="none"/>
+    <!-- Armhole curve -->
+    <path d="M140,0 Q155,40 148,60" class="cut" fill="none"/>
+    <!-- Shoulder line -->
+    <line x1="55" y1="0" x2="140" y2="0" stroke="#2a1a0a" stroke-width="1.5"/>
+    <!-- Waist dart marks (chest) -->
+    <path d="M80,65 L70,105 L80,65 L90,105" class="dart"/>
+    <text x="80" y="122" text-anchor="middle" font-family="'Work Sans'" font-size="7" fill="#9b2424">छाती डार्ट</text>
+    <!-- Waist dart -->
+    <path d="M80,155 L76,175 L80,155 L84,175" class="dart"/>
+    <!-- Grain line (vertical arrow) -->
+    <line x1="30" y1="30" x2="30" y2="155" class="grain"/>
+    <text x="30" y="188" text-anchor="middle" font-family="'Work Sans'" font-size="7" fill="#016b6f">ग्रेन</text>
+    <!-- CF label -->
+    <text x="6" y="90" text-anchor="middle" class="lbl" transform="rotate(-90 6 90)" fill="#b35c00">CF →</text>
+    <!-- Measurements -->
+    <line x1="165" y1="0" x2="165" y2="175" stroke="#b35c00" stroke-width="1" marker-start="url(#gah2)" marker-end="url(#gah)"/>
+    <text x="175" y="87" class="lbl-en" fill="#b35c00">14"–16"</text>
+    <text x="175" y="97" class="lbl-en" fill="#b35c00">लंबाई</text>
+  </g>
+
+  <!-- BACK PIECE -->
+  <g transform="translate(220,40)">
+    <text x="80" y="-6" text-anchor="middle" class="lbl">बैक बॉडिस (Back Bodice)</text>
+    <rect x="0" y="0" width="150" height="195" fill="url(#grid5)" stroke="#c4a882" stroke-width="1"/>
+    <!-- Back pattern shape -->
+    <path d="M15,0 L135,0 L142,20 L144,60 L140,100 L136,140 L132,175 L18,175 L14,140 L10,100 L6,60 L8,20 Z" class="cut" fill="rgba(1,107,111,0.05)"/>
+    <path d="M17,8 L133,8 L138,25 L140,65 L136,105 L132,145 L128,168 L22,168 L18,145 L14,105 L10,65 L12,25 Z" class="seam"/>
+    <!-- Back neckline (shallower) -->
+    <path d="M40,0 Q75,15 110,0" class="cut" fill="none"/>
+    <!-- Armhole -->
+    <path d="M135,0 Q148,38 142,58" class="cut" fill="none"/>
+    <!-- Shoulder -->
+    <line x1="40" y1="0" x2="135" y2="0" stroke="#2a1a0a" stroke-width="1.5"/>
+    <!-- Shoulder dart (back) -->
+    <path d="M88,0 L80,35 L88,0 L96,35" class="dart"/>
+    <text x="88" y="50" text-anchor="middle" font-family="'Work Sans'" font-size="7" fill="#9b2424">कंधा डार्ट</text>
+    <!-- Grain line -->
+    <line x1="30" y1="30" x2="30" y2="155" class="grain"/>
+    <text x="30" y="188" text-anchor="middle" font-family="'Work Sans'" font-size="7" fill="#016b6f">ग्रेन</text>
+    <!-- CB label -->
+    <text x="6" y="90" text-anchor="middle" class="lbl" transform="rotate(-90 6 90)" fill="#016b6f">CB →</text>
+  </g>
+
+  <!-- SLEEVE PIECE -->
+  <g transform="translate(400,50)">
+    <text x="60" y="-6" text-anchor="middle" class="lbl">स्लीव (Sleeve)</text>
+    <rect x="0" y="0" width="120" height="160" fill="url(#grid5)" stroke="#c4a882" stroke-width="1"/>
+    <!-- Sleeve cap curve -->
+    <path d="M10,60 Q60,0 110,60 L100,150 L20,150 Z" class="cut" fill="rgba(179,92,0,0.05)"/>
+    <path d="M14,62 Q60,8 106,62 L97,145 L23,145 Z" class="seam"/>
+    <!-- Sleeve grain -->
+    <line x1="60" y1="15" x2="60" y2="145" class="grain"/>
+    <text x="60" y="158" text-anchor="middle" font-family="'Work Sans'" font-size="7" fill="#016b6f">ग्रेन</text>
+    <!-- Length label -->
+    <line x1="118" y1="60" x2="118" y2="150" stroke="#b35c00" stroke-width="1" marker-start="url(#gah2)" marker-end="url(#gah)"/>
+    <text x="131" y="105" class="lbl-en" fill="#b35c00">8"–16"</text>
+    <!-- Cap height -->
+    <line x1="60" y1="0" x2="60" y2="60" stroke="#9b2424" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="66" y="35" class="lbl-en" fill="#9b2424">कैप h.</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(30,240)">
+    <line x1="0" y1="5" x2="20" y2="5" stroke="#2a1a0a" stroke-width="1.5"/>
+    <text x="24" y="8" class="lbl-en">कट लाइन (Cut line)</text>
+    <line x1="100" y1="5" x2="120" y2="5" stroke="#888" stroke-width="0.8" stroke-dasharray="3,2"/>
+    <text x="124" y="8" class="lbl-en">सीम अलाउंस 1.5 cm</text>
+    <line x1="230" y1="5" x2="250" y2="5" stroke="#9b2424" stroke-width="1.2"/>
+    <text x="254" y="8" class="lbl-en" fill="#9b2424">डार्ट (Dart)</text>
+    <line x1="320" y1="2" x2="340" y2="8" stroke="#016b6f" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <text x="344" y="8" class="lbl-en" fill="#016b6f">ग्रेन लाइन (Grain)</text>
+  </g>
+</svg>

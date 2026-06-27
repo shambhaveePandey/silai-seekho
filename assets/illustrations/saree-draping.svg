@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 280" role="img" aria-label="साड़ी ड्रेपिंग शैलियाँ — Saree Draping Styles">
+  <style>
+    .lbl{font:700 11px 'Noto Sans Devanagari','Work Sans',sans-serif;fill:#2a1a0a}
+    .lbl-en{font:500 9px 'Work Sans',sans-serif;fill:#7a5c3a}
+    .step{font:600 8px 'Work Sans',sans-serif;fill:#7a5c3a}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+    .f1{animation:float 3s ease-in-out infinite}
+    .f2{animation:float 3.4s ease-in-out infinite}
+    .f3{animation:float 3.8s ease-in-out infinite}
+  </style>
+  <defs>
+    <linearGradient id="niviG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b35c00"/><stop offset="1" stop-color="#9b2424"/>
+    </linearGradient>
+    <linearGradient id="bangG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#016b6f"/><stop offset="1" stop-color="#014e52"/>
+    </linearGradient>
+    <linearGradient id="gujG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9b2424"/><stop offset="1" stop-color="#7a1a1a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="540" height="280" fill="#fff9f3"/>
+  <text x="270" y="18" text-anchor="middle" font-family="'Noto Sans Devanagari','Work Sans'" font-size="13" font-weight="700" fill="#2a1a0a">तीन प्रमुख ड्रेपिंग शैलियाँ</text>
+  <text x="270" y="30" text-anchor="middle" font-family="'Work Sans'" font-size="9" fill="#7a5c3a">Three Major Saree Draping Styles</text>
+
+  <!-- ── FIGURE 1: NIVI (Andhra/most common) ── -->
+  <g transform="translate(30,42)" class="f1">
+    <rect x="0" y="0" width="155" height="220" rx="10" fill="rgba(179,92,0,0.06)" stroke="#b35c00" stroke-width="1"/>
+
+    <!-- Head -->
+    <circle cx="77" cy="22" r="15" fill="#e8c8a0" stroke="#c4a882" stroke-width="1"/>
+    <!-- Blouse -->
+    <path d="M50,38 Q77,44 104,38 L110,65 L44,65 Z" fill="url(#niviG)" stroke="#8b4500" stroke-width="0.8"/>
+    <!-- Petticoat hint -->
+    <rect x="55" y="65" width="44" height="4" fill="#c89000"/>
+    <!-- Pleats (front tucked at center) -->
+    <path d="M65,69 L60,155 L94,155 L89,69" fill="url(#niviG)" opacity="0.85"/>
+    <!-- Pleat lines -->
+    <g stroke="rgba(255,240,220,0.7)" stroke-width="1" fill="none">
+      <line x1="68" y1="69" x2="63" y2="155"/>
+      <line x1="72" y1="69" x2="67" y2="155"/>
+      <line x1="76" y1="69" x2="71" y2="155"/>
+      <line x1="80" y1="69" x2="77" y2="155"/>
+      <line x1="84" y1="69" x2="82" y2="155"/>
+    </g>
+    <!-- Pallu over left shoulder -->
+    <path d="M50,38 L28,60 L20,90 L35,130 L55,100 L50,65 Z" fill="url(#niviG)" opacity="0.9"/>
+    <!-- Pallu motifs -->
+    <circle cx="32" cy="75" r="3" fill="#fbe9c8" opacity="0.7"/>
+    <circle cx="28" cy="95" r="3" fill="#fbe9c8" opacity="0.7"/>
+    <!-- Body wrap (right side) -->
+    <path d="M89,69 L104,65 L115,90 L108,155 L94,155 Z" fill="url(#niviG)" opacity="0.75"/>
+    <!-- Legs hint -->
+    <rect x="62" y="155" width="10" height="40" rx="5" fill="#e8c8a0" stroke="#c4a882" stroke-width="0.8"/>
+    <rect x="80" y="155" width="10" height="40" rx="5" fill="#e8c8a0" stroke="#c4a882" stroke-width="0.8"/>
+
+    <!-- Style name -->
+    <rect x="10" y="205" width="135" height="30" rx="5" fill="url(#niviG)"/>
+    <text x="77" y="218" text-anchor="middle" class="lbl" fill="white">निवी शैली</text>
+    <text x="77" y="229" text-anchor="middle" class="lbl-en" fill="rgba(255,255,255,0.85)">Nivi (Andhra) · Most Common</text>
+
+    <!-- Step indicators -->
+    <text x="77" y="242" text-anchor="middle" class="step">पल्लू: बाएँ कंधे पर · Pleats: सामने, अंदर टक</text>
+  </g>
+
+  <!-- ── FIGURE 2: BENGALI (Atpoure) ── -->
+  <g transform="translate(195,42)" class="f2">
+    <rect x="0" y="0" width="155" height="220" rx="10" fill="rgba(1,107,111,0.06)" stroke="#016b6f" stroke-width="1"/>
+
+    <!-- Head (with sindoor line in hair) -->
+    <circle cx="77" cy="22" r="15" fill="#e8c8a0" stroke="#c4a882" stroke-width="1"/>
+    <line x1="77" y1="10" x2="77" y2="17" stroke="#9b2424" stroke-width="2"/>
+    <!-- Blouse -->
+    <path d="M50,38 Q77,44 104,38 L110,65 L44,65 Z" fill="url(#bangG)" stroke="#014e52" stroke-width="0.8"/>
+    <!-- Bengali style: NO sewn waistband, pallu draped in FRONT -->
+    <rect x="55" y="65" width="44" height="4" fill="#c89000"/>
+    <!-- Body wrap -->
+    <path d="M44,65 L40,155 L114,155 L110,65 Z" fill="url(#bangG)" opacity="0.8"/>
+    <!-- Pallu at FRONT (distinctive Bengali feature) -->
+    <path d="M77,65 L55,80 L48,130 L60,155 L85,130 L95,80 Z" fill="url(#bangG)" opacity="0.95"/>
+    <!-- Pallu border -->
+    <path d="M55,80 L48,130" fill="none" stroke="#c89000" stroke-width="3"/>
+    <!-- Pallu motifs -->
+    <circle cx="55" cy="95" r="3" fill="#fbe9c8" opacity="0.8"/>
+    <circle cx="52" cy="112" r="3" fill="#fbe9c8" opacity="0.8"/>
+    <!-- No visible left-shoulder drape -->
+    <!-- Legs -->
+    <rect x="62" y="155" width="10" height="40" rx="5" fill="#e8c8a0" stroke="#c4a882" stroke-width="0.8"/>
+    <rect x="80" y="155" width="10" height="40" rx="5" fill="#e8c8a0" stroke="#c4a882" stroke-width="0.8"/>
+
+    <rect x="10" y="205" width="135" height="30" rx="5" fill="url(#bangG)"/>
+    <text x="77" y="218" text-anchor="middle" class="lbl" fill="white">बंगाली / अटपौरे</text>
+    <text x="77" y="229" text-anchor="middle" class="lbl-en" fill="rgba(255,255,255,0.85)">Bengali Atpoure Style</text>
+    <text x="77" y="242" text-anchor="middle" class="step">पल्लू: सामने की तरफ · Pallu draped in front</text>
+  </g>
+
+  <!-- ── FIGURE 3: GUJARATI (Seedha Pallu) ── -->
+  <g transform="translate(360,42)" class="f3">
+    <rect x="0" y="0" width="155" height="220" rx="10" fill="rgba(155,36,36,0.06)" stroke="#9b2424" stroke-width="1"/>
+
+    <!-- Head -->
+    <circle cx="77" cy="22" r="15" fill="#e8c8a0" stroke="#c4a882" stroke-width="1"/>
+    <!-- Blouse -->
+    <path d="M50,38 Q77,44 104,38 L110,65 L44,65 Z" fill="url(#gujG)" stroke="#7a1a1a" stroke-width="0.8"/>
+    <rect x="55" y="65" width="44" height="4" fill="#c89000"/>
+    <!-- Body wrap -->
+    <path d="M44,65 L40,155 L114,155 L110,65 Z" fill="url(#gujG)" opacity="0.75"/>
+    <!-- Gujarati: Pallu draped from BACK over RIGHT shoulder (seedha/ulta pallu) -->
+    <path d="M104,38 L125,55 L132,95 L118,145 L105,120 L106,65 Z" fill="url(#gujG)" opacity="0.92"/>
+    <!-- Pallu border (right side) -->
+    <path d="M125,55 L132,95" fill="none" stroke="#c89000" stroke-width="3"/>
+    <!-- Motifs -->
+    <circle cx="124" cy="70" r="3" fill="#fbe9c8" opacity="0.8"/>
+    <circle cx="128" cy="88" r="3" fill="#fbe9c8" opacity="0.8"/>
+    <!-- Pallu end tucked at back waist, shown as fold -->
+    <path d="M105,70 C95,75 90,80 92,90" fill="none" stroke="#7a1a1a" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <!-- Legs -->
+    <rect x="62" y="155" width="10" height="40" rx="5" fill="#e8c8a0" stroke="#c4a882" stroke-width="0.8"/>
+    <rect x="80" y="155" width="10" height="40" rx="5" fill="#e8c8a0" stroke="#c4a882" stroke-width="0.8"/>
+
+    <rect x="10" y="205" width="135" height="30" rx="5" fill="url(#gujG)"/>
+    <text x="77" y="218" text-anchor="middle" class="lbl" fill="white">गुजराती / सीधा पल्लू</text>
+    <text x="77" y="229" text-anchor="middle" class="lbl-en" fill="rgba(255,255,255,0.85)">Gujarati Seedha Pallu</text>
+    <text x="77" y="242" text-anchor="middle" class="step">पल्लू: दाएँ कंधे पर सामने · Pallu over right shoulder</text>
+  </g>
+</svg>

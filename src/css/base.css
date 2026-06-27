@@ -560,3 +560,53 @@ button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
 .ds-steps li{font-size:var(--text-sm)}
 .ds-tip{background:var(--color-primary-hi);border-radius:var(--radius-md);padding:var(--space-3);
   font-size:var(--text-sm);color:var(--color-text)}
+
+/* ── KB Lesson inline content ───────────────────────────── */
+.lesson-intro p{font-size:var(--text-base);color:var(--color-text);line-height:1.7;margin:0}
+.lesson-steps{display:flex;flex-direction:column;gap:var(--space-4)}
+.lesson-step{display:flex;gap:var(--space-4);align-items:flex-start}
+.lesson-step-num{flex-shrink:0;width:28px;height:28px;border-radius:50%;
+  background:var(--color-primary);color:#fff;font-weight:700;font-size:var(--text-sm);
+  display:flex;align-items:center;justify-content:center;margin-top:2px}
+.lesson-step-body h5{font-family:var(--font-display);font-size:var(--text-sm);font-weight:700;
+  color:var(--color-text);margin:0 0 4px}
+.lesson-step-body p{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;margin:0}
+.lesson-tips{display:flex;flex-direction:column;gap:var(--space-3)}
+.lesson-tip{display:flex;gap:var(--space-3);align-items:flex-start;background:var(--color-primary-hi);
+  border-radius:var(--radius-md);padding:var(--space-3) var(--space-4)}
+.lesson-tip .tip-icon{font-size:1rem;line-height:1.5;flex-shrink:0}
+.lesson-tip span:not(.tip-icon){font-size:var(--text-sm);color:var(--color-text);line-height:1.6}
+
+/* ── DS Garment selector bar ─────────────────────────────── */
+.ds-garment-bar{display:flex;flex-wrap:wrap;gap:var(--space-3);align-items:center;
+  margin-bottom:var(--space-5);padding:var(--space-4);
+  background:var(--color-surface);border:1px solid var(--color-border);
+  border-radius:var(--radius-lg);box-shadow:var(--shadow-sm)}
+.ds-garment-bar-group{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.ds-garment-label{font-size:var(--text-xs);font-weight:600;color:var(--color-text-muted);
+  margin-right:4px;white-space:nowrap}
+.ds-garment-chip{padding:5px 12px;border-radius:var(--radius-full);border:1.5px solid var(--color-border);
+  background:var(--color-surface-2);color:var(--color-text-muted);font-size:var(--text-xs);
+  font-weight:600;cursor:pointer;transition:all .15s}
+.ds-garment-chip:hover{border-color:var(--color-primary);color:var(--color-primary)}
+.ds-garment-chip.active{background:var(--color-primary);color:#fff;border-color:var(--color-primary)}
+.ds-gender-chip{padding:5px 14px;border-radius:var(--radius-full);border:1.5px solid var(--color-border);
+  background:var(--color-surface-2);color:var(--color-text-muted);font-size:var(--text-sm);
+  cursor:pointer;transition:all .15s}
+.ds-gender-chip.active{background:var(--color-teal);color:#fff;border-color:var(--color-teal)}
+.ds-garment-info{margin-top:var(--space-6);background:var(--color-surface);
+  border:1px solid var(--color-border);border-left:4px solid var(--color-primary);
+  border-radius:var(--radius-lg);padding:var(--space-5);box-shadow:var(--shadow-sm)}
+.ds-garment-info h4{font-family:var(--font-display);font-size:var(--text-lg);
+  color:var(--color-text);margin-bottom:var(--space-4)}
+.ds-size-table{width:100%;border-collapse:collapse;font-size:var(--text-xs);margin-bottom:var(--space-4)}
+.ds-size-table th{background:var(--color-surface-offset);font-weight:700;
+  color:var(--color-text-muted);text-align:left;padding:6px 10px;border-bottom:2px solid var(--color-border)}
+.ds-size-table td{padding:6px 10px;border-bottom:1px solid var(--color-border);color:var(--color-text)}
+.ds-size-table tr:last-child td{border-bottom:none}
+.ds-cutting-list{font-size:var(--text-sm);color:var(--color-text-muted);
+  padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
+.ds-stitch-steps{display:flex;flex-direction:column;gap:var(--space-2);margin-top:var(--space-2)}
+.ds-stitch-step{display:flex;gap:var(--space-3);align-items:flex-start;font-size:var(--text-sm)}
+.ds-stitch-num{width:22px;height:22px;border-radius:50%;background:var(--color-teal);
+  color:#fff;font-weight:700;font-size:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0}

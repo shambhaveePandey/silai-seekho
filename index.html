@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="src/css/base.css">
 </head>
-<body data-lang="bi">
+<body data-lang="hi">
 
 <!-- NAV -->
 <nav class="nav">
@@ -24,8 +24,8 @@
     <span class="nav-title"><span>सिलाई</span> सीखो</span>
   </a>
   <div class="nav-controls">
-    <button class="nav-btn lang-btn active" id="langHi" onclick="setLang('hi')" title="हिंदी">HI</button>
-    <button class="nav-btn lang-btn" id="langBi" onclick="setLang('bi')" title="Hindi + English">HI/EN</button>
+    <button class="nav-btn lang-btn active" id="langHi" onclick="setLang('hi')" title="हिंदी">हिं</button>
+    <button class="nav-btn lang-btn" id="langBi" onclick="setLang('bi')" title="Hindi + English">द्वि</button>
     <button class="nav-btn lang-btn" id="langEn" onclick="setLang('en')" title="English">EN</button>
     <button class="nav-btn" data-theme-toggle aria-label="Toggle theme" id="themeBtn">🌙</button>
   </div>
@@ -447,6 +447,33 @@
       <p class="en-only">Create your own fabric pattern — design it in 2D, preview it draped in 3D, and learn how to replicate it on real cloth.</p>
     </div>
 
+    <!-- GARMENT SELECTOR BAR -->
+    <div class="ds-garment-bar">
+      <div class="ds-garment-bar-group">
+        <span class="ds-garment-label"><span class="hi-only">परिधान</span><span class="en-only">Garment</span></span>
+        <button class="ds-garment-chip active" data-garment="blouse" onclick="setDSGarment('blouse')">🥻 <span class="hi-only">ब्लाउज़</span><span class="en-only">Blouse</span></button>
+        <button class="ds-garment-chip" data-garment="kurta" onclick="setDSGarment('kurta')">👘 <span class="hi-only">कुर्ता</span><span class="en-only">Kurta</span></button>
+        <button class="ds-garment-chip" data-garment="salwar" onclick="setDSGarment('salwar')">👗 <span class="hi-only">सलवार</span><span class="en-only">Salwar</span></button>
+        <button class="ds-garment-chip" data-garment="shirt" onclick="setDSGarment('shirt')">👔 <span class="hi-only">शर्ट</span><span class="en-only">Shirt</span></button>
+        <button class="ds-garment-chip" data-garment="dress" onclick="setDSGarment('dress')">👗 <span class="hi-only">ड्रेस</span><span class="en-only">Dress</span></button>
+        <button class="ds-garment-chip" data-garment="tshirt" onclick="setDSGarment('tshirt')">👕 <span class="hi-only">टी-शर्ट</span><span class="en-only">T-Shirt</span></button>
+        <button class="ds-garment-chip" data-garment="pants" onclick="setDSGarment('pants')">👖 <span class="hi-only">पैंट</span><span class="en-only">Pants</span></button>
+      </div>
+      <div class="ds-garment-bar-group">
+        <span class="ds-garment-label"><span class="hi-only">मानेकिन</span><span class="en-only">Mannequin</span></span>
+        <button class="ds-gender-chip active" data-gender="female" onclick="setDSGender('female')">♀ <span class="hi-only">महिला</span><span class="en-only">Female</span></button>
+        <button class="ds-gender-chip" data-gender="male" onclick="setDSGender('male')">♂ <span class="hi-only">पुरुष</span><span class="en-only">Male</span></button>
+      </div>
+      <div class="ds-garment-bar-group">
+        <span class="ds-garment-label"><span class="hi-only">साइज़</span><span class="en-only">Size</span></span>
+        <button class="ds-garment-chip" data-size="XS" onclick="setDSSize('XS')">XS</button>
+        <button class="ds-garment-chip active" data-size="S" onclick="setDSSize('S')">S</button>
+        <button class="ds-garment-chip" data-size="M" onclick="setDSSize('M')">M</button>
+        <button class="ds-garment-chip" data-size="L" onclick="setDSSize('L')">L</button>
+        <button class="ds-garment-chip" data-size="XL" onclick="setDSSize('XL')">XL</button>
+      </div>
+    </div>
+
     <div class="ds-layout">
       <!-- CONTROLS -->
       <aside class="ds-controls">
@@ -506,6 +533,9 @@
       <h3>🧵 <span class="hi-only">इसे असली कपड़े पर कैसे बनाएँ</span><span class="en-only">How to replicate this on real fabric</span></h3>
       <div id="dsInsights"></div>
     </div>
+
+    <!-- GARMENT INFO (measurements + cutting + stitching) -->
+    <div class="ds-garment-info" id="dsGarmentInfo"></div>
   </div>
 </div><!-- /view-studio -->
 
@@ -527,15 +557,16 @@
         <h4><span class="hi-only">सीखने के लक्ष्य</span><span class="en-only">Learning Objectives</span></h4>
         <ul class="modal-objectives" id="modalObjectives"></ul>
       </div>
+      <div id="modalContent"></div>
       <div class="modal-section">
-        <h4>🎬 <span class="hi-only">वीडियो ट्यूटोरियल</span><span class="en-only">Video Tutorials</span></h4>
+        <h4>🎬 <span class="hi-only">और संसाधन — वीडियो</span><span class="en-only">Further Resources — Videos</span></h4>
         <div class="video-list" id="modalVideos"></div>
         <p style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:8px">
           <span class="hi-only">वीडियो पर टैप करें — यहीं चलेगा (या नया टैब खुलेगा)</span>
           <span class="en-only">Tap a video to play it inline (or open in a new tab)</span></p>
       </div>
       <div class="modal-section">
-        <h4>🔗 <span class="hi-only">संदर्भ और लिंक</span><span class="en-only">References & Links</span></h4>
+        <h4>🔗 <span class="hi-only">बाहरी संदर्भ</span><span class="en-only">External References</span></h4>
         <div class="ref-list" id="modalRefs"></div>
       </div>
     </div>

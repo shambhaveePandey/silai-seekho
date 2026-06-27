@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 270" role="img" aria-label="प्रिंसेस कट ब्लाउज़ — Princess Cut Blouse Pattern">
+  <style>
+    .lbl{font:700 10px 'Noto Sans Devanagari','Work Sans',sans-serif;fill:#2a1a0a}
+    .lbl-en{font:400 8px 'Work Sans',sans-serif;fill:#7a5c3a}
+    .cut{stroke:#2a1a0a;stroke-width:1.5;fill:none}
+    .princess{stroke:#9b2424;stroke-width:1.8;fill:none}
+    .seam{stroke:#888;stroke-width:0.8;stroke-dasharray:3,2;fill:none}
+    .grain{stroke:#016b6f;stroke-width:1.5;stroke-dasharray:5,3;fill:none}
+    @keyframes dash{from{stroke-dashoffset:20}to{stroke-dashoffset:0}}
+    .anim-seam{stroke-dasharray:8,4;animation:dash 1.5s linear infinite;stroke:#9b2424;stroke-width:1.5;fill:none}
+  </style>
+  <defs>
+    <pattern id="grid2" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#e8ddd0" stroke-width="0.4"/>
+    </pattern>
+    <pattern id="grid2x" width="50" height="50" patternUnits="userSpaceOnUse">
+      <rect width="50" height="50" fill="url(#grid2)"/>
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#d8c8b8" stroke-width="0.8"/>
+    </pattern>
+    <marker id="gah3" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
+      <path d="M0,0 L4,3 L0,6" fill="none" stroke="#016b6f" stroke-width="1"/>
+    </marker>
+    <marker id="gah3r" markerWidth="6" markerHeight="6" refX="1" refY="3" orient="auto-start-reverse">
+      <path d="M0,0 L4,3 L0,6" fill="none" stroke="#016b6f" stroke-width="1"/>
+    </marker>
+  </defs>
+
+  <rect width="540" height="270" fill="#fff9f3"/>
+  <text x="270" y="17" text-anchor="middle" font-family="'Noto Sans Devanagari','Work Sans'" font-size="12" font-weight="700" fill="#2a1a0a">प्रिंसेस कट ब्लाउज़ — पैटर्न पीस</text>
+  <text x="270" y="29" text-anchor="middle" font-family="'Work Sans'" font-size="9" fill="#7a5c3a">Princess Cut Blouse Pattern Pieces · Dart converted into seam</text>
+
+  <!-- FRONT LEFT PANEL -->
+  <g transform="translate(25,38)">
+    <text x="45" y="-5" text-anchor="middle" class="lbl">फ्रंट साइड पैनल</text>
+    <text x="45" y="4" text-anchor="middle" class="lbl-en">Front Side Panel</text>
+    <rect x="0" y="8" width="90" height="195" fill="url(#grid2x)" stroke="#c4a882" stroke-width="1"/>
+    <path d="M5,8 L85,8 L88,30 L86,90 L82,140 L80,195 L10,195 L8,140 L4,90 L2,30 Z" class="cut" fill="rgba(179,92,0,0.06)"/>
+    <!-- Princess seam (right edge - curved) -->
+    <path d="M85,8 Q92,60 88,110 Q86,150 82,195" class="anim-seam"/>
+    <!-- Armhole -->
+    <path d="M5,8 Q0,40 2,75" class="cut"/>
+    <!-- Neckline -->
+    <path d="M5,8 Q35,28 85,8" class="cut"/>
+    <!-- Grain -->
+    <line x1="45" y1="30" x2="45" y2="175" class="grain" marker-start="url(#gah3r)" marker-end="url(#gah3)"/>
+    <text x="45" y="188" text-anchor="middle" class="lbl-en" fill="#016b6f">ग्रेन</text>
+    <!-- Apex dot -->
+    <circle cx="42" cy="95" r="4" fill="#b35c00"/>
+    <text x="55" y="95" class="lbl-en" fill="#b35c00">एपेक्स</text>
+  </g>
+
+  <!-- FRONT CENTER PANEL -->
+  <g transform="translate(130,38)">
+    <text x="55" y="-5" text-anchor="middle" class="lbl">फ्रंट सेंटर पैनल</text>
+    <text x="55" y="4" text-anchor="middle" class="lbl-en">Front Center Panel</text>
+    <rect x="0" y="8" width="110" height="195" fill="url(#grid2x)" stroke="#c4a882" stroke-width="1"/>
+    <path d="M5,8 L105,8 L108,30 L106,90 L102,150 L100,195 L10,195 L8,150 L4,90 L2,30 Z" class="cut" fill="rgba(179,92,0,0.08)"/>
+    <!-- Princess seams on BOTH sides -->
+    <path d="M5,8 Q0,60 2,115 Q2,158 5,195" class="anim-seam"/>
+    <path d="M105,8 Q110,60 108,115 Q108,158 105,195" class="anim-seam"/>
+    <!-- Neckline -->
+    <path d="M5,8 Q55,40 105,8" class="cut"/>
+    <!-- Grain -->
+    <line x1="55" y1="30" x2="55" y2="175" class="grain" marker-start="url(#gah3r)" marker-end="url(#gah3)"/>
+    <!-- Bust curve shaping -->
+    <path d="M2,90 Q28,100 55,98 Q82,100 108,90" fill="none" stroke="#b35c00" stroke-width="0.8" stroke-dasharray="3,2" opacity="0.6"/>
+    <text x="55" y="185" text-anchor="middle" class="lbl-en" fill="#016b6f">ग्रेन · CF</text>
+  </g>
+
+  <!-- BACK PRINCESS PANEL -->
+  <g transform="translate(258,38)">
+    <text x="120" y="-5" text-anchor="middle" class="lbl">बैक प्रिंसेस पैनल (पूरा)</text>
+    <text x="120" y="4" text-anchor="middle" class="lbl-en">Back Princess Panel (full width)</text>
+    <rect x="0" y="8" width="240" height="195" fill="url(#grid2x)" stroke="#c4a882" stroke-width="1"/>
+    <!-- Back full panel with center princess seam -->
+    <path d="M8,8 L232,8 L238,30 L236,90 L230,150 L228,195 L12,195 L10,150 L4,90 L2,30 Z" class="cut" fill="rgba(1,107,111,0.05)"/>
+    <!-- Center back princess seam -->
+    <path d="M120,8 Q118,60 120,120 Q120,165 120,195" class="anim-seam"/>
+    <!-- Side princess seams -->
+    <path d="M60,8 Q58,60 56,120 Q55,165 55,195" class="anim-seam"/>
+    <path d="M180,8 Q182,60 184,120 Q185,165 185,195" class="anim-seam"/>
+    <!-- Back neckline (shallower) -->
+    <path d="M8,8 Q120,22 232,8" class="cut"/>
+    <!-- Armholes -->
+    <path d="M8,8 Q0,45 2,80" class="cut"/>
+    <path d="M232,8 Q240,45 238,80" class="cut"/>
+    <!-- Grain -->
+    <line x1="120" y1="30" x2="120" y2="178" class="grain" marker-start="url(#gah3r)" marker-end="url(#gah3)"/>
+    <text x="120" y="188" text-anchor="middle" class="lbl-en" fill="#016b6f">ग्रेन · CB</text>
+    <!-- Panel labels -->
+    <text x="40" y="105" text-anchor="middle" class="lbl-en">साइड</text>
+    <text x="120" y="105" text-anchor="middle" class="lbl-en">सेंटर</text>
+    <text x="205" y="105" text-anchor="middle" class="lbl-en">साइड</text>
+  </g>
+
+  <!-- Legend / Explanation -->
+  <rect x="25" y="242" width="490" height="22" rx="5" fill="#9b2424" opacity="0.08" stroke="#9b2424" stroke-width="0.8"/>
+  <line x1="35" y1="253" x2="60" y2="253" stroke="#9b2424" stroke-width="1.8" stroke-dasharray="5,3"/>
+  <text x="65" y="256" class="lbl-en" fill="#9b2424">प्रिंसेस सीम (Princess seam) — डार्ट को इस सीम में बदला जाता है</text>
+  <text x="300" y="256" class="lbl-en" fill="#016b6f"> · Converts body darts into curved seams for perfect fit</text>
+</svg>
