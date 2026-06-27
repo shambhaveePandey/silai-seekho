@@ -49,6 +49,9 @@
   <button class="view-tab" id="vtab-kb" onclick="switchView('kb')">
     📚 <span class="hi-only">ज्ञान आधार</span><span class="en-only">Knowledge Base</span>
   </button>
+  <button class="view-tab" id="vtab-studio" onclick="switchView('studio')">
+    🎨 <span class="hi-only">डिज़ाइन स्टूडियो</span><span class="en-only">Design Studio</span>
+  </button>
 </nav>
 
 <!-- ════════════════════════════════════════════════════════
@@ -433,6 +436,79 @@
   </div>
 </div><!-- /view-kb -->
 
+<!-- ═════════════════════════════════════════
+     VIEW 3 — FABRIC DESIGN STUDIO
+═════════════════════════════════════════ -->
+<div class="view" id="view-studio">
+  <div class="ds">
+    <div class="ds-header">
+      <h2>🎨 <span class="hi-only">कपड़ा डिज़ाइन स्टूडियो</span><span class="en-only">Fabric Design Studio</span></h2>
+      <p class="hi-only">अपना खुद का कपड़ा पैटर्न बनाएँ — इसे 2D में डिज़ाइन करें, 3D ड्रेप में देखें, और जानें कि इसे असली कपड़े पर कैसे बनाएं।</p>
+      <p class="en-only">Create your own fabric pattern — design it in 2D, preview it draped in 3D, and learn how to replicate it on real cloth.</p>
+    </div>
+
+    <div class="ds-layout">
+      <!-- CONTROLS -->
+      <aside class="ds-controls">
+        <div class="ds-group">
+          <label class="ds-label"><span class="hi-only">रंग संयोजन</span><span class="en-only">Colour palette</span></label>
+          <div class="ds-swatches" id="dsPalettes"></div>
+        </div>
+        <div class="ds-group">
+          <label class="ds-label"><span class="hi-only">अपने रंग</span><span class="en-only">Custom colours</span></label>
+          <div class="ds-colors">
+            <label class="ds-color"><input type="color" id="dsBg" value="#fbe9c8" oninput="setDSColor('bg',this.value)"><span class="hi-only">पृष्ठभूमि</span><span class="en-only">Background</span></label>
+            <label class="ds-color"><input type="color" id="dsFg" value="#b35c00" oninput="setDSColor('fg',this.value)"><span class="hi-only">मुख्य</span><span class="en-only">Main</span></label>
+            <label class="ds-color"><input type="color" id="dsAccent" value="#016b6f" oninput="setDSColor('accent',this.value)"><span class="hi-only">सहायक</span><span class="en-only">Accent</span></label>
+          </div>
+        </div>
+        <div class="ds-group">
+          <label class="ds-label"><span class="hi-only">मोटिफ़ (बूटी)</span><span class="en-only">Motif</span></label>
+          <div class="ds-chips" id="dsMotifs"></div>
+        </div>
+        <div class="ds-group">
+          <label class="ds-label"><span class="hi-only">घनत्व</span><span class="en-only">Density</span> · <b id="dsDensityVal">4</b></label>
+          <input type="range" id="dsDensity" min="2" max="8" step="1" value="4" oninput="setDSDensity(this.value)">
+        </div>
+        <div class="ds-group">
+          <label class="ds-label"><span class="hi-only">आकार</span><span class="en-only">Motif scale</span> · <b id="dsScaleVal">1.0×</b></label>
+          <input type="range" id="dsScale" min="0.5" max="1.6" step="0.1" value="1" oninput="setDSScale(this.value)">
+        </div>
+        <div class="ds-group">
+          <label class="ds-label"><span class="hi-only">घुमाव</span><span class="en-only">Rotation</span> · <b id="dsRotVal">0°</b></label>
+          <input type="range" id="dsRot" min="0" max="90" step="15" value="0" oninput="setDSRotation(this.value)">
+        </div>
+        <div class="ds-actions">
+          <button class="btn-secondary" onclick="randomiseDS()">🎲 <span class="hi-only">यादृच्छिक</span><span class="en-only">Surprise me</span></button>
+          <button class="btn-primary" onclick="downloadDS()">⬇️ <span class="hi-only">डाउनलोड</span><span class="en-only">Download PNG</span></button>
+        </div>
+      </aside>
+
+      <!-- PREVIEWS -->
+      <div class="ds-previews">
+        <div class="ds-preview-card">
+          <div class="ds-preview-head"><h4><span class="hi-only">2D पैटर्न (रिपीट)</span><span class="en-only">2D Pattern (repeat tile)</span></h4></div>
+          <div class="ds-canvas-wrap"><canvas id="dsCanvas" aria-label="Fabric pattern"></canvas></div>
+        </div>
+        <div class="ds-preview-card">
+          <div class="ds-preview-head">
+            <h4><span class="hi-only">3D ड्रेप झलक</span><span class="en-only">3D Drape Preview</span></h4>
+            <button class="ds-mini-btn active" id="dsAnimBtn" onclick="toggleDSAnim()" title="Spin">↻ <span class="hi-only">घुमाव</span><span class="en-only">Spin</span></button>
+          </div>
+          <div class="ds-3d" id="ds3d"><p class="ds-3d-fallback"><span class="hi-only">3D लोड हो रहा है…</span><span class="en-only">Loading 3D…</span></p></div>
+          <p class="ds-3d-hint"><span class="hi-only">कपड़े को खींचकर घुमाएँ · अपना 2D पैटर्न यहाँ ड्रेप पर दिखता है</span><span class="en-only">Drag to rotate · your 2D pattern is mapped onto the drape</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- REPLICATION INSIGHTS -->
+    <div class="ds-insights-card">
+      <h3>🧵 <span class="hi-only">इसे असली कपड़े पर कैसे बनाएँ</span><span class="en-only">How to replicate this on real fabric</span></h3>
+      <div id="dsInsights"></div>
+    </div>
+  </div>
+</div><!-- /view-studio -->
+
 <!-- LESSON DETAIL MODAL -->
 <div class="modal-overlay" id="lessonModal" role="dialog" aria-modal="true" aria-labelledby="modalTitleHi">
   <div class="modal">
@@ -475,6 +551,7 @@
 
 <script src="src/js/media-loader.js"></script>
 <script src="src/js/knowledge-base.js"></script>
+<script src="src/js/design-studio.js"></script>
 <script src="src/js/app.js"></script>
 </body>
 </html>

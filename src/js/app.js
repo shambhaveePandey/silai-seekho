@@ -305,6 +305,7 @@ function switchView(view){
   if(target) target.classList.add('active');
   if(tab) tab.classList.add('active');
   if(view==='kb' && typeof loadKnowledgeBase==='function') loadKnowledgeBase();
+  if(view==='studio' && typeof initDesignStudio==='function'){ initDesignStudio(); if(typeof init3D==='function') setTimeout(init3D,60); }
   window.scrollTo({top:0,behavior:'smooth'});
 }
 

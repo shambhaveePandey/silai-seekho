@@ -12,6 +12,11 @@
 
 👉 **[shambhaveepandey.github.io/silai-seekho](https://shambhaveepandey.github.io/silai-seekho/)**
 
+## 📔 Documentation
+
+- 📖 **[User Manual (Notion)](https://www.notion.so/38cff97a75418185bdc3e5d5722402c3)** — how to use every feature, step by step.
+- ⚙️ **[Developer & API Documentation (Notion)](https://www.notion.so/38cff97a75418120a0fad7cd48a58c00)** — architecture, data schema, the JS function API, theming and deployment.
+
 ---
 
 ## 📚 What is Silai Seekho?
@@ -44,6 +49,17 @@ The app teaches through **interactive SVG visualisations**, **animated diagrams*
   - **Reference links** to external guides and resources
   - A matching illustration
 
+### 🥻 Saree & Blouse Course (new)
+- A dedicated topic in the Knowledge Base teaching **traditional and modern Indian saree blouse** design and draping.
+- **6 lessons** spanning all four levels: saree anatomy → blouse measurements → traditional drafting → regional draping styles (Nivi/Bengali/Gujarati) → modern princess-cut & designer back designs → bridal blouse with padding, boning and zardozi.
+- Each lesson includes its own video tutorials and reference links.
+
+### 🎨 Fabric Design Studio (new)
+- Create your **own fabric pattern** in a live **2D editor**: pick a traditional Indian palette (Haldi, Indigo, Rani Pink, Mehendi, Ivory & Gold, Midnight) or custom colours, choose a motif (Paisley, Floral Booti, Bandhani, Block Print, Stripes, Checks, Polka Dots, Chevron), and tune density, scale and rotation.
+- Preview the pattern **draped in 3D** (Three.js) — drag to rotate, toggle auto-spin.
+- A **replication insights** panel explains **how to make the design on real cloth** — estimated repeat size, colours/screens, and a motif-specific step-by-step method (block printing, bandhani tie-dye, aari/zari embroidery, screen printing, weaving) plus a practical tip.
+- **Download** your design as a PNG.
+
 ### 🌏 Bilingual & PWA
 - Hindi/English content displayed side by side
 - Installable as a Progressive Web App (manifest + icons)
@@ -54,21 +70,23 @@ The app teaches through **interactive SVG visualisations**, **animated diagrams*
 
 ```
 silai-seekho/
-├── index.html                  # Main app (nav, hero, view tabs, lesson + KB views, modal)
+├── index.html                  # Main app (nav, hero, 3 view tabs, lesson + KB + studio views, modal)
 ├── manifest.webmanifest        # PWA manifest
 ├── .nojekyll                   # Prevents GitHub Pages/Jekyll from stripping files
+├── 404.html
 ├── README.md
 ├── LICENSE
 │
 ├── src/
 │   ├── css/
-│   │   └── base.css            # Design tokens + lesson, view-switcher, KB, and modal styles
+│   │   └── base.css            # Design tokens + lesson, view-switcher, KB, modal & Design Studio styles
 │   ├── js/
 │   │   ├── app.js              # Lesson logic: quizzes, hotspots, drag-drop, confetti, view switcher
 │   │   ├── knowledge-base.js   # KB controller: load JSON, filters, search, lesson modal, video embed
+│   │   ├── design-studio.js    # Fabric Design Studio: 2D pattern engine, 3D drape, replication insights
 │   │   └── media-loader.js     # Mounts external SVG/GIF illustrations with onerror fallbacks
 │   └── data/
-│       └── knowledge-base.json # 15 lessons × 9 topics × 4 levels (bilingual)
+│       └── knowledge-base.json # 21 lessons × 10 topics × 4 levels (bilingual), incl. Saree & Blouse
 │
 ├── assets/
 │   ├── illustrations/          # Externalised, loadable media
@@ -78,6 +96,7 @@ silai-seekho/
 │   │   ├── machine.svg
 │   │   ├── seams.svg
 │   │   ├── measurements.svg
+│   │   ├── saree-blouse.svg    # Saree & blouse course illustration
 │   │   └── stitching.gif       # Animated stitching demo
 │   └── icons/
 │       ├── logo.svg

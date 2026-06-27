@@ -1,359 +1,1064 @@
 {
   "meta": {
-    "version": "2.0",
+    "version": "3.0",
     "updated": "2026-06-27",
-    "levels": ["beginner", "intermediate", "advanced", "expert"],
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced",
+      "expert"
+    ],
     "levelLabels": {
-      "beginner": { "hi": "शुरुआती", "en": "Beginner" },
-      "intermediate": { "hi": "मध्यम", "en": "Intermediate" },
-      "advanced": { "hi": "उन्नत", "en": "Advanced" },
-      "expert": { "hi": "विशेषज्ञ", "en": "Expert" }
+      "beginner": {
+        "hi": "शुरुआती",
+        "en": "Beginner"
+      },
+      "intermediate": {
+        "hi": "मध्यम",
+        "en": "Intermediate"
+      },
+      "advanced": {
+        "hi": "उन्नत",
+        "en": "Advanced"
+      },
+      "expert": {
+        "hi": "विशेषज्ञ",
+        "en": "Expert"
+      }
     }
   },
   "topics": [
-    { "id": "tools", "icon": "🧰", "hi": "औज़ार और सामग्री", "en": "Tools & Materials" },
-    { "id": "fabrics", "icon": "🎨", "hi": "कपड़े और रेशे", "en": "Fabrics & Fibres" },
-    { "id": "machines", "icon": "⚙️", "hi": "सिलाई मशीनें", "en": "Sewing Machines" },
-    { "id": "stitches", "icon": "🧷", "hi": "टांके और सीम", "en": "Stitches & Seams" },
-    { "id": "measurements", "icon": "📐", "hi": "नाप और फिटिंग", "en": "Measurements & Fitting" },
-    { "id": "patterns", "icon": "✂️", "hi": "पैटर्न और कटाई", "en": "Pattern & Cutting" },
-    { "id": "garments", "icon": "👗", "hi": "परिधान निर्माण", "en": "Garment Construction" },
-    { "id": "embroidery", "icon": "🪡", "hi": "कढ़ाई और सजावट", "en": "Embroidery & Embellishment" },
-    { "id": "business", "icon": "💼", "hi": "सिलाई व्यवसाय", "en": "Tailoring Business" }
+    {
+      "id": "tools",
+      "icon": "🧰",
+      "hi": "औज़ार और सामग्री",
+      "en": "Tools & Materials"
+    },
+    {
+      "id": "fabrics",
+      "icon": "🎨",
+      "hi": "कपड़े और रेशे",
+      "en": "Fabrics & Fibres"
+    },
+    {
+      "id": "machines",
+      "icon": "⚙️",
+      "hi": "सिलाई मशीनें",
+      "en": "Sewing Machines"
+    },
+    {
+      "id": "stitches",
+      "icon": "🧷",
+      "hi": "टांके और सीम",
+      "en": "Stitches & Seams"
+    },
+    {
+      "id": "measurements",
+      "icon": "📐",
+      "hi": "नाप और फिटिंग",
+      "en": "Measurements & Fitting"
+    },
+    {
+      "id": "patterns",
+      "icon": "✂️",
+      "hi": "पैटर्न और कटाई",
+      "en": "Pattern & Cutting"
+    },
+    {
+      "id": "garments",
+      "icon": "👗",
+      "hi": "परिधान निर्माण",
+      "en": "Garment Construction"
+    },
+    {
+      "id": "embroidery",
+      "icon": "🪡",
+      "hi": "कढ़ाई और सजावट",
+      "en": "Embroidery & Embellishment"
+    },
+    {
+      "id": "business",
+      "icon": "💼",
+      "hi": "सिलाई व्यवसाय",
+      "en": "Tailoring Business"
+    },
+    {
+      "id": "saree",
+      "icon": "🥻",
+      "hi": "साड़ी और ब्लाउज़",
+      "en": "Saree & Blouse"
+    }
   ],
   "lessons": [
     {
       "id": "L-B-tools-01",
       "topic": "tools",
       "level": "beginner",
-      "title": { "hi": "ज़रूरी सिलाई औज़ार", "en": "Essential Sewing Tools" },
+      "title": {
+        "hi": "ज़रूरी सिलाई औज़ार",
+        "en": "Essential Sewing Tools"
+      },
       "duration": 20,
       "summary": {
         "hi": "इंच टेप, कैंची, सुई-धागा, चॉक और पिन को पहचानें और उनका सही उपयोग सीखें।",
         "en": "Identify the inch tape, scissors, needle & thread, chalk and pins, and learn their correct use."
       },
       "objectives": {
-        "hi": ["हर औज़ार का नाम पहचानना", "कपड़े की कैंची और कागज़ की कैंची का अंतर", "सुई के नंबर समझना"],
-        "en": ["Name each tool", "Difference between fabric and paper scissors", "Understand needle sizes"]
+        "hi": [
+          "हर औज़ार का नाम पहचानना",
+          "कपड़े की कैंची और कागज़ की कैंची का अंतर",
+          "सुई के नंबर समझना"
+        ],
+        "en": [
+          "Name each tool",
+          "Difference between fabric and paper scissors",
+          "Understand needle sizes"
+        ]
       },
       "illustration": "assets/illustrations/tools.svg",
       "videos": [
-        { "title": "Basic Sewing Tools for Beginners", "channel": "Made to Sew", "url": "https://www.youtube.com/watch?v=Adkv7iuMQ7c", "lang": "en" },
-        { "title": "सिलाई के औज़ार — शुरुआत", "channel": "Stitching with Bawa", "url": "https://www.youtube.com/results?search_query=सिलाई+के+औज़ार+शुरुआत", "lang": "hi" }
+        {
+          "title": "Basic Sewing Tools for Beginners",
+          "channel": "Made to Sew",
+          "url": "https://www.youtube.com/watch?v=Adkv7iuMQ7c",
+          "lang": "en"
+        },
+        {
+          "title": "सिलाई के औज़ार — शुरुआत",
+          "channel": "Stitching with Bawa",
+          "url": "https://www.youtube.com/results?search_query=सिलाई+के+औज़ार+शुरुआत",
+          "lang": "hi"
+        }
       ],
       "references": [
-        { "title": "Sewing tools glossary", "source": "Seamwork", "url": "https://www.seamwork.com/magazine/tools" },
-        { "title": "Hand sewing needle sizes", "source": "Threads Magazine", "url": "https://www.threadsmagazine.com/" }
+        {
+          "title": "Sewing tools glossary",
+          "source": "Seamwork",
+          "url": "https://www.seamwork.com/magazine/tools"
+        },
+        {
+          "title": "Hand sewing needle sizes",
+          "source": "Threads Magazine",
+          "url": "https://www.threadsmagazine.com/"
+        }
       ]
     },
     {
       "id": "L-B-fabrics-01",
       "topic": "fabrics",
       "level": "beginner",
-      "title": { "hi": "कपड़े की पहचान", "en": "Identifying Fabrics" },
+      "title": {
+        "hi": "कपड़े की पहचान",
+        "en": "Identifying Fabrics"
+      },
       "duration": 25,
       "summary": {
         "hi": "सूती, रेशम, जॉर्जेट और पॉलिएस्टर को देखकर और छूकर पहचानना सीखें।",
         "en": "Learn to recognise cotton, silk, georgette and polyester by sight and touch."
       },
       "objectives": {
-        "hi": ["प्राकृतिक बनाम कृत्रिम रेशे", "शुरुआत के लिए सूती क्यों सबसे अच्छा है", "हर कपड़े की सुई का नंबर"],
-        "en": ["Natural vs synthetic fibres", "Why cotton is best to start", "Needle size per fabric"]
+        "hi": [
+          "प्राकृतिक बनाम कृत्रिम रेशे",
+          "शुरुआत के लिए सूती क्यों सबसे अच्छा है",
+          "हर कपड़े की सुई का नंबर"
+        ],
+        "en": [
+          "Natural vs synthetic fibres",
+          "Why cotton is best to start",
+          "Needle size per fabric"
+        ]
       },
       "illustration": "assets/illustrations/fabrics.svg",
       "videos": [
-        { "title": "Fabric Types Explained", "channel": "Professor Pincushion", "url": "https://www.youtube.com/watch?v=2Q8Pj6sLh4E", "lang": "en" }
+        {
+          "title": "Fabric Types Explained",
+          "channel": "Professor Pincushion",
+          "url": "https://www.youtube.com/watch?v=2Q8Pj6sLh4E",
+          "lang": "en"
+        }
       ],
       "references": [
-        { "title": "Fabric burn test guide", "source": "Sewport", "url": "https://sewport.com/fabrics-directory" }
+        {
+          "title": "Fabric burn test guide",
+          "source": "Sewport",
+          "url": "https://sewport.com/fabrics-directory"
+        }
       ]
     },
     {
       "id": "L-B-machines-01",
       "topic": "machines",
       "level": "beginner",
-      "title": { "hi": "मशीन से परिचय", "en": "Meet Your Machine" },
+      "title": {
+        "hi": "मशीन से परिचय",
+        "en": "Meet Your Machine"
+      },
       "duration": 30,
       "summary": {
         "hi": "पैर-चालित (treadle) और मिनी मशीन के हिस्सों को पहचानें — सुई, प्रेसर फुट, बॉबिन और हैंडव्हील।",
         "en": "Identify parts of treadle and mini machines — needle, presser foot, bobbin and handwheel."
       },
       "objectives": {
-        "hi": ["मशीन के 6 मुख्य हिस्से", "बॉबिन कैसे भरें", "धागा कैसे पिरोएं"],
-        "en": ["6 main machine parts", "How to wind a bobbin", "How to thread the machine"]
+        "hi": [
+          "मशीन के 6 मुख्य हिस्से",
+          "बॉबिन कैसे भरें",
+          "धागा कैसे पिरोएं"
+        ],
+        "en": [
+          "6 main machine parts",
+          "How to wind a bobbin",
+          "How to thread the machine"
+        ]
       },
       "illustration": "assets/illustrations/machine.svg",
       "videos": [
-        { "title": "How to Thread a Sewing Machine", "channel": "Singer", "url": "https://www.youtube.com/watch?v=Kvc6T4hVCpw", "lang": "en" },
-        { "title": "सिलाई मशीन में धागा डालना", "channel": "Usha Sew", "url": "https://www.youtube.com/results?search_query=सिलाई+मशीन+में+धागा+डालना", "lang": "hi" }
+        {
+          "title": "How to Thread a Sewing Machine",
+          "channel": "Singer",
+          "url": "https://www.youtube.com/watch?v=Kvc6T4hVCpw",
+          "lang": "en"
+        },
+        {
+          "title": "सिलाई मशीन में धागा डालना",
+          "channel": "Usha Sew",
+          "url": "https://www.youtube.com/results?search_query=सिलाई+मशीन+में+धागा+डालना",
+          "lang": "hi"
+        }
       ],
       "references": [
-        { "title": "Treadle machine maintenance", "source": "ISMACS", "url": "https://ismacs.net/" }
+        {
+          "title": "Treadle machine maintenance",
+          "source": "ISMACS",
+          "url": "https://ismacs.net/"
+        }
       ]
     },
     {
       "id": "L-B-stitches-01",
       "topic": "stitches",
       "level": "beginner",
-      "title": { "hi": "पहली सीधी सिलाई", "en": "Your First Straight Stitch" },
+      "title": {
+        "hi": "पहली सीधी सिलाई",
+        "en": "Your First Straight Stitch"
+      },
       "duration": 25,
       "summary": {
         "hi": "कागज़ पर अभ्यास से शुरू करें, फिर सीधी रेखा में टांके लगाना सीखें।",
         "en": "Start by practising on paper, then learn to sew a clean straight line."
       },
       "objectives": {
-        "hi": ["सीधी सिलाई", "बैक-स्टिच से ताला लगाना", "सीम भत्ता समझना"],
-        "en": ["Straight stitch", "Lock with back-stitch", "Understand seam allowance"]
+        "hi": [
+          "सीधी सिलाई",
+          "बैक-स्टिच से ताला लगाना",
+          "सीम भत्ता समझना"
+        ],
+        "en": [
+          "Straight stitch",
+          "Lock with back-stitch",
+          "Understand seam allowance"
+        ]
       },
       "illustration": "assets/illustrations/seams.svg",
       "videos": [
-        { "title": "Straight Stitch Practice for Beginners", "channel": "Sew Anastasia", "url": "https://www.youtube.com/watch?v=p3yA-9zZ8w0", "lang": "en" }
+        {
+          "title": "Straight Stitch Practice for Beginners",
+          "channel": "Sew Anastasia",
+          "url": "https://www.youtube.com/watch?v=p3yA-9zZ8w0",
+          "lang": "en"
+        }
       ],
       "references": [
-        { "title": "Seam allowance basics", "source": "Colette / Seamwork", "url": "https://www.seamwork.com/magazine" }
+        {
+          "title": "Seam allowance basics",
+          "source": "Colette / Seamwork",
+          "url": "https://www.seamwork.com/magazine"
+        }
       ]
     },
     {
       "id": "L-I-measurements-01",
       "topic": "measurements",
       "level": "intermediate",
-      "title": { "hi": "शरीर के नाप लेना", "en": "Taking Body Measurements" },
+      "title": {
+        "hi": "शरीर के नाप लेना",
+        "en": "Taking Body Measurements"
+      },
       "duration": 35,
       "summary": {
         "hi": "छाती, कमर, कूल्हा और कंधा सही ढंग से नापें और ease allowance जोड़ें।",
         "en": "Accurately measure bust, waist, hip and shoulder, and add the right ease allowance."
       },
       "objectives": {
-        "hi": ["मुख्य नाप बिंदु", "ease allowance जोड़ना", "नाप चार्ट बनाना"],
-        "en": ["Key measurement points", "Adding ease allowance", "Building a measurement chart"]
+        "hi": [
+          "मुख्य नाप बिंदु",
+          "ease allowance जोड़ना",
+          "नाप चार्ट बनाना"
+        ],
+        "en": [
+          "Key measurement points",
+          "Adding ease allowance",
+          "Building a measurement chart"
+        ]
       },
       "illustration": "assets/illustrations/measurements.svg",
       "videos": [
-        { "title": "How to Measure the Body for Sewing", "channel": "Professor Pincushion", "url": "https://www.youtube.com/watch?v=zZ7l1cD3Q9g", "lang": "en" },
-        { "title": "नाप कैसे लें — ब्लाउज़", "channel": "BST Fashion", "url": "https://www.youtube.com/results?search_query=blouse+नाप+कैसे+लें", "lang": "hi" }
+        {
+          "title": "How to Measure the Body for Sewing",
+          "channel": "Professor Pincushion",
+          "url": "https://www.youtube.com/watch?v=zZ7l1cD3Q9g",
+          "lang": "en"
+        },
+        {
+          "title": "नाप कैसे लें — ब्लाउज़",
+          "channel": "BST Fashion",
+          "url": "https://www.youtube.com/results?search_query=blouse+नाप+कैसे+लें",
+          "lang": "hi"
+        }
       ],
       "references": [
-        { "title": "Body measurement chart", "source": "Mood Fabrics", "url": "https://www.moodfabrics.com/blog/" }
+        {
+          "title": "Body measurement chart",
+          "source": "Mood Fabrics",
+          "url": "https://www.moodfabrics.com/blog/"
+        }
       ]
     },
     {
       "id": "L-I-stitches-02",
       "topic": "stitches",
       "level": "intermediate",
-      "title": { "hi": "सीम के प्रकार: सादी, फ्रेंच, डार्ट", "en": "Seam Types: Plain, French, Dart" },
+      "title": {
+        "hi": "सीम के प्रकार: सादी, फ्रेंच, डार्ट",
+        "en": "Seam Types: Plain, French, Dart"
+      },
       "duration": 40,
       "summary": {
         "hi": "अलग-अलग कपड़ों के लिए सही सीम चुनना और साफ-सुथरी फिनिशिंग करना सीखें।",
         "en": "Choose the right seam for each fabric and finish edges cleanly."
       },
       "objectives": {
-        "hi": ["सादी सीम और उसका भत्ता", "नाज़ुक कपड़े के लिए फ्रेंच सीम", "डार्ट से आकार देना"],
-        "en": ["Plain seam & allowance", "French seam for delicate fabric", "Shaping with darts"]
+        "hi": [
+          "सादी सीम और उसका भत्ता",
+          "नाज़ुक कपड़े के लिए फ्रेंच सीम",
+          "डार्ट से आकार देना"
+        ],
+        "en": [
+          "Plain seam & allowance",
+          "French seam for delicate fabric",
+          "Shaping with darts"
+        ]
       },
       "illustration": "assets/illustrations/seams.svg",
       "videos": [
-        { "title": "French Seam Tutorial", "channel": "Made to Sew", "url": "https://www.youtube.com/watch?v=8wYy2x0Z9oQ", "lang": "en" }
+        {
+          "title": "French Seam Tutorial",
+          "channel": "Made to Sew",
+          "url": "https://www.youtube.com/watch?v=8wYy2x0Z9oQ",
+          "lang": "en"
+        }
       ],
       "references": [
-        { "title": "Seam finishes reference", "source": "Threads Magazine", "url": "https://www.threadsmagazine.com/" }
+        {
+          "title": "Seam finishes reference",
+          "source": "Threads Magazine",
+          "url": "https://www.threadsmagazine.com/"
+        }
       ]
     },
     {
       "id": "L-I-patterns-01",
       "topic": "patterns",
       "level": "intermediate",
-      "title": { "hi": "बुनावट और ग्रेन लाइन", "en": "Grain Line & Cutting Layout" },
+      "title": {
+        "hi": "बुनावट और ग्रेन लाइन",
+        "en": "Grain Line & Cutting Layout"
+      },
       "duration": 35,
       "summary": {
         "hi": "ताना, बाना, बायस और सेल्वेज समझकर कपड़े को सही दिशा में काटें।",
         "en": "Understand warp, weft, bias and selvedge to cut fabric on the correct grain."
       },
       "objectives": {
-        "hi": ["ग्रेन लाइन पहचानना", "बायस कट कब इस्तेमाल करें", "कपड़ा बचाने वाला लेआउट"],
-        "en": ["Identify the grain line", "When to use a bias cut", "Fabric-saving layout"]
+        "hi": [
+          "ग्रेन लाइन पहचानना",
+          "बायस कट कब इस्तेमाल करें",
+          "कपड़ा बचाने वाला लेआउट"
+        ],
+        "en": [
+          "Identify the grain line",
+          "When to use a bias cut",
+          "Fabric-saving layout"
+        ]
       },
       "illustration": "assets/illustrations/weave.svg",
       "videos": [
-        { "title": "Understanding Fabric Grain", "channel": "Closet Core Patterns", "url": "https://www.youtube.com/watch?v=Bx0bX5g3vTI", "lang": "en" }
+        {
+          "title": "Understanding Fabric Grain",
+          "channel": "Closet Core Patterns",
+          "url": "https://www.youtube.com/watch?v=Bx0bX5g3vTI",
+          "lang": "en"
+        }
       ],
       "references": [
-        { "title": "Grainline explained", "source": "Closet Core", "url": "https://www.closetcorepatterns.com/blog/" }
+        {
+          "title": "Grainline explained",
+          "source": "Closet Core",
+          "url": "https://www.closetcorepatterns.com/blog/"
+        }
       ]
     },
     {
       "id": "L-A-patterns-02",
       "topic": "patterns",
       "level": "advanced",
-      "title": { "hi": "सलवार कमीज़ का पैटर्न ड्राफ्ट", "en": "Drafting a Salwar Kameez Pattern" },
+      "title": {
+        "hi": "सलवार कमीज़ का पैटर्न ड्राफ्ट",
+        "en": "Drafting a Salwar Kameez Pattern"
+      },
       "duration": 60,
       "summary": {
         "hi": "नाप से सीधे कागज़ पर कमीज़, सलवार और दुपट्टे का पैटर्न बनाना सीखें।",
         "en": "Draft a kameez, salwar and dupatta pattern directly from measurements."
       },
       "objectives": {
-        "hi": ["बॉडिस ब्लॉक बनाना", "स्लीव और नेकलाइन ड्राफ्ट", "सलवार का पैटर्न"],
-        "en": ["Create a bodice block", "Draft sleeve & neckline", "Salwar pattern"]
+        "hi": [
+          "बॉडिस ब्लॉक बनाना",
+          "स्लीव और नेकलाइन ड्राफ्ट",
+          "सलवार का पैटर्न"
+        ],
+        "en": [
+          "Create a bodice block",
+          "Draft sleeve & neckline",
+          "Salwar pattern"
+        ]
       },
       "illustration": "assets/illustrations/measurements.svg",
       "videos": [
-        { "title": "Salwar Kameez Pattern Drafting", "channel": "Disha Stitching", "url": "https://www.youtube.com/results?search_query=salwar+kameez+pattern+drafting", "lang": "hi" }
+        {
+          "title": "Salwar Kameez Pattern Drafting",
+          "channel": "Disha Stitching",
+          "url": "https://www.youtube.com/results?search_query=salwar+kameez+pattern+drafting",
+          "lang": "hi"
+        }
       ],
       "references": [
-        { "title": "Indian pattern drafting methods", "source": "Sewguide", "url": "https://sewguide.com/" }
+        {
+          "title": "Indian pattern drafting methods",
+          "source": "Sewguide",
+          "url": "https://sewguide.com/"
+        }
       ]
     },
     {
       "id": "L-A-garments-01",
       "topic": "garments",
       "level": "advanced",
-      "title": { "hi": "ज़िप, प्लैकेट और कॉलर", "en": "Zippers, Plackets & Collars" },
+      "title": {
+        "hi": "ज़िप, प्लैकेट और कॉलर",
+        "en": "Zippers, Plackets & Collars"
+      },
       "duration": 55,
       "summary": {
         "hi": "अदृश्य ज़िप लगाना, प्लैकेट बनाना और कॉलर को साफ-सुथरे ढंग से जोड़ना।",
         "en": "Insert an invisible zipper, build a placket and attach a clean collar."
       },
       "objectives": {
-        "hi": ["इनविज़िबल ज़िप इंसर्शन", "टू-पीस प्लैकेट", "कॉलर स्टैंड लगाना"],
-        "en": ["Invisible zip insertion", "Two-piece placket", "Attaching a collar stand"]
+        "hi": [
+          "इनविज़िबल ज़िप इंसर्शन",
+          "टू-पीस प्लैकेट",
+          "कॉलर स्टैंड लगाना"
+        ],
+        "en": [
+          "Invisible zip insertion",
+          "Two-piece placket",
+          "Attaching a collar stand"
+        ]
       },
       "illustration": "assets/illustrations/seams.svg",
       "videos": [
-        { "title": "Invisible Zipper Tutorial", "channel": "Professor Pincushion", "url": "https://www.youtube.com/watch?v=Q1F0u4r9sJw", "lang": "en" }
+        {
+          "title": "Invisible Zipper Tutorial",
+          "channel": "Professor Pincushion",
+          "url": "https://www.youtube.com/watch?v=Q1F0u4r9sJw",
+          "lang": "en"
+        }
       ],
       "references": [
-        { "title": "Collar construction guide", "source": "Threads Magazine", "url": "https://www.threadsmagazine.com/" }
+        {
+          "title": "Collar construction guide",
+          "source": "Threads Magazine",
+          "url": "https://www.threadsmagazine.com/"
+        }
       ]
     },
     {
       "id": "L-A-embroidery-01",
       "topic": "embroidery",
       "level": "advanced",
-      "title": { "hi": "हाथ की कढ़ाई के टांके", "en": "Hand Embroidery Stitches" },
+      "title": {
+        "hi": "हाथ की कढ़ाई के टांके",
+        "en": "Hand Embroidery Stitches"
+      },
       "duration": 45,
       "summary": {
         "hi": "चेन स्टिच, सैटिन स्टिच और फ्रेंच नॉट जैसे सजावटी टांके सीखें।",
         "en": "Learn decorative stitches like chain stitch, satin stitch and French knot."
       },
       "objectives": {
-        "hi": ["चेन और लेज़ी-डेज़ी स्टिच", "सैटिन भराई", "फ्रेंच नॉट"],
-        "en": ["Chain & lazy-daisy stitch", "Satin fill", "French knot"]
+        "hi": [
+          "चेन और लेज़ी-डेज़ी स्टिच",
+          "सैटिन भराई",
+          "फ्रेंच नॉट"
+        ],
+        "en": [
+          "Chain & lazy-daisy stitch",
+          "Satin fill",
+          "French knot"
+        ]
       },
       "illustration": "assets/illustrations/tools.svg",
       "videos": [
-        { "title": "20 Basic Embroidery Stitches", "channel": "Cutesy Crafts", "url": "https://www.youtube.com/watch?v=Pgrh4tQU4VE", "lang": "en" }
+        {
+          "title": "20 Basic Embroidery Stitches",
+          "channel": "Cutesy Crafts",
+          "url": "https://www.youtube.com/watch?v=Pgrh4tQU4VE",
+          "lang": "en"
+        }
       ],
       "references": [
-        { "title": "Embroidery stitch dictionary", "source": "Sarah's Hand Embroidery", "url": "https://www.embroidery.rocksea.org/" }
+        {
+          "title": "Embroidery stitch dictionary",
+          "source": "Sarah's Hand Embroidery",
+          "url": "https://www.embroidery.rocksea.org/"
+        }
       ]
     },
     {
       "id": "L-E-garments-02",
       "topic": "garments",
       "level": "expert",
-      "title": { "hi": "ब्लाउज़ टेलरिंग और फिटिंग सुधार", "en": "Blouse Tailoring & Fit Correction" },
+      "title": {
+        "hi": "ब्लाउज़ टेलरिंग और फिटिंग सुधार",
+        "en": "Blouse Tailoring & Fit Correction"
+      },
       "duration": 75,
       "summary": {
         "hi": "प्रिंसेस सीम, कप शेपिंग और फिटिंग की आम समस्याओं को ठीक करना सीखें।",
         "en": "Master princess seams, cup shaping and correcting common fitting problems."
       },
       "objectives": {
-        "hi": ["प्रिंसेस सीम ड्राफ्ट", "बस्ट डार्ट मैनिपुलेशन", "गैप और रिंकल सुधार"],
-        "en": ["Draft princess seams", "Bust dart manipulation", "Fix gaping & wrinkles"]
+        "hi": [
+          "प्रिंसेस सीम ड्राफ्ट",
+          "बस्ट डार्ट मैनिपुलेशन",
+          "गैप और रिंकल सुधार"
+        ],
+        "en": [
+          "Draft princess seams",
+          "Bust dart manipulation",
+          "Fix gaping & wrinkles"
+        ]
       },
       "illustration": "assets/illustrations/measurements.svg",
       "videos": [
-        { "title": "Princess Seam Bodice", "channel": "The Last Stitch", "url": "https://www.youtube.com/watch?v=8m9Q5cRkY3w", "lang": "en" }
+        {
+          "title": "Princess Seam Bodice",
+          "channel": "The Last Stitch",
+          "url": "https://www.youtube.com/watch?v=8m9Q5cRkY3w",
+          "lang": "en"
+        }
       ],
       "references": [
-        { "title": "Fitting & alterations", "source": "Threads Magazine", "url": "https://www.threadsmagazine.com/" }
+        {
+          "title": "Fitting & alterations",
+          "source": "Threads Magazine",
+          "url": "https://www.threadsmagazine.com/"
+        }
       ]
     },
     {
       "id": "L-E-business-01",
       "topic": "business",
       "level": "expert",
-      "title": { "hi": "सिलाई की दुकान चलाना", "en": "Running a Tailoring Business" },
+      "title": {
+        "hi": "सिलाई की दुकान चलाना",
+        "en": "Running a Tailoring Business"
+      },
       "duration": 60,
       "summary": {
         "hi": "मूल्य निर्धारण, ग्राहक प्रबंधन और छोटे बुटीक को बढ़ाने की रणनीति सीखें।",
         "en": "Learn pricing, customer management and strategies to grow a small boutique."
       },
       "objectives": {
-        "hi": ["काम का मूल्य तय करना", "ग्राहक रिकॉर्ड रखना", "ऑनलाइन ऑर्डर लेना"],
-        "en": ["Pricing your work", "Keeping customer records", "Taking online orders"]
+        "hi": [
+          "काम का मूल्य तय करना",
+          "ग्राहक रिकॉर्ड रखना",
+          "ऑनलाइन ऑर्डर लेना"
+        ],
+        "en": [
+          "Pricing your work",
+          "Keeping customer records",
+          "Taking online orders"
+        ]
       },
       "illustration": "assets/illustrations/tools.svg",
       "videos": [
-        { "title": "How to Start a Tailoring Business", "channel": "Boutique Business", "url": "https://www.youtube.com/results?search_query=start+tailoring+business+india", "lang": "en" }
+        {
+          "title": "How to Start a Tailoring Business",
+          "channel": "Boutique Business",
+          "url": "https://www.youtube.com/results?search_query=start+tailoring+business+india",
+          "lang": "en"
+        }
       ],
       "references": [
-        { "title": "Pricing handmade work", "source": "Seamwork", "url": "https://www.seamwork.com/magazine" }
+        {
+          "title": "Pricing handmade work",
+          "source": "Seamwork",
+          "url": "https://www.seamwork.com/magazine"
+        }
       ]
     },
     {
       "id": "L-E-embroidery-02",
       "topic": "embroidery",
       "level": "expert",
-      "title": { "hi": "ज़रदोज़ी और एरी वर्क", "en": "Zardozi & Aari Work" },
+      "title": {
+        "hi": "ज़रदोज़ी और एरी वर्क",
+        "en": "Zardozi & Aari Work"
+      },
       "duration": 90,
       "summary": {
         "hi": "पारंपरिक भारतीय ज़रदोज़ी और एरी हुक तकनीक से अलंकृत कढ़ाई बनाना।",
         "en": "Create ornate embellishment using traditional Indian zardozi and the aari hook."
       },
       "objectives": {
-        "hi": ["अड्डा फ्रेम सेटअप", "एरी हुक पकड़ना", "मोती और सितारे लगाना"],
-        "en": ["Adda frame setup", "Holding the aari hook", "Attaching beads & sequins"]
+        "hi": [
+          "अड्डा फ्रेम सेटअप",
+          "एरी हुक पकड़ना",
+          "मोती और सितारे लगाना"
+        ],
+        "en": [
+          "Adda frame setup",
+          "Holding the aari hook",
+          "Attaching beads & sequins"
+        ]
       },
       "illustration": "assets/illustrations/tools.svg",
       "videos": [
-        { "title": "Aari Embroidery for Beginners", "channel": "Aari World", "url": "https://www.youtube.com/results?search_query=aari+embroidery+for+beginners", "lang": "hi" }
+        {
+          "title": "Aari Embroidery for Beginners",
+          "channel": "Aari World",
+          "url": "https://www.youtube.com/results?search_query=aari+embroidery+for+beginners",
+          "lang": "hi"
+        }
       ],
       "references": [
-        { "title": "History of zardozi", "source": "Victoria & Albert Museum", "url": "https://www.vam.ac.uk/" }
+        {
+          "title": "History of zardozi",
+          "source": "Victoria & Albert Museum",
+          "url": "https://www.vam.ac.uk/"
+        }
       ]
     },
     {
       "id": "L-I-machines-02",
       "topic": "machines",
       "level": "intermediate",
-      "title": { "hi": "तनाव और टांके की समस्याएं ठीक करना", "en": "Fixing Tension & Stitch Problems" },
+      "title": {
+        "hi": "तनाव और टांके की समस्याएं ठीक करना",
+        "en": "Fixing Tension & Stitch Problems"
+      },
       "duration": 40,
       "summary": {
         "hi": "ढीले टांके, धागा टूटना और बॉबिन की उलझन जैसी आम समस्याओं को सुलझाएं।",
         "en": "Troubleshoot loose stitches, thread breakage and bobbin nests."
       },
       "objectives": {
-        "hi": ["ऊपर-नीचे तनाव संतुलन", "धागा टूटने के कारण", "मशीन की सफाई व तेल"],
-        "en": ["Balance upper/lower tension", "Causes of thread breakage", "Cleaning & oiling"]
+        "hi": [
+          "ऊपर-नीचे तनाव संतुलन",
+          "धागा टूटने के कारण",
+          "मशीन की सफाई व तेल"
+        ],
+        "en": [
+          "Balance upper/lower tension",
+          "Causes of thread breakage",
+          "Cleaning & oiling"
+        ]
       },
       "illustration": "assets/illustrations/machine.svg",
       "videos": [
-        { "title": "Sewing Machine Tension Fix", "channel": "Sewing Parts Online", "url": "https://www.youtube.com/watch?v=Z2y6q2I3Yc8", "lang": "en" }
+        {
+          "title": "Sewing Machine Tension Fix",
+          "channel": "Sewing Parts Online",
+          "url": "https://www.youtube.com/watch?v=Z2y6q2I3Yc8",
+          "lang": "en"
+        }
       ],
       "references": [
-        { "title": "Troubleshooting chart", "source": "Singer Support", "url": "https://www.singer.com/support" }
+        {
+          "title": "Troubleshooting chart",
+          "source": "Singer Support",
+          "url": "https://www.singer.com/support"
+        }
       ]
     },
     {
       "id": "L-B-business-00",
       "topic": "business",
       "level": "beginner",
-      "title": { "hi": "घर से सिलाई शुरू करना", "en": "Starting Sewing From Home" },
+      "title": {
+        "hi": "घर से सिलाई शुरू करना",
+        "en": "Starting Sewing From Home"
+      },
       "duration": 20,
       "summary": {
         "hi": "कम बजट में घरेलू सिलाई का सेटअप, ज़रूरी सामान और पहला ऑर्डर लेना।",
         "en": "Set up a low-budget home sewing corner, essential supplies, and taking your first order."
       },
       "objectives": {
-        "hi": ["न्यूनतम सेटअप", "शुरुआती सामान की सूची", "पहला ग्राहक खोजना"],
-        "en": ["Minimal setup", "Starter supply list", "Find your first customer"]
+        "hi": [
+          "न्यूनतम सेटअप",
+          "शुरुआती सामान की सूची",
+          "पहला ग्राहक खोजना"
+        ],
+        "en": [
+          "Minimal setup",
+          "Starter supply list",
+          "Find your first customer"
+        ]
       },
       "illustration": "assets/illustrations/tools.svg",
       "videos": [
-        { "title": "Home Sewing Setup Ideas", "channel": "Sew Sweetness", "url": "https://www.youtube.com/results?search_query=home+sewing+setup", "lang": "en" }
+        {
+          "title": "Home Sewing Setup Ideas",
+          "channel": "Sew Sweetness",
+          "url": "https://www.youtube.com/results?search_query=home+sewing+setup",
+          "lang": "en"
+        }
       ],
       "references": [
-        { "title": "Beginner supply checklist", "source": "Seamwork", "url": "https://www.seamwork.com/magazine" }
+        {
+          "title": "Beginner supply checklist",
+          "source": "Seamwork",
+          "url": "https://www.seamwork.com/magazine"
+        }
+      ]
+    },
+    {
+      "id": "L-B-saree-01",
+      "topic": "saree",
+      "level": "beginner",
+      "title": {
+        "hi": "साड़ी का परिचय और भाग",
+        "en": "Introduction to the Saree & Its Parts"
+      },
+      "duration": 18,
+      "summary": {
+        "hi": "साड़ी के मुख्य भाग — पल्लू, बॉर्डर, बॉडी और स्कर्ट — पहचानें, और जानें कि ब्लाउज़ व पेटीकोट इसके साथ कैसे पहने जाते हैं।",
+        "en": "Identify the main parts of a saree — pallu, border, body and skirt — and learn how the blouse and petticoat work with it."
+      },
+      "objectives": {
+        "hi": [
+          "पल्लू, बॉर्डर और बॉडी पहचानना",
+          "6-गज़ और 9-गज़ साड़ी का अंतर",
+          "ब्लाउज़ और पेटीकोट की भूमिका समझना"
+        ],
+        "en": [
+          "Identify pallu, border and body",
+          "Difference between 6-yard and 9-yard sarees",
+          "Understand the role of blouse and petticoat"
+        ]
+      },
+      "illustration": "assets/illustrations/saree-blouse.svg",
+      "videos": [
+        {
+          "title": "Saree draping for beginners (Bengali)",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=nu-iB9bNNl8",
+          "lang": "hi"
+        },
+        {
+          "title": "Anatomy of a Saree explained",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/results?search_query=parts+of+a+saree+explained",
+          "lang": "en"
+        }
+      ],
+      "references": [
+        {
+          "title": "Styles of draping sarees (80+ drapes)",
+          "source": "Surat Textile Hub",
+          "url": "https://surattextilehub.com/blog/styles-of-draping-sarees"
+        },
+        {
+          "title": "International Museum of the Saree",
+          "source": "IMOTS",
+          "url": "https://www.internationalmuseumofthesaree.org"
+        }
+      ]
+    },
+    {
+      "id": "L-B-saree-02",
+      "topic": "saree",
+      "level": "beginner",
+      "title": {
+        "hi": "ब्लाउज़ के नाप लेना",
+        "en": "Taking Blouse Measurements"
+      },
+      "duration": 25,
+      "summary": {
+        "hi": "ब्लाउज़ के 12 ज़रूरी नाप — लंबाई, चेस्ट, कमर, शोल्डर, आर्महोल, एपेक्स-टू-एपेक्स, स्लीव — सही तरीके से लेना सीखें।",
+        "en": "Learn to take the 12 essential blouse measurements correctly — length, chest, waist, shoulder, armhole, apex-to-apex and sleeve."
+      },
+      "objectives": {
+        "hi": [
+          "ब्लाउज़ की लंबाई और चेस्ट नापना",
+          "एपेक्स (बस्ट पॉइंट) सही से चिह्नित करना",
+          "स्लीव की लंबाई और गोलाई नापना"
+        ],
+        "en": [
+          "Measure blouse length and chest",
+          "Mark the apex (bust point) correctly",
+          "Measure sleeve length and round"
+        ]
+      },
+      "illustration": "assets/illustrations/saree-blouse.svg",
+      "videos": [
+        {
+          "title": "Blouse measurement guide (Hindi)",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/results?search_query=blouse+measurement+kaise+le+hindi",
+          "lang": "hi"
+        },
+        {
+          "title": "How to take blouse measurements",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/results?search_query=how+to+take+blouse+measurements",
+          "lang": "en"
+        }
+      ],
+      "references": [
+        {
+          "title": "Body measurement basics",
+          "source": "Seamwork",
+          "url": "https://www.seamwork.com/magazine"
+        },
+        {
+          "title": "Measuring for fit",
+          "source": "Threads Magazine",
+          "url": "https://www.threadsmagazine.com/"
+        }
+      ]
+    },
+    {
+      "id": "L-I-saree-03",
+      "topic": "saree",
+      "level": "intermediate",
+      "title": {
+        "hi": "पारंपरिक ब्लाउज़ की कटाई व ड्राफ्टिंग",
+        "en": "Traditional Blouse Drafting & Cutting"
+      },
+      "duration": 45,
+      "summary": {
+        "hi": "36\" ब्लाउज़ का बेसिक ब्लॉक चार्ट पेपर पर ड्राफ्ट करें — फ्रंट, बैक, डार्ट और आर्महोल — सीम अलाउंस के साथ।",
+        "en": "Draft a basic 36\" blouse block on chart paper — front, back, darts and armhole — with seam allowance."
+      },
+      "objectives": {
+        "hi": [
+          "लंबाई, आर्महोल गहराई और शोल्डर चिह्नित करना",
+          "बस्ट और कमर डार्ट बनाना",
+          "फ्रंट व बैक नेक की गहराई तय करना"
+        ],
+        "en": [
+          "Mark length, armhole depth and shoulder",
+          "Create bust and waist darts",
+          "Set front and back neck depth"
+        ]
+      },
+      "illustration": "assets/illustrations/saree-blouse.svg",
+      "videos": [
+        {
+          "title": "Drafting for 36\" saree blouse (back, deep neck)",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=l0avCEGnvwc",
+          "lang": "en"
+        },
+        {
+          "title": "ब्लाउज़ कटिंग सीखें (Hindi)",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/results?search_query=blouse+cutting+drafting+hindi",
+          "lang": "hi"
+        }
+      ],
+      "references": [
+        {
+          "title": "Dart manipulation basics",
+          "source": "Seamwork",
+          "url": "https://www.seamwork.com/magazine"
+        },
+        {
+          "title": "Pattern drafting fundamentals",
+          "source": "Threads Magazine",
+          "url": "https://www.threadsmagazine.com/"
+        }
+      ]
+    },
+    {
+      "id": "L-I-saree-04",
+      "topic": "saree",
+      "level": "intermediate",
+      "title": {
+        "hi": "साड़ी ड्रेपिंग शैलियाँ (निवी, बंगाली, गुजराती)",
+        "en": "Saree Draping Styles (Nivi, Bengali, Gujarati)"
+      },
+      "duration": 35,
+      "summary": {
+        "hi": "तीन प्रमुख ड्रेप शैलियों में पल्लू और प्लीट्स बनाना सीखें — आंध्र की निवी, बंगाली अटपौर और गुजराती सीधा पल्लू।",
+        "en": "Learn to form pleats and pallu in three major drape styles — Andhra Nivi, Bengali Atpoure and Gujarati seedha pallu."
+      },
+      "objectives": {
+        "hi": [
+          "समान प्लीट्स बनाना और टकना",
+          "पल्लू की लंबाई व सेट करना",
+          "हर शैली का अंतर पहचानना"
+        ],
+        "en": [
+          "Form and tuck even pleats",
+          "Set pallu length and fall",
+          "Distinguish each regional style"
+        ]
+      },
+      "illustration": "assets/illustrations/saree-blouse.svg",
+      "videos": [
+        {
+          "title": "Saree draping styles tutorial",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=nu-iB9bNNl8",
+          "lang": "hi"
+        },
+        {
+          "title": "Regional saree drapes",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/results?search_query=regional+saree+draping+styles",
+          "lang": "en"
+        }
+      ],
+      "references": [
+        {
+          "title": "The Sari Series (108 drapes, films)",
+          "source": "Surat Textile Hub",
+          "url": "https://surattextilehub.com/blog/styles-of-draping-sarees"
+        },
+        {
+          "title": "Saree heritage & drapes",
+          "source": "International Museum of the Saree",
+          "url": "https://www.internationalmuseumofthesaree.org"
+        }
+      ]
+    },
+    {
+      "id": "L-A-saree-05",
+      "topic": "saree",
+      "level": "advanced",
+      "title": {
+        "hi": "आधुनिक डिज़ाइनर ब्लाउज़ — प्रिंसेस कट व बैक डिज़ाइन",
+        "en": "Modern Designer Blouse — Princess Cut & Back Designs"
+      },
+      "duration": 55,
+      "summary": {
+        "hi": "प्रिंसेस-कट ब्लाउज़ को ड्राफ्ट और सिलें, और आधुनिक बैक नेक डिज़ाइन — कीहोल, टाई-अप, बोट नेक व डीप बैक — बनाएं।",
+        "en": "Draft and stitch a princess-cut blouse, and create modern back-neck designs — keyhole, tie-up, boat neck and deep back."
+      },
+      "objectives": {
+        "hi": [
+          "डार्ट को प्रिंसेस सीम में बदलना",
+          "फिटेड कप के लिए कर्व्ड सीम सिलना",
+          "ट्रेंडी बैक नेक पैटर्न बनाना"
+        ],
+        "en": [
+          "Convert darts into princess seams",
+          "Sew curved seams for fitted cups",
+          "Build trendy back-neck patterns"
+        ]
+      },
+      "illustration": "assets/illustrations/saree-blouse.svg",
+      "videos": [
+        {
+          "title": "Princess Cut Blouse Cutting and Stitching",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=flzTl0QKYu4",
+          "lang": "hi"
+        },
+        {
+          "title": "Latest blouse back neck designs 2025",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=9LRaMIardUM",
+          "lang": "en"
+        }
+      ],
+      "references": [
+        {
+          "title": "Classic, Modern & Trendy Blouse Styles",
+          "source": "Lashkaraa",
+          "url": "https://www.lashkaraa.com/blogs/lashkaraa/stylish-saree-blouse-designs"
+        },
+        {
+          "title": "Saree blouse trends to dominate 2025",
+          "source": "Kalki Fashion",
+          "url": "https://blog.kalkifashion.com/must-see-saree-blouse-trends-that-will-dominate-2025/"
+        }
+      ]
+    },
+    {
+      "id": "L-E-saree-06",
+      "topic": "saree",
+      "level": "expert",
+      "title": {
+        "hi": "ब्राइडल ब्लाउज़ — पैडेड, बोनिंग व ज़रदोज़ी",
+        "en": "Bridal Blouse — Padding, Boning & Zardozi"
+      },
+      "duration": 75,
+      "summary": {
+        "hi": "लाइनिंग, कप पैडिंग, कोर्सेट बोनिंग और भारी ज़रदोज़ी/मिरर वर्क के साथ संरचित ब्राइडल ब्लाउज़ तैयार करें।",
+        "en": "Construct a structured bridal blouse with lining, cup padding, corset boning, and heavy zardozi/mirror embellishment."
+      },
+      "objectives": {
+        "hi": [
+          "लाइनिंग और कप पैडिंग जोड़ना",
+          "फ्लेक्सिबल बोनिंग से टॉर्सो शेप देना",
+          "भारी कढ़ाई पर निर्माण की योजना बनाना"
+        ],
+        "en": [
+          "Add lining and cup padding",
+          "Shape the torso with flexible boning",
+          "Plan construction around heavy embroidery"
+        ]
+      },
+      "illustration": "assets/illustrations/saree-blouse.svg",
+      "videos": [
+        {
+          "title": "Designer bridal blouse construction",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/results?search_query=bridal+blouse+padding+boning+stitching",
+          "lang": "hi"
+        },
+        {
+          "title": "Neo-traditional corset blouse trend",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=0yWJUyIJ980",
+          "lang": "en"
+        }
+      ],
+      "references": [
+        {
+          "title": "Trending saree blouse styles 2025-26 (corset, boning)",
+          "source": "Hatkay",
+          "url": "https://www.hatkay.com/blogs/hatkay/saree-blouse-styles-trending-in-2025-26"
+        },
+        {
+          "title": "Silk saree blouse designs front & back",
+          "source": "Yuvti",
+          "url": "https://yuvti.co.in/blogs/news/silk-saree-blouse-designs-front-and-back"
+        }
       ]
     }
   ]
