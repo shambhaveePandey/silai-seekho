@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" width="480" height="180" role="img" aria-label="Seam types diagram">
+  <style>.sl{font:400 10px 'Noto Sans Devanagari',sans-serif;fill:#2a1a0a}.se{font:400 8px 'Work Sans',sans-serif;fill:#7a5c3a}</style>
+  <!-- Plain seam -->
+  <rect x="20" y="40" width="90" height="100" rx="6" fill="#f5f0e8" stroke="#d4b896" stroke-width="1.5"/>
+  <rect x="20" y="40" width="90" height="50" rx="6" fill="#e8dcc8" stroke="#b35c00" stroke-width="1"/>
+  <line x1="65" y1="40" x2="65" y2="140" stroke="#b35c00" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="65" y="158" class="sl" text-anchor="middle">सादी सीम</text>
+  <text x="65" y="170" class="se" text-anchor="middle">Plain Seam</text>
+  <!-- Dart -->
+  <rect x="130" y="40" width="90" height="100" rx="6" fill="#f5f0e8" stroke="#d4b896" stroke-width="1.5"/>
+  <path d="M175,40 L155,140 L195,140 Z" fill="#d4c4a0" stroke="#b35c00" stroke-width="1.5"/>
+  <text x="175" y="158" class="sl" text-anchor="middle">डार्ट</text>
+  <text x="175" y="170" class="se" text-anchor="middle">Dart</text>
+  <!-- French seam -->
+  <rect x="240" y="40" width="90" height="100" rx="6" fill="#f5f0e8" stroke="#d4b896" stroke-width="1.5"/>
+  <rect x="240" y="40" width="90" height="50" rx="6" fill="#e8dcc8" stroke="#b35c00" stroke-width="1"/>
+  <line x1="285" y1="40" x2="285" y2="140" stroke="#b35c00" stroke-width="2.5"/>
+  <line x1="281" y1="40" x2="281" y2="140" stroke="#e8dcc8" stroke-width="1.5"/>
+  <text x="285" y="158" class="sl" text-anchor="middle">फ्रेंच सीम</text>
+  <text x="285" y="170" class="se" text-anchor="middle">French Seam</text>
+  <!-- Hem -->
+  <rect x="350" y="40" width="90" height="100" rx="6" fill="#f5f0e8" stroke="#d4b896" stroke-width="1.5"/>
+  <rect x="350" y="120" width="90" height="20" rx="0" fill="#e8dcc8" stroke="#b35c00" stroke-width="1.5"/>
+  <line x1="350" y1="120" x2="440" y2="120" stroke="#b35c00" stroke-width="2"/>
+  <text x="395" y="158" class="sl" text-anchor="middle">हेम</text>
+  <text x="395" y="170" class="se" text-anchor="middle">Hem</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" width="480" height="260" role="img" aria-label="Treadle sewing machine diagram">
+  <style>
+    @keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+    .bobbin-inner{transform-origin:150px 160px;animation:spin 2s linear infinite}
+    @media(prefers-reduced-motion:reduce){.bobbin-inner{animation:none}}
+  </style>
+  <rect x="80" y="40" width="220" height="140" rx="12" fill="#e8dcc8" stroke="#8b6914" stroke-width="2"/>
+  <rect x="120" y="80" width="40" height="60" rx="4" fill="#d4c4a0" stroke="#8b6914" stroke-width="1.5"/>
+  <rect x="138" y="85" width="4" height="50" rx="2" fill="#aaa" stroke="#888"/>
+  <circle cx="140" cy="93" r="3" fill="#666"/>
+  <rect x="130" y="130" width="20" height="8" rx="2" fill="#888" stroke="#666"/>
+  <rect x="126" y="138" width="28" height="6" rx="1" fill="#999" stroke="#777"/>
+  <ellipse cx="150" cy="160" rx="18" ry="8" fill="#c0aa80" stroke="#8b6914"/>
+  <ellipse cx="150" cy="160" rx="10" ry="5" fill="#b09060" class="bobbin-inner"/>
+  <path d="M180,50 L180,70 L165,80 L155,90" fill="none" stroke="#b35c00" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="290" cy="110" r="28" fill="#d4c4a0" stroke="#8b6914" stroke-width="2"/>
+  <circle cx="290" cy="110" r="16" fill="#c8b48c" stroke="#8b6914" stroke-width="1.5"/>
+  <circle cx="290" cy="110" r="5" fill="#8b6914"/>
+  <line x1="290" y1="82" x2="290" y2="94" stroke="#8b6914" stroke-width="2"/>
+  <line x1="290" y1="126" x2="290" y2="138" stroke="#8b6914" stroke-width="2"/>
+  <line x1="262" y1="110" x2="274" y2="110" stroke="#8b6914" stroke-width="2"/>
+  <line x1="306" y1="110" x2="318" y2="110" stroke="#8b6914" stroke-width="2"/>
+  <line x1="220" y1="40" x2="220" y2="10" stroke="#8b6914" stroke-width="2"/>
+  <circle cx="220" cy="10" r="6" fill="#b35c00" stroke="#8b6914"/>
+  <rect x="60" y="190" width="260" height="16" rx="4" fill="#8b6914" stroke="#6a4d10" stroke-width="1.5"/>
+  <rect x="110" y="210" width="160" height="30" rx="6" fill="#c4a060" stroke="#8b6914" stroke-width="2"/>
+  <rect x="80" y="200" width="12" height="50" rx="3" fill="#6a4d10"/>
+  <rect x="290" y="200" width="12" height="50" rx="3" fill="#6a4d10"/>
+  <ellipse cx="220" cy="175" rx="80" ry="12" fill="none" stroke="#555" stroke-width="2" stroke-dasharray="6,3"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" width="480" height="180" role="img" aria-label="Fabric swatches">
+  <style>.fl{font:600 11px 'Noto Sans Devanagari',sans-serif;fill:#2a1a0a}.fe{font:400 9px 'Work Sans',sans-serif;fill:#7a5c3a}</style>
+  <!-- Cotton -->
+  <rect x="20" y="30" width="90" height="120" rx="8" fill="#f5f0e8" stroke="#d4b896" stroke-width="2"/>
+  <line x1="25" y1="50" x2="105" y2="50" stroke="#d4b896" stroke-width="1" opacity="0.6"/>
+  <line x1="25" y1="70" x2="105" y2="70" stroke="#d4b896" stroke-width="1" opacity="0.6"/>
+  <line x1="25" y1="90" x2="105" y2="90" stroke="#d4b896" stroke-width="1" opacity="0.6"/>
+  <line x1="40" y1="30" x2="40" y2="150" stroke="#d4b896" stroke-width="1" opacity="0.6"/>
+  <line x1="60" y1="30" x2="60" y2="150" stroke="#d4b896" stroke-width="1" opacity="0.6"/>
+  <line x1="80" y1="30" x2="80" y2="150" stroke="#d4b896" stroke-width="1" opacity="0.6"/>
+  <text x="65" y="168" class="fl" text-anchor="middle">सूती</text>
+  <text x="65" y="178" class="fe" text-anchor="middle">Cotton</text>
+  <!-- Silk -->
+  <rect x="130" y="30" width="90" height="120" rx="8" fill="#fce4ec" stroke="#e91e63" stroke-width="2" opacity="0.8"/>
+  <path d="M130,60 Q175,45 220,60 Q175,75 130,60Z" fill="#e91e63" opacity="0.15"/>
+  <path d="M130,90 Q175,75 220,90 Q175,105 130,90Z" fill="#e91e63" opacity="0.15"/>
+  <path d="M130,120 Q175,105 220,120 Q175,135 130,120Z" fill="#e91e63" opacity="0.15"/>
+  <text x="175" y="168" class="fl" text-anchor="middle">रेशम</text>
+  <text x="175" y="178" class="fe" text-anchor="middle">Silk</text>
+  <!-- Georgette -->
+  <rect x="240" y="30" width="90" height="120" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" opacity="0.8"/>
+  <circle cx="265" cy="55" r="3" fill="#4caf50" opacity="0.3"/>
+  <circle cx="280" cy="70" r="3" fill="#4caf50" opacity="0.3"/>
+  <circle cx="295" cy="55" r="3" fill="#4caf50" opacity="0.3"/>
+  <circle cx="265" cy="85" r="3" fill="#4caf50" opacity="0.3"/>
+  <circle cx="310" cy="85" r="3" fill="#4caf50" opacity="0.3"/>
+  <text x="285" y="168" class="fl" text-anchor="middle">जॉर्जेट</text>
+  <text x="285" y="178" class="fe" text-anchor="middle">Georgette</text>
+  <!-- Polyester -->
+  <rect x="350" y="30" width="90" height="120" rx="8" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" opacity="0.8"/>
+  <line x1="355" y1="45" x2="435" y2="45" stroke="#2196f3" stroke-width="1.5" opacity="0.5"/>
+  <line x1="355" y1="65" x2="435" y2="65" stroke="#2196f3" stroke-width="1.5" opacity="0.5"/>
+  <line x1="355" y1="85" x2="435" y2="85" stroke="#2196f3" stroke-width="1.5" opacity="0.5"/>
+  <line x1="370" y1="30" x2="370" y2="150" stroke="#2196f3" stroke-width="1.5" opacity="0.5"/>
+  <line x1="390" y1="30" x2="390" y2="150" stroke="#2196f3" stroke-width="1.5" opacity="0.5"/>
+  <line x1="410" y1="30" x2="410" y2="150" stroke="#2196f3" stroke-width="1.5" opacity="0.5"/>
+  <text x="395" y="168" class="fl" text-anchor="middle">पॉलिएस्टर</text>
+  <text x="395" y="178" class="fe" text-anchor="middle">Polyester</text>
+</svg>

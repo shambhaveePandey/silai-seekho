@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="hi" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>सिलाई सीखो — Silai Seekho</title>
+<meta name="description" content="Interactive bilingual (Hindi/English) tailoring lessons with a searchable knowledge base, video tutorials and reference links.">
+<link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#b35c00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/css/base.css">
+</head>
+<body data-lang="bi">
+
+<!-- NAV -->
+<nav class="nav">
+  <a class="nav-logo" href="#">
+    <img src="assets/icons/logo.svg" alt="" width="36" height="36"
+         onerror="this.style.display='none'">
+    <span class="nav-title"><span>सिलाई</span> सीखो</span>
+  </a>
+  <div class="nav-controls">
+    <button class="nav-btn lang-btn active" id="langHi" onclick="setLang('hi')" title="हिंदी">HI</button>
+    <button class="nav-btn lang-btn" id="langBi" onclick="setLang('bi')" title="Hindi + English">HI/EN</button>
+    <button class="nav-btn lang-btn" id="langEn" onclick="setLang('en')" title="English">EN</button>
+    <button class="nav-btn" data-theme-toggle aria-label="Toggle theme" id="themeBtn">🌙</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🪡 <span class="hi-only">सीखें · अभ्यास करें · आगे बढ़ें</span><span class="en-only">Learn · Practise · Progress</span></div>
+  <h1>कपड़ा और सिलाई <em>की दुनिया</em></h1>
+  <p class="hero-sub hi-only">इंटरैक्टिव पाठ और खोजने योग्य ज्ञान आधार — शुरुआती से विशेषज्ञ तक</p>
+  <p class="hero-sub en-only">Interactive lessons and a searchable knowledge base — beginner to expert</p>
+  <div class="progress-bar-wrap"><div class="progress-bar" id="progressBar"></div></div>
+  <p class="progress-label" id="progressLabel">0 / 6 पाठ पूरे हुए</p>
+</section>
+
+<!-- VIEW TABS -->
+<nav class="view-tabs">
+  <button class="view-tab active" id="vtab-lesson" onclick="switchView('lesson')">
+    📖 <span class="hi-only">इंटरैक्टिव पाठ</span><span class="en-only">Interactive Lesson</span>
+  </button>
+  <button class="view-tab" id="vtab-kb" onclick="switchView('kb')">
+    📚 <span class="hi-only">ज्ञान आधार</span><span class="en-only">Knowledge Base</span>
+  </button>
+</nav>
+
+<!-- ════════════════════════════════════════════════════════
+     VIEW 1 — INTERACTIVE LESSON
+═══════════════════════════════════════════════════════════ -->
+<div class="view active" id="view-lesson">
+
+<!-- CHAPTER NAV -->
+<nav class="chapter-nav" role="tablist" aria-label="Chapters">
+  <button class="chapter-pill active" role="tab" onclick="goChapter(0)" id="cpill-0">🪡 औज़ार</button>
+  <button class="chapter-pill" role="tab" onclick="goChapter(1)" id="cpill-1">🎨 कपड़े</button>
+  <button class="chapter-pill" role="tab" onclick="goChapter(2)" id="cpill-2">🕸️ बुनावट</button>
+  <button class="chapter-pill" role="tab" onclick="goChapter(3)" id="cpill-3">⚙️ मशीनें</button>
+  <button class="chapter-pill" role="tab" onclick="goChapter(4)" id="cpill-4">🧷 सिलाई</button>
+  <button class="chapter-pill" role="tab" onclick="goChapter(5)" id="cpill-5">📐 नाप</button>
+</nav>
+
+<main id="mainContent">
+
+<!-- CHAPTER 0 — TOOLS -->
+<section class="chapter-section active lesson" id="ch-0" role="tabpanel">
+  <div class="lesson-header">
+    <p class="lesson-number hi-only">अध्याय १ · औज़ार और सामग्री</p>
+    <p class="lesson-number en-only">Chapter 1 · Tools & Materials</p>
+    <h2 class="lesson-title hi-only">सिलाई के ज़रूरी औज़ार</h2>
+    <h2 class="lesson-title en-only">Essential Tailoring Tools</h2>
+    <p class="lesson-title-en hi-only">Essential Tailoring Tools</p>
+    <p class="lesson-desc hi-only">हर पेशेवर दर्जी इन्हें जानता है। इन्हें पहचानना सीखें।</p>
+    <p class="lesson-desc en-only">Every professional tailor knows these. Learn to identify each one.</p>
+  </div>
+  <div class="visual-zone" id="viz-0">
+    <div class="illus-wrap" data-illus="assets/illustrations/tools.svg" data-alt="Tailoring tools"></div>
+    <p class="viz-caption hi-only">नीचे सही जवाब चुनें — चित्र अपडेट होगा ✨</p>
+    <p class="viz-caption en-only">Choose an answer below — the illustration updates ✨</p>
+  </div>
+  <div class="quiz-block">
+    <p class="quiz-question hi-only">कपड़े पर निशान लगाने के लिए क्या इस्तेमाल होता है?</p>
+    <p class="quiz-question en-only">What is used to mark measurements on fabric?</p>
+    <p class="quiz-question-en hi-only">What is used to mark measurements on fabric?</p>
+    <div class="options-grid" id="opts-0" role="radiogroup">
+      <button class="option-btn" onclick="checkQ(0,'wrong','opts-0','fb-0','viz-0','needle-selected')" disabled="">
+        <span class="option-icon">A</span>
+        <span class="option-text"><span class="option-hi">सुई (Needle)</span><span class="option-en hi-only">Needle — used to stitch fabric</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
+      </button>
+      <button class="option-btn" onclick="checkQ(0,'correct','opts-0','fb-0','viz-0','chalk-selected')" disabled="">
+        <span class="option-icon">B</span>
+        <span class="option-text"><span class="option-hi">चॉक / मार्कर (Chalk)</span><span class="option-en hi-only">Chalk — marks cutting lines</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+      </button>
+      <button class="option-btn" onclick="checkQ(0,'wrong','opts-0','fb-0','viz-0','scissors-selected')" disabled="">
+        <span class="option-icon">C</span>
+        <span class="option-text"><span class="option-hi">कैंची (Scissors)</span><span class="option-en hi-only">Scissors — used to cut fabric</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
+      </button>
+      <button class="option-btn" onclick="checkQ(0,'wrong','opts-0','fb-0','viz-0','pin-selected')" disabled="">
+        <span class="option-icon">D</span>
+        <span class="option-text"><span class="option-hi">पिन (Pin)</span><span class="option-en hi-only">Pin — holds fabric layers</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
+      </button>
+    </div>
+    <div class="feedback" id="fb-0"><span class="feedback-icon"></span><div class="feedback-text"><strong></strong><p></p></div></div>
+  </div>
+  <div class="action-row">
+    <button class="btn-secondary" onclick="startChapter(0)">🔄 <span class="hi-only">दोबारा</span><span class="en-only">Retry</span></button>
+    <button class="btn-primary" onclick="goChapter(1)">अगला पाठ → <span class="en-only">Next</span></button>
+  </div>
+</section>
+
+<!-- CHAPTER 1 — FABRICS -->
+<section class="chapter-section lesson" id="ch-1" role="tabpanel">
+  <div class="lesson-header">
+    <p class="lesson-number hi-only">अध्याय २ · कपड़े के प्रकार</p>
+    <p class="lesson-number en-only">Chapter 2 · Fabric Types</p>
+    <h2 class="lesson-title hi-only">कपड़े की पहचान करें</h2>
+    <h2 class="lesson-title en-only">Identifying Fabrics</h2>
+    <p class="lesson-title-en hi-only">Identify Fabrics by Touch & Look</p>
+    <p class="lesson-desc hi-only">शुरुआती दर्जी के लिए सबसे ज़रूरी है — कपड़े को देखकर और छूकर पहचानना।</p>
+    <p class="lesson-desc en-only">The most important skill for a beginner tailor — recognising fabric by sight and touch.</p>
+  </div>
+  <div class="visual-zone" id="viz-1">
+    <div class="illus-wrap" data-illus="assets/illustrations/fabrics.svg" data-alt="Fabric swatches"></div>
+  </div>
+  <p class="section-label hi-only">मुख्य अवधारणाएं</p>
+  <p class="section-label en-only">Key Concepts</p>
+  <div class="concept-grid">
+    <div class="concept-card" onclick="toggleCard(this)">
+      <div class="concept-card-header"><div class="concept-card-title">सूती कपड़ा <span>Cotton Fabric</span></div>
+        <svg class="concept-card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="concept-card-body"><span class="hi">प्राकृतिक रेशा · Natural fibre</span>हल्का, सांस लेने योग्य, धोने में आसान। गर्मियों के लिए सर्वोत्तम।<br><em>Light, breathable, easy to wash. Best for summer wear.</em><br><strong>सिलाई टिप:</strong> सुई नंबर 11–14 इस्तेमाल करें।<br><em>Use needle size 11–14.</em></div>
+    </div>
+    <div class="concept-card" onclick="toggleCard(this)">
+      <div class="concept-card-header"><div class="concept-card-title">रेशम <span>Silk</span></div>
+        <svg class="concept-card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="concept-card-body"><span class="hi">प्राकृतिक · Natural, चमकदार · Shiny</span>महंगा, फिसलन वाला — अनुभवी दर्जी के लिए।<br><em>Expensive, slippery — for experienced tailors.</em><br><strong>टिप:</strong> सिलाई से पहले पिन ज़रूर लगाएं।<br><em>Always pin before stitching.</em></div>
+    </div>
+    <div class="concept-card" onclick="toggleCard(this)">
+      <div class="concept-card-header"><div class="concept-card-title">जॉर्जेट <span>Georgette</span></div>
+        <svg class="concept-card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="concept-card-body"><span class="hi">हल्का, पारदर्शी · Sheer & light</span>साड़ी और दुपट्टे के लिए लोकप्रिय।<br><em>Popular for sarees and dupattas.</em><br><strong>टिप:</strong> फ्रेंच सीम इस्तेमाल करें।<br><em>Use French seam to hide raw edges.</em></div>
+    </div>
+    <div class="concept-card" onclick="toggleCard(this)">
+      <div class="concept-card-header"><div class="concept-card-title">पॉलिएस्टर <span>Polyester</span></div>
+        <svg class="concept-card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="concept-card-body"><span class="hi">कृत्रिम रेशा · Synthetic fibre</span>सस्ता, टिकाऊ, जल्दी सूखता है।<br><em>Cheap, durable, quick-drying.</em><br><strong>टिप:</strong> कम तापमान पर इस्त्री करें।<br><em>Iron on low heat only.</em></div>
+    </div>
+  </div>
+  <div class="quiz-block">
+    <p class="quiz-question hi-only">शुरुआती दर्जी के लिए सबसे अच्छा कपड़ा कौन सा है?</p>
+    <p class="quiz-question en-only">Which fabric is best for a beginner tailor?</p>
+    <p class="quiz-question-en hi-only">Which fabric is best for a beginner tailor?</p>
+    <div class="options-grid" id="opts-1" role="radiogroup">
+      <button class="option-btn" onclick="checkQ(1,'wrong','opts-1','fb-1','viz-1','silk-hl')" disabled="">
+        <span class="option-icon">A</span><span class="option-text"><span class="option-hi">रेशम (Silk)</span><span class="option-en hi-only">Silk — slippery, hard to control</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></span></button>
+      <button class="option-btn" onclick="checkQ(1,'correct','opts-1','fb-1','viz-1','cotton-hl')" disabled="">
+        <span class="option-icon">B</span><span class="option-text"><span class="option-hi">सूती (Cotton)</span><span class="option-en hi-only">Cotton — easy to handle & press</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+      <button class="option-btn" onclick="checkQ(1,'wrong','opts-1','fb-1','viz-1','georgette-hl')" disabled="">
+        <span class="option-icon">C</span><span class="option-text"><span class="option-hi">जॉर्जेट (Georgette)</span><span class="option-en hi-only">Georgette — delicate & tricky</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></span></button>
+      <button class="option-btn" onclick="checkQ(1,'wrong','opts-1','fb-1','viz-1','poly-hl')" disabled="">
+        <span class="option-icon">D</span><span class="option-text"><span class="option-hi">पॉलिएस्टर (Polyester)</span><span class="option-en hi-only">Polyester — slippery when cheap</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></span></button>
+    </div>
+    <div class="feedback" id="fb-1"><span class="feedback-icon"></span><div class="feedback-text"><strong></strong><p></p></div></div>
+  </div>
+  <div class="action-row">
+    <button class="btn-secondary" onclick="startChapter(1)">🔄</button>
+    <button class="btn-primary" onclick="goChapter(2)">अगला → <span class="en-only">Next</span></button>
+  </div>
+</section>
+
+<!-- CHAPTER 2 — WEAVE -->
+<section class="chapter-section lesson" id="ch-2" role="tabpanel">
+  <div class="lesson-header">
+    <p class="lesson-number hi-only">अध्याय ३ · बुनावट और धागे</p>
+    <p class="lesson-number en-only">Chapter 3 · Grain & Weave</p>
+    <h2 class="lesson-title hi-only">ताना, बाना और सेल्वेज</h2>
+    <h2 class="lesson-title en-only">Warp, Weft & Selvedge</h2>
+    <p class="lesson-desc hi-only">कपड़े की बुनावट समझे बिना सही कटाई संभव नहीं।</p>
+    <p class="lesson-desc en-only">Without understanding weave direction, correct cutting is impossible.</p>
+  </div>
+  <div class="visual-zone" id="viz-2">
+    <div class="illus-wrap" data-illus="assets/illustrations/weave.svg" data-alt="Warp weft weave diagram"></div>
+  </div>
+  <div class="quiz-block">
+    <p class="quiz-question hi-only">रिक्त स्थान भरें — खड़े धागों को <span class="fill-blank"><input type="text" id="fill-warp" placeholder="Hindi" maxlength="8" oninput="checkFill('fill-warp','ताना','fb-fill-1')"></span> (
+      <span class="fill-blank"><input type="text" id="fill-warp-en" placeholder="English" maxlength="10" oninput="checkFill('fill-warp-en','warp','fb-fill-1')"></span>
+    ) कहते हैं।</p>
+    <p class="quiz-question en-only">Fill the blank — vertical threads are called <span class="fill-blank"><input type="text" id="fill-warp-en2" placeholder="type answer" maxlength="10" oninput="checkFill('fill-warp-en2','warp','fb-fill-2')"></span></p>
+    <div class="feedback" id="fb-fill-1" style="margin-top:12px"></div>
+    <div class="feedback" id="fb-fill-2" style="margin-top:12px"></div>
+  </div>
+  <div class="action-row">
+    <button class="btn-secondary" onclick="startChapter(2)">🔄</button>
+    <button class="btn-primary" onclick="goChapter(3)">अगला → <span class="en-only">Next</span></button>
+  </div>
+</section>
+
+<!-- CHAPTER 3 — MACHINES (interactive hotspots over inline SVG + animated GIF demo) -->
+<section class="chapter-section lesson" id="ch-3" role="tabpanel">
+  <div class="lesson-header">
+    <p class="lesson-number hi-only">अध्याय ४ · सिलाई मशीनें</p>
+    <p class="lesson-number en-only">Chapter 4 · Sewing Machines</p>
+    <h2 class="lesson-title hi-only">पैर-चालित बनाम मिनी मशीन</h2>
+    <h2 class="lesson-title en-only">Treadle vs Mini Sewing Machine</h2>
+  </div>
+  <div class="visual-zone" id="viz-3" style="flex-direction:column">
+    <div class="machine-wrap" id="machine-diagram">
+      <svg viewBox="0 0 480 260" width="480" height="260" role="img" aria-label="Treadle sewing machine diagram">
+        <rect x="80" y="40" width="220" height="140" rx="12" fill="#e8dcc8" stroke="#8b6914" stroke-width="2"/>
+        <rect x="120" y="80" width="40" height="60" rx="4" fill="#d4c4a0" stroke="#8b6914" stroke-width="1.5"/>
+        <rect x="138" y="85" width="4" height="50" rx="2" fill="#aaa" stroke="#888"/>
+        <circle cx="140" cy="93" r="3" fill="#666"/>
+        <rect x="130" y="130" width="20" height="8" rx="2" fill="#888" stroke="#666"/>
+        <rect x="126" y="138" width="28" height="6" rx="1" fill="#999" stroke="#777"/>
+        <ellipse cx="150" cy="160" rx="18" ry="8" fill="#c0aa80" stroke="#8b6914"/>
+        <ellipse cx="150" cy="160" rx="10" ry="5" fill="#b09060" class="bobbin-inner"/>
+        <path d="M180,50 L180,70 L165,80 L155,90" fill="none" stroke="#b35c00" stroke-width="1.5" stroke-dasharray="4,2"/>
+        <circle cx="290" cy="110" r="28" fill="#d4c4a0" stroke="#8b6914" stroke-width="2"/>
+        <circle cx="290" cy="110" r="16" fill="#c8b48c" stroke="#8b6914" stroke-width="1.5"/>
+        <circle cx="290" cy="110" r="5" fill="#8b6914"/>
+        <line x1="290" y1="82" x2="290" y2="94" stroke="#8b6914" stroke-width="2"/>
+        <line x1="290" y1="126" x2="290" y2="138" stroke="#8b6914" stroke-width="2"/>
+        <line x1="262" y1="110" x2="274" y2="110" stroke="#8b6914" stroke-width="2"/>
+        <line x1="306" y1="110" x2="318" y2="110" stroke="#8b6914" stroke-width="2"/>
+        <line x1="220" y1="40" x2="220" y2="10" stroke="#8b6914" stroke-width="2"/>
+        <circle cx="220" cy="10" r="6" fill="#b35c00" stroke="#8b6914"/>
+        <rect x="60" y="190" width="260" height="16" rx="4" fill="#8b6914" stroke="#6a4d10" stroke-width="1.5"/>
+        <rect x="110" y="210" width="160" height="30" rx="6" fill="#c4a060" stroke="#8b6914" stroke-width="2"/>
+        <rect x="80" y="200" width="12" height="50" rx="3" fill="#6a4d10"/>
+        <rect x="290" y="200" width="12" height="50" rx="3" fill="#6a4d10"/>
+        <ellipse cx="220" cy="175" rx="80" ry="12" fill="none" stroke="#555" stroke-width="2" stroke-dasharray="6,3"/>
+      </svg>
+      <button class="hotspot-btn" style="left:17%;top:52%" onclick="showHotspot(this,1)" title="Part 1">1<span class="hotspot-tooltip"></span></button>
+      <button class="hotspot-btn" style="left:30%;top:68%" onclick="showHotspot(this,2)" title="Part 2">2<span class="hotspot-tooltip"></span></button>
+      <button class="hotspot-btn" style="left:28%;top:78%" onclick="showHotspot(this,3)" title="Part 3">3<span class="hotspot-tooltip"></span></button>
+      <button class="hotspot-btn" style="left:55%;top:36%" onclick="showHotspot(this,4)" title="Part 4">4<span class="hotspot-tooltip"></span></button>
+      <button class="hotspot-btn" style="left:43%;top:8%" onclick="showHotspot(this,5)" title="Part 5">5<span class="hotspot-tooltip"></span></button>
+      <button class="hotspot-btn" style="left:22%;top:90%" onclick="showHotspot(this,6)" title="Part 6">6<span class="hotspot-tooltip"></span></button>
+    </div>
+    <div class="hotspot-info" id="hotspot-info" style="width:100%;max-width:500px">
+      <span class="hi-only">👆 ऊपर कोई नंबर दबाएं — उस हिस्से की जानकारी यहाँ दिखेगी</span>
+      <span class="en-only">👆 Tap any number above to learn about that part</span>
+    </div>
+    <p class="viz-caption" style="margin-top:16px"><span class="hi-only">सिलाई की गति — एनिमेशन</span><span class="en-only">Stitching motion — animation</span></p>
+    <img class="media-gif" src="assets/illustrations/stitching.gif" alt="Animated stitching demonstration"
+         loading="lazy" onerror="this.style.display='none'">
+  </div>
+  <div class="quiz-block">
+    <p class="quiz-question hi-only">पैर-चालित मशीन में बिजली की ज़रूरत क्यों नहीं होती?</p>
+    <p class="quiz-question en-only">Why does a treadle machine not need electricity?</p>
+    <p class="quiz-question-en hi-only">Why does a treadle machine not need electricity?</p>
+    <div class="options-grid" id="opts-3" role="radiogroup">
+      <button class="option-btn" onclick="checkQ(3,'correct','opts-3','fb-3','viz-3','treadle-ok')" disabled="">
+        <span class="option-icon">A</span><span class="option-text"><span class="option-hi">पैर से पेडल चलाने पर पहिया घूमता है</span><span class="option-en hi-only">The foot pedal turns the wheel mechanically</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+      <button class="option-btn" onclick="checkQ(3,'wrong','opts-3','fb-3','viz-3','treadle-no')" disabled="">
+        <span class="option-icon">B</span><span class="option-text"><span class="option-hi">इसमें बैटरी लगी होती है</span><span class="option-en hi-only">It runs on a hidden battery</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></span></button>
+      <button class="option-btn" onclick="checkQ(3,'wrong','opts-3','fb-3','viz-3','treadle-no2')" disabled="">
+        <span class="option-icon">C</span><span class="option-text"><span class="option-hi">सूरज की रोशनी से चलती है</span><span class="option-en hi-only">It is solar powered</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></span></button>
+    </div>
+    <div class="feedback" id="fb-3"><span class="feedback-icon"></span><div class="feedback-text"><strong></strong><p></p></div></div>
+  </div>
+  <div class="action-row">
+    <button class="btn-secondary" onclick="startChapter(3)">🔄</button>
+    <button class="btn-primary" onclick="goChapter(4)">अगला →</button>
+  </div>
+</section>
+
+<!-- CHAPTER 4 — SEAMS -->
+<section class="chapter-section lesson" id="ch-4" role="tabpanel">
+  <div class="lesson-header">
+    <p class="lesson-number hi-only">अध्याय ५ · सीम और बनावट</p>
+    <p class="lesson-number en-only">Chapter 5 · Seams & Stitches</p>
+    <h2 class="lesson-title hi-only">सीम, डार्ट और हेम</h2>
+    <h2 class="lesson-title en-only">Seam, Dart & Hem</h2>
+    <p class="lesson-desc hi-only">ये सिलाई की बुनियादी इकाइयां हैं।</p>
+    <p class="lesson-desc en-only">These are the fundamental units of tailoring.</p>
+  </div>
+  <div class="visual-zone" id="viz-4">
+    <div class="illus-wrap" data-illus="assets/illustrations/seams.svg" data-alt="Seam types diagram"></div>
+  </div>
+  <div class="concept-grid">
+    <div class="concept-card" onclick="toggleCard(this)">
+      <div class="concept-card-header"><div class="concept-card-title">सादी सीम <span>Plain Seam</span></div>
+        <svg class="concept-card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="concept-card-body"><span class="hi">सबसे सरल सीम · The simplest seam</span>दो कपड़ों को एक सीधी रेखा में सिलना।<br><em>Joining two fabric pieces in a straight line.</em><br><strong>भत्ता:</strong> आमतौर पर 1–1.5 इंच<br><em>Seam allowance: usually 1–1.5 inches</em></div>
+    </div>
+    <div class="concept-card" onclick="toggleCard(this)">
+      <div class="concept-card-header"><div class="concept-card-title">डार्ट <span>Dart</span></div>
+        <svg class="concept-card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="concept-card-body"><span class="hi">शरीर की आकृति के लिए · For body shape</span>कपड़े को शरीर के अनुसार आकार देने वाली तह।<br><em>A folded tuck that shapes the garment to the body.</em><br><strong>उदाहरण:</strong> ब्लाउज की पीठ पर डार्ट<br><em>Example: back darts on a blouse</em></div>
+    </div>
+    <div class="concept-card" onclick="toggleCard(this)">
+      <div class="concept-card-header"><div class="concept-card-title">फ्रेंच सीम <span>French Seam</span></div>
+        <svg class="concept-card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="concept-card-body"><span class="hi">दोहरी सीम · Double-stitched seam</span>कच्चे किनारे छिपाने के लिए दो बार सिला जाता है।<br><em>Sewn twice to enclose raw edges — ideal for georgette & silk.</em></div>
+    </div>
+    <div class="concept-card" onclick="toggleCard(this)">
+      <div class="concept-card-header"><div class="concept-card-title">हेम <span>Hem</span></div>
+        <svg class="concept-card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="concept-card-body"><span class="hi">निचला किनारा · Bottom edge finish</span>कपड़े के निचले हिस्से को अंदर मोड़कर सिलना।<br><em>Folding and stitching the bottom edge of a garment.</em><br><strong>आम हेम:</strong> 1–2 इंच | <em>Typical: 1–2 inches</em></div>
+    </div>
+  </div>
+  <div class="quiz-block">
+    <p class="quiz-question hi-only">डार्ट का मुख्य उद्देश्य क्या है?</p>
+    <p class="quiz-question en-only">What is the main purpose of a dart?</p>
+    <p class="quiz-question-en hi-only">What is the main purpose of a dart?</p>
+    <div class="options-grid" id="opts-4" role="radiogroup">
+      <button class="option-btn" onclick="checkQ(4,'wrong','opts-4','fb-4','viz-4','hem-hl')" disabled="">
+        <span class="option-icon">A</span><span class="option-text"><span class="option-hi">निचला किनारा साफ करना</span><span class="option-en hi-only">To clean the bottom hem</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></span></button>
+      <button class="option-btn" onclick="checkQ(4,'correct','opts-4','fb-4','viz-4','dart-hl')" disabled="">
+        <span class="option-icon">B</span><span class="option-text"><span class="option-hi">कपड़े को शरीर का आकार देना</span><span class="option-en hi-only">To shape the garment to the body</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+      <button class="option-btn" onclick="checkQ(4,'wrong','opts-4','fb-4','viz-4','seam-hl')" disabled="">
+        <span class="option-icon">C</span><span class="option-text"><span class="option-hi">दो कपड़े जोड़ना</span><span class="option-en hi-only">To join two pieces of fabric</span></span>
+        <span class="option-result-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></span></button>
+    </div>
+    <div class="feedback" id="fb-4"><span class="feedback-icon"></span><div class="feedback-text"><strong></strong><p></p></div></div>
+  </div>
+  <div class="action-row">
+    <button class="btn-secondary" onclick="startChapter(4)">🔄</button>
+    <button class="btn-primary" onclick="goChapter(5)">अगला →</button>
+  </div>
+</section>
+
+<!-- CHAPTER 5 — MEASUREMENTS -->
+<section class="chapter-section lesson" id="ch-5" role="tabpanel">
+  <div class="lesson-header">
+    <p class="lesson-number hi-only">अध्याय ६ · शरीर के नाप</p>
+    <p class="lesson-number en-only">Chapter 6 · Body Measurements</p>
+    <h2 class="lesson-title hi-only">नाप लेना और भत्ता</h2>
+    <h2 class="lesson-title en-only">Taking Measurements & Ease Allowance</h2>
+  </div>
+  <div class="visual-zone" id="viz-5">
+    <div class="illus-wrap" data-illus="assets/illustrations/measurements.svg" data-alt="Body measurement points"></div>
+  </div>
+  <p class="section-label hi-only">मिलान खेल — हिंदी नाम को अंग्रेज़ी से मिलाएं</p>
+  <p class="section-label en-only">Match Game — drag Hindi to the correct English</p>
+  <div class="match-game" id="match-game">
+    <div class="match-col-title">
+      <span class="hi-only">हिंदी नाम</span><span class="en-only">Hindi Name</span>
+      <span class="hi-only">अंग्रेज़ी नाम (यहाँ छोड़ें)</span><span class="en-only">English Name (drop here)</span>
+    </div>
+    <div id="drag-col">
+      <div class="match-card" draggable="true" data-val="chest" id="drag-chest" ondragstart="dragStart(event)">🫁 छाती / Bust</div>
+      <div class="match-card" draggable="true" data-val="waist" id="drag-waist" ondragstart="dragStart(event)" style="margin-top:8px">⌚ कमर / Waist</div>
+      <div class="match-card" draggable="true" data-val="hip" id="drag-hip" ondragstart="dragStart(event)" style="margin-top:8px">🍑 कूल्हा / Hip</div>
+      <div class="match-card" draggable="true" data-val="shoulder" id="drag-shoulder" ondragstart="dragStart(event)" style="margin-top:8px">💪 कंधा / Shoulder</div>
+    </div>
+    <div id="drop-col">
+      <div class="match-drop" data-accept="chest" ondragover="dragOver(event)" ondrop="drop(event)" ondragleave="dragLeave(event)">Bust / Chest (छाती)</div>
+      <div class="match-drop" data-accept="waist" ondragover="dragOver(event)" ondrop="drop(event)" ondragleave="dragLeave(event)" style="margin-top:8px">Waist (कमर)</div>
+      <div class="match-drop" data-accept="hip" ondragover="dragOver(event)" ondrop="drop(event)" ondragleave="dragLeave(event)" style="margin-top:8px">Hip (कूल्हा)</div>
+      <div class="match-drop" data-accept="shoulder" ondragover="dragOver(event)" ondrop="drop(event)" ondragleave="dragLeave(event)" style="margin-top:8px">Shoulder (कंधा)</div>
+    </div>
+  </div>
+  <div class="feedback" id="fb-match" style="display:none"></div>
+  <div class="action-row">
+    <button class="btn-secondary" onclick="resetMatch()">🔄 <span class="hi-only">फिर से</span><span class="en-only">Reset</span></button>
+    <button class="btn-primary" onclick="finishLesson()">🎉 <span class="hi-only">पाठ पूरा करें</span><span class="en-only">Complete Lesson</span></button>
+  </div>
+</section>
+
+<!-- SCORE CARD -->
+<section class="chapter-section score-card" id="ch-score">
+  <div class="score-circle" id="scoreCircle">0/6</div>
+  <h2 class="hi-only">शाबाश! पाठ पूरा हुआ! 🎊</h2>
+  <h2 class="en-only">Lesson Complete! 🎊</h2>
+  <p class="hi-only">आपने सिलाई और कपड़े की बुनियादी जानकारी हासिल कर ली।<br>अब मशीन पर बैठ कर अभ्यास शुरू करें!</p>
+  <p class="en-only">You have covered the basics of tailoring and fabric.<br>Now sit at the machine and start practising!</p>
+  <div class="action-row" style="justify-content:center">
+    <button class="btn-secondary" onclick="restartAll()">🔄 <span class="hi-only">फिर से शुरू</span><span class="en-only">Start Over</span></button>
+    <button class="btn-primary" onclick="switchView('kb')">📚 <span class="hi-only">ज्ञान आधार देखें</span><span class="en-only">Explore Knowledge Base</span></button>
+  </div>
+</section>
+
+</main>
+</div><!-- /view-lesson -->
+
+<!-- ════════════════════════════════════════════════════════
+     VIEW 2 — KNOWLEDGE BASE
+═══════════════════════════════════════════════════════════ -->
+<div class="view" id="view-kb">
+  <div class="kb">
+    <div class="kb-header">
+      <h2><span class="hi-only">ज्ञान आधार</span><span class="en-only">Knowledge Base</span></h2>
+      <p class="hi-only">शुरुआती से विशेषज्ञ तक — मुख्य विषयों में संगठित पाठ योजनाएं, वीडियो ट्यूटोरियल और संदर्भ लिंक। खोजें और सीखें।</p>
+      <p class="en-only">Lesson plans organised by core topic — from beginner to expert — with video tutorials and reference links. Search and learn.</p>
+    </div>
+
+    <div class="kb-search-wrap">
+      <span class="kb-search-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </span>
+      <input type="search" class="kb-search" id="kbSearch" oninput="searchKB(this.value)"
+        placeholder="खोजें: सीम, नाप, मशीन, ज़िप… / Search: seam, zipper, dart, business…"
+        aria-label="Search lessons">
+    </div>
+
+    <div class="kb-filters">
+      <div class="kb-filter-row">
+        <span class="kb-filter-label"><span class="hi-only">स्तर</span><span class="en-only">Level</span></span>
+        <div id="kbLevelChips" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+      </div>
+      <div class="kb-filter-row">
+        <span class="kb-filter-label"><span class="hi-only">विषय</span><span class="en-only">Topic</span></span>
+        <div id="kbTopicChips" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+      </div>
+    </div>
+
+    <div class="kb-count" id="kbCount"></div>
+    <div class="kb-grid" id="kbGrid">
+      <div class="kb-empty" style="grid-column:1/-1"><span>⏳</span>
+        <p class="hi-only">पाठ लोड हो रहे हैं…</p><p class="en-only">Loading lessons…</p></div>
+    </div>
+  </div>
+</div><!-- /view-kb -->
+
+<!-- LESSON DETAIL MODAL -->
+<div class="modal-overlay" id="lessonModal" role="dialog" aria-modal="true" aria-labelledby="modalTitleHi">
+  <div class="modal">
+    <div class="modal-head">
+      <button class="modal-close" onclick="closeLesson()" aria-label="Close">✕</button>
+      <h2 id="modalTitleHi"></h2>
+      <p class="sub" id="modalSub"></p>
+      <p class="sub" id="modalTitleEn" style="font-style:italic"></p>
+      <div class="modal-badges" id="modalBadges"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="illus-wrap" id="modalIllus" data-failed="false"></div>
+      </div>
+      <div class="modal-section">
+        <h4><span class="hi-only">सीखने के लक्ष्य</span><span class="en-only">Learning Objectives</span></h4>
+        <ul class="modal-objectives" id="modalObjectives"></ul>
+      </div>
+      <div class="modal-section">
+        <h4>🎬 <span class="hi-only">वीडियो ट्यूटोरियल</span><span class="en-only">Video Tutorials</span></h4>
+        <div class="video-list" id="modalVideos"></div>
+        <p style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:8px">
+          <span class="hi-only">वीडियो पर टैप करें — यहीं चलेगा (या नया टैब खुलेगा)</span>
+          <span class="en-only">Tap a video to play it inline (or open in a new tab)</span></p>
+      </div>
+      <div class="modal-section">
+        <h4>🔗 <span class="hi-only">संदर्भ और लिंक</span><span class="en-only">References & Links</span></h4>
+        <div class="ref-list" id="modalRefs"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<canvas class="confetti-canvas" id="confettiCanvas"></canvas>
+
+<footer style="text-align:center;padding:32px 24px;color:var(--color-text-faint);font-size:var(--text-xs);border-top:1px solid var(--color-border)">
+  🪡 <span class="hi-only">सिलाई सीखो — भारत के सीखने वालों के लिए ❤️ से बना</span><span class="en-only">Silai Seekho — built with ❤️ for learners across India</span>
+  · MIT License
+</footer>
+
+<script src="src/js/media-loader.js"></script>
+<script src="src/js/knowledge-base.js"></script>
+<script src="src/js/app.js"></script>
+</body>
+</html>
