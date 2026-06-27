@@ -39,6 +39,9 @@
   <p class="hero-sub en-only">Interactive lessons and a searchable knowledge base — beginner to expert</p>
   <div class="progress-bar-wrap"><div class="progress-bar" id="progressBar"></div></div>
   <p class="progress-label" id="progressLabel">0 / 6 पाठ पूरे हुए</p>
+  <div class="hero-banner-wrap">
+    <img src="assets/illustrations/hero-banner.svg" alt="" class="hero-banner-img" aria-hidden="true" loading="lazy">
+  </div>
 </section>
 
 <!-- VIEW TABS -->
@@ -539,7 +542,18 @@
   </div>
 </div><!-- /view-studio -->
 
-<!-- LESSON DETAIL MODAL -->
+<!-- VIEW 4 — KB LESSON DETAIL PAGE -->
+<div class="view" id="view-kb-lesson">
+  <div class="lp-topbar">
+    <button class="lp-back-btn" onclick="backToKB()">
+      ← <span class="hi-only">ज्ञान आधार</span><span class="en-only">Knowledge Base</span>
+    </button>
+    <span class="lp-breadcrumb" id="lpBreadcrumb"></span>
+  </div>
+  <div id="lpContent" class="lp-content"></div>
+</div>
+
+<!-- LESSON DETAIL MODAL (legacy, kept for graceful fallback) -->
 <div class="modal-overlay" id="lessonModal" role="dialog" aria-modal="true" aria-labelledby="modalTitleHi">
   <div class="modal">
     <div class="modal-head">

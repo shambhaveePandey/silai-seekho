@@ -306,6 +306,7 @@ function switchView(view){
   if(tab) tab.classList.add('active');
   if(view==='kb' && typeof loadKnowledgeBase==='function') loadKnowledgeBase();
   if(view==='studio' && typeof initDesignStudio==='function'){ initDesignStudio(); if(typeof init3D==='function') setTimeout(init3D,60); }
+  if(view==='kb-lesson'){ const kbTab=document.getElementById('vtab-kb'); if(kbTab) kbTab.classList.add('active'); }
   window.scrollTo({top:0,behavior:'smooth'});
 }
 

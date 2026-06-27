@@ -1,0 +1,174 @@
+<svg viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Silai Seekho decorative banner">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fdf3e7"/>
+      <stop offset="50%" style="stop-color:#fff9f0"/>
+      <stop offset="100%" style="stop-color:#fdf3e7"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#016b6f"/>
+      <stop offset="100%" style="stop-color:#028a8f"/>
+    </linearGradient>
+    <linearGradient id="terracotta" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b35c00"/>
+      <stop offset="100%" style="stop-color:#d47020"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="280" fill="url(#bg)"/>
+
+  <!-- Top border band with diamond pattern -->
+  <rect y="0" width="1200" height="12" fill="#b35c00"/>
+  <g fill="#c89000" opacity="0.6">
+    <polygon points="0,0 6,6 0,12"/> <polygon points="12,0 6,6 12,12"/>
+    <polygon points="24,0 18,6 24,12"/> <polygon points="36,0 30,6 36,12"/>
+  </g>
+  <!-- Repeating diamond strip top -->
+  <g fill="#c89000">
+    <rect x="0" y="4" width="1200" height="1" opacity="0.3"/>
+    <rect x="0" y="7" width="1200" height="1" opacity="0.3"/>
+  </g>
+
+  <!-- Bottom border band -->
+  <rect y="268" width="1200" height="12" fill="#b35c00"/>
+  <rect x="0" y="272" width="1200" height="1" fill="#c89000" opacity="0.4"/>
+
+  <!-- ── LEFT: Scissors + measuring tape ── -->
+  <!-- Scissors body -->
+  <g transform="translate(110,90)">
+    <!-- blade 1 -->
+    <ellipse cx="0" cy="-35" rx="8" ry="38" transform="rotate(-15)" fill="#016b6f" opacity="0.9"/>
+    <ellipse cx="0" cy="-35" rx="4" ry="34" transform="rotate(-15)" fill="#028a8f"/>
+    <!-- blade 2 -->
+    <ellipse cx="0" cy="-35" rx="8" ry="38" transform="rotate(15)" fill="#016b6f" opacity="0.9"/>
+    <ellipse cx="0" cy="-35" rx="4" ry="34" transform="rotate(15)" fill="#028a8f"/>
+    <!-- pivot -->
+    <circle cx="0" cy="0" r="5" fill="#c89000"/>
+    <!-- handle rings -->
+    <ellipse cx="-18" cy="32" rx="14" ry="10" fill="none" stroke="#016b6f" stroke-width="4"/>
+    <ellipse cx="18" cy="32" rx="14" ry="10" fill="none" stroke="#016b6f" stroke-width="4"/>
+  </g>
+
+  <!-- Measuring tape arc -->
+  <path d="M 40 180 Q 120 110 200 160" fill="none" stroke="#b35c00" stroke-width="12" stroke-linecap="round" opacity="0.15"/>
+  <path d="M 40 180 Q 120 110 200 160" fill="none" stroke="#b35c00" stroke-width="6" stroke-linecap="round"/>
+  <!-- Tape markings -->
+  <g stroke="#fff" stroke-width="1.5" opacity="0.8">
+    <line x1="56" y1="176" x2="60" y2="172"/>
+    <line x1="72" y1="162" x2="76" y2="158"/>
+    <line x1="90" y1="150" x2="94" y2="146"/>
+    <line x1="110" y1="140" x2="114" y2="136"/>
+    <line x1="132" y1="136" x2="136" y2="132"/>
+    <line x1="155" y1="140" x2="159" y2="136"/>
+    <line x1="175" y1="148" x2="179" y2="144"/>
+  </g>
+  <!-- Tape labels -->
+  <text x="42" y="200" font-size="10" fill="#b35c00" opacity="0.7" font-family="monospace">1</text>
+  <text x="90" y="145" font-size="10" fill="#b35c00" opacity="0.7" font-family="monospace">5</text>
+  <text x="150" y="138" font-size="10" fill="#b35c00" opacity="0.7" font-family="monospace">10</text>
+
+  <!-- ── CENTER: 8-petal lotus mandala ── -->
+  <g transform="translate(600,140)">
+    <!-- outer ring -->
+    <circle cx="0" cy="0" r="95" fill="none" stroke="#c89000" stroke-width="1.5" opacity="0.3"/>
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#b35c00" stroke-width="0.5" opacity="0.4"/>
+
+    <!-- 8 petals -->
+    <g opacity="0.85">
+      <ellipse cx="0" cy="-58" rx="18" ry="36" fill="#b35c00" opacity="0.8"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="36" fill="#b35c00" opacity="0.8" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="36" fill="#b35c00" opacity="0.8" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="36" fill="#b35c00" opacity="0.8" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="36" fill="#b35c00" opacity="0.8" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="36" fill="#b35c00" opacity="0.8" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="36" fill="#b35c00" opacity="0.8" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="36" fill="#b35c00" opacity="0.8" transform="rotate(315)"/>
+    </g>
+
+    <!-- 8 teal inner petals -->
+    <g opacity="0.9">
+      <ellipse cx="0" cy="-38" rx="10" ry="24" fill="#016b6f"/>
+      <ellipse cx="0" cy="-38" rx="10" ry="24" fill="#016b6f" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-38" rx="10" ry="24" fill="#016b6f" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-38" rx="10" ry="24" fill="#016b6f" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-38" rx="10" ry="24" fill="#016b6f" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-38" rx="10" ry="24" fill="#016b6f" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-38" rx="10" ry="24" fill="#016b6f" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-38" rx="10" ry="24" fill="#016b6f" transform="rotate(315)"/>
+    </g>
+
+    <!-- center circle + dot -->
+    <circle cx="0" cy="0" r="18" fill="#c89000"/>
+    <circle cx="0" cy="0" r="12" fill="#fdf3e7"/>
+    <circle cx="0" cy="0" r="6" fill="#b35c00"/>
+
+    <!-- decorative dots on ring -->
+    <g fill="#c89000">
+      <circle cx="0" cy="-88" r="3"/>
+      <circle cx="62" cy="-62" r="3"/>
+      <circle cx="88" cy="0" r="3"/>
+      <circle cx="62" cy="62" r="3"/>
+      <circle cx="0" cy="88" r="3"/>
+      <circle cx="-62" cy="62" r="3"/>
+      <circle cx="-88" cy="0" r="3"/>
+      <circle cx="-62" cy="-62" r="3"/>
+    </g>
+  </g>
+
+  <!-- App title text over center -->
+  <text x="600" y="220" text-anchor="middle" font-size="13" fill="#9b2424" font-family="Georgia,serif" letter-spacing="3" opacity="0.7">✦ सिलाई सीखो ✦</text>
+
+  <!-- ── RIGHT: Thread spool + fabric swatch ── -->
+  <!-- Spool -->
+  <g transform="translate(1040,120)">
+    <!-- spool cylinder -->
+    <ellipse cx="0" cy="-30" rx="28" ry="10" fill="#c89000"/>
+    <rect x="-28" y="-30" width="56" height="60" fill="#d4a800" rx="2"/>
+    <ellipse cx="0" cy="30" rx="28" ry="10" fill="#c89000"/>
+    <!-- thread wind lines -->
+    <g stroke="#b35c00" stroke-width="1.5" opacity="0.6">
+      <ellipse cx="0" cy="-10" rx="26" ry="8"/>
+      <ellipse cx="0" cy="0" rx="26" ry="8"/>
+      <ellipse cx="0" cy="10" rx="26" ry="8"/>
+    </g>
+    <!-- thread unspooling -->
+    <path d="M 28 0 Q 60 -20 80 20 Q 100 50 130 40" fill="none" stroke="#b35c00" stroke-width="2.5" stroke-dasharray="6 3"/>
+  </g>
+
+  <!-- Fabric swatch with Indian motif -->
+  <g transform="translate(1080,150) rotate(-8)">
+    <rect x="0" y="0" width="90" height="70" rx="4" fill="#9b2424" opacity="0.85"/>
+    <rect x="4" y="4" width="82" height="62" rx="2" fill="none" stroke="#c89000" stroke-width="1.5" opacity="0.6"/>
+    <!-- paisley-like motif -->
+    <g transform="translate(45,35)" fill="none" stroke="#c89000" stroke-width="1.5" opacity="0.8">
+      <path d="M0,-18 C12,-12 14,0 8,10 C4,18 -4,18 -8,10 C-14,0 -12,-12 0,-18Z"/>
+      <circle cx="0" cy="-6" r="4"/>
+    </g>
+    <!-- corner dots -->
+    <g fill="#c89000" opacity="0.7">
+      <circle cx="10" cy="10" r="2"/><circle cx="80" cy="10" r="2"/>
+      <circle cx="10" cy="60" r="2"/><circle cx="80" cy="60" r="2"/>
+    </g>
+    <!-- border dots -->
+    <g fill="#c89000" opacity="0.4">
+      <circle cx="22" cy="10" r="1.5"/><circle cx="34" cy="10" r="1.5"/>
+      <circle cx="46" cy="10" r="1.5"/><circle cx="58" cy="10" r="1.5"/>
+      <circle cx="68" cy="10" r="1.5"/>
+    </g>
+  </g>
+
+  <!-- Needle with thread -->
+  <line x1="960" y1="80" x2="1010" y2="180" stroke="#016b6f" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="960" cy="78" rx="4" ry="6" fill="#c89000"/>
+  <circle cx="960" cy="80" r="2" fill="#fdf3e7"/>
+  <path d="M 960 80 Q 940 120 960 160 Q 975 190 960 220" fill="none" stroke="#b35c00" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.6"/>
+
+  <!-- Subtle diagonal pattern in background -->
+  <g stroke="#b35c00" stroke-width="0.5" opacity="0.05">
+    <line x1="250" y1="20" x2="250" y2="260"/>
+    <line x1="350" y1="20" x2="350" y2="260"/>
+    <line x1="850" y1="20" x2="850" y2="260"/>
+    <line x1="950" y1="20" x2="950" y2="260"/>
+  </g>
+</svg>
