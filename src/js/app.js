@@ -15,6 +15,8 @@ const CHAPTERS = 6;
 function setLang(l){
   currentLang = l;
   document.body.setAttribute('data-lang', l);
+  // Update <html lang> for screen readers & browser spell-check
+  document.documentElement.lang = l === 'en' ? 'en' : 'hi';
   ['langHi','langBi','langEn'].forEach(id=>document.getElementById(id).classList.remove('active'));
   document.getElementById(l==='bi'?'langBi':l==='en'?'langEn':'langHi').classList.add('active');
   const placeholders = { hi:'खोजें…', en:'Search…', bi:'खोजें… / Search…' };

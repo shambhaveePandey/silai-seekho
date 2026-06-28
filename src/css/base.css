@@ -369,11 +369,34 @@ button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
 /* ── LANG MODES ──────────────────────────────────────────── */
 [data-lang="hi"] .en-only{display:none}
 [data-lang="en"] .hi-only{display:none}
-/* Hinglish (bi) — Hindi primary, English as faint translation below */
-[data-lang="bi"] .en-only{display:block;font-size:.76em;
-  color:var(--color-text-faint);font-style:italic;margin-top:1px;line-height:1.3;opacity:.85}
-[data-lang="bi"] .view-tab .en-only,[data-lang="bi"] .hero-badge .en-only{
-  font-size:.65em;display:block;color:var(--color-text-faint);opacity:.7}
+
+/* Hinglish (bi) — Hindi primary, English as readable keynote below */
+[data-lang="bi"] .en-only{
+  display:block;
+  font-size:.85em;
+  color:var(--color-text-muted);
+  font-style:normal;
+  font-weight:400;
+  margin-top:3px;
+  line-height:1.45;
+  letter-spacing:.01em;
+}
+/* Compact contexts: nav tabs, badges */
+[data-lang="bi"] .view-tab .en-only,
+[data-lang="bi"] .hero-badge .en-only,
+[data-lang="bi"] .lang-btn .en-only,
+[data-lang="bi"] .nav-btn .en-only{
+  font-size:.68em;display:block;color:var(--color-text-muted);margin-top:1px;
+}
+/* In Hinglish mode, hide redundant English-subtitle divs (kb-card-title-en,
+   lesson-title-en, lp-en-subtitle) since .en-only content already shows */
+[data-lang="bi"] .kb-card-title-en,
+[data-lang="bi"] .lesson-title-en,
+[data-lang="bi"] .lp-en-subtitle{ display:none }
+/* In English mode, show these subtitle divs so Hindi users get context */
+[data-lang="en"] .kb-card-title-en,
+[data-lang="en"] .lesson-title-en,
+[data-lang="en"] .lp-en-subtitle{ display:none }
 
 /* ── CHAPTER SECTIONS ─────────────────────────────────────── */
 .chapter-section{display:none}
@@ -996,4 +1019,88 @@ button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
   .dash{padding:var(--space-6) var(--space-3) var(--space-10)}
   .dash-ch{flex-direction:column;align-items:flex-start}
   .dash-ch-bar-wrap{width:100%}
+}
+
+/* ════════════════════════════════════════════════════════════
+   RESPONSIVE — 480 px gap (between 360 and 600)
+════════════════════════════════════════════════════════════ */
+@media(max-width:480px){
+  /* Nav: tighter row-2 so tabs still visible */
+  .view-tab{font-size:10px;padding:5px 5px;gap:2px}
+  .view-tab svg,.view-tab span:first-child{font-size:.85rem}
+
+  /* Quiz options: single column always */
+  .options-grid{grid-template-columns:1fr!important}
+
+  /* Lesson content padding */
+  .lesson,.kb,.ds{padding-left:var(--space-3);padding-right:var(--space-3)}
+
+  /* KB filters: wrap tightly */
+  .kb-filter-label{min-width:0;margin-right:var(--space-1)}
+  .kb-chip{padding:4px 10px;font-size:10px}
+
+  /* KB grid single column */
+  .kb-grid{grid-template-columns:1fr!important}
+
+  /* Dashboard: 2-col stats → 1-col at 360 handled separately */
+  .dash-stats{grid-template-columns:1fr 1fr}
+  .dash-stat{padding:var(--space-3)}
+  .dash-stat-value{font-size:var(--text-xl)}
+
+  /* Lesson page media */
+  .lp-media-grid{grid-template-columns:1fr}
+  .lp-video-grid{grid-template-columns:1fr}
+
+  /* Design studio */
+  .ds-previews{grid-template-columns:1fr}
+  .ds-layout{grid-template-columns:1fr}
+}
+
+/* ── Very small (≤ 380 px): dashboard 1-col stats ─────── */
+@media(max-width:380px){
+  .dash-stats{grid-template-columns:1fr 1fr}
+  .dash-stat-icon{font-size:1.2rem}
+  .dash-stat-value{font-size:var(--text-lg)}
+  .dash-stat-label{font-size:9px}
+}
+
+/* ── Fluid quiz image (aspect-ratio) ──────────────────── */
+.quiz-img{
+  width:100%;
+  max-height:220px;
+  height:auto;
+  aspect-ratio:16/7;
+  object-fit:cover;
+  border-radius:var(--radius-md);
+  margin-bottom:var(--space-4);
+  border:1px solid var(--color-border);
+  display:block;
+}
+@media(max-width:480px){.quiz-img{aspect-ratio:4/3;max-height:180px}}
+
+/* ── Nav search: full-width on small screens ──────────── */
+@media(max-width:600px){
+  .nav-search-wrap{flex:1 1 100%;order:4;border-top:none;padding-top:0;max-width:100%}
+  #navSearch{width:100%}
+}
+
+/* ── KB lesson page: readable on all sizes ────────────── */
+.lp-concepts-grid{
+  grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr))
+}
+.lp-steps{gap:var(--space-4)}
+@media(max-width:480px){
+  .lp-step-num{width:28px;height:28px;font-size:.7rem;flex-shrink:0}
+  .lp-step-body h5{font-size:var(--text-sm)}
+}
+
+/* ── Option button text: prevent overflow ─────────────── */
+.option-hi,.option-en{overflow-wrap:break-word;word-break:break-word;hyphens:auto}
+
+/* ── Touch targets: 44 px minimum ────────────────────── */
+.kb-chip,.lang-btn,.nav-btn,.view-tab,.btn-primary,.btn-secondary,.option-btn{
+  min-height:44px;
+}
+@media(max-width:860px){
+  .kb-chip{min-height:36px}
 }

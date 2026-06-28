@@ -159,52 +159,91 @@
         },
         "steps": [
           {
-            "title": { "hi": "इंच टेप (Measuring Tape)", "en": "Measuring Tape" },
+            "title": {
+              "hi": "इंच टेप (Measuring Tape)",
+              "en": "Measuring Tape"
+            },
             "hi": "60 इंच / 150 सेमी का लचीला इंच टेप खरीदें। एक तरफ इंच और दूसरी तरफ सेंटीमीटर होते हैं। नाप लेते समय इसे शरीर से सटाकर रखें, ढीला या खिंचा हुआ नहीं।",
             "en": "Buy a flexible 60-inch / 150 cm measuring tape. One side shows inches, the other centimetres. When measuring, keep it snug against the body — not loose or stretched."
           },
           {
-            "title": { "hi": "कपड़े की कैंची (Fabric Scissors)", "en": "Fabric Scissors" },
+            "title": {
+              "hi": "कपड़े की कैंची (Fabric Scissors)",
+              "en": "Fabric Scissors"
+            },
             "hi": "कपड़े की कैंची और कागज़ की कैंची अलग रखें। कागज़ काटने से धार जल्दी खराब होती है। अच्छी कैंची में ब्लेड तेज़ और रिवेट टाइट होता है। 8\"–10\" की कैंची शुरुआत के लिए सही है।",
             "en": "Keep fabric scissors separate from paper scissors — cutting paper quickly dulls the blade. A good pair has sharp blades and a tight rivet. An 8\"–10\" pair is ideal for beginners."
           },
           {
-            "title": { "hi": "सुई और धागा (Needle & Thread)", "en": "Needle & Thread" },
+            "title": {
+              "hi": "सुई और धागा (Needle & Thread)",
+              "en": "Needle & Thread"
+            },
             "hi": "हाथ-सिलाई की सुई नंबर 9–12 पतले कपड़े के लिए और 14–18 मोटे कपड़े के लिए होती है। मशीन की सुई का नंबर कपड़े के हिसाब से चुनें: सूती के लिए 11/75, जॉर्जेट के लिए 9/65। धागे का रंग कपड़े से मिलाएं।",
             "en": "Hand-sewing needle sizes 9–12 suit lightweight fabrics; 14–18 for heavier ones. For machine needles, choose size 11/75 for cotton, 9/65 for georgette. Match thread colour to your fabric."
           },
           {
-            "title": { "hi": "टेलर चॉक (Tailor's Chalk)", "en": "Tailor's Chalk" },
+            "title": {
+              "hi": "टेलर चॉक (Tailor's Chalk)",
+              "en": "Tailor's Chalk"
+            },
             "hi": "टेलर चॉक पतली कील जैसे आकार का होता है, साधारण चॉक नहीं। इससे कपड़े पर कटाई की रेखाएं बनाई जाती हैं। धोने या ब्रश करने पर निशान मिट जाते हैं। हल्के रंग के कपड़े पर गहरे रंग का चॉक और गहरे कपड़े पर हल्का चॉक इस्तेमाल करें।",
             "en": "Tailor's chalk is a flat wedge shape — not regular chalk. Use it to draw cutting lines on fabric. Marks brush or wash away easily. Use dark chalk on light fabric and light chalk on dark fabric."
           },
           {
-            "title": { "hi": "पिन (Dressmaker Pins)", "en": "Dressmaker Pins" },
+            "title": {
+              "hi": "पिन (Dressmaker Pins)",
+              "en": "Dressmaker Pins"
+            },
             "hi": "पिन दो कपड़ों की परतों को सिलाई से पहले जोड़े रखते हैं। पतली, तेज़ पिन का इस्तेमाल करें। पिन को कपड़े की सिलाई रेखा के साथ लम्बवत लगाएं ताकि सिलाई करते समय आसानी से निकाल सकें।",
             "en": "Pins hold fabric layers together before stitching. Use fine, sharp dressmaking pins. Insert them perpendicular to the stitching line so you can remove them easily as you sew."
           },
           {
-            "title": { "hi": "सीम रिपर (Seam Ripper)", "en": "Seam Ripper" },
+            "title": {
+              "hi": "सीम रिपर (Seam Ripper)",
+              "en": "Seam Ripper"
+            },
             "hi": "सीम रिपर एक छोटा, नुकीला उपकरण है जो गलत टांकों को काटता है। इसे धागे के नीचे फंसाकर ऊपर खींचें — एक बार में एक टाँका काटें। पूरी सीम को एक बार में खींचने की कोशिश न करें — कपड़ा खिंच सकता है। हर दर्जी के पास यह होना ज़रूरी है।",
             "en": "A seam ripper is a small, sharp tool that cuts stitches. Slide it under a stitch and push upward — cut one stitch at a time. Never try to rip a whole seam at once — it can stretch the fabric. Every tailor needs one."
           },
           {
-            "title": { "hi": "इस्त्री और इस्त्री बोर्ड (Iron & Ironing Board)", "en": "Iron & Ironing Board" },
+            "title": {
+              "hi": "इस्त्री और इस्त्री बोर्ड (Iron & Ironing Board)",
+              "en": "Iron & Ironing Board"
+            },
             "hi": "प्रेसिंग सिलाई जितना ही ज़रूरी है। हर सीम सिलने के बाद उसे इस्त्री से press करें — इससे सिलाई सपाट और साफ दिखती है। भाप वाली इस्त्री (steam iron) बेहतर है। सूती पर मध्यम, रेशम और जॉर्जेट पर कम तापमान रखें। कभी भी कपड़े पर सीधे इस्त्री न घुमाएं — एक press cloth लगाएं।",
             "en": "Pressing is as important as stitching. Press every seam after sewing — it makes the work look flat and professional. A steam iron is better than a dry iron. Use medium heat for cotton, low for silk and georgette. Never slide the iron — always lift and press. Use a press cloth on delicate fabrics."
           },
           {
-            "title": { "hi": "L-स्केल / सेट स्क्वायर (L-Scale)", "en": "L-Scale / Set Square" },
+            "title": {
+              "hi": "L-स्केल / सेट स्क्वायर (L-Scale)",
+              "en": "L-Scale / Set Square"
+            },
             "hi": "L-स्केल या सेट स्क्वायर से सही कोण (90°) बनाए जाते हैं। पैटर्न ड्राफ्टिंग में आर्महोल, नेकलाइन और कोने सटीक बनाने के लिए ज़रूरी है। प्लास्टिक या धातु का L-स्केल (60 सेमी) शुरुआत के लिए उपयुक्त है।",
             "en": "An L-scale or set square creates perfect right angles. Essential for pattern drafting — accurate armholes, necklines and corners. A 60 cm plastic or metal L-scale is ideal for beginners."
           }
         ],
         "tips": [
-          { "hi": "कैंची पर अपना नाम लिखें — घर में कोई और इस्तेमाल न करे!", "en": "Label your scissors — keep them away from paper and other household use." },
-          { "hi": "पुरानी सुई हमेशा बदलें — सुनसान आवाज़ आए तो सुई बदलने का समय है।", "en": "Replace needles regularly — if your machine sounds noisy or skips stitches, change the needle first." },
-          { "hi": "सीम रिपर को हमेशा पास रखें — गलती सुधारना हुनर का हिस्सा है, कमज़ोरी नहीं।", "en": "Keep your seam ripper close — fixing mistakes is part of the craft, not a sign of weakness." },
-          { "hi": "हर औज़ार की अलग जगह तय करें — काम करते समय चीज़ें ढूँढने में समय बर्बाद नहीं होगा।", "en": "Assign a dedicated spot for every tool — you won't waste time searching during work." },
-          { "hi": "पिन हमेशा एक cushion में रखें, ज़मीन पर नहीं — पाँव को नुकसान और गुम होने से बचाएं।", "en": "Always store pins in a cushion, never loose — prevents foot injuries and loss." }
+          {
+            "hi": "कैंची पर अपना नाम लिखें — घर में कोई और इस्तेमाल न करे!",
+            "en": "Label your scissors — keep them away from paper and other household use."
+          },
+          {
+            "hi": "पुरानी सुई हमेशा बदलें — सुनसान आवाज़ आए तो सुई बदलने का समय है।",
+            "en": "Replace needles regularly — if your machine sounds noisy or skips stitches, change the needle first."
+          },
+          {
+            "hi": "सीम रिपर को हमेशा पास रखें — गलती सुधारना हुनर का हिस्सा है, कमज़ोरी नहीं।",
+            "en": "Keep your seam ripper close — fixing mistakes is part of the craft, not a sign of weakness."
+          },
+          {
+            "hi": "हर औज़ार की अलग जगह तय करें — काम करते समय चीज़ें ढूँढने में समय बर्बाद नहीं होगा।",
+            "en": "Assign a dedicated spot for every tool — you won't waste time searching during work."
+          },
+          {
+            "hi": "पिन हमेशा एक cushion में रखें, ज़मीन पर नहीं — पाँव को नुकसान और गुम होने से बचाएं।",
+            "en": "Always store pins in a cushion, never loose — prevents foot injuries and loss."
+          }
         ]
       }
     },
@@ -266,42 +305,75 @@
         },
         "steps": [
           {
-            "title": { "hi": "सूती (Cotton)", "en": "Cotton" },
+            "title": {
+              "hi": "सूती (Cotton)",
+              "en": "Cotton"
+            },
             "hi": "सूती शुरुआती लोगों के लिए सबसे अच्छा कपड़ा है। यह सांस लेता है, आसानी से धुलता है और सिलाई में स्थिर रहता है। जलाने पर कागज़ जैसी गंध और राख जलती है। सुई नंबर 11/75 और साधारण धागा उपयुक्त है।",
             "en": "Cotton is the best fabric for beginners. It breathes, washes easily and stays stable while sewing. Burns with a paper-like smell and leaves grey ash. Use needle size 11/75 and all-purpose thread."
           },
           {
-            "title": { "hi": "रेशम (Silk)", "en": "Silk" },
+            "title": {
+              "hi": "रेशम (Silk)",
+              "en": "Silk"
+            },
             "hi": "रेशम चमकदार और फिसलन वाला होता है। काटते और सिलाई करते समय पिन लगाकर रखें। जलाने पर बालों जैसी गंध आती है और मनके जैसी राख बनती है। पतली सुई 9/65 और रेशमी धागा इस्तेमाल करें।",
             "en": "Silk is lustrous and slippery. Pin it well before cutting and sewing. Burns with a hair-like smell and leaves a bead-like ash. Use a fine needle size 9/65 and silk thread."
           },
           {
-            "title": { "hi": "जॉर्जेट", "en": "Georgette" },
+            "title": {
+              "hi": "जॉर्जेट",
+              "en": "Georgette"
+            },
             "hi": "जॉर्जेट झुर्रीदार और हल्का होता है। इसे काटते समय चॉक निशान और शार्प कैंची ज़रूरी है। सिलाई बहुत धीरे करें — जल्दबाज़ी में टांके टेढ़े हो जाते हैं। फ्रेंच सीम इस कपड़े के लिए आदर्श है।",
             "en": "Georgette is textured and lightweight. Use chalk marks and sharp scissors when cutting. Sew slowly — rushing causes crooked stitches. French seams are ideal for this fabric."
           },
           {
-            "title": { "hi": "पॉलिएस्टर", "en": "Polyester" },
+            "title": {
+              "hi": "पॉलिएस्टर",
+              "en": "Polyester"
+            },
             "hi": "पॉलिएस्टर सस्ता और टिकाऊ होता है। जलाने पर प्लास्टिक जैसी गंध और काली राख बनती है। इस्त्री कम तापमान पर करें। मध्यम वज़न की सुई 14/90 और पॉलिएस्टर धागा उपयुक्त है।",
             "en": "Polyester is affordable and durable. Burns with a plastic smell and leaves black ash. Iron at low temperature. Use medium needle size 14/90 and polyester thread."
           },
           {
-            "title": { "hi": "खादी और लिनेन", "en": "Khadi & Linen" },
+            "title": {
+              "hi": "खादी और लिनेन",
+              "en": "Khadi & Linen"
+            },
             "hi": "खादी हस्त-निर्मित सूती या रेशमी कपड़ा है — प्रत्येक टुकड़ा थोड़ा अलग होता है। लिनेन सन (flax) के पौधे से बनता है — सूती से ज़्यादा मज़बूत पर सख्त। दोनों बुनावट में कुछ असमानता होती है जो उन्हें खास बनाती है। सिलाई से पहले धो लें — लिनेन 10% तक सिकुड़ सकता है।",
             "en": "Khadi is handwoven cotton or silk — each piece is slightly unique. Linen comes from the flax plant — stronger than cotton but stiff. Both have slight texture irregularities that make them special. Pre-wash before cutting — linen can shrink up to 10%."
           },
           {
-            "title": { "hi": "मिश्रित कपड़े (Blended Fabrics)", "en": "Blended Fabrics" },
+            "title": {
+              "hi": "मिश्रित कपड़े (Blended Fabrics)",
+              "en": "Blended Fabrics"
+            },
             "hi": "पॉली-कॉटन (60/40 या 80/20 मिश्रण) सबसे आम तैयार-पोशाक कपड़ा है। इसमें पॉलिएस्टर की टिकाऊता और सूती की सांस लेने की क्षमता दोनों होती हैं। जलाने पर दोनों की गंध आती है — मिली-जुली पहचान। ये कपड़े पहनने, देखभाल और सिलाई में सबसे आसान हैं।",
             "en": "Poly-cotton (60/40 or 80/20 blend) is the most common ready-made fabric. It combines polyester's durability with cotton's breathability. The burn test gives mixed signals — you'll smell both materials. These fabrics are the easiest to wear, care for and sew."
           }
         ],
         "tips": [
-          { "hi": "जलाने वाला परीक्षण (burn test) सबसे सटीक तरीका है — थोड़ा धागा लेकर माचिस से जलाएं।", "en": "The burn test is the most accurate method — pull a thread from the fabric and burn it carefully." },
-          { "hi": "नया कपड़ा खरीदते समय हमेशा 10–15 सेमी अधिक लें — रंग फीका पड़ने पर मेल मिलाना मुश्किल हो सकता है।", "en": "Always buy 10–15 cm extra when purchasing fabric — matching the colour later can be very difficult." },
-          { "hi": "कपड़े को काटने से पहले एक बार धोएं और सुखाएं — प्री-वॉशिंग सिकुड़ाव रोकती है।", "en": "Pre-wash and dry fabric before cutting — this prevents shrinkage after the garment is sewn." },
-          { "hi": "कपड़े की दुकान पर एक कोने को मोड़कर देखें — ताना देखने से ग्रेन लाइन का पता चलता है।", "en": "At the shop, fold one corner diagonally — if it falls in a perfect triangle the grain is straight." },
-          { "hi": "मिश्रित कपड़े (polyester-cotton) रोज़मर्रा के उपयोग के लिए सबसे अच्छे हैं — कम देखभाल, ज़्यादा टिकाऊ।", "en": "Poly-cotton blends are best for everyday garments — low maintenance and very durable." }
+          {
+            "hi": "जलाने वाला परीक्षण (burn test) सबसे सटीक तरीका है — थोड़ा धागा लेकर माचिस से जलाएं।",
+            "en": "The burn test is the most accurate method — pull a thread from the fabric and burn it carefully."
+          },
+          {
+            "hi": "नया कपड़ा खरीदते समय हमेशा 10–15 सेमी अधिक लें — रंग फीका पड़ने पर मेल मिलाना मुश्किल हो सकता है।",
+            "en": "Always buy 10–15 cm extra when purchasing fabric — matching the colour later can be very difficult."
+          },
+          {
+            "hi": "कपड़े को काटने से पहले एक बार धोएं और सुखाएं — प्री-वॉशिंग सिकुड़ाव रोकती है।",
+            "en": "Pre-wash and dry fabric before cutting — this prevents shrinkage after the garment is sewn."
+          },
+          {
+            "hi": "कपड़े की दुकान पर एक कोने को मोड़कर देखें — ताना देखने से ग्रेन लाइन का पता चलता है।",
+            "en": "At the shop, fold one corner diagonally — if it falls in a perfect triangle the grain is straight."
+          },
+          {
+            "hi": "मिश्रित कपड़े (polyester-cotton) रोज़मर्रा के उपयोग के लिए सबसे अच्छे हैं — कम देखभाल, ज़्यादा टिकाऊ।",
+            "en": "Poly-cotton blends are best for everyday garments — low maintenance and very durable."
+          }
         ]
       }
     },
@@ -369,42 +441,75 @@
         },
         "steps": [
           {
-            "title": { "hi": "6 मुख्य हिस्से पहचानें", "en": "Identify the 6 Main Parts" },
+            "title": {
+              "hi": "6 मुख्य हिस्से पहचानें",
+              "en": "Identify the 6 Main Parts"
+            },
             "hi": "हैंडव्हील (दाईं ओर) — सुई ऊपर-नीचे करता है। प्रेसर फुट — कपड़े को दबाए रखता है। थ्रेड टेक-अप लीवर — ऊपर-नीचे हिलता है। बॉबिन केस — नीचे का धागा रखता है। फीड डॉग्स — कपड़ा आगे खींचते हैं। स्टिच लेंथ डायल — टांके की लंबाई तय करता है।",
             "en": "Handwheel (right side) — moves needle up/down. Presser foot — holds fabric down. Thread take-up lever — moves up and down. Bobbin case — holds lower thread. Feed dogs — pull fabric forward. Stitch length dial — controls stitch length."
           },
           {
-            "title": { "hi": "बॉबिन कैसे भरें", "en": "How to Wind a Bobbin" },
+            "title": {
+              "hi": "बॉबिन कैसे भरें",
+              "en": "How to Wind a Bobbin"
+            },
             "hi": "खाली बॉबिन को बॉबिन वाइंडर पर लगाएं। धागे का सिरा बॉबिन के छेद में डालकर कुछ बार लपेटें। मशीन का फुट पेडल दबाएं — बॉबिन भरते समय धागा समान रूप से लपेटा जाना चाहिए। भरा बॉबिन बॉबिन केस में डालें।",
             "en": "Place an empty bobbin on the bobbin winder. Thread the end through the hole and wrap a few times. Press the foot pedal — thread should wind evenly. Insert the filled bobbin into the bobbin case."
           },
           {
-            "title": { "hi": "मशीन में धागा पिरोएं", "en": "Threading the Machine" },
+            "title": {
+              "hi": "मशीन में धागा पिरोएं",
+              "en": "Threading the Machine"
+            },
             "hi": "धागे को स्पूल पिन पर रखें। क्रम से: टेंशन डिस्क → थ्रेड गाइड → टेक-अप लीवर → निचला गाइड → सुई (सामने से पीछे)। हैंडव्हील से सुई नीचे ले जाएं और बॉबिन का धागा ऊपर खींचें। दोनों धागों को प्रेसर फुट के पीछे ले जाएं।",
             "en": "Place thread on spool pin. Route in order: tension disc → thread guide → take-up lever → lower guide → needle (front to back). Lower needle with handwheel and pull up the bobbin thread. Guide both threads behind the presser foot."
           },
           {
-            "title": { "hi": "पहली सिलाई का अभ्यास", "en": "First Practice Stitch" },
+            "title": {
+              "hi": "पहली सिलाई का अभ्यास",
+              "en": "First Practice Stitch"
+            },
             "hi": "कागज़ की एक शीट लें और बिना धागे के सिलाई करें — यह सुई की दिशा सीखने का तरीका है। फिर धागा डालकर कपड़े के टुकड़े पर सीधी लाइन सिलें। शुरुआत और अंत में 2–3 बैक-स्टिच लगाएं।",
             "en": "Take a sheet of paper and sew without thread — this teaches needle direction. Then thread the machine and stitch a straight line on a fabric scrap. Backstitch 2–3 stitches at the start and end."
           },
           {
-            "title": { "hi": "टेंशन और स्टिच लेंथ सेट करना", "en": "Setting Tension & Stitch Length" },
+            "title": {
+              "hi": "टेंशन और स्टिच लेंथ सेट करना",
+              "en": "Setting Tension & Stitch Length"
+            },
             "hi": "स्टिच लेंथ डायल: सामान्य सिलाई के लिए 2.5–3 मिमी। छोटे टांके (2 मिमी) मज़बूत सिलाई के लिए, बड़े (4–5 मिमी) basting के लिए। थ्रेड टेंशन: 4–5 (मध्यम) से शुरू करें। अगर ऊपर का धागा नीचे दिखे — टेंशन बढ़ाएं; अगर नीचे का ऊपर दिखे — घटाएं।",
             "en": "Stitch length dial: 2.5–3 mm for general sewing. Shorter stitches (2 mm) for strong seams, longer (4–5 mm) for basting. Thread tension: start at 4–5 (middle). If upper thread shows below — increase tension; if lower thread shows above — decrease it."
           },
           {
-            "title": { "hi": "पैर-चालित मशीन (Treadle Machine) का उपयोग", "en": "Using a Treadle Machine" },
+            "title": {
+              "hi": "पैर-चालित मशीन (Treadle Machine) का उपयोग",
+              "en": "Using a Treadle Machine"
+            },
             "hi": "पैर-चालित (treadle) मशीन पैरों से चलाई जाती है — बिजली नहीं चाहिए। दोनों पैर एक साथ, आगे-पीछे की लय में चलाएं। शुरुआत हैंडव्हील से करें — सुई नीचे हो। धीरे-धीरे लय बनाएं — जल्दी नहीं। पैर-चालित मशीन आज भी भारत के छोटे शहरों में सबसे विश्वसनीय है।",
             "en": "A treadle machine is foot-powered — no electricity needed. Move both feet together in a forward-backward rhythm. Start with the handwheel — needle down. Build rhythm gradually — don't rush. The treadle machine remains the most reliable option in smaller Indian towns."
           }
         ],
         "tips": [
-          { "hi": "हर 8–10 घंटे की सिलाई के बाद मशीन में तेल डालें। सूखी मशीन जल्दी खराब होती है।", "en": "Oil your machine every 8–10 hours of sewing. A dry machine wears out quickly." },
-          { "hi": "धागा टूटे तो पहले सुई की जाँच करें — यह सबसे आम कारण है।", "en": "If thread breaks repeatedly, check the needle first — it's the most common cause." },
-          { "hi": "मशीन चलाने से पहले सुई की दिशा जाँचें — flat side हमेशा पीछे की ओर।", "en": "Before starting, check the needle direction — the flat side must always face back." },
-          { "hi": "हर नई सिलाई परियोजना से पहले एक test seam करें — धागे और तनाव की जाँच।", "en": "Always sew a test seam at the start of every new project to check thread and tension." },
-          { "hi": "मशीन का कवर उतारकर बॉबिन की जगह और फीड डॉग्स को हफ्ते में एक बार साफ करें।", "en": "Once a week, remove the bobbin cover and brush out lint from the feed dogs and bobbin area." }
+          {
+            "hi": "हर 8–10 घंटे की सिलाई के बाद मशीन में तेल डालें। सूखी मशीन जल्दी खराब होती है।",
+            "en": "Oil your machine every 8–10 hours of sewing. A dry machine wears out quickly."
+          },
+          {
+            "hi": "धागा टूटे तो पहले सुई की जाँच करें — यह सबसे आम कारण है।",
+            "en": "If thread breaks repeatedly, check the needle first — it's the most common cause."
+          },
+          {
+            "hi": "मशीन चलाने से पहले सुई की दिशा जाँचें — flat side हमेशा पीछे की ओर।",
+            "en": "Before starting, check the needle direction — the flat side must always face back."
+          },
+          {
+            "hi": "हर नई सिलाई परियोजना से पहले एक test seam करें — धागे और तनाव की जाँच।",
+            "en": "Always sew a test seam at the start of every new project to check thread and tension."
+          },
+          {
+            "hi": "मशीन का कवर उतारकर बॉबिन की जगह और फीड डॉग्स को हफ्ते में एक बार साफ करें।",
+            "en": "Once a week, remove the bobbin cover and brush out lint from the feed dogs and bobbin area."
+          }
         ]
       }
     },
@@ -456,42 +561,75 @@
         },
         "steps": [
           {
-            "title": { "hi": "कागज़ पर अभ्यास", "en": "Practice on Paper" },
+            "title": {
+              "hi": "कागज़ पर अभ्यास",
+              "en": "Practice on Paper"
+            },
             "hi": "A4 कागज़ पर पेंसिल से समानांतर लाइनें खींचें (1 सेमी की दूरी पर)। बिना धागे के मशीन चलाएं और सुई से उन लाइनों पर चलें। यह तरीका धागा और कपड़ा बर्बाद किए बिना दिशा-नियंत्रण सिखाता है।",
             "en": "Draw parallel lines on A4 paper (1 cm apart) with a pencil. Run the machine without thread and follow those lines with the needle. This teaches direction control without wasting thread or fabric."
           },
           {
-            "title": { "hi": "सीधी लाइन में सिलाई", "en": "Sewing a Straight Line" },
+            "title": {
+              "hi": "सीधी लाइन में सिलाई",
+              "en": "Sewing a Straight Line"
+            },
             "hi": "सूती कपड़े के दो टुकड़े (15 × 15 सेमी) लें। किनारों पर 1.5 सेमी सीम अलाउंस छोड़ें। प्रेसर फुट की दाईं धार को कपड़े के किनारे से मिलाएं — यह 1.5 सेमी का भत्ता रखने का आसान तरीका है। धीरे-धीरे सिलाई करें।",
             "en": "Take two pieces of cotton (15 × 15 cm). Leave 1.5 cm seam allowance at the edges. Align the right edge of the presser foot with the fabric edge — this is an easy way to keep 1.5 cm allowance. Sew slowly."
           },
           {
-            "title": { "hi": "बैक-स्टिच से ताला लगाना", "en": "Locking with Backstitich" },
+            "title": {
+              "hi": "बैक-स्टिच से ताला लगाना",
+              "en": "Locking with Backstitich"
+            },
             "hi": "सिलाई की शुरुआत में 3 टांके आगे करें, फिर 3 पीछे, फिर आगे बढ़ें। अंत में भी यही करें। इससे धागा नहीं खुलेगा। बैक-स्टिच बटन मशीन पर अलग से होता है — उसे दबाकर रखें।",
             "en": "At the start, sew 3 stitches forward, 3 back, then continue forward. Do the same at the end. This locks the thread so it won't unravel. The reverse button on your machine holds down for backstitching."
           },
           {
-            "title": { "hi": "सीम अलाउंस समझें", "en": "Understanding Seam Allowance" },
+            "title": {
+              "hi": "सीम अलाउंस समझें",
+              "en": "Understanding Seam Allowance"
+            },
             "hi": "सीम अलाउंस वह दूरी है जो कपड़े के किनारे और सिलाई की रेखा के बीच होती है। भारतीय सिलाई में 1–1.5 सेमी मानक है। ज़्यादा छोड़ने से कपड़ा बेकार, कम छोड़ने से सिलाई कमज़ोर।",
             "en": "Seam allowance is the distance between the fabric edge and the stitch line. In Indian tailoring, 1–1.5 cm is standard. Too much wastes fabric; too little makes a weak seam."
           },
           {
-            "title": { "hi": "किनारे फिनिश करना (Edge Finishing)", "en": "Edge Finishing" },
+            "title": {
+              "hi": "किनारे फिनिश करना (Edge Finishing)",
+              "en": "Edge Finishing"
+            },
             "hi": "कच्चे किनारे (raw edges) उधड़ते हैं — इन्हें फिनिश करना ज़रूरी है। तीन तरीके: (1) ज़िगज़ैग स्टिच — मशीन पर; (2) पिंकिंग शियर (दाँतेदार कैंची); (3) हाथ से Blanket Stitch। रेशम और जॉर्जेट के लिए French seam सबसे अच्छा है।",
             "en": "Raw edges fray with wear — finishing them is essential. Three methods: (1) zigzag stitch on the machine; (2) pinking shears (serrated scissors); (3) hand blanket stitch. For silk and georgette, a French seam is the best finish."
           },
           {
-            "title": { "hi": "कॉर्नर और कर्व सिलना", "en": "Sewing Corners & Curves" },
+            "title": {
+              "hi": "कॉर्नर और कर्व सिलना",
+              "en": "Sewing Corners & Curves"
+            },
             "hi": "कोने पर: सुई नीचे रखें, प्रेसर फुट उठाएं, कपड़ा 90° घुमाएं, फिर आगे सिलें। घुमावदार सिलाई के लिए: धीरे-धीरे और बार-बार मार्गदर्शन करते हुए सिलें। सीम खुलने के बाद घुमावदार भाग में छोटे-छोटे clip लगाएं — इससे कर्व flat होगा।",
             "en": "At a corner: stop with needle down, raise the presser foot, pivot the fabric 90°, then continue sewing. For curved seams: sew slowly with frequent guidance. After sewing, clip into the curved seam allowance — this allows the curve to lie flat."
           }
         ],
         "tips": [
-          { "hi": "सिलाई करते समय कपड़े को कभी खींचें नहीं — फीड डॉग्स खुद आगे ले जाएंगे।", "en": "Never pull the fabric while sewing — the feed dogs will move it forward automatically." },
-          { "hi": "टांके की लंबाई 2.5–3 मिमी (शुरुआती के लिए) रखें।", "en": "Set stitch length to 2.5–3 mm for general sewing as a beginner." },
-          { "hi": "हर सीम के बाद इस्त्री करें — pressing सिलाई की गुणवत्ता दोगुनी कर देती है।", "en": "Press every seam after sewing — pressing doubles the quality of your stitching." },
-          { "hi": "कपड़े की कटाई हमेशा चॉक लाइन से 3–5 मिमी बाहर करें — सीम के बाद अतिरिक्त ट्रिम करें।", "en": "Always cut 3–5 mm outside the chalk line — trim excess after sewing the seam." },
-          { "hi": "अभ्यास के लिए पुराने bedsheets या सूती कपड़े का इस्तेमाल करें — महँगा कपड़ा बर्बाद न करें।", "en": "Practice on old bedsheets or cotton scraps — don't waste expensive fabric while learning." }
+          {
+            "hi": "सिलाई करते समय कपड़े को कभी खींचें नहीं — फीड डॉग्स खुद आगे ले जाएंगे।",
+            "en": "Never pull the fabric while sewing — the feed dogs will move it forward automatically."
+          },
+          {
+            "hi": "टांके की लंबाई 2.5–3 मिमी (शुरुआती के लिए) रखें।",
+            "en": "Set stitch length to 2.5–3 mm for general sewing as a beginner."
+          },
+          {
+            "hi": "हर सीम के बाद इस्त्री करें — pressing सिलाई की गुणवत्ता दोगुनी कर देती है।",
+            "en": "Press every seam after sewing — pressing doubles the quality of your stitching."
+          },
+          {
+            "hi": "कपड़े की कटाई हमेशा चॉक लाइन से 3–5 मिमी बाहर करें — सीम के बाद अतिरिक्त ट्रिम करें।",
+            "en": "Always cut 3–5 mm outside the chalk line — trim excess after sewing the seam."
+          },
+          {
+            "hi": "अभ्यास के लिए पुराने bedsheets या सूती कपड़े का इस्तेमाल करें — महँगा कपड़ा बर्बाद न करें।",
+            "en": "Practice on old bedsheets or cotton scraps — don't waste expensive fabric while learning."
+          }
         ]
       }
     },
@@ -549,42 +687,75 @@
         },
         "steps": [
           {
-            "title": { "hi": "छाती (Bust/Chest)", "en": "Bust / Chest" },
+            "title": {
+              "hi": "छाती (Bust/Chest)",
+              "en": "Bust / Chest"
+            },
             "hi": "इंच टेप को छाती के सबसे चौड़े हिस्से पर, बाँहों के नीचे से घुमाएं। टेप सीधा और क्षैतिज रहे। 1 उँगली टेप और शरीर के बीच आ सके, इतनी जगह रखें। यह नाप ease allowance जोड़ने से पहले का है।",
             "en": "Wrap the tape around the fullest part of the bust, under the arms. Keep it straight and horizontal. Leave enough room for one finger between tape and body. This is the bare measurement before adding ease."
           },
           {
-            "title": { "hi": "कमर (Waist)", "en": "Waist" },
+            "title": {
+              "hi": "कमर (Waist)",
+              "en": "Waist"
+            },
             "hi": "कमर के सबसे पतले हिस्से पर, नाभि के थोड़ा ऊपर, नाप लें। सांस सामान्य रखें — सांस रोककर नाप मत लें। ब्लाउज़ के लिए कमर में 2.5–3 सेमी ease जोड़ें।",
             "en": "Measure at the narrowest part of the waist, just above the navel. Breathe normally — do not hold your breath. Add 2.5–3 cm ease for a blouse."
           },
           {
-            "title": { "hi": "कंधा (Shoulder)", "en": "Shoulder" },
+            "title": {
+              "hi": "कंधा (Shoulder)",
+              "en": "Shoulder"
+            },
             "hi": "गर्दन के आधार से कंधे के किनारे (shoulder point) तक नापें। यह नाप कमीज़ और ब्लाउज़ की फिटिंग के लिए बेहद ज़रूरी है। सामने की तरफ से नापें — कंधे का सिरा नीचे दबाएं नहीं।",
             "en": "Measure from the base of the neck to the shoulder point (edge). This measurement is critical for fitting shirts and blouses. Measure from the front — do not press down the shoulder."
           },
           {
-            "title": { "hi": "Ease Allowance जोड़ना", "en": "Adding Ease Allowance" },
+            "title": {
+              "hi": "Ease Allowance जोड़ना",
+              "en": "Adding Ease Allowance"
+            },
             "hi": "Ease वह अतिरिक्त जगह है जो हिलने-डुलने के लिए चाहिए। ब्लाउज़ में छाती पर 5–7 सेमी, कमर पर 3–5 सेमी ease जोड़ें। सूट में ज़्यादा ease, ब्लाउज़ में कम। नाप चार्ट में हमेशा दोनों लिखें: bare measurement और ease के साथ।",
             "en": "Ease is the extra room needed for movement. Add 5–7 cm ease at the bust and 3–5 cm at the waist for a blouse. More ease for suits, less for blouses. Always record both: bare measurement and measurement with ease."
           },
           {
-            "title": { "hi": "कूल्हा और जाँघ का नाप", "en": "Hip & Thigh Measurements" },
+            "title": {
+              "hi": "कूल्हा और जाँघ का नाप",
+              "en": "Hip & Thigh Measurements"
+            },
             "hi": "कूल्हा (Hip): कमर से 7–9 इंच नीचे, सबसे चौड़ी जगह से गोल नापें। सलवार और लेहंगा के लिए ज़रूरी। जाँघ (Thigh): जाँघ के ऊपरी हिस्से से गोल, खड़े होकर। पतलून और चूड़ीदार के लिए यह नाप ज़रूरी है। ease: कूल्हे पर 5–8 सेमी, जाँघ पर 4–5 सेमी।",
             "en": "Hip: 7–9 inches below the waist, measured around the fullest part. Essential for salwar and lehenga. Thigh: around the widest part of the upper thigh, standing upright. Needed for trousers and churidar. Ease: 5–8 cm at hip, 4–5 cm at thigh."
           },
           {
-            "title": { "hi": "लंबाई के नाप", "en": "Length Measurements" },
+            "title": {
+              "hi": "लंबाई के नाप",
+              "en": "Length Measurements"
+            },
             "hi": "कुर्ती लंबाई: कंधे से जहाँ कुर्ती खत्म होनी हो। ब्लाउज़ लंबाई: कंधे से कमर तक (14–17 इंच)। सलवार इनसीम: जाँघ के ऊपर से पाँव तक। इन नापों को ग्राहक की पसंद और फैशन के हिसाब से बदलें।",
             "en": "Kurti length: shoulder to wherever the kurti should end. Blouse length: shoulder to waist (14–17 inches). Salwar inseam: upper thigh to foot. Adjust these lengths according to the customer's preference and current fashion."
           }
         ],
         "tips": [
-          { "hi": "नाप हमेशा खड़े होकर और हल्के कपड़ों में लें।", "en": "Always take measurements standing upright, wearing lightweight clothing." },
-          { "hi": "नाप चार्ट एक डायरी में लिखें — ग्राहक का नाम, तारीख और हर नाप।", "en": "Record measurements in a notebook — customer name, date and every measurement." },
-          { "hi": "हर नाप को दो बार लें — पहला और दूसरा नाप मेल नहीं खाते तो तीसरी बार लें।", "en": "Take every measurement twice — if the two differ, take it a third time and use the middle value." },
-          { "hi": "इंच टेप पुराना और खिंचा हुआ हो तो बदल लें — गलत नाप से काम बर्बाद होता है।", "en": "Replace old, stretched measuring tapes — a distorted tape gives wrong measurements every time." },
-          { "hi": "ग्राहक का नाप लेते समय उन्हें सीधे खड़े रहने को कहें — हाथ बगल में, पैर साथ।", "en": "Ask the customer to stand straight with arms at their sides and feet together when measuring." }
+          {
+            "hi": "नाप हमेशा खड़े होकर और हल्के कपड़ों में लें।",
+            "en": "Always take measurements standing upright, wearing lightweight clothing."
+          },
+          {
+            "hi": "नाप चार्ट एक डायरी में लिखें — ग्राहक का नाम, तारीख और हर नाप।",
+            "en": "Record measurements in a notebook — customer name, date and every measurement."
+          },
+          {
+            "hi": "हर नाप को दो बार लें — पहला और दूसरा नाप मेल नहीं खाते तो तीसरी बार लें।",
+            "en": "Take every measurement twice — if the two differ, take it a third time and use the middle value."
+          },
+          {
+            "hi": "इंच टेप पुराना और खिंचा हुआ हो तो बदल लें — गलत नाप से काम बर्बाद होता है।",
+            "en": "Replace old, stretched measuring tapes — a distorted tape gives wrong measurements every time."
+          },
+          {
+            "hi": "ग्राहक का नाप लेते समय उन्हें सीधे खड़े रहने को कहें — हाथ बगल में, पैर साथ।",
+            "en": "Ask the customer to stand straight with arms at their sides and feet together when measuring."
+          }
         ]
       }
     },
@@ -636,37 +807,67 @@
         },
         "steps": [
           {
-            "title": { "hi": "सादी सीम (Plain Seam)", "en": "Plain Seam" },
+            "title": {
+              "hi": "सादी सीम (Plain Seam)",
+              "en": "Plain Seam"
+            },
             "hi": "दो कपड़ों को सीधे मिलाकर सिलना। यह सबसे आम और आसान सीम है। सीम भत्ता 1–1.5 सेमी। किनारों को ज़िगज़ैग या पिंकिंग शियर से फिनिश करें ताकि उधड़े नहीं। सूती, पॉलिएस्टर और मोटे कपड़ों के लिए उपयुक्त।",
             "en": "Sewing two fabric pieces together directly. This is the most common and easiest seam. Seam allowance 1–1.5 cm. Finish edges with zigzag or pinking shears to prevent fraying. Suitable for cotton, polyester and heavier fabrics."
           },
           {
-            "title": { "hi": "फ्रेंच सीम (French Seam)", "en": "French Seam" },
+            "title": {
+              "hi": "फ्रेंच सीम (French Seam)",
+              "en": "French Seam"
+            },
             "hi": "रेशम, जॉर्जेट और नाज़ुक कपड़ों के लिए। पहले कपड़े को गलत तरफ (wrong side out) सिलें, 0.5 सेमी भत्ता रखें। फिर कपड़े को पलटें और सही तरफ 1 सेमी से सिलें। पहली सिलाई अंदर छिप जाती है — किनारे बिल्कुल साफ दिखते हैं।",
             "en": "For silk, georgette and delicate fabrics. First sew wrong sides together with 0.5 cm allowance. Then turn and sew right sides together at 1 cm. The first seam is enclosed inside — edges look perfectly clean."
           },
           {
-            "title": { "hi": "डार्ट (Dart)", "en": "Dart" },
+            "title": {
+              "hi": "डार्ट (Dart)",
+              "en": "Dart"
+            },
             "hi": "डार्ट कपड़े में आकार (shape) देने के लिए होता है। छाती डार्ट ब्लाउज़ को बस्ट पर फिट करता है। डार्ट की नोक (tip) पर सुई नीचे करके रोकें, फिर धागे बाँधें। डार्ट की ओर इस्त्री करें, कभी भी खोलें नहीं।",
             "en": "A dart adds shape to flat fabric. A bust dart fits the blouse at the chest. At the dart tip, stop with needle down, then tie off the threads. Press darts toward the fabric — never press them open."
           },
           {
-            "title": { "hi": "फ्लैट-फेल्ड सीम (Flat Felled Seam)", "en": "Flat Felled Seam" },
+            "title": {
+              "hi": "फ्लैट-फेल्ड सीम (Flat Felled Seam)",
+              "en": "Flat Felled Seam"
+            },
             "hi": "फ्लैट-फेल्ड सीम बहुत मज़बूत होती है — जींस और कुर्ते के कंधे पर इस्तेमाल होती है। पहले plain seam सिलें। एक तरफ का allowance 6 मिमी तक ट्रिम करें। दूसरे allowance को उस पर मोड़ें और ढक दें। ऊपर से सीधी सिलाई करें — दोनों तरफ से साफ दिखेगी।",
             "en": "A flat felled seam is very strong — used on jeans and kameez shoulders. First sew a plain seam. Trim one allowance to 6 mm. Fold the other allowance over it to enclose the raw edge. Topstitch along the edge — it looks clean from both sides."
           },
           {
-            "title": { "hi": "Basting (अस्थायी सिलाई)", "en": "Basting (Temporary Stitching)" },
+            "title": {
+              "hi": "Basting (अस्थायी सिलाई)",
+              "en": "Basting (Temporary Stitching)"
+            },
             "hi": "Basting लंबे टांकों से की गई अस्थायी सिलाई है — fitting के बाद निकाल दी जाती है। स्टिच लेंथ 5–6 मिमी पर सेट करें या हाथ से running stitch लगाएं। बिना sewing machine बंद किए, बड़े टांकों से दो परतें जोड़ें। fitting सही लगने पर permanent stitch करें, फिर basting निकाल लें।",
             "en": "Basting is temporary stitching with long stitches — removed after fitting. Set stitch length to 5–6 mm or use a hand running stitch. Join layers quickly with large stitches. Once the fit is confirmed, sew the permanent stitch then remove all basting."
           }
         ],
         "tips": [
-          { "hi": "फ्रेंच सीम पर इस्त्री ज़रूर करें — यह सीम को नरम और फ्लैट रखती है।", "en": "Always press French seams — pressing keeps them soft and flat." },
-          { "hi": "डार्ट की नोक पर बैक-स्टिच न लगाएं — इससे छेद जैसा दिखता है। धागे बाँधें।", "en": "Never backstitch at a dart tip — it creates a dimple. Instead, tie off the threads by hand." },
-          { "hi": "सिलाई से पहले seam type तय करें — बाद में बदलना मुश्किल होता है।", "en": "Decide on your seam type before sewing — changing it later is difficult." },
-          { "hi": "नाज़ुक कपड़ों पर हमेशा French seam लगाएं — बाद में उधड़ने की समस्या नहीं होगी।", "en": "Always use a French seam on delicate fabrics — you'll never have fraying problems later." },
-          { "hi": "सीम को press करते समय हमेशा grain line की दिशा में move करें।", "en": "When pressing seams, always move the iron in the direction of the grain line." }
+          {
+            "hi": "फ्रेंच सीम पर इस्त्री ज़रूर करें — यह सीम को नरम और फ्लैट रखती है।",
+            "en": "Always press French seams — pressing keeps them soft and flat."
+          },
+          {
+            "hi": "डार्ट की नोक पर बैक-स्टिच न लगाएं — इससे छेद जैसा दिखता है। धागे बाँधें।",
+            "en": "Never backstitch at a dart tip — it creates a dimple. Instead, tie off the threads by hand."
+          },
+          {
+            "hi": "सिलाई से पहले seam type तय करें — बाद में बदलना मुश्किल होता है।",
+            "en": "Decide on your seam type before sewing — changing it later is difficult."
+          },
+          {
+            "hi": "नाज़ुक कपड़ों पर हमेशा French seam लगाएं — बाद में उधड़ने की समस्या नहीं होगी।",
+            "en": "Always use a French seam on delicate fabrics — you'll never have fraying problems later."
+          },
+          {
+            "hi": "सीम को press करते समय हमेशा grain line की दिशा में move करें।",
+            "en": "When pressing seams, always move the iron in the direction of the grain line."
+          }
         ]
       }
     },
@@ -718,42 +919,75 @@
         },
         "steps": [
           {
-            "title": { "hi": "ताना और बाना (Warp & Weft)", "en": "Warp & Weft" },
+            "title": {
+              "hi": "ताना और बाना (Warp & Weft)",
+              "en": "Warp & Weft"
+            },
             "hi": "ताना (Warp) धागे कपड़े की लंबाई में होते हैं — मज़बूत और कम खिंचाव वाले। बाना (Weft) धागे चौड़ाई में होते हैं — थोड़े खिंचाव वाले। ज़्यादातर पैटर्न पीस ताने की दिशा में (लंबाई में) काटे जाते हैं।",
             "en": "Warp threads run along the fabric length — strong with minimal stretch. Weft threads run across the width — slightly more stretch. Most pattern pieces are cut along the warp (lengthwise grain)."
           },
           {
-            "title": { "hi": "बायस कट (Bias Cut)", "en": "Bias Cut" },
+            "title": {
+              "hi": "बायस कट (Bias Cut)",
+              "en": "Bias Cut"
+            },
             "hi": "बायस ताने और बाने के बीच 45° का कोण है। बायस पर कपड़ा सबसे ज़्यादा खिंचता है। साड़ी के ब्लाउज़ पाइपिंग, गर्दन की बाइंडिंग और घुमावदार किनारों के लिए बायस कट इस्तेमाल होता है।",
             "en": "Bias is the 45-degree angle between warp and weft. Fabric stretches most on the bias. Use bias cut for saree blouse piping, neck bindings and curved edges."
           },
           {
-            "title": { "hi": "सेल्वेज (Selvedge)", "en": "Selvedge" },
+            "title": {
+              "hi": "सेल्वेज (Selvedge)",
+              "en": "Selvedge"
+            },
             "hi": "सेल्वेज कपड़े के दोनों किनारों की बुनी हुई पट्टी है — इसे काटें नहीं, यह पैटर्न का हिस्सा नहीं है। सेल्वेज हमेशा ताने की दिशा में होती है — इससे ग्रेन पहचानना आसान होता है।",
             "en": "Selvedge is the finished woven edge on both sides of the fabric — do not cut it, it is not part of the pattern. The selvedge always runs along the warp grain — use it to identify the grain direction easily."
           },
           {
-            "title": { "hi": "कपड़ा बचाने वाला लेआउट", "en": "Fabric-Saving Layout" },
+            "title": {
+              "hi": "कपड़ा बचाने वाला लेआउट",
+              "en": "Fabric-Saving Layout"
+            },
             "hi": "पैटर्न पीस को कागज़ पर फैलाएं और इस तरह रखें कि कम से कम कपड़ा लगे। बड़े पीस पहले रखें, छोटे बाद में। फोल्ड पर रखने वाले पीस (जैसे सेंटर फ्रंट) को कपड़े की तह पर रखें।",
             "en": "Lay pattern pieces on paper and arrange them to use as little fabric as possible. Place large pieces first, small ones later. Pieces marked 'cut on fold' (like centre front) go on the fabric fold."
           },
           {
-            "title": { "hi": "नॉच और मार्किंग", "en": "Notches & Marking" },
+            "title": {
+              "hi": "नॉच और मार्किंग",
+              "en": "Notches & Marking"
+            },
             "hi": "नॉच छोटे V-आकार के निशान हैं जो पैटर्न के किनारों पर होते हैं — दो पीस को सही से जोड़ने में मदद करते हैं। कपड़े काटते समय नॉच की जगह पर बाहर की ओर छोटा त्रिकोण छोड़ें। अंदरूनी चिह्न (जैसे डार्ट बिंदु) के लिए tailor's tack या chalk से निशान लगाएं।",
             "en": "Notches are small V-shaped marks on pattern edges — they help align two pieces correctly. When cutting, leave a small outward triangle at each notch position. For interior marks (like dart points) use tailor's tacks or chalk transfers."
           },
           {
-            "title": { "hi": "प्रिंट और बूटा मिलाना", "en": "Matching Prints & Motifs" },
+            "title": {
+              "hi": "प्रिंट और बूटा मिलाना",
+              "en": "Matching Prints & Motifs"
+            },
             "hi": "धारीदार, चेक या बूटेदार कपड़े में पैटर्न मिलाना ज़रूरी है — वरना सिलाई अजीब लगती है। साइड सीम पर धारियाँ एक-दूसरे से मिलनी चाहिए। इसके लिए 10–20% अतिरिक्त कपड़ा लें। पैटर्न को pin करने के बाद एक बार आईने में देखें।",
             "en": "For striped, checked or printed fabric, matching the pattern at seams is essential — otherwise the garment looks mismatched. Stripes must align at the side seams. Buy 10–20% extra fabric for pattern matching. After pinning, check in a mirror before cutting."
           }
         ],
         "tips": [
-          { "hi": "कपड़े को फोल्ड करने से पहले सेल्वेज को मिलाएं — इससे दोनों परतें एक जैसी कटेंगी।", "en": "Match selvedges before folding fabric — this ensures both layers cut identically." },
-          { "hi": "चेक या धारीदार कपड़े में पैटर्न मिलाना याद रखें — इसके लिए 10–15% अतिरिक्त कपड़ा लें।", "en": "Remember to match checks or stripes — buy 10–15% extra fabric for pattern matching." },
-          { "hi": "हमेशा ग्रेन लाइन को measure करके रखें — आँख से देखकर गलती होती है।", "en": "Always measure the grain line with a ruler — the eye alone is not accurate enough." },
-          { "hi": "पैटर्न पीस को टेप से ज़मीन पर fix करें — काटते समय हिलेगा नहीं।", "en": "Tape pattern pieces to the floor — they won't shift while you cut." },
-          { "hi": "कपड़े की एक तरफ 'right side' होती है और एक 'wrong side' — पैटर्न right side down रखें।", "en": "Fabric has a right side and a wrong side — place pattern pieces on the wrong side for marking." }
+          {
+            "hi": "कपड़े को फोल्ड करने से पहले सेल्वेज को मिलाएं — इससे दोनों परतें एक जैसी कटेंगी।",
+            "en": "Match selvedges before folding fabric — this ensures both layers cut identically."
+          },
+          {
+            "hi": "चेक या धारीदार कपड़े में पैटर्न मिलाना याद रखें — इसके लिए 10–15% अतिरिक्त कपड़ा लें।",
+            "en": "Remember to match checks or stripes — buy 10–15% extra fabric for pattern matching."
+          },
+          {
+            "hi": "हमेशा ग्रेन लाइन को measure करके रखें — आँख से देखकर गलती होती है।",
+            "en": "Always measure the grain line with a ruler — the eye alone is not accurate enough."
+          },
+          {
+            "hi": "पैटर्न पीस को टेप से ज़मीन पर fix करें — काटते समय हिलेगा नहीं।",
+            "en": "Tape pattern pieces to the floor — they won't shift while you cut."
+          },
+          {
+            "hi": "कपड़े की एक तरफ 'right side' होती है और एक 'wrong side' — पैटर्न right side down रखें।",
+            "en": "Fabric has a right side and a wrong side — place pattern pieces on the wrong side for marking."
+          }
         ]
       }
     },
@@ -805,32 +1039,59 @@
         },
         "steps": [
           {
-            "title": { "hi": "बॉडिस ब्लॉक (Bodice Block)", "en": "Bodice Block" },
+            "title": {
+              "hi": "बॉडिस ब्लॉक (Bodice Block)",
+              "en": "Bodice Block"
+            },
             "hi": "चार्ट पेपर पर आयताकार आधार बनाएं: चौड़ाई = (छाती/2 + ease), लंबाई = कमीज़ की लंबाई। ऊपर से कंधे की गहराई (5–6 सेमी) छोड़ें। साइड में कमर की shape के लिए 1–2 सेमी का कर्व काटें।",
             "en": "On chart paper, draw a rectangle: width = (bust/2 + ease), length = kameez length. From the top, drop the shoulder depth (5–6 cm). Curve in 1–2 cm at the sides for waist shaping."
           },
           {
-            "title": { "hi": "नेकलाइन और कंधा", "en": "Neckline & Shoulder" },
+            "title": {
+              "hi": "नेकलाइन और कंधा",
+              "en": "Neckline & Shoulder"
+            },
             "hi": "फ्रंट नेक: 7–8 सेमी नीचे और 7 सेमी चौड़ी (U या V आकार)। बैक नेक: 1.5 सेमी नीचे और 5 सेमी चौड़ी। कंधे की रेखा को थोड़ा झुकाएं (2–3° ढलान)।",
             "en": "Front neck: 7–8 cm deep and 7 cm wide (U or V shape). Back neck: 1.5 cm deep and 5 cm wide. Angle the shoulder line slightly (2–3° slope)."
           },
           {
-            "title": { "hi": "आर्महोल और स्लीव", "en": "Armhole & Sleeve" },
+            "title": {
+              "hi": "आर्महोल और स्लीव",
+              "en": "Armhole & Sleeve"
+            },
             "hi": "आर्महोल गहराई = कंधे से 18–20 सेमी नीचे। आर्महोल कर्व के लिए बाहर की तरफ निकाल कर काटें। स्लीव की चौड़ाई = आर्महोल माप + 2 सेमी ease। स्लीव कैप कर्व धीरे-धीरे बनाएं।",
             "en": "Armhole depth = 18–20 cm below the shoulder. Cut a gentle outward curve for the armhole. Sleeve width = armhole measurement + 2 cm ease. Draft the sleeve cap curve gradually."
           },
           {
-            "title": { "hi": "सलवार का पैटर्न", "en": "Salwar Pattern" },
+            "title": {
+              "hi": "सलवार का पैटर्न",
+              "en": "Salwar Pattern"
+            },
             "hi": "कमर चौड़ाई = (कमर/2 + 3 सेमी ease + 2 सेमी drawstring fold)। इनसीम = कूल्हे से पाँव तक। क्रॉच की गहराई = (कूल्हा/4 + 2 सेमी)। पैर की चौड़ाई: पटियाला के लिए बड़ी, सीधी के लिए छोटी।",
             "en": "Waist width = (waist/2 + 3 cm ease + 2 cm drawstring fold). Inseam = hip to foot. Crotch depth = (hip/4 + 2 cm). Leg width: wide for Patiala, narrow for straight salwar."
           }
         ],
         "tips": [
-          { "hi": "पहली बार मस्लिन (सस्ते) कपड़े से ट्रायल बनाएं — महँगे कपड़े पर सीधे काटने का जोखिम मत लें।", "en": "Make a trial in muslin (cheap fabric) first — never risk cutting straight into expensive fabric." },
-          { "hi": "पैटर्न पर हमेशा तारीख, साइज़ और ग्रेन लाइन लिखें।", "en": "Always mark the date, size and grain line on your pattern pieces." },
-          { "hi": "सलवार में ऊपरी इनसीम (crotch seam) को double stitch करें — यह सबसे ज़्यादा दबाव वाली जगह है।", "en": "Double-stitch the crotch seam of the salwar — it takes the most strain." },
-          { "hi": "कमीज़ का कॉलर पहले अलग से बनाएं, फिर जोड़ें — सही shape के लिए interfacing लगाएं।", "en": "Construct the kameez collar separately first, then attach — use interfacing for proper shape." },
-          { "hi": "पैटर्न को अखबार पर trace करके रखें — असली पैटर्न बार-बार काटने से खराब होता है।", "en": "Trace your master pattern onto newspaper — the original wears out quickly with repeated use." }
+          {
+            "hi": "पहली बार मस्लिन (सस्ते) कपड़े से ट्रायल बनाएं — महँगे कपड़े पर सीधे काटने का जोखिम मत लें।",
+            "en": "Make a trial in muslin (cheap fabric) first — never risk cutting straight into expensive fabric."
+          },
+          {
+            "hi": "पैटर्न पर हमेशा तारीख, साइज़ और ग्रेन लाइन लिखें।",
+            "en": "Always mark the date, size and grain line on your pattern pieces."
+          },
+          {
+            "hi": "सलवार में ऊपरी इनसीम (crotch seam) को double stitch करें — यह सबसे ज़्यादा दबाव वाली जगह है।",
+            "en": "Double-stitch the crotch seam of the salwar — it takes the most strain."
+          },
+          {
+            "hi": "कमीज़ का कॉलर पहले अलग से बनाएं, फिर जोड़ें — सही shape के लिए interfacing लगाएं।",
+            "en": "Construct the kameez collar separately first, then attach — use interfacing for proper shape."
+          },
+          {
+            "hi": "पैटर्न को अखबार पर trace करके रखें — असली पैटर्न बार-बार काटने से खराब होता है।",
+            "en": "Trace your master pattern onto newspaper — the original wears out quickly with repeated use."
+          }
         ]
       }
     },
@@ -882,27 +1143,51 @@
         },
         "steps": [
           {
-            "title": { "hi": "इनविज़िबल ज़िप (Invisible Zipper)", "en": "Invisible Zipper" },
+            "title": {
+              "hi": "इनविज़िबल ज़िप (Invisible Zipper)",
+              "en": "Invisible Zipper"
+            },
             "hi": "इनविज़िबल ज़िप ज़िप की दाँत छुपाता है। इसके लिए invisible zipper foot चाहिए। ज़िप को खोलकर, दाँत ऊपर मोड़कर सिलें। सिलने के बाद जब ज़िप बंद करें तो सिलाई दिखनी नहीं चाहिए।",
             "en": "An invisible zipper hides the teeth. You need an invisible zipper foot for this. Sew with the zipper open, curling the teeth upward. When closed, the stitching should be invisible."
           },
           {
-            "title": { "hi": "दो-टुकड़ा प्लैकेट (Two-Piece Placket)", "en": "Two-Piece Placket" },
+            "title": {
+              "hi": "दो-टुकड़ा प्लैकेट (Two-Piece Placket)",
+              "en": "Two-Piece Placket"
+            },
             "hi": "कमीज़ के कफ के लिए दो-टुकड़ा प्लैकेट सबसे साफ दिखता है। बड़ा टुकड़ा बाहर (top placket) और छोटा अंदर (under placket)। कोने सही से मोड़ें और press करें। बटन लगाने की जगह मार्क करें।",
             "en": "A two-piece placket looks cleanest for shirt cuffs. The larger piece is the top placket, smaller is the under placket. Fold corners cleanly and press. Mark buttonhole placement."
           },
           {
-            "title": { "hi": "कॉलर स्टैंड (Collar Stand)", "en": "Collar Stand" },
+            "title": {
+              "hi": "कॉलर स्टैंड (Collar Stand)",
+              "en": "Collar Stand"
+            },
             "hi": "कॉलर स्टैंड गर्दन को सही आकार देता है। पहले कॉलर बनाएं (दो परतें, मुड़े हुए किनारे), फिर कॉलर स्टैंड से जोड़ें। स्टैंड को नेकलाइन से पिन करके सिलें — सुनिश्चित करें कि यह समान रूप से घूमे।",
             "en": "A collar stand gives the neck its proper shape. First construct the collar (two layers, turned edges), then attach it to the stand. Pin the stand to the neckline and sew — ensure it curves evenly all around."
           }
         ],
         "tips": [
-          { "hi": "ज़िप लगाने से पहले, उस जगह को बास्टिंग से बंद करें — इससे प्लेसमेंट सही रहती है।", "en": "Before inserting a zipper, baste the opening closed first — this keeps placement accurate." },
-          { "hi": "कॉलर को press करने के लिए clapper (लकड़ी का ब्लॉक) इस्तेमाल करें — किनारे तेज़ और flat रहेंगे।", "en": "Use a wooden clapper when pressing collars — it keeps edges crisp and flat." },
-          { "hi": "इनविज़िबल ज़िप हमेशा खुली अवस्था में सिलें — बंद ज़िप पर सिलाई impossible है।", "en": "Always sew an invisible zipper while it is open — it's impossible to sew when closed." },
-          { "hi": "प्लैकेट के कोनों को diagonal clip करें — इससे कोना sharp और flat बनेगा।", "en": "Diagonally clip placket corners before turning — it gives a sharp, flat corner." },
-          { "hi": "कॉलर की interfacing लगाते समय iron की भाप ज़्यादा रखें — बेहतर bonding होगी।", "en": "Use plenty of steam when fusing collar interfacing — it bonds more securely." }
+          {
+            "hi": "ज़िप लगाने से पहले, उस जगह को बास्टिंग से बंद करें — इससे प्लेसमेंट सही रहती है।",
+            "en": "Before inserting a zipper, baste the opening closed first — this keeps placement accurate."
+          },
+          {
+            "hi": "कॉलर को press करने के लिए clapper (लकड़ी का ब्लॉक) इस्तेमाल करें — किनारे तेज़ और flat रहेंगे।",
+            "en": "Use a wooden clapper when pressing collars — it keeps edges crisp and flat."
+          },
+          {
+            "hi": "इनविज़िबल ज़िप हमेशा खुली अवस्था में सिलें — बंद ज़िप पर सिलाई impossible है।",
+            "en": "Always sew an invisible zipper while it is open — it's impossible to sew when closed."
+          },
+          {
+            "hi": "प्लैकेट के कोनों को diagonal clip करें — इससे कोना sharp और flat बनेगा।",
+            "en": "Diagonally clip placket corners before turning — it gives a sharp, flat corner."
+          },
+          {
+            "hi": "कॉलर की interfacing लगाते समय iron की भाप ज़्यादा रखें — बेहतर bonding होगी।",
+            "en": "Use plenty of steam when fusing collar interfacing — it bonds more securely."
+          }
         ]
       }
     },
@@ -954,32 +1239,59 @@
         },
         "steps": [
           {
-            "title": { "hi": "चेन स्टिच (Chain Stitch)", "en": "Chain Stitch" },
+            "title": {
+              "hi": "चेन स्टिच (Chain Stitch)",
+              "en": "Chain Stitch"
+            },
             "hi": "सुई ऊपर निकालें, धागे का लूप बनाएं, सुई उसी जगह वापस डालें और लूप के अंदर से आगे निकालें। हर टाँका एक कड़ी जैसा दिखेगा। भारतीय कशीदाकारी में सबसे आम टाँका है।",
             "en": "Bring needle up, make a loop, insert needle at the same hole and come up inside the loop. Each stitch looks like a chain link. It's the most common stitch in Indian embroidery."
           },
           {
-            "title": { "hi": "सैटिन स्टिच (Satin Stitch)", "en": "Satin Stitch" },
+            "title": {
+              "hi": "सैटिन स्टिच (Satin Stitch)",
+              "en": "Satin Stitch"
+            },
             "hi": "एक किनारे से दूसरे किनारे तक सीधे समानांतर टांके लगाएं। टांके एक-दूसरे से सटे हों ताकि कपड़ा न दिखे। पत्तियों और पंखुड़ियों को भरने के लिए उपयुक्त। सभी टाँके एक ही दिशा में रखें।",
             "en": "Make straight parallel stitches from one edge to the other. Keep stitches close so no fabric shows through. Ideal for filling leaves and petals. Keep all stitches in the same direction."
           },
           {
-            "title": { "hi": "फ्रेंच नॉट (French Knot)", "en": "French Knot" },
+            "title": {
+              "hi": "फ्रेंच नॉट (French Knot)",
+              "en": "French Knot"
+            },
             "hi": "सुई ऊपर निकालें, धागे को सुई के चारों ओर 2–3 बार लपेटें, और सुई को पास की जगह में वापस डालें। धागे को कसते हुए सुई खींचें — एक सुंदर गाँठ बनेगी। फूलों के केंद्र और टेक्सचर के लिए उपयोगी।",
             "en": "Bring needle up, wrap thread 2–3 times around the needle, then insert needle close to where it came up. Pull through while holding the thread taut — a neat knot forms. Great for flower centres and texture."
           },
           {
-            "title": { "hi": "लेज़ी-डेज़ी (Lazy Daisy)", "en": "Lazy Daisy" },
+            "title": {
+              "hi": "लेज़ी-डेज़ी (Lazy Daisy)",
+              "en": "Lazy Daisy"
+            },
             "hi": "चेन स्टिच की तरह शुरू करें लेकिन एक छोटे टाँके से लूप को पकड़ें — यह एक पंखुड़ी बनाता है। 5–6 पंखुड़ियां गोल में लगाएं और फूल तैयार। फ्रेंच नॉट से केंद्र भरें।",
             "en": "Start like a chain stitch but anchor the loop with a small stitch — this creates one petal. Make 5–6 petals in a circle for a complete flower. Fill the centre with a French knot."
           }
         ],
         "tips": [
-          { "hi": "कढ़ाई के लिए हमेशा embroidery hoop इस्तेमाल करें — कपड़ा सपाट और टाँके समान रहेंगे।", "en": "Always use an embroidery hoop — it keeps fabric taut and stitches even." },
-          { "hi": "6-strand floss को आमतौर पर 2–3 strands में बाँटकर इस्तेमाल करें।", "en": "Usually split 6-strand floss into 2–3 strands for finer, neater embroidery." },
-          { "hi": "धागा शुरू करते समय knot न बनाएं — waste knot या away knot इस्तेमाल करें।", "en": "Don't knot the thread at the start — use a waste knot or away knot instead." },
-          { "hi": "कढ़ाई का design पहले pencil से हल्के हाथ से trace करें — गहरा निशान कपड़े पर रह सकता है।", "en": "Trace your embroidery design lightly in pencil first — deep marks can show through the fabric." },
-          { "hi": "Indian DMC floss colors: #349 (हरा), #321 (लाल), #798 (नीला), #972 (पीला) — भारतीय डिज़ाइन के लिए।", "en": "Popular Indian DMC colours: #349 (green), #321 (red), #798 (blue), #972 (yellow) — classic Indian palette." }
+          {
+            "hi": "कढ़ाई के लिए हमेशा embroidery hoop इस्तेमाल करें — कपड़ा सपाट और टाँके समान रहेंगे।",
+            "en": "Always use an embroidery hoop — it keeps fabric taut and stitches even."
+          },
+          {
+            "hi": "6-strand floss को आमतौर पर 2–3 strands में बाँटकर इस्तेमाल करें।",
+            "en": "Usually split 6-strand floss into 2–3 strands for finer, neater embroidery."
+          },
+          {
+            "hi": "धागा शुरू करते समय knot न बनाएं — waste knot या away knot इस्तेमाल करें।",
+            "en": "Don't knot the thread at the start — use a waste knot or away knot instead."
+          },
+          {
+            "hi": "कढ़ाई का design पहले pencil से हल्के हाथ से trace करें — गहरा निशान कपड़े पर रह सकता है।",
+            "en": "Trace your embroidery design lightly in pencil first — deep marks can show through the fabric."
+          },
+          {
+            "hi": "Indian DMC floss colors: #349 (हरा), #321 (लाल), #798 (नीला), #972 (पीला) — भारतीय डिज़ाइन के लिए।",
+            "en": "Popular Indian DMC colours: #349 (green), #321 (red), #798 (blue), #972 (yellow) — classic Indian palette."
+          }
         ]
       }
     },
@@ -1031,27 +1343,51 @@
         },
         "steps": [
           {
-            "title": { "hi": "प्रिंसेस सीम ड्राफ्ट", "en": "Drafting Princess Seams" },
+            "title": {
+              "hi": "प्रिंसेस सीम ड्राफ्ट",
+              "en": "Drafting Princess Seams"
+            },
             "hi": "प्रिंसेस सीम डार्ट को एक curved seam में बदल देती है। फ्रंट पैनल को तीन हिस्सों में बाँटें: साइड पैनल (apex से होकर जाता है), और सेंटर पैनल। साइड पैनल में apex डॉट (बस्ट पॉइंट) को निशान लगाएं — सीम यहाँ से बाहर निकलती है।",
             "en": "Princess seams convert darts into a single curved seam. Divide the front panel into three pieces: two side panels (running through the apex) and one centre panel. Mark the apex dot (bust point) on the side panel — the seam curves outward here."
           },
           {
-            "title": { "hi": "बस्ट डार्ट मैनिपुलेशन", "en": "Bust Dart Manipulation" },
+            "title": {
+              "hi": "बस्ट डार्ट मैनिपुलेशन",
+              "en": "Bust Dart Manipulation"
+            },
             "hi": "डार्ट को किसी भी दिशा में ले जाया जा सकता है — छाती डार्ट, कंधे का डार्ट, साइड डार्ट। बस apex पॉइंट तक रेखा खींचें, पुराना डार्ट काटें और नई जगह खोलें। डार्ट की मात्रा हमेशा समान रहती है।",
             "en": "Darts can be moved in any direction — bust dart, shoulder dart, side dart. Draw a line to the apex point, cut the existing dart and open it at the new position. The dart intake always remains the same."
           },
           {
-            "title": { "hi": "आम फिटिंग समस्याएं", "en": "Common Fitting Problems" },
+            "title": {
+              "hi": "आम फिटिंग समस्याएं",
+              "en": "Common Fitting Problems"
+            },
             "hi": "आर्महोल पर खिंचाव → आर्महोल बड़ा करें। पीठ पर शिकन → कमर को थोड़ा बाहर छोड़ें। बस्ट के नीचे गैप → apex-to-apex की दूरी बदलें। कंधे पर ढीलापन → कंधे की सीम अंदर लें। हर समस्या को muslin पर सुधारें, फिर असली कपड़े पर।",
             "en": "Pulling at armhole → enlarge the armhole. Horizontal back wrinkles → let out the waist seam. Gap at bust → adjust the apex-to-apex distance. Drooping shoulders → take in the shoulder seam. Fix every problem on muslin first, then transfer to real fabric."
           }
         ],
         "tips": [
-          { "hi": "फिटिंग हमेशा सही अंडरगार्मेंट के साथ करें — इससे असली आकार का पता चलता है।", "en": "Always fit over the correct undergarments — they reveal the true body shape." },
-          { "hi": "एक बार में एक ही बदलाव करें और हर बार पहनकर जाँचें।", "en": "Make only one alteration at a time and check the fit after each change." },
-          { "hi": "प्रिंसेस सीम सिलते समय convex piece को bottom पर रखें — मशीन कर्व को खुद guide करेगी।", "en": "When sewing princess seams, place the convex piece on the bottom — the machine naturally eases the curve." },
-          { "hi": "Muslin toile (trial blouse) को ग्राहक के साथ मिलकर fit करें — communication ज़रूरी है।", "en": "Fit the muslin toile with the customer present — communication about fit preferences is essential." },
-          { "hi": "फिटिंग की हर समस्या को कागज़ पर स्केच करें — अगली बार pattern सीधे ठीक करें।", "en": "Sketch each fitting correction on paper — next time, fix the pattern directly." }
+          {
+            "hi": "फिटिंग हमेशा सही अंडरगार्मेंट के साथ करें — इससे असली आकार का पता चलता है।",
+            "en": "Always fit over the correct undergarments — they reveal the true body shape."
+          },
+          {
+            "hi": "एक बार में एक ही बदलाव करें और हर बार पहनकर जाँचें।",
+            "en": "Make only one alteration at a time and check the fit after each change."
+          },
+          {
+            "hi": "प्रिंसेस सीम सिलते समय convex piece को bottom पर रखें — मशीन कर्व को खुद guide करेगी।",
+            "en": "When sewing princess seams, place the convex piece on the bottom — the machine naturally eases the curve."
+          },
+          {
+            "hi": "Muslin toile (trial blouse) को ग्राहक के साथ मिलकर fit करें — communication ज़रूरी है।",
+            "en": "Fit the muslin toile with the customer present — communication about fit preferences is essential."
+          },
+          {
+            "hi": "फिटिंग की हर समस्या को कागज़ पर स्केच करें — अगली बार pattern सीधे ठीक करें।",
+            "en": "Sketch each fitting correction on paper — next time, fix the pattern directly."
+          }
         ]
       }
     },
@@ -1103,27 +1439,51 @@
         },
         "steps": [
           {
-            "title": { "hi": "काम का मूल्य कैसे तय करें", "en": "How to Price Your Work" },
+            "title": {
+              "hi": "काम का मूल्य कैसे तय करें",
+              "en": "How to Price Your Work"
+            },
             "hi": "मूल्य = सामग्री की लागत + समय × घंटे का दर + overhead। घंटे का दर कम से कम ₹150–300 रखें। साधारण ब्लाउज़ 2–3 घंटे = ₹400–600 मिनिमम। कभी भी केवल 'मटेरियल के पैसे' नहीं लेना — आपका समय और हुनर भी मूल्यवान है।",
             "en": "Price = Material cost + time × hourly rate + overhead. Set hourly rate at minimum ₹150–300. A simple blouse takes 2–3 hours = minimum ₹400–600. Never charge only for materials — your time and skill have value too."
           },
           {
-            "title": { "hi": "ग्राहक रिकॉर्ड रखना", "en": "Keeping Customer Records" },
+            "title": {
+              "hi": "ग्राहक रिकॉर्ड रखना",
+              "en": "Keeping Customer Records"
+            },
             "hi": "एक मोटी कॉपी रखें। हर ग्राहक के लिए: नाम, फोन, नाप, ऑर्डर की तारीख, डिलीवरी तारीख, कुल रकम, advance और बाकी। WhatsApp पर ऑर्डर confirm करें — लिखित सबूत ज़रूरी है।",
             "en": "Keep a register. For each customer: name, phone, measurements, order date, delivery date, total amount, advance and balance. Confirm orders on WhatsApp — written confirmation is essential."
           },
           {
-            "title": { "hi": "ऑनलाइन ऑर्डर कैसे लें", "en": "Taking Online Orders" },
+            "title": {
+              "hi": "ऑनलाइन ऑर्डर कैसे लें",
+              "en": "Taking Online Orders"
+            },
             "hi": "Instagram और WhatsApp Business पर प्रोफाइल बनाएं। हर काम की तस्वीर रोशनी में लें और post करें। #silai #boutique #handmade जैसे hashtag इस्तेमाल करें। कस्टमर से साड़ी और कपड़ा courier के ज़रिए मंगाएं — पहले advance लें।",
             "en": "Create profiles on Instagram and WhatsApp Business. Photograph each finished garment in good light and post it. Use hashtags like #silai #boutique #handmade. Have customers courier fabric to you — always collect advance payment first."
           }
         ],
         "tips": [
-          { "hi": "हर महीने आय और खर्च का हिसाब रखें — छोटे-छोटे खर्च जोड़ने पर बड़े निकलते हैं।", "en": "Track income and expenses every month — small costs add up to big ones." },
-          { "hi": "खुश ग्राहक आपका सबसे अच्छा विज्ञापन है — अच्छा काम, सही समय पर दें।", "en": "A happy customer is your best advertisement — deliver good work on time." },
-          { "hi": "त्योहारों से 2–3 महीने पहले advance orders लेना शुरू करें — October में Diwali orders भरे होते हैं।", "en": "Start taking advance orders 2–3 months before festivals — by October, Diwali orders are already full." },
-          { "hi": "Google Business Profile बनाएं — local search में आपकी दुकान दिखेगी।", "en": "Create a Google Business Profile — your shop will appear in local search results." },
-          { "hi": "नए कौशल सीखते रहें — embroidery, lehenga stitching, designer blouses जोड़ने से rates बढ़ते हैं।", "en": "Keep learning new skills — adding embroidery, lehenga and designer blouses increases your rates." }
+          {
+            "hi": "हर महीने आय और खर्च का हिसाब रखें — छोटे-छोटे खर्च जोड़ने पर बड़े निकलते हैं।",
+            "en": "Track income and expenses every month — small costs add up to big ones."
+          },
+          {
+            "hi": "खुश ग्राहक आपका सबसे अच्छा विज्ञापन है — अच्छा काम, सही समय पर दें।",
+            "en": "A happy customer is your best advertisement — deliver good work on time."
+          },
+          {
+            "hi": "त्योहारों से 2–3 महीने पहले advance orders लेना शुरू करें — October में Diwali orders भरे होते हैं।",
+            "en": "Start taking advance orders 2–3 months before festivals — by October, Diwali orders are already full."
+          },
+          {
+            "hi": "Google Business Profile बनाएं — local search में आपकी दुकान दिखेगी।",
+            "en": "Create a Google Business Profile — your shop will appear in local search results."
+          },
+          {
+            "hi": "नए कौशल सीखते रहें — embroidery, lehenga stitching, designer blouses जोड़ने से rates बढ़ते हैं।",
+            "en": "Keep learning new skills — adding embroidery, lehenga and designer blouses increases your rates."
+          }
         ]
       }
     },
@@ -1175,27 +1535,51 @@
         },
         "steps": [
           {
-            "title": { "hi": "अड्डा फ्रेम सेटअप", "en": "Adda Frame Setup" },
+            "title": {
+              "hi": "अड्डा फ्रेम सेटअप",
+              "en": "Adda Frame Setup"
+            },
             "hi": "अड्डा एक बड़ा लकड़ी का चौकोर फ्रेम है जिस पर कपड़ा कसकर खींचा जाता है। कपड़ा नीचे की ओर रखें (ulta karke — wrong side up) और एरी हुक ऊपर से डालें। कपड़ा बिल्कुल tight होना चाहिए — ढीला कपड़ा टांके बिगाड़ता है।",
             "en": "An adda is a large square wooden frame on which the fabric is stretched tightly. Place fabric upside down (wrong side up) and insert the aari hook from the top. The fabric must be pulled taut — loose fabric ruins stitches."
           },
           {
-            "title": { "hi": "एरी हुक पकड़ना", "en": "Holding the Aari Hook" },
+            "title": {
+              "hi": "एरी हुक पकड़ना",
+              "en": "Holding the Aari Hook"
+            },
             "hi": "एरी हुक एक पतली छड़ी है जिसके सिरे पर छोटा हुक होता है। दाएं हाथ से हुक पकड़ें (ऊपर), बाएं हाथ में धागा या ज़री नीचे। हुक को कपड़े में डालें, धागे को पकड़ें और ऊपर खींचें — loop बनाएं। यह crochet जैसा है पर नीचे से ऊपर।",
             "en": "The aari hook is a thin rod with a small hook at the tip. Hold the hook in the right hand (on top), thread or zari in the left hand below. Insert the hook into fabric, catch the thread and pull up — forming a loop. It's like crochet but from bottom to top."
           },
           {
-            "title": { "hi": "मोती और सितारे लगाना", "en": "Attaching Beads & Sequins" },
+            "title": {
+              "hi": "मोती और सितारे लगाना",
+              "en": "Attaching Beads & Sequins"
+            },
             "hi": "मोती: लूप बनाएं, मोती उस लूप में डालें, फिर अगला loop उसके ऊपर से जाएगा। सितारे: नीचे से ज़री के साथ सितारे को थ्रेड करें और एरी हुक से lock करें। ज़रदोज़ी की मोटी ज़री (bullion wire) को भी इसी तरह जोड़ा जाता है।",
             "en": "Beads: make a loop, string a bead onto it, then the next loop passes over it to lock it in. Sequins: thread with zari from below and lock with the aari hook. Heavy bullion wire for zardozi is attached the same way."
           }
         ],
         "tips": [
-          { "hi": "ज़री के धागे को हाथ पर लपेटकर रखें — उलझने से बचाएं।", "en": "Keep zari wound loosely around your hand — this prevents tangling." },
-          { "hi": "शुरुआत में सूती कपड़े पर अभ्यास करें — असली जॉर्जेट या रेशम पर जाने से पहले।", "en": "Practice on cotton fabric first — before moving to real georgette or silk." },
-          { "hi": "अड्डा फ्रेम पर कपड़े के किनारे मोड़कर न लगाएं — सीधे बाँधें ताकि bias न पड़े।", "en": "Don't fold fabric edges when stretching on the adda frame — lace them straight to avoid bias distortion." },
-          { "hi": "ज़रदोज़ी कढ़ाई के बाद कपड़े को 'face down' ironing board पर रखकर press करें।", "en": "After zardozi embroidery, press the fabric face-down on a thick towel to protect the work." },
-          { "hi": "एरी वर्क में consistent depth बनाए रखें — हर loop एक जैसी गहराई से बनेगी तो design uniform रहेगा।", "en": "Maintain consistent depth in aari work — equal depth on each loop keeps the design uniform." }
+          {
+            "hi": "ज़री के धागे को हाथ पर लपेटकर रखें — उलझने से बचाएं।",
+            "en": "Keep zari wound loosely around your hand — this prevents tangling."
+          },
+          {
+            "hi": "शुरुआत में सूती कपड़े पर अभ्यास करें — असली जॉर्जेट या रेशम पर जाने से पहले।",
+            "en": "Practice on cotton fabric first — before moving to real georgette or silk."
+          },
+          {
+            "hi": "अड्डा फ्रेम पर कपड़े के किनारे मोड़कर न लगाएं — सीधे बाँधें ताकि bias न पड़े।",
+            "en": "Don't fold fabric edges when stretching on the adda frame — lace them straight to avoid bias distortion."
+          },
+          {
+            "hi": "ज़रदोज़ी कढ़ाई के बाद कपड़े को 'face down' ironing board पर रखकर press करें।",
+            "en": "After zardozi embroidery, press the fabric face-down on a thick towel to protect the work."
+          },
+          {
+            "hi": "एरी वर्क में consistent depth बनाए रखें — हर loop एक जैसी गहराई से बनेगी तो design uniform रहेगा।",
+            "en": "Maintain consistent depth in aari work — equal depth on each loop keeps the design uniform."
+          }
         ]
       }
     },
@@ -1247,32 +1631,59 @@
         },
         "steps": [
           {
-            "title": { "hi": "तनाव (Tension) ठीक करना", "en": "Fixing Tension" },
+            "title": {
+              "hi": "तनाव (Tension) ठीक करना",
+              "en": "Fixing Tension"
+            },
             "hi": "ऊपर का धागा नीचे दिखे → upper tension बढ़ाएं। नीचे का धागा ऊपर दिखे → upper tension घटाएं। ऊपर और नीचे का धागा बीच में मिले तो तनाव सही है। टेस्ट: दो परत सूती पर सिलाई करें और देखें।",
             "en": "Upper thread showing on bottom → increase upper tension. Lower thread showing on top → decrease upper tension. Both threads should meet in the middle of the fabric. Test: sew on two layers of cotton and check."
           },
           {
-            "title": { "hi": "धागा टूटने के कारण", "en": "Causes of Thread Breakage" },
+            "title": {
+              "hi": "धागा टूटने के कारण",
+              "en": "Causes of Thread Breakage"
+            },
             "hi": "1. सुई गलत दिशा में है — flat side हमेशा पीछे। 2. सुई टेढ़ी या टूटी है — बदलें। 3. धागा गलत तरफ से पिरोया है — दोबारा सही से करें। 4. Tension बहुत ज़्यादा है। 5. सुई का नंबर कपड़े के लिए गलत है।",
             "en": "1. Needle inserted wrong — flat side must face back. 2. Needle bent or blunt — replace it. 3. Thread routed incorrectly — re-thread carefully. 4. Tension too tight. 5. Wrong needle size for the fabric."
           },
           {
-            "title": { "hi": "बॉबिन घोंसला (Bird's Nest)", "en": "Bobbin Bird's Nest" },
+            "title": {
+              "hi": "बॉबिन घोंसला (Bird's Nest)",
+              "en": "Bobbin Bird's Nest"
+            },
             "hi": "नीचे धागे का उलझा हुआ गोला — 'bird's nest' — तब बनता है जब मशीन शुरू करने से पहले दोनों धागे प्रेसर फुट के पीछे नहीं खींचे गए। हर बार सिलाई शुरू करने से पहले दोनों धागे 10–12 सेमी पीछे छोड़ें।",
             "en": "A tangled mass of thread under the fabric — called a bird's nest — forms when both threads weren't pulled back behind the presser foot before starting. Always leave 10–12 cm of both threads behind the foot before you begin."
           },
           {
-            "title": { "hi": "सफाई और तेल", "en": "Cleaning & Oiling" },
+            "title": {
+              "hi": "सफाई और तेल",
+              "en": "Cleaning & Oiling"
+            },
             "hi": "बॉबिन केस के आसपास रोज़ कपड़े से पोंछें। हर 8 घंटे की सिलाई के बाद मूविंग पार्ट्स पर एक बूँद sewing machine oil लगाएं। कभी WD-40 न डालें — यह machine के लिए नहीं है।",
             "en": "Wipe around the bobbin case daily. Apply one drop of sewing machine oil to all moving parts every 8 hours of sewing. Never use WD-40 — it is not meant for sewing machines."
           }
         ],
         "tips": [
-          { "hi": "हर सिलाई सत्र से पहले मशीन में नई सुई डालें — इससे 80% समस्याएं खत्म हो जाती हैं।", "en": "Start every sewing session with a fresh needle — this eliminates 80% of problems." },
-          { "hi": "मशीन पर कवर रखें जब उपयोग में न हो — धूल और नमी से बचाएं।", "en": "Keep your machine covered when not in use — protect it from dust and humidity." },
-          { "hi": "टेंशन कभी भी extreme पर न ले जाएं — 1 से 9 में से 4–5 सबसे safe range है।", "en": "Never set tension at the extremes — 4–5 on a 1–9 scale is the safest range to start from." },
-          { "hi": "Bird's nest (bobbin tangle) बनने पर: सब धागे निकालें, बॉबिन नया डालें, फिर से thread करें।", "en": "If you get a bird's nest: remove all thread, reinsert the bobbin, and re-thread the entire machine." },
-          { "hi": "Bobbin case को हर हफ्ते निकालकर brush करें — रुई और धागे के टुकड़े जमा होते हैं।", "en": "Remove and brush out the bobbin case weekly — lint and thread bits accumulate quickly." }
+          {
+            "hi": "हर सिलाई सत्र से पहले मशीन में नई सुई डालें — इससे 80% समस्याएं खत्म हो जाती हैं।",
+            "en": "Start every sewing session with a fresh needle — this eliminates 80% of problems."
+          },
+          {
+            "hi": "मशीन पर कवर रखें जब उपयोग में न हो — धूल और नमी से बचाएं।",
+            "en": "Keep your machine covered when not in use — protect it from dust and humidity."
+          },
+          {
+            "hi": "टेंशन कभी भी extreme पर न ले जाएं — 1 से 9 में से 4–5 सबसे safe range है।",
+            "en": "Never set tension at the extremes — 4–5 on a 1–9 scale is the safest range to start from."
+          },
+          {
+            "hi": "Bird's nest (bobbin tangle) बनने पर: सब धागे निकालें, बॉबिन नया डालें, फिर से thread करें।",
+            "en": "If you get a bird's nest: remove all thread, reinsert the bobbin, and re-thread the entire machine."
+          },
+          {
+            "hi": "Bobbin case को हर हफ्ते निकालकर brush करें — रुई और धागे के टुकड़े जमा होते हैं।",
+            "en": "Remove and brush out the bobbin case weekly — lint and thread bits accumulate quickly."
+          }
         ]
       }
     },
@@ -1324,27 +1735,51 @@
         },
         "steps": [
           {
-            "title": { "hi": "न्यूनतम सेटअप", "en": "Minimal Setup" },
+            "title": {
+              "hi": "न्यूनतम सेटअप",
+              "en": "Minimal Setup"
+            },
             "hi": "ज़रूरी सामान: 1 सिलाई मशीन (₹5,000–15,000), इस्त्री और बोर्ड, एक कटाई की मेज़ (या साफ फर्श), अच्छी रोशनी। छोटे कमरे के एक कोने में भी काम चल सकता है। पहले दिन से ही काम की जगह साफ और व्यवस्थित रखें।",
             "en": "Essential items: 1 sewing machine (₹5,000–15,000), iron and board, a cutting surface (or clean floor), good lighting. Even a corner of a small room works. Keep your work area clean and organised from day one."
           },
           {
-            "title": { "hi": "शुरुआती सामान की सूची", "en": "Starter Supply List" },
+            "title": {
+              "hi": "शुरुआती सामान की सूची",
+              "en": "Starter Supply List"
+            },
             "hi": "इंच टेप, कैंची (कपड़े की), विभिन्न रंगों के धागे, विभिन्न नंबर की सुइयाँ, टेलर चॉक, पिन, बॉबिन का सेट, सेफ्टी पिन, बटन और हुक का वर्गीकरण। इन सब पर ₹1,000–2,000 में शुरू हो सकता है।",
             "en": "Measuring tape, fabric scissors, assorted thread colours, mixed needle sizes, tailor's chalk, pins, spare bobbins, safety pins, assorted buttons and hooks. You can start all this for ₹1,000–2,000."
           },
           {
-            "title": { "hi": "पहला ग्राहक खोजना", "en": "Finding Your First Customer" },
+            "title": {
+              "hi": "पहला ग्राहक खोजना",
+              "en": "Finding Your First Customer"
+            },
             "hi": "परिवार और पड़ोसियों से शुरू करें — एक ब्लाउज़ या पेटीकोट सिलकर दें (सस्ते में या मुफ़्त)। तस्वीर लें और WhatsApp status पर डालें। खुश ग्राहक आपको आगे refer करेगा। 5 ग्राहकों के बाद regular rate लेना शुरू करें।",
             "en": "Start with family and neighbours — stitch a blouse or petticoat for them (at cost or free). Photograph it and post on WhatsApp status. A happy customer will refer you further. After 5 customers, start charging your regular rate."
           }
         ],
         "tips": [
-          { "hi": "शुरुआत में सिर्फ वही काम लें जो आप अच्छे से कर सकते हैं — quality से compromise न करें।", "en": "In the beginning, only take orders for things you do well — never compromise on quality." },
-          { "hi": "हर delivery पर visiting card दें — नाम, WhatsApp नंबर और specialty।", "en": "Give a visiting card with every delivery — your name, WhatsApp number and speciality." },
-          { "hi": "₹500 से कम का ऑर्डर घर पर pick-up और drop देने पर extra charge करें।", "en": "Charge extra for pickup and delivery on orders under ₹500 — your time has value." },
-          { "hi": "काम की जगह अच्छी रोशनी वाली होनी चाहिए — आँखों और quality दोनों के लिए।", "en": "Your workspace must have good lighting — it protects your eyes and improves quality." },
-          { "hi": "पहले 3 महीने में portfolio बनाएं — हर काम की तस्वीर good background पर खींचें।", "en": "Build a portfolio in your first 3 months — photograph every piece on a clean background." }
+          {
+            "hi": "शुरुआत में सिर्फ वही काम लें जो आप अच्छे से कर सकते हैं — quality से compromise न करें।",
+            "en": "In the beginning, only take orders for things you do well — never compromise on quality."
+          },
+          {
+            "hi": "हर delivery पर visiting card दें — नाम, WhatsApp नंबर और specialty।",
+            "en": "Give a visiting card with every delivery — your name, WhatsApp number and speciality."
+          },
+          {
+            "hi": "₹500 से कम का ऑर्डर घर पर pick-up और drop देने पर extra charge करें।",
+            "en": "Charge extra for pickup and delivery on orders under ₹500 — your time has value."
+          },
+          {
+            "hi": "काम की जगह अच्छी रोशनी वाली होनी चाहिए — आँखों और quality दोनों के लिए।",
+            "en": "Your workspace must have good lighting — it protects your eyes and improves quality."
+          },
+          {
+            "hi": "पहले 3 महीने में portfolio बनाएं — हर काम की तस्वीर good background पर खींचें।",
+            "en": "Build a portfolio in your first 3 months — photograph every piece on a clean background."
+          }
         ]
       }
     },
@@ -1407,28 +1842,55 @@
         },
         "steps": [
           {
-            "title": { "hi": "साड़ी के मुख्य भाग", "en": "Main Parts of a Saree" },
+            "title": {
+              "hi": "साड़ी के मुख्य भाग",
+              "en": "Main Parts of a Saree"
+            },
             "hi": "टक एंड (पल्लू का विपरीत सिरा): पेटीकोट में टकी जाती है। बॉडी: साड़ी का मध्य हिस्सा — सबसे लंबा भाग (लगभग 4–4.5 गज़)। बॉर्डर: दोनों लंबे किनारों पर सजावटी पट्टी। पल्लू: आखिरी 0.75–1 गज़ — सबसे सजावटी हिस्सा, कंधे पर जाता है।",
             "en": "Tuck end (opposite to pallu): tucked into the petticoat. Body: the middle section — longest part (about 4–4.5 yards). Border: decorative strip along both long edges. Pallu: the last 0.75–1 yard — most decorative, draped over the shoulder."
           },
           {
-            "title": { "hi": "6-गज़ बनाम 9-गज़ साड़ी", "en": "6-Yard vs 9-Yard Saree" },
+            "title": {
+              "hi": "6-गज़ बनाम 9-गज़ साड़ी",
+              "en": "6-Yard vs 9-Yard Saree"
+            },
             "hi": "6 गज़ (5.5 मी) — सबसे आम, निवी और अन्य शैलियों के लिए। 9 गज़ (8.2 मी) — महाराष्ट्रियन नवारी, तमिल मडिसार शैलियों के लिए। 6 गज़ की चौड़ाई 45–48 इंच होती है। 9 गज़ की चौड़ाई 36–42 इंच।",
             "en": "6 yards (5.5 m) — most common, for Nivi and most draping styles. 9 yards (8.2 m) — for Maharashtrian Nauvari and Tamil Madisar styles. A 6-yard saree is 45–48 inches wide. A 9-yard saree is 36–42 inches wide."
           },
           {
-            "title": { "hi": "ब्लाउज़ और पेटीकोट की भूमिका", "en": "Role of Blouse and Petticoat" },
+            "title": {
+              "hi": "ब्लाउज़ और पेटीकोट की भूमिका",
+              "en": "Role of Blouse and Petticoat"
+            },
             "hi": "पेटीकोट: कमर से नीचे, साड़ी की टक यहाँ होती है। कमर में drawstring से कसा जाता है। ब्लाउज़ (चोली): साड़ी के रंग/बॉर्डर से मिलाकर बनाया जाता है। आमतौर पर 0.75–1 मीटर ब्लाउज़ पीस साड़ी के साथ मिलता है।",
             "en": "Petticoat: worn from the waist down, saree tucks into it. Tightened with a drawstring at the waist. Blouse (choli): matched to the saree's colour or border. Usually 0.75–1 metre of blouse piece comes with the saree."
           }
         ],
         "tips": [
-          { "hi": "पेटीकोट का रंग साड़ी से मिलाएं — पारदर्शी साड़ियों में नीचे का रंग दिखता है।", "en": "Match petticoat colour to the saree — for sheer sarees, the undergarment colour shows through." },
-          { "hi": "साड़ी को पहनने से पहले हमेशा ब्लाउज़ पूरी तरह तैयार कर लें।", "en": "Always have the blouse completely finished before wearing the saree." },
-          { "hi": "नई साड़ी खरीदते समय blouse piece का रंग और fabric ज़रूर मेल करें।", "en": "When buying a new saree, ensure the blouse piece matches in colour and fabric weight." },
-          { "hi": "रेशम साड़ी को हमेशा मस्लिन या सूती कपड़े में लपेटकर रखें — plastic में नहीं।", "en": "Always store silk sarees wrapped in muslin or cotton — never in plastic." },
-          { "hi": "साड़ी के पल्लू पर कढ़ाई या बॉर्डर का ध्यान रखें — यही सबसे ज़्यादा दिखती है।", "en": "Pay close attention to the pallu's embroidery or border — it's the most visible part." },
-          { "hi": "कंजीवरम, बनारसी और पैठणी साड़ियाँ GI-tagged हैं — असली की पहचान weavers' mark से होती है।", "en": "Kanjivaram, Banarasi and Paithani sarees are GI-tagged — authentic ones carry a weavers' mark." }
+          {
+            "hi": "पेटीकोट का रंग साड़ी से मिलाएं — पारदर्शी साड़ियों में नीचे का रंग दिखता है।",
+            "en": "Match petticoat colour to the saree — for sheer sarees, the undergarment colour shows through."
+          },
+          {
+            "hi": "साड़ी को पहनने से पहले हमेशा ब्लाउज़ पूरी तरह तैयार कर लें।",
+            "en": "Always have the blouse completely finished before wearing the saree."
+          },
+          {
+            "hi": "नई साड़ी खरीदते समय blouse piece का रंग और fabric ज़रूर मेल करें।",
+            "en": "When buying a new saree, ensure the blouse piece matches in colour and fabric weight."
+          },
+          {
+            "hi": "रेशम साड़ी को हमेशा मस्लिन या सूती कपड़े में लपेटकर रखें — plastic में नहीं।",
+            "en": "Always store silk sarees wrapped in muslin or cotton — never in plastic."
+          },
+          {
+            "hi": "साड़ी के पल्लू पर कढ़ाई या बॉर्डर का ध्यान रखें — यही सबसे ज़्यादा दिखती है।",
+            "en": "Pay close attention to the pallu's embroidery or border — it's the most visible part."
+          },
+          {
+            "hi": "कंजीवरम, बनारसी और पैठणी साड़ियाँ GI-tagged हैं — असली की पहचान weavers' mark से होती है।",
+            "en": "Kanjivaram, Banarasi and Paithani sarees are GI-tagged — authentic ones carry a weavers' mark."
+          }
         ]
       }
     },
@@ -1491,37 +1953,67 @@
         },
         "steps": [
           {
-            "title": { "hi": "1. ब्लाउज़ लंबाई", "en": "1. Blouse Length" },
+            "title": {
+              "hi": "1. ब्लाउज़ लंबाई",
+              "en": "1. Blouse Length"
+            },
             "hi": "कंधे के जोड़ से कमर तक (या जहाँ ब्लाउज़ खत्म होनी हो)। आमतौर पर 14–17 इंच। लंबी ब्लाउज़ के लिए नाभि तक भी नाप लें।",
             "en": "From the shoulder joint to the waist (or wherever the blouse should end). Typically 14–17 inches. For a longer blouse, measure to the navel as well."
           },
           {
-            "title": { "hi": "2. छाती (Chest/Bust)", "en": "2. Chest / Bust" },
+            "title": {
+              "hi": "2. छाती (Chest/Bust)",
+              "en": "2. Chest / Bust"
+            },
             "hi": "बगल से नीचे, छाती के सबसे उभरे हिस्से से गोल नापें। 1 उँगली की जगह रखें। यह नाप ब्लाउज़ ड्राफ्ट का आधार है। Ease आमतौर पर 1 इंच जोड़ते हैं।",
             "en": "Measure around the fullest part of the bust, under the arms. Leave room for one finger. This measurement is the foundation of the blouse draft. Add 1 inch ease."
           },
           {
-            "title": { "hi": "3. कमर और कंधा", "en": "3. Waist & Shoulder" },
+            "title": {
+              "hi": "3. कमर और कंधा",
+              "en": "3. Waist & Shoulder"
+            },
             "hi": "कमर: सबसे पतली जगह से गोल। कंधा: गर्दन के आधार से कंधे के किनारे तक सीधे (3.5–5.5 इंच)।",
             "en": "Waist: around the narrowest point. Shoulder: straight from the neck base to the shoulder point (3.5–5.5 inches)."
           },
           {
-            "title": { "hi": "4. आर्महोल और एपेक्स", "en": "4. Armhole & Apex" },
+            "title": {
+              "hi": "4. आर्महोल और एपेक्स",
+              "en": "4. Armhole & Apex"
+            },
             "hi": "आर्महोल: बगल से कंधे तक (8–9 इंच)। एपेक्स-टू-एपेक्स: एक बस्ट पॉइंट से दूसरे तक (7–9 इंच)। एपेक्स की ऊँचाई: कंधे से बस्ट पॉइंट तक (9–12 इंच)।",
             "en": "Armhole: from underarm to shoulder (8–9 inches). Apex-to-apex: from one bust point to the other (7–9 inches). Apex height: from shoulder to bust point (9–12 inches)."
           },
           {
-            "title": { "hi": "5. स्लीव", "en": "5. Sleeve" },
+            "title": {
+              "hi": "5. स्लीव",
+              "en": "5. Sleeve"
+            },
             "hi": "स्लीव लंबाई: कंधे से कोहनी (हाफ स्लीव) या कलाई (फुल)। स्लीव गोलाई: बाँह के ऊपरी हिस्से से गोल + 1 इंच ease।",
             "en": "Sleeve length: shoulder to elbow (half) or wrist (full). Sleeve round: around the upper arm + 1 inch ease."
           }
         ],
         "tips": [
-          { "hi": "नाप लेने वाले और दिलवाने वाले दोनों खड़े रहें — नाप बैठकर नहीं लेते।", "en": "Both the measurer and the person being measured should stand upright — never take measurements sitting down." },
-          { "hi": "नाप की डायरी में पेन से लिखें, पेंसिल से नहीं — ग्राहक के नाम के साथ।", "en": "Write measurements in pen, not pencil — always with the customer's name." },
-          { "hi": "ब्लाउज़ नाप हमेशा सही अंडरगार्मेंट पहनकर लें — इससे accurate cup placement मिलती है।", "en": "Always take blouse measurements with the correct bra — it ensures accurate cup placement." },
-          { "hi": "अगर ग्राहक की एक कंधा दूसरे से नीचा है तो दोनों तरफ अलग-अलग नाप लें।", "en": "If one shoulder is lower, take measurements on both sides separately." },
-          { "hi": "नाप chart में कॉलम बनाएं: bare + ease + final — तीनों अलग-अलग।", "en": "In your measurement chart, create columns: bare + ease + final — record all three separately." }
+          {
+            "hi": "नाप लेने वाले और दिलवाने वाले दोनों खड़े रहें — नाप बैठकर नहीं लेते।",
+            "en": "Both the measurer and the person being measured should stand upright — never take measurements sitting down."
+          },
+          {
+            "hi": "नाप की डायरी में पेन से लिखें, पेंसिल से नहीं — ग्राहक के नाम के साथ।",
+            "en": "Write measurements in pen, not pencil — always with the customer's name."
+          },
+          {
+            "hi": "ब्लाउज़ नाप हमेशा सही अंडरगार्मेंट पहनकर लें — इससे accurate cup placement मिलती है।",
+            "en": "Always take blouse measurements with the correct bra — it ensures accurate cup placement."
+          },
+          {
+            "hi": "अगर ग्राहक की एक कंधा दूसरे से नीचा है तो दोनों तरफ अलग-अलग नाप लें।",
+            "en": "If one shoulder is lower, take measurements on both sides separately."
+          },
+          {
+            "hi": "नाप chart में कॉलम बनाएं: bare + ease + final — तीनों अलग-अलग।",
+            "en": "In your measurement chart, create columns: bare + ease + final — record all three separately."
+          }
         ]
       }
     },
@@ -1584,32 +2076,59 @@
         },
         "steps": [
           {
-            "title": { "hi": "चार्ट पेपर तैयार करें", "en": "Prepare Chart Paper" },
+            "title": {
+              "hi": "चार्ट पेपर तैयार करें",
+              "en": "Prepare Chart Paper"
+            },
             "hi": "A2 साइज़ का चार्ट पेपर लें। एक सीधी आड़ी रेखा (baseline) खींचें। ऊपर बाईं ओर से शुरू करें। पेंसिल और रूलर से काम करें — गलती सुधारना आसान रहेगा।",
             "en": "Take A2 size chart paper. Draw a straight horizontal baseline. Start from the top-left corner. Work in pencil and ruler — corrections will be easy."
           },
           {
-            "title": { "hi": "फ्रंट बॉडिस खींचें", "en": "Draw the Front Bodice" },
+            "title": {
+              "hi": "फ्रंट बॉडिस खींचें",
+              "en": "Draw the Front Bodice"
+            },
             "hi": "आयत बनाएं: चौड़ाई = (छाती/2 + 1 इंच ease), ऊँचाई = ब्लाउज़ लंबाई। ऊपर से: कंधे की गहराई (1.5 इंच) नापें। फ्रंट नेक: 2.5–3 इंच नीचे + 2.5–3 इंच चौड़ी। आर्महोल: कंधे से नीचे 6–7 इंच पर एक कर्व।",
             "en": "Draw a rectangle: width = (bust/2 + 1 inch ease), height = blouse length. From the top: mark shoulder depth (1.5 inches). Front neck: 2.5–3 inches deep + 2.5–3 inches wide. Armhole: a curve from the shoulder, 6–7 inches down."
           },
           {
-            "title": { "hi": "बस्ट और कमर डार्ट", "en": "Bust and Waist Darts" },
+            "title": {
+              "hi": "बस्ट और कमर डार्ट",
+              "en": "Bust and Waist Darts"
+            },
             "hi": "बस्ट डार्ट: एपेक्स पॉइंट से 1.5 इंच ऊपर मार्क करें। डार्ट की चौड़ाई = (छाती - कमर)/4। डार्ट की नोक एपेक्स से 1 इंच छोड़कर बनाएं। कमर डार्ट: कमर की लाइन पर, साइड से अंदर।",
             "en": "Bust dart: mark 1.5 inches above the apex point. Dart intake = (bust - waist)/4. Keep dart tip 1 inch away from apex. Waist dart: at the waist line, taken in from the side."
           },
           {
-            "title": { "hi": "बैक बॉडिस और स्लीव", "en": "Back Bodice & Sleeve" },
+            "title": {
+              "hi": "बैक बॉडिस और स्लीव",
+              "en": "Back Bodice & Sleeve"
+            },
             "hi": "बैक बॉडिस: फ्रंट जैसा ही लेकिन बैक नेक उथली (0.5–0.75 इंच)। कंधे का डार्ट: कंधे की रेखा पर 1 इंच चौड़ा। स्लीव: आयत (चौड़ाई = armhole गोलाई + 2 सेमी)। स्लीव कैप: ऊपर एक धनुषाकार कर्व।",
             "en": "Back bodice: same as front but back neck is shallower (0.5–0.75 inches). Shoulder dart: 1 inch wide on the shoulder line. Sleeve: rectangle (width = armhole circumference + 2 cm). Sleeve cap: a gentle arch at the top."
           }
         ],
         "tips": [
-          { "hi": "पैटर्न काटने से पहले सभी लाइनें एक बार और जाँचें — मापकर verify करें।", "en": "Before cutting the pattern, verify all lines once more — measure and double-check." },
-          { "hi": "हर पैटर्न पीस पर लिखें: नाम, साइज़, कितनी बार काटें, ग्रेन लाइन।", "en": "Label every pattern piece: name, size, how many times to cut, and grain line." },
-          { "hi": "पहला ब्लाउज़ हमेशा सूती कपड़े (trial piece) में बनाएं — असली कपड़े पर सीधे नहीं।", "en": "Always make the first blouse in a trial cotton fabric — never cut the real fabric without a toile first." },
-          { "hi": "आर्महोल कर्व को curve ruler से बनाएं — हाथ से खींचा कर्व आमतौर पर uneven होता है।", "en": "Draw the armhole curve with a curve ruler — hand-drawn curves are usually uneven." },
-          { "hi": "draft में सभी seam allowance को अलग रंग से mark करें — cutting line और sewing line दोनों दिखें।", "en": "Mark seam allowances in a different colour on your draft — both cutting line and sewing line should be visible." }
+          {
+            "hi": "पैटर्न काटने से पहले सभी लाइनें एक बार और जाँचें — मापकर verify करें।",
+            "en": "Before cutting the pattern, verify all lines once more — measure and double-check."
+          },
+          {
+            "hi": "हर पैटर्न पीस पर लिखें: नाम, साइज़, कितनी बार काटें, ग्रेन लाइन।",
+            "en": "Label every pattern piece: name, size, how many times to cut, and grain line."
+          },
+          {
+            "hi": "पहला ब्लाउज़ हमेशा सूती कपड़े (trial piece) में बनाएं — असली कपड़े पर सीधे नहीं।",
+            "en": "Always make the first blouse in a trial cotton fabric — never cut the real fabric without a toile first."
+          },
+          {
+            "hi": "आर्महोल कर्व को curve ruler से बनाएं — हाथ से खींचा कर्व आमतौर पर uneven होता है।",
+            "en": "Draw the armhole curve with a curve ruler — hand-drawn curves are usually uneven."
+          },
+          {
+            "hi": "draft में सभी seam allowance को अलग रंग से mark करें — cutting line और sewing line दोनों दिखें।",
+            "en": "Mark seam allowances in a different colour on your draft — both cutting line and sewing line should be visible."
+          }
         ]
       }
     },
@@ -1672,27 +2191,51 @@
         },
         "steps": [
           {
-            "title": { "hi": "निवी (Nivi) शैली — आंध्र / सबसे आम", "en": "Nivi Style — Andhra / Most Common" },
+            "title": {
+              "hi": "निवी (Nivi) शैली — आंध्र / सबसे आम",
+              "en": "Nivi Style — Andhra / Most Common"
+            },
             "hi": "टक एंड को पेटीकोट में दाईं ओर से टकें। साड़ी को बाईं ओर घुमाते हुए पूरे शरीर पर लपेटें। 5–7 प्लीट्स बनाएं (हर एक 4–5 इंच चौड़ी) और पेटीकोट में टकें — बीच में नाभि के पास। बाकी साड़ी को एक बार और घुमाएं, पल्लू बाएं कंधे पर डालें।",
             "en": "Tuck the tuck end into the petticoat at the right side. Wrap the saree leftward around the body. Make 5–7 pleats (each 4–5 inches wide) and tuck into the petticoat at the centre near the navel. Wrap remaining saree once more, drape pallu over left shoulder."
           },
           {
-            "title": { "hi": "बंगाली / अटपौरे शैली", "en": "Bengali / Atpoure Style" },
+            "title": {
+              "hi": "बंगाली / अटपौरे शैली",
+              "en": "Bengali / Atpoure Style"
+            },
             "hi": "बंगाली शैली की खासियत: पल्लू सामने की तरफ। टक एंड पीछे से शुरू। कोई कमरबंद नहीं — साड़ी ढीली घुमाई जाती है। पल्लू को सामने से लाकर गर्दन के ऊपर से पीछे की ओर ले जाएं। दाईं ओर से कंधे पर (पिन से fix करें)।",
             "en": "Bengali style hallmark: pallu at the front. Start from the back. No pinning at waist — the saree is draped loosely. Bring the pallu from the front, over the head, and back behind. Pin at the right shoulder."
           },
           {
-            "title": { "hi": "गुजराती / सीधा पल्लू", "en": "Gujarati / Seedha Pallu" },
+            "title": {
+              "hi": "गुजराती / सीधा पल्लू",
+              "en": "Gujarati / Seedha Pallu"
+            },
             "hi": "गुजराती शैली में पल्लू सामने की ओर — दाएं कंधे पर। पहले पेटीकोट में टकें। साड़ी को दाईं ओर घुमाकर शुरू करें। पल्लू को पीछे से लाकर दाएं कंधे पर पिन करें, बाकी सामने लहराएं। पल्लू पर पारंपरिक gota या mirror work ज़्यादा दिखती है।",
             "en": "In the Gujarati style, the pallu faces forward over the right shoulder. First tuck in the saree. Start draping from the right side. Bring the pallu from the back and pin it at the right shoulder, letting it fall forward. Traditional gota or mirror work shows best this way."
           }
         ],
         "tips": [
-          { "hi": "प्लीट्स बनाने से पहले साड़ी की लंबाई जाँचें — पल्लू ज़मीन से 6–8 इंच ऊँचा रहे।", "en": "Check the saree length before pleating — the pallu should be 6–8 inches above the floor." },
-          { "hi": "सेफ्टी पिन पल्लू को कंधे पर और प्लीट्स को पेटीकोट पर fix करने के लिए इस्तेमाल करें।", "en": "Use safety pins to fix the pallu at the shoulder and anchor the pleats to the petticoat." },
-          { "hi": "प्लीट्स की चौड़ाई एक जैसी रखें — एक पीस कागज़ का गाइड की तरह इस्तेमाल करें।", "en": "Keep pleats even in width — use a strip of card as a guide for consistent folding." },
-          { "hi": "पहली बार अभ्यास के लिए सूती साड़ी चुनें — रेशम और जॉर्जेट फिसलती हैं।", "en": "For practice, choose a cotton saree first — silk and georgette slip while draping." },
-          { "hi": "किसी अनुभवी से एक बार सीधे सिखवाएं — YouTube देखने से ज़्यादा तेज़ सीखेंगे।", "en": "Learn from an experienced person in person once — you'll learn faster than watching videos alone." }
+          {
+            "hi": "प्लीट्स बनाने से पहले साड़ी की लंबाई जाँचें — पल्लू ज़मीन से 6–8 इंच ऊँचा रहे।",
+            "en": "Check the saree length before pleating — the pallu should be 6–8 inches above the floor."
+          },
+          {
+            "hi": "सेफ्टी पिन पल्लू को कंधे पर और प्लीट्स को पेटीकोट पर fix करने के लिए इस्तेमाल करें।",
+            "en": "Use safety pins to fix the pallu at the shoulder and anchor the pleats to the petticoat."
+          },
+          {
+            "hi": "प्लीट्स की चौड़ाई एक जैसी रखें — एक पीस कागज़ का गाइड की तरह इस्तेमाल करें।",
+            "en": "Keep pleats even in width — use a strip of card as a guide for consistent folding."
+          },
+          {
+            "hi": "पहली बार अभ्यास के लिए सूती साड़ी चुनें — रेशम और जॉर्जेट फिसलती हैं।",
+            "en": "For practice, choose a cotton saree first — silk and georgette slip while draping."
+          },
+          {
+            "hi": "किसी अनुभवी से एक बार सीधे सिखवाएं — YouTube देखने से ज़्यादा तेज़ सीखेंगे।",
+            "en": "Learn from an experienced person in person once — you'll learn faster than watching videos alone."
+          }
         ]
       }
     },
@@ -1755,27 +2298,51 @@
         },
         "steps": [
           {
-            "title": { "hi": "डार्ट को प्रिंसेस सीम में बदलें", "en": "Convert Darts into Princess Seams" },
+            "title": {
+              "hi": "डार्ट को प्रिंसेस सीम में बदलें",
+              "en": "Convert Darts into Princess Seams"
+            },
             "hi": "बेसिक ब्लॉक पर apex पॉइंट को नाप लें। एक vertical रेखा shoulder से apex से होकर नीचे तक खींचें — यह princess seam की line है। ब्लॉक को इस रेखा पर काटें। साइड पैनल और सेंटर पैनल बनते हैं।",
             "en": "On the basic block, locate the apex point. Draw a vertical line from shoulder through the apex to the hem — this is the princess seam line. Cut the block along this line. This creates the side panel and centre panel."
           },
           {
-            "title": { "hi": "कर्व्ड सीम सिलना", "en": "Sewing the Curved Seam" },
+            "title": {
+              "hi": "कर्व्ड सीम सिलना",
+              "en": "Sewing the Curved Seam"
+            },
             "hi": "साइड पैनल के कर्व वाले किनारे पर notches (छोटे कट) लगाएं। इन्हें center panel के matching edge से पिन करें। धीरे-धीरे कर्व को सिलें — कपड़े को खींचें नहीं। सिलने के बाद सीम allowance को notch करें ताकि कर्व flat हो जाए।",
             "en": "Notch the curved edge of the side panel. Pin it to the matching edge of the centre panel. Sew the curve slowly — do not pull the fabric. After sewing, notch the seam allowance so the curve lies flat."
           },
           {
-            "title": { "hi": "बैक नेक डिज़ाइन", "en": "Back Neck Designs" },
+            "title": {
+              "hi": "बैक नेक डिज़ाइन",
+              "en": "Back Neck Designs"
+            },
             "hi": "कीहोल (Keyhole): बैक नेक पर गोल या बूँद-आकार का छेद। टाई-अप: स्ट्रैप्स से बाँधने वाला डिज़ाइन। बोट नेक: कंधे से कंधे तक चौड़ी, उथली नेक। डीप बैक: पीठ पर 'U' या 'V' आकार का गहरा कट। हर डिज़ाइन के लिए अलग ड्राफ्ट।",
             "en": "Keyhole: a round or teardrop-shaped opening at the back neck. Tie-up: design tied with straps. Boat neck: wide, shallow neck from shoulder to shoulder. Deep back: a deep U or V cut down the back. Each design requires a separate draft."
           }
         ],
         "tips": [
-          { "hi": "प्रिंसेस सीम के apex पर एक छोटा clip लगाएं — इससे कर्व की सिलाई आसान होती है।", "en": "Clip a small notch at the apex of the princess seam — it makes sewing the curve much easier." },
-          { "hi": "बैक नेक पर facing (अस्तर की पट्टी) लगाना न भूलें — यह किनारे को साफ और टिकाऊ बनाती है।", "en": "Don't forget to add a facing to the back neck — it keeps the edge clean and durable." },
-          { "hi": "प्रिंसेस कट ब्लाउज़ में प्रत्येक curved seam को press करने के बाद tailor's ham पर shape दें।", "en": "After sewing each curved seam in a princess-cut blouse, press over a tailor's ham to set the 3D shape." },
-          { "hi": "keyhole और tie-up back डिज़ाइन के लिए bias binding सबसे clean finish देता है।", "en": "Bias binding gives the cleanest finish for keyhole and tie-up back designs." },
-          { "hi": "Designer blouse stitching में 2mm छोटा stitch length रखें — curves ज़्यादा precise बनेंगे।", "en": "Use a 2 mm stitch length for designer blouse curves — it gives more precise and stable seams." }
+          {
+            "hi": "प्रिंसेस सीम के apex पर एक छोटा clip लगाएं — इससे कर्व की सिलाई आसान होती है।",
+            "en": "Clip a small notch at the apex of the princess seam — it makes sewing the curve much easier."
+          },
+          {
+            "hi": "बैक नेक पर facing (अस्तर की पट्टी) लगाना न भूलें — यह किनारे को साफ और टिकाऊ बनाती है।",
+            "en": "Don't forget to add a facing to the back neck — it keeps the edge clean and durable."
+          },
+          {
+            "hi": "प्रिंसेस कट ब्लाउज़ में प्रत्येक curved seam को press करने के बाद tailor's ham पर shape दें।",
+            "en": "After sewing each curved seam in a princess-cut blouse, press over a tailor's ham to set the 3D shape."
+          },
+          {
+            "hi": "keyhole और tie-up back डिज़ाइन के लिए bias binding सबसे clean finish देता है।",
+            "en": "Bias binding gives the cleanest finish for keyhole and tie-up back designs."
+          },
+          {
+            "hi": "Designer blouse stitching में 2mm छोटा stitch length रखें — curves ज़्यादा precise बनेंगे।",
+            "en": "Use a 2 mm stitch length for designer blouse curves — it gives more precise and stable seams."
+          }
         ]
       }
     },
@@ -1838,32 +2405,843 @@
         },
         "steps": [
           {
-            "title": { "hi": "लाइनिंग और कप पैडिंग", "en": "Lining & Cup Padding" },
+            "title": {
+              "hi": "लाइनिंग और कप पैडिंग",
+              "en": "Lining & Cup Padding"
+            },
             "hi": "ब्राइडल ब्लाउज़ में हमेशा दो परतें होती हैं: बाहरी (ज़री/कढ़ाई वाली) और लाइनिंग (silk या satin)। cup padding फोम या foam bra cup से होती है — apex के आसपास lining से fix करें। यह shape देती है और heavy embroidery को support करती है।",
             "en": "Bridal blouses always have two layers: outer (embroidered) and lining (silk or satin). Cup padding uses foam or foam bra cups — secure them around the apex from the lining side. This gives shape and supports heavy embroidery."
           },
           {
-            "title": { "hi": "Corset Boning", "en": "Corset Boning" },
+            "title": {
+              "hi": "Corset Boning",
+              "en": "Corset Boning"
+            },
             "hi": "Spiral boning (flex बोन) ब्लाउज़ की साइड सीम में डाला जाता है। यह कमर को shape देता है और ब्लाउज़ को ऊपर hold करता है। Boning casing (पतली पट्टी) को सीम के साथ सिलें, फिर boning अंदर डालें। लंबाई: नीचे के किनारे से 1 सेमी कम।",
             "en": "Spiral boning (flex bone) is inserted in the side seams of the blouse. It shapes the waist and holds the blouse up. Sew a boning casing (narrow strip) along the seam, then slide the boning in. Length: 1 cm shorter than the hem."
           },
           {
-            "title": { "hi": "भारी कढ़ाई के आसपास construction", "en": "Construction Around Heavy Embroidery" },
+            "title": {
+              "hi": "भारी कढ़ाई के आसपास construction",
+              "en": "Construction Around Heavy Embroidery"
+            },
             "hi": "कढ़ाई पहले करें, फिर काटें — heavy work से कपड़ा सिकुड़ सकता है। काटते समय कढ़ाई के designs को ध्यान में रखें — border centralized रहे। सिलाई करते समय कढ़ाई पर सीधे iron न करें — तौलिये पर उल्टा रखें।",
             "en": "Do the embroidery first, then cut — heavy work can shrink the fabric slightly. When cutting, keep the embroidery design in mind — borders should be centred. When ironing, never place the iron directly on embroidery — lay it face-down on a towel."
           },
           {
-            "title": { "hi": "Hook & Eye और Finishing", "en": "Hook & Eye and Finishing" },
+            "title": {
+              "hi": "Hook & Eye और Finishing",
+              "en": "Hook & Eye and Finishing"
+            },
             "hi": "ब्राइडल ब्लाउज़ में zip की जगह hook & eye लगाएं — 4–6 हुक, 1 इंच की दूरी पर। आखिरी finishing: lining को outer fabric से hand-stitch करें (slip stitch)। किनारों को piping से bind करें — यह professional look देता है।",
             "en": "Use hook & eye instead of a zip for bridal blouses — 4–6 hooks, 1 inch apart. Final finishing: hand-stitch the lining to the outer fabric (slip stitch). Bind all raw edges with piping — this gives a professional look."
           }
         ],
         "tips": [
-          { "hi": "ब्राइडल ब्लाउज़ की fitting कम से कम 3 बार करें — बारात के दिन surprise नहीं चाहिए।", "en": "Fit a bridal blouse at least 3 times — there are no pleasant surprises on the wedding day." },
-          { "hi": "ज़री और beadwork वाले कपड़े को dry-clean करें — धोने से बर्बाद हो सकता है।", "en": "Dry-clean all zari and beadwork fabric — washing can ruin the embellishments." },
-          { "hi": "भारी कढ़ाई वाले ब्लाउज़ में बोनिंग ज़रूरी है — बिना support के ब्लाउज़ घंटों में ढीला पड़ जाता है।", "en": "Boning is essential in heavily embroidered blouses — without support they droop within hours." },
-          { "hi": "Cup padding को lining से slip-stitch करें — बोनिंग के बाद नहीं, पहले।", "en": "Slip-stitch cup padding to the lining before inserting boning — not after." },
-          { "hi": "Bridal blouse delivery से पहले दुल्हन से एक बार पूरे लहंगे/साड़ी के साथ wearing test करवाएं।", "en": "Before delivering the bridal blouse, have the bride do a full wearing test with the lehenga or saree." }
+          {
+            "hi": "ब्राइडल ब्लाउज़ की fitting कम से कम 3 बार करें — बारात के दिन surprise नहीं चाहिए।",
+            "en": "Fit a bridal blouse at least 3 times — there are no pleasant surprises on the wedding day."
+          },
+          {
+            "hi": "ज़री और beadwork वाले कपड़े को dry-clean करें — धोने से बर्बाद हो सकता है।",
+            "en": "Dry-clean all zari and beadwork fabric — washing can ruin the embellishments."
+          },
+          {
+            "hi": "भारी कढ़ाई वाले ब्लाउज़ में बोनिंग ज़रूरी है — बिना support के ब्लाउज़ घंटों में ढीला पड़ जाता है।",
+            "en": "Boning is essential in heavily embroidered blouses — without support they droop within hours."
+          },
+          {
+            "hi": "Cup padding को lining से slip-stitch करें — बोनिंग के बाद नहीं, पहले।",
+            "en": "Slip-stitch cup padding to the lining before inserting boning — not after."
+          },
+          {
+            "hi": "Bridal blouse delivery से पहले दुल्हन से एक बार पूरे लहंगे/साड़ी के साथ wearing test करवाएं।",
+            "en": "Before delivering the bridal blouse, have the bride do a full wearing test with the lehenga or saree."
+          }
+        ]
+      }
+    },
+    {
+      "id": "L-B-measurements-00",
+      "topic": "measurements",
+      "level": "beginner",
+      "title": {
+        "hi": "शरीर के बुनियादी नाप / शरीर की नींव",
+        "en": "Body Measurements: The Foundation"
+      },
+      "duration": 20,
+      "summary": {
+        "hi": "इस पाठ में आप सीखेंगे कि बस्ट, कमर, हिप, पीठ की लंबाई और आस्तीन की लंबाई कैसे नापें। सही मुद्रा, टेप तकनीक और ईज़ एलाउंस की बुनियादी जानकारी भी दी जाएगी।",
+        "en": "In this lesson you will learn how to take bust, waist, hip, back length, and sleeve length measurements. Proper posture, tape technique, and ease allowance basics are also covered."
+      },
+      "objectives": {
+        "hi": [
+          "मेज़रमेंट टेप को सही तरीके से पकड़ना और उपयोग करना सीखें",
+          "बस्ट, कमर और हिप की सटीक माप लेना सीखें",
+          "पीठ की लंबाई और आस्तीन की लंबाई मापना सीखें",
+          "ईज़ एलाउंस क्या है और इसे माप में कैसे जोड़ें, यह समझें"
+        ],
+        "en": [
+          "Learn to hold and use a measuring tape correctly",
+          "Take accurate bust, waist, and hip measurements",
+          "Measure back length and sleeve length",
+          "Understand ease allowance and how to add it to measurements"
+        ]
+      },
+      "illustration": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Placeholder.png",
+      "videos": [
+        {
+          "title": "How to Take Body Measurements for Sewing",
+          "channel": "Professor Pincushion",
+          "url": "https://www.youtube.com/watch?v=oBnFRnlF5Bo",
+          "lang": "en"
+        },
+        {
+          "title": "शरीर की नाप कैसे लें - सिलाई के लिए",
+          "channel": "Sewing Hindi Tutorials",
+          "url": "https://www.youtube.com/results?search_query=body+measurements+for+stitching+hindi",
+          "lang": "hi"
+        }
+      ],
+      "references": [
+        {
+          "title": "Body Measurements Guide",
+          "source": "Threads Magazine",
+          "url": "https://www.threadsmagazine.com/2011/08/02/how-to-take-your-body-measurements"
+        },
+        {
+          "title": "Ease in Sewing Explained",
+          "source": "Craftsy",
+          "url": "https://www.craftsy.com/post/sewing-ease/"
+        }
+      ],
+      "content": {
+        "intro": {
+          "hi": "किसी भी कपड़े को सही तरह से सिलने के लिए सबसे पहले शरीर की सही नाप लेना ज़रूरी है। गलत नाप से कपड़ा बहुत ढीला या बहुत तंग बन जाता है। इस पाठ में हम सीखेंगे कि मेज़रमेंट टेप का उपयोग कैसे करें, कहाँ-कहाँ नाप लें, और ईज़ एलाउंस कैसे जोड़ें।",
+          "en": "Taking accurate body measurements is the very first step before sewing any garment. Incorrect measurements result in clothes that are too loose or too tight. In this lesson we will learn how to use a measuring tape, where to take each measurement, and how to add ease allowance."
+        },
+        "steps": [
+          {
+            "title": {
+              "hi": "तैयारी और मुद्रा",
+              "en": "Preparation & Posture"
+            },
+            "hi": "नाप लेने से पहले व्यक्ति को सीधे खड़े होने के लिए कहें — कंधे सीधे, पैर मिले हुए, हाथ बाजू में। ढीले या बहुत मोटे कपड़े न पहने हों। यदि संभव हो तो हल्के-फिटिंग इनरवेयर में नाप लें। एक अच्छी गुणवत्ता का 150 सेमी (60 इंच) मेज़रमेंट टेप लें। टेप न मुड़ा हो, न खिंचा हो।",
+            "en": "Ask the person to stand straight — shoulders back, feet together, arms at sides. Avoid measuring over thick or loose clothing; measuring in fitted innerwear gives the most accurate results. Use a good-quality 150 cm (60 inch) measuring tape that is neither twisted nor stretched."
+          },
+          {
+            "title": {
+              "hi": "बस्ट (सीना) की नाप",
+              "en": "Bust Measurement"
+            },
+            "hi": "टेप को सीने के सबसे चौड़े हिस्से पर, यानी निप्पल लाइन पर, क्षैतिज रूप से लपेटें। टेप पीठ पर भी सीधी रहनी चाहिए। टेप इतनी ढीली हो कि एक उंगली अंदर जा सके, लेकिन लटकनी नहीं चाहिए। यह माप सेंटीमीटर या इंच में नोट करें। उदाहरण: 90 सेमी या 36 इंच।",
+            "en": "Wrap the tape horizontally around the fullest part of the chest, at the nipple line, ensuring it remains level across the back. The tape should be snug enough to stay up but loose enough to slip one finger underneath. Note this measurement in centimetres or inches, e.g. 90 cm or 36 inches."
+          },
+          {
+            "title": {
+              "hi": "कमर (वेस्ट) की नाप",
+              "en": "Waist Measurement"
+            },
+            "hi": "कमर की सबसे पतली जगह पर टेप लपेटें — यह आमतौर पर नाभि से थोड़ा ऊपर होती है। व्यक्ति को सामान्य सांस लेने के बाद सांस छोड़ने पर नाप लें। पेट अंदर न खींचें। टेप क्षैतिज रहे। एक उंगली का गैप रखें। उदाहरण: 70 सेमी या 28 इंच।",
+            "en": "Wrap the tape around the narrowest part of the torso, usually just above the navel. Measure after the person exhales normally — they should not hold their stomach in. Keep the tape horizontal and allow one finger of ease. Example: 70 cm or 28 inches."
+          },
+          {
+            "title": {
+              "hi": "हिप (कूल्हे) की नाप",
+              "en": "Hip Measurement"
+            },
+            "hi": "हिप की सबसे चौड़ी जगह पर नाप लें — यह आमतौर पर कमर से 18–23 सेमी (7–9 इंच) नीचे होती है। टेप को नितंबों के उभार पर क्षैतिज रूप से लपेटें। टेप पीछे भी सीधी रहनी चाहिए। एक उंगली का गैप रखें। उदाहरण: 96 सेमी या 38 इंच।",
+            "en": "Measure around the fullest part of the hips and seat, usually 18–23 cm (7–9 inches) below the waist. Keep the tape horizontal across the widest point of the buttocks and allow one finger of ease. Example: 96 cm or 38 inches."
+          },
+          {
+            "title": {
+              "hi": "पीठ की लंबाई (बैक लेंथ)",
+              "en": "Back Length"
+            },
+            "hi": "व्यक्ति के पीछे जाएं। गर्दन के सबसे उभरे हड्डी (7वीं सर्वाइकल वर्टीब्रा) से लेकर कमर तक टेप लगाएं। सिर थोड़ा आगे झुकाने से यह हड्डी साफ़ दिखती है। यह नाप ब्लाउज़ और कुर्ती की लंबाई तय करने में काम आती है। उदाहरण: 38 सेमी या 15 इंच।",
+            "en": "Stand behind the person and measure from the most prominent bone at the base of the neck (7th cervical vertebra) straight down to the natural waist. Asking the person to tilt their head slightly forward makes this bone more visible. This measurement determines the length of blouses and kurtis. Example: 38 cm or 15 inches."
+          },
+          {
+            "title": {
+              "hi": "आस्तीन की लंबाई (स्लीव लेंथ) और ईज़ एलाउंस",
+              "en": "Sleeve Length & Ease Allowance"
+            },
+            "hi": "बांह को हल्का मोड़कर कंधे के बिंदु (शोल्डर पॉइंट) से कलाई की हड्डी तक नाप लें। यह फुल स्लीव की लंबाई है। छोटी आस्तीन के लिए कोहनी तक नापें। ईज़ एलाउंस: सिले हुए कपड़े में हिलने-डुलने के लिए जगह होनी चाहिए। ब्लाउज़ में बस्ट पर 2.5–5 सेमी ईज़ जोड़ें। आरामदायक पहनावे के लिए और ज़्यादा ईज़ जोड़ा जाता है।",
+            "en": "With the arm slightly bent, measure from the shoulder point down to the wrist bone for full sleeve length; measure to the elbow for short sleeves. Ease allowance is the extra room built into a garment for comfort and movement. Add 2.5–5 cm of ease to the bust measurement for a close-fitting blouse, and more for casual or relaxed styles."
+          }
+        ],
+        "tips": [
+          {
+            "hi": "हमेशा एक नोटबुक में नाप लिखें — केवल याददाश्त पर निर्भर न रहें। नाम, तारीख और नाप तीनों लिखें।",
+            "en": "Always write measurements in a notebook — never rely on memory alone. Record the name, date, and all measurements together."
+          },
+          {
+            "hi": "नाप दो बार लें और मिलाएं। पहली और दूसरी नाप में ज़्यादा फर्क हो तो तीसरी बार नापें।",
+            "en": "Take each measurement twice and compare. If the two readings differ significantly, measure a third time and use the most consistent value."
+          },
+          {
+            "hi": "टेप को कभी खींचकर न नापें — इससे नाप छोटी आ जाती है और कपड़ा तंग बनता है।",
+            "en": "Never pull the tape tight while measuring — this gives a falsely small reading and results in garments that are too tight."
+          },
+          {
+            "hi": "गर्भावस्था, वज़न में बदलाव या बच्चों के लिए हर 3–6 महीने में नाप दोबारा लें क्योंकि शरीर बदलता रहता है।",
+            "en": "For pregnant clients, growing children, or anyone with changing weight, re-take measurements every 3–6 months as body proportions change over time."
+          }
+        ]
+      }
+    },
+    {
+      "id": "L-I-fabrics-02",
+      "topic": "fabrics",
+      "level": "intermediate",
+      "title": {
+        "hi": "कपड़े की देखभाल: धुलाई, इस्त्री और भंडारण",
+        "en": "Fabric Care: Washing, Ironing & Storage"
+      },
+      "duration": 25,
+      "summary": {
+        "hi": "इस पाठ में कपड़ों पर लगे केयर लेबल के चिह्न पढ़ना, अलग-अलग कपड़ों के लिए धुलाई का तापमान, इस्त्री की सेटिंग, और रेशम, कॉटन व सिंथेटिक कपड़ों को मोड़कर स्टोर करने का सही तरीका सीखेंगे।",
+        "en": "This lesson covers reading care label symbols on fabrics, washing temperatures for different fabric types, ironing heat settings, and the correct way to fold and store silk, cotton, and synthetic fabrics. Pre-washing before cutting is also explained."
+      },
+      "objectives": {
+        "hi": [
+          "कपड़े के केयर लेबल पर बने अंतर्राष्ट्रीय चिह्नों को पहचानना और समझना सीखें",
+          "रेशम, कॉटन, ऊन और सिंथेटिक के लिए सही धुलाई तापमान जानें",
+          "इस्त्री की सही गर्मी सेटिंग चुनना सीखें",
+          "कपड़ों को लंबे समय तक सुरक्षित रखने के लिए सही भंडारण के तरीके अपनाएं",
+          "काटने से पहले कपड़े को प्री-वॉश क्यों करें, यह समझें"
+        ],
+        "en": [
+          "Recognise and interpret international care label symbols on fabrics",
+          "Know the correct washing temperatures for silk, cotton, wool, and synthetics",
+          "Choose the right ironing heat setting for each fabric",
+          "Adopt proper storage methods to keep fabrics safe long-term",
+          "Understand why pre-washing fabric before cutting is essential"
+        ]
+      },
+      "illustration": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Placeholder.png",
+      "videos": [
+        {
+          "title": "How to Read Fabric Care Labels",
+          "channel": "Made to Sew",
+          "url": "https://www.youtube.com/results?search_query=how+to+read+fabric+care+labels+sewing",
+          "lang": "en"
+        },
+        {
+          "title": "कपड़े की देखभाल और धुलाई के तरीके",
+          "channel": "Sewing Hindi",
+          "url": "https://www.youtube.com/results?search_query=kapde+ki+dekhbhal+dhulai+silai+hindi",
+          "lang": "hi"
+        }
+      ],
+      "references": [
+        {
+          "title": "Fabric Care Symbols Guide",
+          "source": "GINETEX International",
+          "url": "https://www.ginetex.net/en/care-labelling/care-symbols/"
+        },
+        {
+          "title": "Pre-washing Fabric Before Sewing",
+          "source": "Seamwork Magazine",
+          "url": "https://www.seamwork.com/articles/pre-washing-fabric"
+        }
+      ],
+      "content": {
+        "intro": {
+          "hi": "अच्छा सिला हुआ कपड़ा भी अगर सही देखभाल न हो तो जल्दी खराब हो जाता है। कपड़े की धुलाई, इस्त्री और भंडारण में थोड़ी सी लापरवाही से रंग उड़ सकता है, कपड़ा सिकुड़ सकता है या उसकी चमक जा सकती है। इस पाठ में हम सीखेंगे कि हर प्रकार के कपड़े की सही देखभाल कैसे करें।",
+          "en": "Even a beautifully stitched garment will deteriorate quickly without proper care. Small mistakes in washing, ironing, or storing fabric can cause colour fading, shrinkage, or loss of sheen. In this lesson we will learn how to care correctly for each type of fabric."
+        },
+        "steps": [
+          {
+            "title": {
+              "hi": "केयर लेबल के चिह्न पढ़ना",
+              "en": "Reading Care Label Symbols"
+            },
+            "hi": "हर कपड़े के टुकड़े पर या तैयार कपड़े की सिलाई में एक छोटा लेबल लगा होता है जिस पर अंतर्राष्ट्रीय चिह्न होते हैं। टब का चिह्न — धुलाई के लिए; तिकोना — ब्लीच के लिए; लोहे का चिह्न — इस्त्री के लिए; गोला — ड्राई क्लीन के लिए; वर्ग — ड्रायर के लिए। टब पर अंक जैसे 30, 40, 60 का मतलब है उस तापमान (°C) पर धोएं। X का निशान मतलब वह काम न करें।",
+            "en": "Every fabric piece or finished garment has a small care label sewn in, bearing international symbols. A tub symbol indicates washing instructions; a triangle means bleaching guidance; an iron symbol covers ironing; a circle means dry clean; a square covers tumble drying. Numbers inside the tub (30, 40, 60) indicate the maximum wash temperature in °C. An X through any symbol means do NOT perform that action."
+          },
+          {
+            "title": {
+              "hi": "धुलाई का तापमान — कपड़े के अनुसार",
+              "en": "Washing Temperatures by Fabric Type"
+            },
+            "hi": "कॉटन (सूती): 40–60°C पर मशीन में धो सकते हैं। गहरे रंग के कॉटन को 30°C पर धोएं ताकि रंग न उड़े। रेशम (सिल्क): हमेशा ठंडे पानी (30°C या कम) में हल्के हाथ से या 'डेलिकेट' साइकिल पर धोएं। कभी गर्म पानी में न डालें। ऊन (वूल): 30°C से कम, वूल साइकिल पर। गर्म पानी से ऊन सिकुड़ जाती है। सिंथेटिक (पॉलिएस्टर, नायलॉन): 30–40°C पर। बहुत गर्म पानी से सिंथेटिक कपड़े पिघल सकते हैं। ब्रोकेड और जरी: हमेशा ड्राई क्लीन करवाएं।",
+            "en": "Cotton: machine wash at 40–60°C; wash dark cottons at 30°C to prevent colour bleed. Silk: always cold water (30°C or below), gentle hand wash or delicate cycle; never use hot water. Wool: below 30°C on a wool cycle; hot water causes irreversible shrinkage. Synthetics (polyester, nylon): 30–40°C; excessive heat can cause fibres to melt or distort. Brocade and zari-embellished fabrics: always dry clean only."
+          },
+          {
+            "title": {
+              "hi": "इस्त्री की गर्मी सेटिंग",
+              "en": "Ironing Temperature Settings"
+            },
+            "hi": "इस्त्री पर आमतौर पर एक से तीन बिंदु (•, ••, •••) होते हैं। एक बिंदु (110°C): सिंथेटिक जैसे नायलॉन, एसीटेट। दो बिंदु (150°C): रेशम और ऊन — इन पर सीधे इस्त्री न करें; पतला कपड़ा रखकर इस्त्री करें। तीन बिंदु (200°C): कॉटन और लिनन। कभी भी सिंथेटिक पर ज़्यादा गर्म इस्त्री न करें — कपड़ा पिघल जाएगा। रेशम पर सीधे इस्त्री करने से दाग पड़ सकते हैं।",
+            "en": "Most irons are marked with one to three dots. One dot (110°C): synthetics such as nylon and acetate. Two dots (150°C): silk and wool — always use a pressing cloth between the iron and fabric. Three dots (200°C): cotton and linen. Never use a high-heat setting on synthetics as fibres will melt. Ironing silk directly can cause permanent sheen marks; always use a damp pressing cloth."
+          },
+          {
+            "title": {
+              "hi": "काटने से पहले प्री-वॉश क्यों ज़रूरी है",
+              "en": "Why Pre-washing Before Cutting Is Essential"
+            },
+            "hi": "अधिकांश प्राकृतिक कपड़े जैसे कॉटन और लिनन पहली धुलाई में 3–5% सिकुड़ सकते हैं। अगर कपड़े को काटने और सिलने के बाद पहली बार धोया जाए तो पूरा कपड़ा छोटा हो जाएगा। इसलिए कपड़ा खरीदने के बाद उसे काटने से पहले एक बार धोएं और सुखाएं। रेशम और ब्रोकेड का प्री-वॉश नहीं होता — इन्हें ड्राई क्लीन के लिए ही तैयार करें। प्री-वॉश से रंग की पक्की जांच भी हो जाती है।",
+            "en": "Most natural fabrics such as cotton and linen can shrink 3–5% in the first wash. If you cut and sew first and then wash, the finished garment will shrink and no longer fit correctly. Always wash and dry fabric before cutting, using the same method you intend to use long-term. Silk and brocade are exceptions — prepare these for dry cleaning only. Pre-washing also reveals whether the dye bleeds."
+          },
+          {
+            "title": {
+              "hi": "कॉटन और लिनन को मोड़कर रखना",
+              "en": "Folding & Storing Cotton and Linen"
+            },
+            "hi": "कॉटन और लिनन को साफ, सूखे हाथों से मोड़ें। लंबे समय के भंडारण के लिए इन्हें अखबार में न लपेटें — प्रिंटर की स्याही दाग सकती है। कपड़े की दुकानों की तरह थान बनाकर रखें या शेल्फ पर सपाट रखें। नमी से बचाएं। कीड़ों से बचाने के लिए नीम की पत्तियां या सिलिका जेल पैकेट रखें।",
+            "en": "Fold cotton and linen with clean, dry hands. For long-term storage, do not wrap them in newspaper as printing ink can transfer and stain the fabric. Store folded flat on shelves, similar to how fabric shops keep their bolts. Keep away from moisture and direct sunlight. Place neem leaves or silica gel packets nearby to prevent insects and mildew."
+          },
+          {
+            "title": {
+              "hi": "रेशम और सिंथेटिक को सही तरह स्टोर करना",
+              "en": "Storing Silk and Synthetic Fabrics"
+            },
+            "hi": "रेशम को हमेशा मलमल के कपड़े या सूती कवर में लपेटकर रखें — प्लास्टिक बैग में रेशम को नमी मिल सकती है और फफूंद लग सकती है। रेशम को कभी अखबार के पास न रखें। सिंथेटिक कपड़े (पॉलिएस्टर, जॉर्जेट) प्लास्टिक में रख सकते हैं लेकिन पूरी तरह बंद न करें — थोड़ी हवा लगनी चाहिए। लंबे समय के भंडारण के लिए रेशम को हर कुछ महीनों में दोबारा मोड़ें ताकि मोड़ की रेखाएं न पड़ें।",
+            "en": "Always wrap silk in muslin or cotton fabric covers — plastic bags trap moisture and cause mildew on silk. Never store silk near newspaper. Synthetic fabrics (polyester, georgette) can be stored in plastic but do not seal them completely — some air circulation is needed. For long-term storage of silk, refold every few months to prevent permanent crease lines forming along the fold."
+          }
+        ],
+        "tips": [
+          {
+            "hi": "धोने से पहले कपड़े को उल्टा (inside out) करें — इससे बाहरी रंग और बुनाई लंबे समय तक टिकती है।",
+            "en": "Turn garments inside out before washing — this protects the outer colour and weave from friction and keeps them looking new longer."
+          },
+          {
+            "hi": "रेशम पर कभी सीधा पानी न छिड़कें — पानी के धब्बे पड़ जाते हैं। इस्त्री के लिए नम कपड़ा बीच में रखें।",
+            "en": "Never spray water directly onto silk — it leaves water spots. Always use a damp pressing cloth between the iron and silk fabric."
+          },
+          {
+            "hi": "जरी और कढ़ाई वाले कपड़े को हमेशा उल्टा लपेटकर मोड़ें ताकि कढ़ाई का धागा न टूटे और जरी चमकती रहे।",
+            "en": "Always fold embroidered and zari fabrics with the right side inward so the threads and metallic work do not snag or flatten during storage."
+          },
+          {
+            "hi": "ऊनी कपड़े को लटकाकर (हैंगर पर) न रखें — वज़न से कपड़ा खिंच जाता है। हमेशा मोड़कर रखें।",
+            "en": "Never hang woollen fabrics on a hanger for long-term storage — the weight causes them to stretch out of shape. Always store folded flat."
+          },
+          {
+            "hi": "नए कपड़े का एक छोटा टुकड़ा बचाकर रखें और उस पर पहले इस्त्री टेस्ट करें — खासकर अनजान कपड़े पर।",
+            "en": "Save a small scrap of new fabric and test the iron on it first — especially when working with an unfamiliar material."
+          }
+        ]
+      }
+    },
+    {
+      "id": "L-A-stitches-03",
+      "topic": "stitches",
+      "level": "advanced",
+      "title": {
+        "hi": "बटनहोल, ज़िप और क्लोज़र",
+        "en": "Buttonholes, Zippers & Closures"
+      },
+      "duration": 35,
+      "summary": {
+        "hi": "इस पाठ में मशीन बटनहोल तकनीक, हाथ से काटकर बनाए जाने वाले बटनहोल की फिनिशिंग, इनविज़िबल ज़िप लगाना, लैप्ड ज़िप विधि और हुक-एंड-आई की सही जगह और लगाने का तरीका सीखेंगे।",
+        "en": "This lesson covers the machine buttonhole technique, hand-cut buttonhole finishing, invisible zip insertion, lapped zip method, and correct placement and stitching of hook-and-eye closures."
+      },
+      "objectives": {
+        "hi": [
+          "मशीन पर चार-स्टेप बटनहोल बनाना सीखें",
+          "बटनहोल को सीम रिपर से काटकर साफ फिनिश करना सीखें",
+          "इनविज़िबल ज़िप को बिना दिखे लगाना सीखें",
+          "लैप्ड ज़िप की पारंपरिक विधि अपनाएं",
+          "हुक-एंड-आई की सही जगह और हाथ से टांका लगाना सीखें"
+        ],
+        "en": [
+          "Sew a four-step machine buttonhole",
+          "Cut open and cleanly finish a buttonhole with a seam ripper",
+          "Insert an invisible zip so it is completely hidden",
+          "Apply a lapped zip using the traditional method",
+          "Place and hand-stitch hook-and-eye closures correctly"
+        ]
+      },
+      "illustration": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Placeholder.png",
+      "videos": [
+        {
+          "title": "How to Sew a Buttonhole and Insert a Zipper",
+          "channel": "Angela Wolf",
+          "url": "https://www.youtube.com/results?search_query=machine+buttonhole+invisible+zipper+sewing+tutorial",
+          "lang": "en"
+        },
+        {
+          "title": "ज़िप और बटनहोल लगाने का तरीका",
+          "channel": "Silai Ghar Hindi",
+          "url": "https://www.youtube.com/results?search_query=zip+buttonhole+lagane+ka+tarika+hindi+silai",
+          "lang": "hi"
+        }
+      ],
+      "references": [
+        {
+          "title": "Zipper Insertion Techniques",
+          "source": "Threads Magazine",
+          "url": "https://www.threadsmagazine.com/2013/08/14/5-ways-to-insert-a-zipper"
+        },
+        {
+          "title": "Buttonhole Guide for Home Sewers",
+          "source": "Craftsy Blog",
+          "url": "https://www.craftsy.com/post/how-to-sew-a-buttonhole/"
+        }
+      ],
+      "content": {
+        "intro": {
+          "hi": "किसी भी परिधान की पेशेवर फिनिशिंग उसके क्लोज़र पर निर्भर करती है। बटनहोल का टेढ़ा होना, ज़िप का दिखना या हुक का ढीला होना — ये सब कपड़े की गुणवत्ता को कम करते हैं। इस पाठ में हम सीखेंगे कि मशीन और हाथ दोनों से क्लोज़र कैसे बनाएं।",
+          "en": "The professional finish of any garment depends largely on its closures. A crooked buttonhole, a visible zip, or a loose hook all reduce the perceived quality of the work. In this lesson we will learn how to create closures both by machine and by hand."
+        },
+        "steps": [
+          {
+            "title": {
+              "hi": "मशीन बटनहोल: तैयारी और माप",
+              "en": "Machine Buttonhole: Preparation & Marking"
+            },
+            "hi": "पहले बटन की चौड़ाई और मोटाई मापें। बटनहोल की लंबाई = बटन का व्यास + मोटाई + 3 मिमी (गैप के लिए)। कपड़े पर चॉक या वॉटर-सॉल्युबल पेन से बटनहोल की जगह और लंबाई मार्क करें। इंटरफेसिंग लगाएं — हर बटनहोल के नीचे इंटरफेसिंग ज़रूरी है ताकि कपड़ा खिंचे न। मशीन पर बटनहोल फुट लगाएं और बटन को उसके स्लॉट में फिट करें (ऑटो-साइज़ के लिए)।",
+            "en": "First measure the button's diameter and thickness. Buttonhole length = button diameter + thickness + 3 mm for ease. Mark the buttonhole position and length on the fabric using tailor's chalk or a water-soluble pen. Apply interfacing behind every buttonhole position so the fabric does not stretch during stitching. Attach the buttonhole foot to your machine and place the button in its slot if using auto-size buttonhole mode."
+          },
+          {
+            "title": {
+              "hi": "मशीन बटनहोल: चार चरणों में सिलाई",
+              "en": "Machine Buttonhole: Sewing in Four Steps"
+            },
+            "hi": "अधिकांश घरेलू मशीनों में चार-स्टेप बटनहोल होता है। चरण 1: बायीं तरफ की साटिन सिलाई नीचे की ओर। चरण 2: नीचे का बार टैक। चरण 3: दायीं तरफ की साटिन सिलाई ऊपर की ओर। चरण 4: ऊपर का बार टैक। हर बटनहोल एक ही सेटिंग पर बनाएं ताकि सभी एक जैसे दिखें। सिलाई के बाद कपड़े के पीछे धागों को गाँठ लगाकर काटें।",
+            "en": "Most domestic machines use a four-step buttonhole. Step 1: left side satin stitching downward. Step 2: bottom bar tack. Step 3: right side satin stitching upward. Step 4: top bar tack. Sew all buttonholes at the same settings to keep them consistent. After sewing, pull threads to the back and secure with a knot before trimming."
+          },
+          {
+            "title": {
+              "hi": "बटनहोल काटना और हाथ से फिनिशिंग",
+              "en": "Cutting Open & Hand-finishing Buttonholes"
+            },
+            "hi": "एक पिन को बटनहोल के एक सिरे पर रखें ताकि सीम रिपर ज़्यादा न जाए। सीम रिपर से बटनहोल के बीच की लाइन को सावधानी से काटें। कटे हुए किनारों को बटनहोल स्टिच (ओवरकास्ट स्टिच) से हाथ से मज़बूत करें — खासकर हल्के या बुने हुए कपड़े पर। कपड़े के किनारों को उधड़ने से बचाने के लिए फ्रे-चेक लिक्विड भी लगा सकते हैं।",
+            "en": "Place a pin across one end of the buttonhole to act as a stop so the seam ripper does not travel too far. Carefully cut down the centre of the buttonhole using a seam ripper. Reinforce the cut edges with hand buttonhole stitch (overcast stitch) — especially important on lightweight or loosely woven fabrics. Fray-check liquid applied to the cut edges is a quick alternative to hand stitching."
+          },
+          {
+            "title": {
+              "hi": "इनविज़िबल ज़िप लगाना",
+              "en": "Inserting an Invisible Zip"
+            },
+            "hi": "इनविज़िबल ज़िप को पहले बिना दबाए खोलें और कॉइल को पीछे की तरफ मोड़ें (आयरन से हल्का गर्म करके)। ज़िप को कपड़े के दाहिने तरफ रखें — ज़िप का दाहिना हिस्सा कपड़े के दाहिने किनारे से। इनविज़िबल ज़िप फुट लगाएं और कॉइल को फुट के खाँचे में डालकर सिलें। दोनों तरफ अलग-अलग सिलें। नीचे का सिरा सिलने के बाद नियमित ज़िप फुट से सीम बंद करें।",
+            "en": "Before inserting, open the invisible zip and uncurl the coil by pressing it gently with a warm iron. Place the zip right side down on the right side of the fabric, aligning the zip tape edge with the fabric's seam allowance edge. Attach the invisible zipper foot, slot the coil into the foot's groove, and stitch close to the coil. Sew each side separately. After both sides are stitched, switch to a regular zip foot to close the remaining seam below the zip."
+          },
+          {
+            "title": {
+              "hi": "लैप्ड ज़िप विधि",
+              "en": "Lapped Zip Method"
+            },
+            "hi": "लैप्ड ज़िप में ज़िप के ऊपर कपड़े की एक परत (लैप) होती है जो ज़िप को ढक लेती है। सीम को अस्थायी रूप से बंद करें (बेस्टिंग)। ज़िप को सीम के पीछे की तरफ रखकर दायीं पट्टी को पहले सिलें। फिर बेस्टिंग हटाएं और ज़िप की बायीं पट्टी को कपड़े की लैप से ढककर किनारे से 6 मिमी अंदर टॉपस्टिच करें। यह विधि स्कर्ट और सलवार में सबसे ज़्यादा उपयोग होती है।",
+            "en": "In a lapped zip, one fold of fabric covers the zip entirely. Begin by temporarily closing the seam with basting stitches. Place the zip face-down behind the seam and stitch the right side of the zip tape first. Remove the basting, then fold the left seam allowance over the zip and topstitch 6 mm from the fold line. This method is most commonly used in skirts and salwar seams."
+          },
+          {
+            "title": {
+              "hi": "हुक-एंड-आई की जगह और हाथ से टांका",
+              "en": "Hook-and-Eye Placement & Hand Stitching"
+            },
+            "hi": "हुक को कपड़े के किनारे से 3 मिमी अंदर रखें। हुक की गोल लूप में ओवरकास्ट स्टिच से 4–6 बार धागा डालें। हुक के दोनों तरफ कपड़े पर भी कुछ टाँके लगाएं ताकि हिले नहीं। आई (आँख) को ठीक सामने वाले किनारे पर रखें — किनारे के बाहर निकली हुई या किनारे पर — ज़रूरत के अनुसार। भारी कपड़ों में एक से ज़्यादा हुक-एंड-आई लगाएं।",
+            "en": "Position the hook 3 mm from the fabric edge. Secure each loop of the hook with 4–6 overcast stitches, then take a few stitches through the fabric on each side of the hook shank to prevent movement. Place the eye directly opposite on the other edge — either projecting slightly beyond the edge (for edges that meet) or flat on the edge (for edges that overlap). For heavier fabrics such as waistbands, use multiple hook-and-eye sets spaced evenly."
+          }
+        ],
+        "tips": [
+          {
+            "hi": "बटनहोल सिलने से पहले हमेशा एक स्क्रैप कपड़े पर टेस्ट बटनहोल बनाएं — लंबाई और सिलाई की घनता जाँचें।",
+            "en": "Always sew a test buttonhole on a scrap of the same fabric and interfacing before sewing on the garment — check length and stitch density before committing."
+          },
+          {
+            "hi": "इनविज़िबल ज़िप लगाते समय कॉइल को इस्त्री से सीधा करना न भूलें — यह कदम न करने पर ज़िप सही नहीं बैठती।",
+            "en": "Do not skip pressing the coil of an invisible zip before insertion — uncurling it is the single most important step for a perfectly flat, invisible result."
+          },
+          {
+            "hi": "ज़िप का रंग हमेशा कपड़े के रंग से मिलाएं। अगर बिल्कुल मेल न हो तो थोड़ा गहरा रंग हल्के रंग से बेहतर होता है।",
+            "en": "Always match zip colour to the fabric. If an exact match is unavailable, a slightly darker shade is less visible than a lighter one against the fabric."
+          },
+          {
+            "hi": "हुक-एंड-आई को मज़बूत करने के लिए धागे को हमेशा डबल करके उपयोग करें और अंत में मज़बूत गाँठ लगाएं।",
+            "en": "Always use doubled thread when hand-sewing hook-and-eye closures for strength, and finish with a secure knot tucked underneath the stitching."
+          }
+        ]
+      }
+    },
+    {
+      "id": "L-B-patterns-00",
+      "topic": "patterns",
+      "level": "beginner",
+      "title": {
+        "hi": "पैटर्न के चिह्न पढ़ना",
+        "en": "Reading Pattern Symbols & Markings"
+      },
+      "duration": 20,
+      "summary": {
+        "hi": "इस पाठ में सिलाई पैटर्न पर बने सभी चिह्नों और रेखाओं को पढ़ना और समझना सीखेंगे — ग्रेन लाइन, नॉच, डार्ट, सीम एलाउंस, फोल्ड लाइन, कट-ऑन-फोल्ड, पैटर्न नंबर और साइज़ लाइनें।",
+        "en": "In this lesson you will learn to read and understand all the symbols and lines printed on a sewing pattern — grain line, notches, darts, seam allowance, fold line, cut-on-fold, pattern piece numbers, and size lines."
+      },
+      "objectives": {
+        "hi": [
+          "ग्रेन लाइन को पहचानना और कपड़े पर सही तरह से रखना सीखें",
+          "नॉच, डार्ट और फोल्ड लाइन के चिह्नों को समझें",
+          "सीम एलाउंस क्या होता है और इसे कैसे मार्क करें",
+          "कट-ऑन-फोल्ड पैटर्न को कपड़े पर सही तरह रखना सीखें",
+          "पैटर्न के नंबर और साइज़ लाइनें कैसे पढ़ें"
+        ],
+        "en": [
+          "Identify the grain line and align it correctly on fabric",
+          "Understand notch, dart, and fold line markings",
+          "Know what seam allowance is and how to transfer it to fabric",
+          "Place a cut-on-fold pattern piece correctly on fabric",
+          "Read pattern piece numbers and size lines accurately"
+        ]
+      },
+      "illustration": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Placeholder.png",
+      "videos": [
+        {
+          "title": "How to Read a Sewing Pattern",
+          "channel": "Made to Sew",
+          "url": "https://www.youtube.com/watch?v=yyIqsEFi1Ao",
+          "lang": "en"
+        },
+        {
+          "title": "सिलाई पैटर्न के चिह्न समझना",
+          "channel": "Silai Tutorials Hindi",
+          "url": "https://www.youtube.com/results?search_query=silai+pattern+chinh+padhna+hindi",
+          "lang": "hi"
+        }
+      ],
+      "references": [
+        {
+          "title": "Understanding Sewing Pattern Symbols",
+          "source": "Burda Style",
+          "url": "https://www.burdastyle.com/techniques/understanding-sewing-pattern-symbols/"
+        },
+        {
+          "title": "Sewing Pattern Markings Explained",
+          "source": "The Spruce Crafts",
+          "url": "https://www.thesprucecrafts.com/sewing-pattern-markings-explained-4117793"
+        }
+      ],
+      "content": {
+        "intro": {
+          "hi": "सिलाई पैटर्न एक नक्शे की तरह होता है। उस पर बने हर चिह्न का एक खास मतलब होता है। अगर इन्हें समझे बिना पैटर्न काटें तो कपड़ा गलत दिशा में जाएगा, सीम मेल नहीं खाएंगी और कपड़ा ठीक से नहीं बनेगा। इस पाठ में हम पैटर्न की भाषा सीखेंगे।",
+          "en": "A sewing pattern is like a map. Every mark printed on it carries a specific meaning. Cutting fabric without understanding these marks will result in pieces that are off-grain, seams that do not match, and a garment that does not fit. In this lesson we will learn the language of patterns."
+        },
+        "steps": [
+          {
+            "title": {
+              "hi": "ग्रेन लाइन — कपड़े की दिशा",
+              "en": "Grain Line — Fabric Direction"
+            },
+            "hi": "ग्रेन लाइन पैटर्न पर एक लंबे तीर (→) के रूप में दिखती है। यह बताती है कि पैटर्न को कपड़े के धागों के समानांतर कैसे रखना है। कपड़े का सेल्वेज (किनारा) लंबाई की दिशा में होता है — इसे 'वार्प' या 'स्ट्रेट ग्रेन' कहते हैं। ग्रेन लाइन को सेल्वेज के समानांतर रखें। गलत ग्रेन पर काटने से कपड़ा मुड़ जाता है और कपड़ा सही से फिट नहीं होता।",
+            "en": "The grain line appears on the pattern as a long arrow (→). It tells you how to align the pattern piece parallel to the threads of the fabric. The selvedge (finished edge) runs along the length — this is called the warp or straight grain. Always align the grain line arrow parallel to the selvedge. Cutting off-grain causes garments to twist and hang incorrectly."
+          },
+          {
+            "title": {
+              "hi": "नॉच — सीम को जोड़ने के निशान",
+              "en": "Notches — Seam Matching Marks"
+            },
+            "hi": "नॉच पैटर्न के किनारे पर छोटे त्रिकोण या हीरे के आकार के निशान होते हैं। ये बताते हैं कि दो पैटर्न पीस को सिलते समय कहाँ मिलाना है। सिंगल नॉच आमतौर पर आगे के हिस्से पर, डबल नॉच पीछे के हिस्से पर होती है। नॉच को काटते समय कपड़े के बाहर की तरफ छोटे निशान लगाएं (अंदर की तरफ न काटें — इससे सीम कमज़ोर होती है)।",
+            "en": "Notches are small triangular or diamond shapes on the edge of a pattern piece. They indicate matching points when joining two pieces during sewing. Single notches usually mark the front of a garment; double notches mark the back. When cutting, mark notches as small outward clips on the fabric edge — never cut inward into the seam allowance, as this weakens the seam."
+          },
+          {
+            "title": {
+              "hi": "डार्ट के निशान",
+              "en": "Dart Markings"
+            },
+            "hi": "डार्ट एक V-आकार की सिलाई है जो कपड़े को शरीर के आकार के अनुसार मोड़ती है — जैसे बस्ट डार्ट, कमर डार्ट। पैटर्न पर डार्ट एक त्रिकोण या दो रेखाओं के रूप में दिखता है जो एक बिंदु पर मिलती हैं। डार्ट के बिंदु को (dot) और दोनों रेखाओं को कपड़े पर ट्रेसिंग पेपर और ट्रेसर व्हील से मार्क करें। सही मार्किंग से डार्ट की फिटिंग सही आती है।",
+            "en": "A dart is a V-shaped seam that shapes flat fabric to fit body curves — such as bust darts and waist darts. On the pattern, a dart appears as a triangle or two lines meeting at a dot. Transfer the dart point (dot) and both stitch lines to the fabric using tracing paper and a tracing wheel. Accurate dart markings directly determine how well the garment fits."
+          },
+          {
+            "title": {
+              "hi": "सीम एलाउंस — सिलाई के लिए जगह",
+              "en": "Seam Allowance — Room for Stitching"
+            },
+            "hi": "सीम एलाउंस वह जगह है जो पैटर्न की कटिंग लाइन और सिलाई की लाइन के बीच होती है। अधिकांश व्यावसायिक पैटर्न में 1.5 सेमी (5/8 इंच) सीम एलाउंस शामिल होता है। कुछ भारतीय पैटर्न में 1 सेमी। पैटर्न पर लिखा होता है कि सीम एलाउंस कितना है — हमेशा पहले जाँचें। इसे हर जगह एक जैसा रखें ताकि सीम सही जुड़ें।",
+            "en": "Seam allowance is the fabric between the cutting line and the sewing line. Most commercial patterns include 1.5 cm (5/8 inch) seam allowance. Some Indian home patterns use 1 cm. The pattern envelope or the pattern itself will state the seam allowance — always check before cutting. Keeping seam allowance consistent throughout ensures all pieces join accurately."
+          },
+          {
+            "title": {
+              "hi": "फोल्ड लाइन और कट-ऑन-फोल्ड",
+              "en": "Fold Line & Cut-on-Fold"
+            },
+            "hi": "फोल्ड लाइन एक डैश-डॉट रेखा (-.-.-)  होती है जो बताती है कि पैटर्न को यहाँ मोड़ना है। कट-ऑन-फोल्ड का मतलब है कि पैटर्न पीस को कपड़े की मुड़ी हुई परत पर इस तरह रखें कि फोल्ड लाइन कपड़े के मोड़ से बिल्कुल मिले। इस पीस को एक पूरे टुकड़े के रूप में काटें — यानी पैटर्न को हटाने पर एक सिम्मेट्रिकल (दोनों तरफ बराबर) टुकड़ा मिलेगा। यह ब्लाउज़ के आगे के हिस्से और स्कर्ट के पैनल में आम है।",
+            "en": "The fold line is a dash-dot line (-.-.-)  indicating where the pattern should meet a fold in the fabric. Cut-on-fold means placing the pattern piece on folded fabric so the fold-line marking aligns exactly with the fabric's fold. Cut around the rest of the piece without cutting along the fold; when opened out, you will have one symmetrical fabric piece. This is common for blouse fronts and skirt panels."
+          },
+          {
+            "title": {
+              "hi": "पैटर्न नंबर, साइज़ लाइनें और अन्य चिह्न",
+              "en": "Pattern Numbers, Size Lines & Other Symbols"
+            },
+            "hi": "हर पैटर्न पीस पर एक नंबर होता है जो उसे पहचानता है — जैसे 'पीस 3' या 'Part C'। मल्टी-साइज़ पैटर्न में कई साइज़ की रेखाएं एक साथ छपी होती हैं। अपनी साइज़ की रेखा को हाइलाइटर से मार्क करें ताकि काटते समय गलती न हो। तीर वाले चिह्न कभी-कभी सिलाई की दिशा (जैसे मखमल के लिए नाप की दिशा) बताते हैं। 'फोल्ड', 'कट 2', 'कट 1 पेयर' जैसे निर्देश पैटर्न पर लिखे होते हैं।",
+            "en": "Each pattern piece carries a number or letter to identify it — such as 'Piece 3' or 'Part C'. Multi-size patterns print several size lines on top of each other. Highlight your size line with a coloured marker before cutting to avoid following the wrong line. Arrow indicators sometimes show nap direction (important for velvet and corduroy). Instructions like 'Fold', 'Cut 2', or 'Cut 1 pair' are printed on each piece — always read them before cutting."
+          }
+        ],
+        "tips": [
+          {
+            "hi": "पैटर्न काटने से पहले उसे इस्त्री करें — मुड़े हुए पैटर्न से गलत माप आती है।",
+            "en": "Press pattern pieces with a warm dry iron before cutting — folded and creased paper gives inaccurate measurements."
+          },
+          {
+            "hi": "पहली बार किसी नए पैटर्न से सिलते समय सस्ते कपड़े (मलमल या पुराना सूती) पर पहले 'टोइल' बनाएं — इससे फिटिंग जाँच होती है।",
+            "en": "When using a new pattern for the first time, make a toile (test garment) in cheap fabric such as muslin or old cotton before cutting into your good fabric — this lets you check fit without risk."
+          },
+          {
+            "hi": "ग्रेन लाइन को मापने के लिए टेप का उपयोग करें — आँख से अंदाज़ा लगाना पर्याप्त नहीं है। दोनों सिरों पर सेल्वेज से दूरी नापें।",
+            "en": "Always measure the grain line with a tape measure — do not estimate by eye. Measure the distance from the selvedge at both ends of the grain line arrow and adjust until both measurements are equal."
+          },
+          {
+            "hi": "पैटर्न को कपड़े पर पिन से लगाने के बाद काटें। पिन कपड़े के अंदर की तरफ (सिलाई क्षेत्र में) लगाएं ताकि किनारे से दूर रहें।",
+            "en": "Always pin pattern pieces to fabric before cutting. Place pins within the seam allowance area, parallel to the cutting line, so they do not interfere with cutting and hold the pattern flat."
+          }
+        ]
+      }
+    },
+    {
+      "id": "L-I-embroidery-02",
+      "topic": "embroidery",
+      "level": "intermediate",
+      "title": {
+        "hi": "आरी कढ़ाई की शुरुआत",
+        "en": "Aari Embroidery Basics"
+      },
+      "duration": 30,
+      "summary": {
+        "hi": "इस पाठ में आरी (तंबूर हुक) क्या है, फ्रेम कैसे सेट करें, आरी हुक से बेसिक चेन स्टिच कैसे करें, धागे का तनाव कैसे रखें, सरल फूल का मोटिफ और भारतीय आरी कढ़ाई के उपयोग जैसे चिकनकारी और जरदोज़ी की बुनियाद सीखेंगे।",
+        "en": "This lesson covers what aari (tambour hook) is, how to set up the embroidery frame, how to work the basic chain stitch with an aari hook, maintaining thread tension, creating a simple floral motif, and common Indian uses such as the basis of chikankari and zardozi work."
+      },
+      "objectives": {
+        "hi": [
+          "आरी हुक की पहचान करना और उसे सही तरह पकड़ना सीखें",
+          "कढ़ाई फ्रेम (अड्डा) को सही तरह से सेट करना और कपड़ा चढ़ाना सीखें",
+          "आरी हुक से चेन स्टिच बनाना सीखें",
+          "धागे का सही तनाव बनाए रखना सीखें",
+          "सरल फूल का मोटिफ बनाने की विधि अपनाएं"
+        ],
+        "en": [
+          "Identify an aari hook and learn the correct grip",
+          "Set up an embroidery frame (adda) correctly and mount fabric",
+          "Work the chain stitch with an aari hook",
+          "Maintain correct thread tension throughout",
+          "Create a simple floral motif using the aari technique"
+        ]
+      },
+      "illustration": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Placeholder.png",
+      "videos": [
+        {
+          "title": "Aari Embroidery for Beginners - Basic Chain Stitch",
+          "channel": "Aari & Maggam Works",
+          "url": "https://www.youtube.com/results?search_query=aari+embroidery+basics+chain+stitch+beginners",
+          "lang": "en"
+        },
+        {
+          "title": "आरी कढ़ाई सीखना शुरू करें",
+          "channel": "Embroidery Hindi Channel",
+          "url": "https://www.youtube.com/results?search_query=aari+kadhai+seekhna+hindi+chain+stitch",
+          "lang": "hi"
+        }
+      ],
+      "references": [
+        {
+          "title": "Tambour Beading and Aari Embroidery Guide",
+          "source": "Needle n Thread",
+          "url": "https://www.needlenthread.com/2016/06/tambour-beading-introduction-to-tambour-beading.html"
+        },
+        {
+          "title": "Chikankari Embroidery History and Technique",
+          "source": "Craft Documentation India",
+          "url": "https://www.india-crafts.com/embroidery/chikankari/"
+        }
+      ],
+      "content": {
+        "intro": {
+          "hi": "आरी कढ़ाई भारत की एक प्राचीन और खूबसूरत कला है जो लखनऊ की चिकनकारी, मुंबई की जरदोज़ी और दक्षिण भारत की मग्गम वर्क में उपयोग होती है। आरी हुक एक पेन जैसा औजार है जिसकी नोक पर एक छोटा हुक होता है। इससे बनी चेन स्टिच बहुत तेज़ी से और सुंदर बनती है।",
+          "en": "Aari embroidery is an ancient and beautiful Indian craft used in Lucknow chikankari, Mumbai zardozi, and South Indian maggam work. The aari hook is a pen-like tool with a small hook at its tip. It creates chain stitch rapidly and with great consistency, making it the foundation of many elaborate Indian embroidery styles."
+        },
+        "steps": [
+          {
+            "title": {
+              "hi": "आरी हुक को पहचानना और पकड़ना",
+              "en": "Identifying & Gripping the Aari Hook"
+            },
+            "hi": "आरी हुक (तंबूर हुक) एक लकड़ी या धातु की मूठ वाला औजार है जिसकी नोक एक बारीक हुक के आकार में मुड़ी होती है। हुक का आकार धागे की मोटाई के अनुसार चुनें — पतले धागे के लिए बारीक हुक, मोटे धागे या जरदोज़ी के लिए बड़ा हुक। हुक को पेन की तरह पकड़ें — ऊपर की उंगलियों से मूठ पकड़ें और हुक की नोक नीचे की तरफ। हुक की नोक हमेशा आगे की दिशा में रखें।",
+            "en": "The aari hook (tambour hook) has a wooden or metal handle with a fine hook bent at its tip. Choose hook size according to thread thickness — a fine hook for thin silk threads, a larger hook for zardozi work with metal threads. Hold the hook like a pen — grip the handle with the upper fingers, hook tip pointing downward. Always keep the hook tip oriented in the direction you are stitching."
+          },
+          {
+            "title": {
+              "hi": "फ्रेम (अड्डा) सेट करना और कपड़ा चढ़ाना",
+              "en": "Setting Up the Frame (Adda) & Mounting Fabric"
+            },
+            "hi": "आरी कढ़ाई के लिए गोल या चौकोर अड्डा (हूप/फ्रेम) चाहिए। बड़े काम के लिए पैर वाला बड़ा अड्डा या मेज़ पर रखने वाला फ्रेम उपयोग करें। कपड़े को फ्रेम पर इस तरह चढ़ाएं कि वह एकदम सीधा और तना हुआ हो — ढीला कपड़ा सही कढ़ाई नहीं देता। कपड़ा खिंचा हुआ होना चाहिए लेकिन इतना नहीं कि धागे दिखने लगें। कपड़े का दाहिना (सही) भाग ऊपर की तरफ रखें।",
+            "en": "Aari embroidery requires a round or square adda (hoop or frame). For large pieces, use a floor-standing or table-mounted frame. Mount the fabric tightly so it is completely straight and taut — slack fabric produces uneven stitches. The fabric should be drum-tight but not so stretched that the weave distorts. Always mount with the right side of the fabric facing upward."
+          },
+          {
+            "title": {
+              "hi": "धागा लगाना और पहली चेन स्टिच",
+              "en": "Threading Up & Working the First Chain Stitch"
+            },
+            "hi": "धागे को कपड़े के नीचे (पीछे की तरफ) अपनी बायीं उंगलियों से पकड़ें। हुक को कपड़े के ऊपर से नीचे की तरफ धकेलें — एक छोटा छेद करें। हुक की नोक को नीचे के धागे में डालकर एक लूप खींचें। इस लूप को ऊपर की तरफ निकालें। आगे बढ़कर फिर से हुक को नीचे करें, पिछले लूप के अंदर से नया लूप खींचें। यही चेन स्टिच है — हर लूप पिछले लूप से जुड़ती है। शुरू में धीरे अभ्यास करें।",
+            "en": "Hold the working thread below the fabric (on the back side) between the fingers of your left hand. Push the aari hook down through the fabric from above, making a tiny hole. Catch the thread from below with the hook tip and pull a loop up through the fabric. Move forward slightly, push the hook down again, and pull a new loop up through the previous loop. This creates a chain stitch — each loop links into the last. Practice slowly at first to establish rhythm."
+          },
+          {
+            "title": {
+              "hi": "धागे का तनाव बनाए रखना",
+              "en": "Maintaining Thread Tension"
+            },
+            "hi": "धागे का सही तनाव आरी कढ़ाई की सबसे महत्वपूर्ण बात है। नीचे वाला हाथ धागे को हल्के से खींचे — न ज़्यादा ढीला (लूप बड़ी बनेगी), न ज़्यादा कसा (धागा टूटेगा)। हर लूप का आकार एक जैसा होना चाहिए। शुरुआत में हर कुछ टाँकों पर रुककर लूप का आकार जाँचें। बाईं उंगली कपड़े के नीचे धागे को आगे-पीछे करती रहे ताकि धागे की सप्लाई सही रहे।",
+            "en": "Correct thread tension is the most critical skill in aari embroidery. The left hand below the fabric should maintain a light, even pull on the thread — not too loose (producing large, uneven loops) and not too tight (causing thread to break). Every loop should be the same size. In the beginning, stop every few stitches to check loop consistency. The index finger of the left hand guides the thread continuously to ensure a steady supply."
+          },
+          {
+            "title": {
+              "hi": "सरल फूल का मोटिफ बनाना",
+              "en": "Creating a Simple Floral Motif"
+            },
+            "hi": "कपड़े पर पहले वॉटर-सॉल्युबल पेन से एक सरल फूल का आकार बनाएं — एक गोल केंद्र और 5-6 पंखुड़ियाँ। पहले केंद्र को भरें: गोल-गोल घुमाते हुए चेन स्टिच से भरें (स्पाइरल फिल)। फिर हर पंखुड़ी को बाहर की तरफ से अंदर की तरफ चेन स्टिच से भरें — आउटलाइन पहले, फिर भराई। इससे पंखुड़ी साफ और भरी हुई दिखेगी। तने के लिए एक सीधी चेन स्टिच लाइन बनाएं। यह सबसे बुनियादी आरी मोटिफ है।",
+            "en": "First draw a simple flower design on the fabric using a water-soluble pen — one round centre and 5–6 petals. Begin with the centre: fill it using chain stitch worked in a spiral from the outside in. Then fill each petal by outlining first and then filling inward with chain stitch rows, working from the outer edge toward the centre. This gives a clean, padded look to each petal. Add a straight chain stitch line for the stem. This is the most foundational aari motif."
+          }
+        ],
+        "tips": [
+          {
+            "hi": "आरी सीखते समय पहले मोटे कपड़े (जैसे मलमल या कॉटन) और मोटे धागे से अभ्यास करें — बाद में बारीक रेशम पर जाएं।",
+            "en": "When learning aari, start with thicker fabric such as muslin or cotton and heavier thread — move to fine silk only after your chain stitch is consistent and even."
+          },
+          {
+            "hi": "हुक की नोक को हमेशा चमकदार और खरोंच-रहित रखें — खुरदरी नोक धागे को काट सकती है या कपड़े को खराब कर सकती है।",
+            "en": "Keep the hook tip polished and scratch-free at all times — a rough or damaged tip will snag the thread or damage delicate fabric."
+          },
+          {
+            "hi": "कढ़ाई शुरू करने से पहले कपड़े पर मोटिफ का डिज़ाइन हल्के हाथ से बनाएं — वॉटर-सॉल्युबल पेन का उपयोग करें जो पानी में घुल जाए।",
+            "en": "Always trace the design lightly onto the fabric before starting — use a water-soluble pen that washes out cleanly, not a permanent marker or chalk that may not fully disappear."
+          },
+          {
+            "hi": "बायाँ हाथ कपड़े के नीचे काम करता है — लंबे नाखून न रखें, इससे धागे में उलझन होती है और उंगलियों में दर्द होता है।",
+            "en": "Your left hand works continuously beneath the fabric — keep fingernails trimmed short on that hand to avoid tangling the thread and to work comfortably for extended periods."
+          }
+        ]
+      }
+    },
+    {
+      "id": "L-A-machines-03",
+      "topic": "machines",
+      "level": "advanced",
+      "title": {
+        "hi": "मशीन की देखभाल और समस्या निवारण",
+        "en": "Machine Maintenance & Troubleshooting"
+      },
+      "duration": 30,
+      "summary": {
+        "hi": "इस पाठ में सिलाई मशीन के तेल देने का समय और जगह, बोबिन क्षेत्र से लिंट साफ करना, टेंशन कैलिब्रेशन, टांका छूटना, धागा टूटना और शोरगुल वाली मशीन की समस्याओं का निदान, और सुई व प्रेसर फुट बदलने का समय सीखेंगे।",
+        "en": "This lesson covers the oiling schedule and lubrication points of a sewing machine, cleaning lint from the bobbin area, tension calibration, diagnosing skipped stitches, thread breaking, and a noisy machine, and knowing when to replace the needle and presser foot."
+      },
+      "objectives": {
+        "hi": [
+          "मशीन को कितनी बार और कहाँ तेल दें यह सीखें",
+          "बोबिन क्षेत्र की लिंट साफ करना सीखें",
+          "ऊपरी और निचले धागे का टेंशन सही करना सीखें",
+          "टांका छूटना, धागा टूटना और मशीन के शोर की समस्याओं का कारण और उपाय जानें",
+          "सुई और प्रेसर फुट बदलने का सही समय पहचानना सीखें"
+        ],
+        "en": [
+          "Know how often and where to oil the sewing machine",
+          "Clean lint from the bobbin and feed dog area",
+          "Calibrate upper and lower thread tension correctly",
+          "Diagnose and fix skipped stitches, thread breakage, and machine noise",
+          "Recognise when to replace the needle and presser foot"
+        ]
+      },
+      "illustration": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Placeholder.png",
+      "videos": [
+        {
+          "title": "Sewing Machine Maintenance & Troubleshooting Guide",
+          "channel": "National Sewing Circle",
+          "url": "https://www.youtube.com/results?search_query=sewing+machine+maintenance+oiling+troubleshooting",
+          "lang": "en"
+        },
+        {
+          "title": "सिलाई मशीन की देखभाल और मरम्मत",
+          "channel": "Silai Machine Hindi",
+          "url": "https://www.youtube.com/results?search_query=silai+machine+ki+dekhbhal+tel+dalna+hindi",
+          "lang": "hi"
+        }
+      ],
+      "references": [
+        {
+          "title": "How to Oil and Maintain Your Sewing Machine",
+          "source": "Threads Magazine",
+          "url": "https://www.threadsmagazine.com/2008/03/18/how-to-oil-your-sewing-machine"
+        },
+        {
+          "title": "Sewing Machine Troubleshooting Common Problems",
+          "source": "The Spruce Crafts",
+          "url": "https://www.thesprucecrafts.com/sewing-machine-problems-and-solutions-4122338"
+        }
+      ],
+      "content": {
+        "intro": {
+          "hi": "एक सिलाई मशीन हज़ारों चलने वाले पुर्ज़ों से बनी होती है। सही देखभाल न हो तो मशीन जल्दी खराब होती है, धागा टूटता है और काम बाधित होता है। नियमित सफाई और तेल देने से मशीन वर्षों तक सुचारु चलती है। इस पाठ में हम एक पेशेवर की तरह मशीन की देखभाल करना सीखेंगे।",
+          "en": "A sewing machine is made up of thousands of moving parts. Without proper care, it breaks down quickly, skips stitches, and interrupts your work. Regular cleaning and oiling keeps a machine running smoothly for many years. In this lesson we will learn to maintain a sewing machine the way a professional does."
+        },
+        "steps": [
+          {
+            "title": {
+              "hi": "तेल देने का समय और सही जगह",
+              "en": "Oiling Schedule & Lubrication Points"
+            },
+            "hi": "घरेलू मशीन को हर 8–10 घंटे के उपयोग पर या हर महीने तेल दें — जो भी पहले हो। व्यावसायिक उपयोग में रोज़ तेल दें। मशीन का मैन्युअल देखें जिसमें सभी तेल देने के बिंदु (ऑयल पॉइंट) निशान लगे होते हैं। मुख्य बिंदु: सुई बार, प्रेसर बार, ऊपरी शाफ्ट, लोअर शाफ्ट और हुक रेस। हर जगह केवल 1-2 बूँद सिलाई मशीन का खास तेल (सफेद, पारदर्शी) डालें। खाना पकाने का तेल, WD-40 या किसी अन्य तेल का उपयोग न करें — ये मशीन को नुकसान पहुँचाते हैं।",
+            "en": "Oil a domestic sewing machine every 8–10 hours of use or once a month, whichever comes first. For commercial daily use, oil every day. Refer to the machine manual, which marks all oil points on a diagram. Key points include the needle bar, presser bar, upper shaft, lower shaft, and hook race. Apply only 1–2 drops of clear, white sewing machine oil at each point. Never use cooking oil, WD-40, or general lubricants — these gum up the mechanism and cause long-term damage."
+          },
+          {
+            "title": {
+              "hi": "बोबिन क्षेत्र और फीड डॉग की सफाई",
+              "en": "Cleaning the Bobbin Area & Feed Dogs"
+            },
+            "hi": "बोबिन क्षेत्र में लिंट (धागे का रेशा) जमा होना सबसे आम समस्या है। हर 3–5 घंटे के काम के बाद बोबिन निकालें, बोबिन केस निकालें और उस क्षेत्र को छोटे ब्रश (मशीन के साथ आता है) से साफ करें। फीड डॉग के दांतों में फंसा लिंट टूथपिक से निकालें। कंप्रेस्ड एयर कैन का उपयोग कर सकते हैं लेकिन लिंट को अंदर न धकेलें — बाहर की तरफ उड़ाएं। बोबिन केस के टेंशन स्प्रिंग को भी साफ करें।",
+            "en": "Lint build-up in the bobbin area is the single most common sewing machine problem. After every 3–5 hours of sewing, remove the bobbin and bobbin case and brush out the area with the small brush supplied with the machine. Use a toothpick to dislodge lint from between the feed dog teeth. Compressed air can also be used but always blow lint outward rather than deeper into the machine. Clean the bobbin case tension spring as well."
+          },
+          {
+            "title": {
+              "hi": "धागे का टेंशन सही करना",
+              "en": "Calibrating Thread Tension"
+            },
+            "hi": "सही सिलाई में ऊपर और नीचे के धागे के जोड़ (लॉक) कपड़े के बीच में होने चाहिए — दोनों तरफ से नहीं दिखने चाहिए। अगर ऊपर की तरफ लूप दिख रही है तो नीचे का टेंशन (बोबिन) कसा है या ऊपर का ढीला है। अगर नीचे की तरफ लूप दिख रही है तो ऊपर का टेंशन कसा है। टेंशन डायल को धीरे-धीरे बदलें — एक बार में आधा नंबर। हमेशा पहले ऊपर का धागा दोबारा डालें क्योंकि 80% टेंशन समस्याएं गलत थ्रेडिंग से होती हैं।",
+            "en": "In a correctly tensioned stitch, the top and bottom thread interlock in the middle of the fabric and are invisible from both surfaces. If loops appear on the top surface, the bobbin tension is too tight or the upper tension is too loose. If loops appear on the bottom, the upper tension is too tight. Adjust the tension dial in small half-number increments. Always re-thread the upper thread first as approximately 80% of tension problems are caused by incorrect threading of the upper thread path."
+          },
+          {
+            "title": {
+              "hi": "टांका छूटना और धागा टूटना — कारण और उपाय",
+              "en": "Diagnosing Skipped Stitches & Thread Breakage"
+            },
+            "hi": "टांका छूटना (स्किप्ड स्टिच): सबसे पहले सुई बदलें। मुड़ी, टूटी या कुंद सुई टांका छोड़ती है। सुई की दिशा जाँचें — सुई का चपटा हिस्सा पीछे की तरफ होना चाहिए। गलत सुई का आकार (जैसे मोटे कपड़े पर पतली सुई) भी कारण हो सकता है। धागा टूटना: टेंशन बहुत कसी हुई हो सकती है। धागा थ्रेड गाइड में सही तरह से न डला हो। सुई की आँख या प्लेट पर खरोंच हो। धागे की गुणवत्ता खराब हो — पुराना या कमज़ोर धागा। सुई बदलना सबसे पहला और आसान उपाय है।",
+            "en": "Skipped stitches: the first step is always to replace the needle — a bent, blunt, or incorrectly installed needle is the cause in most cases. Verify the needle is inserted with the flat side facing the back. A needle size that is too fine for the fabric weight will also cause skipping. Thread breakage: causes include tension set too tight; thread not seated correctly in all thread guides; a burr or scratch on the needle plate or needle eye snagging the thread; and poor-quality or old thread that has become brittle. Replacing the needle is the quickest first fix for both problems."
+          },
+          {
+            "title": {
+              "hi": "शोरगुल वाली मशीन — कारण और उपाय",
+              "en": "Noisy Machine — Causes & Solutions"
+            },
+            "hi": "मशीन से असामान्य आवाज़ आना कभी नज़रअंदाज़ न करें। खटखट की आवाज़: बोबिन केस ठीक से नहीं बैठा, या हुक रेस में लिंट। घरघराहट: तेल की कमी — मशीन को तेल दें। खिचखिच: धागा कहीं अटका हुआ है — थ्रेडिंग दोबारा जाँचें। तेज़ धक्का वाली आवाज़: टाइमिंग बंद हो सकती है — यह मिस्त्री को दिखाएं। पहले सफाई और तेल दें; 70% आवाज़ की समस्याएं इससे हल होती हैं।",
+            "en": "Never ignore unusual machine sounds. A knocking sound usually means the bobbin case is not seated correctly, or lint has built up in the hook race. A grinding or humming sound indicates lack of lubrication — oil the machine immediately. A clicking or catching sound means thread is snagged somewhere — re-thread completely. A loud thumping or grinding during stitching may indicate a timing problem that requires a technician. Cleaning and oiling solves approximately 70% of noise complaints."
+          },
+          {
+            "title": {
+              "hi": "सुई और प्रेसर फुट बदलने का समय",
+              "en": "When to Replace Needle & Presser Foot"
+            },
+            "hi": "सुई: हर 6–8 घंटे के काम के बाद बदलें — भले ही वह दिखने में ठीक लगे। एक परियोजना शुरू करने से पहले नई सुई लगाने की आदत बनाएं। मोटे कपड़े, डेनिम या मल्टीपल लेयर के बाद हमेशा बदलें। सुई की जाँच: उसे नाखून पर रखकर घुमाएं — सीधी सुई एक जैसी घूमेगी, मुड़ी हुई नहीं। प्रेसर फुट: अगर फुट पर खरोंच, जंग या टूटा हुआ हिस्सा हो तो बदलें। जंग लगा फुट कपड़े पर निशान छोड़ता है। टेफ्लॉन फुट का उपयोग रेशम और चमड़े पर करें — ये कपड़े को सरकने देता है।",
+            "en": "Needle: replace every 6–8 hours of sewing even if it looks undamaged — the tip dulls invisibly. Develop the habit of starting every new project with a fresh needle. Always replace after sewing through heavy fabric, denim, or multiple layers. To check for a bent needle, place it on a flat fingernail and roll it — a straight needle rolls evenly, a bent one wobbles. Presser foot: replace if the foot has scratches, rust spots, or damaged edges that mark the fabric. A rusty foot will leave stains on light-coloured fabric. Use a Teflon foot for silk, vinyl, and leather as it glides without sticking."
+          }
+        ],
+        "tips": [
+          {
+            "hi": "मशीन पर काम शुरू करने से पहले हमेशा एक स्क्रैप कपड़े पर टेस्ट सिलाई करें — इससे टेंशन, स्टिच लेंथ और सुई की स्थिति जाँच हो जाती है।",
+            "en": "Always sew a test seam on a scrap of the same fabric before starting a project — this lets you check tension, stitch length, and needle condition before working on the actual garment."
+          },
+          {
+            "hi": "मशीन को इस्तेमाल के बाद धूल से बचाने के लिए कवर से ढककर रखें। धूल लिंट के साथ मिलकर मशीन के पुर्ज़ों को जाम करती है।",
+            "en": "Always cover the machine with a dust cover when not in use. Dust mixes with lint and oil residue to form a thick paste that jams moving parts over time."
+          },
+          {
+            "hi": "बोबिन को कभी ज़बरदस्ती बोबिन केस में न डालें — अगर वह आसानी से नहीं जा रहा तो गलत आकार का बोबिन हो सकता है।",
+            "en": "Never force a bobbin into the bobbin case — if it does not drop in easily, it may be the wrong size or type for your machine. Using the wrong bobbin is a surprisingly common cause of stitch problems."
+          },
+          {
+            "hi": "साल में एक बार किसी कुशल मशीन मैकेनिक से मशीन की पूरी सर्विसिंग करवाएं — टाइमिंग, टेंशन और सभी स्क्रू जाँच करवाएं।",
+            "en": "Have the machine fully serviced by a qualified technician once a year — timing, internal tension springs, and all mechanical alignments should be professionally checked and adjusted annually."
+          },
+          {
+            "hi": "धागे को मशीन से निकालने से पहले कभी खींचकर न तोड़ें — यह सुई को मोड़ता है और हुक रेस को नुकसान पहुँचाता है। कैंची से काटें।",
+            "en": "Never yank the thread to break it off the machine — this bends the needle and can damage the hook race. Always cut the thread with scissors, leaving a tail of at least 10 cm."
+          }
         ]
       }
     }
