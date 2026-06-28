@@ -56,18 +56,19 @@
 <section class="hero">
   <div class="hero-content">
     <div class="hero-badge">🪡 <span class="hi-only">सीखें · अभ्यास करें · आगे बढ़ें</span><span class="en-only">Learn · Practise · Progress</span></div>
-    <h1>कपड़ा और सिलाई <em>की दुनिया</em></h1>
+    <h1 class="hi-only">कपड़ा और सिलाई <em>की दुनिया</em></h1>
+    <h1 class="en-only">The World of <em>Fabric &amp; Stitching</em></h1>
     <p class="hero-sub hi-only">इंटरैक्टिव पाठ और खोजने योग्य ज्ञान आधार — शुरुआती से विशेषज्ञ तक</p>
     <p class="hero-sub en-only">Interactive lessons and a searchable knowledge base — beginner to expert</p>
     <div class="progress-bar-wrap"><div class="progress-bar" id="progressBar"></div></div>
-    <p class="progress-label" id="progressLabel">0 / 6 पाठ पूरे हुए</p>
+    <p class="progress-label"><span class="hi-only" id="progressLabelHi">0 / 6 पाठ पूरे हुए</span><span class="en-only" id="progressLabelEn">0 / 6 lessons completed</span></p>
     <nav class="chapter-nav" role="tablist" aria-label="Chapters">
-      <button class="chapter-pill active" role="tab" onclick="goChapter(0)" id="cpill-0">🪡 औज़ार</button>
-      <button class="chapter-pill" role="tab" onclick="goChapter(1)" id="cpill-1">🎨 कपड़े</button>
-      <button class="chapter-pill" role="tab" onclick="goChapter(2)" id="cpill-2">🕸️ बुनावट</button>
-      <button class="chapter-pill" role="tab" onclick="goChapter(3)" id="cpill-3">⚙️ मशीनें</button>
-      <button class="chapter-pill" role="tab" onclick="goChapter(4)" id="cpill-4">🧷 सिलाई</button>
-      <button class="chapter-pill" role="tab" onclick="goChapter(5)" id="cpill-5">📐 नाप</button>
+      <button class="chapter-pill active" role="tab" onclick="goChapter(0)" id="cpill-0">🪡 <span class="hi-only">औज़ार</span><span class="en-only">Tools</span></button>
+      <button class="chapter-pill" role="tab" onclick="goChapter(1)" id="cpill-1">🎨 <span class="hi-only">कपड़े</span><span class="en-only">Fabrics</span></button>
+      <button class="chapter-pill" role="tab" onclick="goChapter(2)" id="cpill-2">🕸️ <span class="hi-only">बुनावट</span><span class="en-only">Weave</span></button>
+      <button class="chapter-pill" role="tab" onclick="goChapter(3)" id="cpill-3">⚙️ <span class="hi-only">मशीनें</span><span class="en-only">Machines</span></button>
+      <button class="chapter-pill" role="tab" onclick="goChapter(4)" id="cpill-4">🧷 <span class="hi-only">सिलाई</span><span class="en-only">Seams</span></button>
+      <button class="chapter-pill" role="tab" onclick="goChapter(5)" id="cpill-5">📐 <span class="hi-only">नाप</span><span class="en-only">Measures</span></button>
     </nav>
   </div>
 </section>
@@ -86,8 +87,7 @@
     <p class="lesson-number en-only">Chapter 1 · Tools & Materials</p>
     <h2 class="lesson-title hi-only">सिलाई के ज़रूरी औज़ार</h2>
     <h2 class="lesson-title en-only">Essential Tailoring Tools</h2>
-    <p class="lesson-title-en hi-only">Essential Tailoring Tools</p>
-    <p class="lesson-desc hi-only">हर पेशेवर दर्जी इन्हें जानता है। शुरुआती से विशेषज्ञ तक — 10 प्रश्न, हर प्रश्न का जवाब दें और अगला खुलेगा।</p>
+        <p class="lesson-desc hi-only">हर पेशेवर दर्जी इन्हें जानता है। शुरुआती से विशेषज्ञ तक — 10 प्रश्न, हर प्रश्न का जवाब दें और अगला खुलेगा।</p>
     <p class="lesson-desc en-only">Every professional tailor knows these. Beginner to expert — answer each question to unlock the next.</p>
   </div>
 
@@ -252,7 +252,7 @@
 
   <div class="action-row">
     <button class="btn-secondary" onclick="startChapter(0)">🔄 <span class="hi-only">दोबारा</span><span class="en-only">Retry</span></button>
-    <button class="btn-primary" onclick="goChapter(1)">अगला पाठ → <span class="en-only">Next</span></button>
+    <button class="btn-primary" onclick="goChapter(1)"><span class="hi-only">अगला पाठ →</span><span class="en-only">Next →</span></button>
   </div>
 </section>
 
@@ -263,8 +263,7 @@
     <p class="lesson-number en-only">Chapter 2 · Fabric Types</p>
     <h2 class="lesson-title hi-only">कपड़े की पहचान करें</h2>
     <h2 class="lesson-title en-only">Identifying Fabrics</h2>
-    <p class="lesson-title-en hi-only">Identify Fabrics by Touch & Look</p>
-    <p class="lesson-desc hi-only">कपड़े को देखकर और छूकर पहचानें — शुरुआती से विशेषज्ञ तक 10 प्रश्न।</p>
+        <p class="lesson-desc hi-only">कपड़े को देखकर और छूकर पहचानें — शुरुआती से विशेषज्ञ तक 10 प्रश्न।</p>
     <p class="lesson-desc en-only">Recognise fabric by sight and touch — 10 questions, beginner to expert.</p>
   </div>
   <p class="section-label hi-only">मुख्य अवधारणाएं</p>
@@ -452,8 +451,8 @@
   </div>
 
   <div class="action-row">
-    <button class="btn-secondary" onclick="startChapter(1)">🔄</button>
-    <button class="btn-primary" onclick="goChapter(2)">अगला → <span class="en-only">Next</span></button>
+    <button class="btn-secondary" onclick="startChapter(1)">🔄 <span class="hi-only">दोबारा</span><span class="en-only">Retry</span></button>
+    <button class="btn-primary" onclick="goChapter(2)"><span class="hi-only">अगला →</span><span class="en-only">Next →</span></button>
   </div>
 </section>
 
@@ -625,8 +624,8 @@
   </div>
 
   <div class="action-row">
-    <button class="btn-secondary" onclick="startChapter(2)">🔄</button>
-    <button class="btn-primary" onclick="goChapter(3)">अगला → <span class="en-only">Next</span></button>
+    <button class="btn-secondary" onclick="startChapter(2)">🔄 <span class="hi-only">दोबारा</span><span class="en-only">Retry</span></button>
+    <button class="btn-primary" onclick="goChapter(3)"><span class="hi-only">अगला →</span><span class="en-only">Next →</span></button>
   </div>
 </section>
 
@@ -801,8 +800,8 @@
   </div>
 
   <div class="action-row">
-    <button class="btn-secondary" onclick="startChapter(3)">🔄</button>
-    <button class="btn-primary" onclick="goChapter(4)">अगला →</button>
+    <button class="btn-secondary" onclick="startChapter(3)">🔄 <span class="hi-only">दोबारा</span><span class="en-only">Retry</span></button>
+    <button class="btn-primary" onclick="goChapter(4)"><span class="hi-only">अगला →</span><span class="en-only">Next →</span></button>
   </div>
 </section>
 
@@ -999,8 +998,8 @@
   </div>
 
   <div class="action-row">
-    <button class="btn-secondary" onclick="startChapter(4)">🔄</button>
-    <button class="btn-primary" onclick="goChapter(5)">अगला →</button>
+    <button class="btn-secondary" onclick="startChapter(4)">🔄 <span class="hi-only">दोबारा</span><span class="en-only">Retry</span></button>
+    <button class="btn-primary" onclick="goChapter(5)"><span class="hi-only">अगला →</span><span class="en-only">Next →</span></button>
   </div>
 </section>
 

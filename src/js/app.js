@@ -343,7 +343,10 @@ function toggleCard(card){card.classList.toggle('open');}
 function updateProgress(){
   const pct = Math.round((score/CHAPTERS)*100);
   document.getElementById('progressBar').style.width=pct+'%';
-  document.getElementById('progressLabel').textContent=`${score} / ${CHAPTERS} पाठ पूरे हुए · ${score} / ${CHAPTERS} completed`;
+  const hi = document.getElementById('progressLabelHi');
+  const en = document.getElementById('progressLabelEn');
+  if(hi) hi.textContent = `${score} / ${CHAPTERS} पाठ पूरे हुए`;
+  if(en) en.textContent = `${score} / ${CHAPTERS} lessons completed`;
 }
 function markChapterDone(n){
   const pill=document.getElementById('cpill-'+n);

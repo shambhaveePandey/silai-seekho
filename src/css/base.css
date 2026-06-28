@@ -370,6 +370,16 @@ button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
 [data-lang="hi"] .en-only{display:none}
 [data-lang="en"] .hi-only{display:none}
 
+/* Quiz option text: .option-hi is always in script, .option-en.hi-only is the
+   English hint. In EN mode swap visibility so English is the primary label. */
+[data-lang="en"] .option-btn .option-hi{display:none}
+[data-lang="en"] .option-btn .option-en{display:block!important;
+  font-size:var(--text-base);font-weight:500;color:var(--color-text);margin-top:0}
+
+/* Lesson header number/title: ensure both sides present */
+[data-lang="en"] .lesson-number.hi-only{display:none}
+[data-lang="hi"] .lesson-number.en-only{display:none}
+
 /* Hinglish (bi) — Hindi primary, English as readable keynote below */
 [data-lang="bi"] .en-only{
   display:block;
