@@ -803,3 +803,82 @@ button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
 .lp-ref-item strong{display:block;font-size:var(--text-sm);color:var(--color-text)}
 .lp-ref-item span{font-size:var(--text-xs);color:var(--color-text-muted)}
 /* hero-banner-img is defined in the hero block above */
+
+/* ══════════════════════════════════════════════════════════════
+   PHONE LAYOUT — ≤ 600 px
+══════════════════════════════════════════════════════════════ */
+@media(max-width:600px){
+  /* Nav first row: tighten up */
+  .nav{padding:var(--space-2) var(--space-3);gap:var(--space-2)}
+  .nav-logo img{width:28px;height:28px}
+  .nav-title{font-size:var(--text-sm)}
+  .lang-btn{padding:3px 8px;font-size:10px}
+  .nav-btn{min-width:32px;height:32px}
+
+  /* View tabs: smaller text so three tabs fit one row */
+  .view-tab{font-size:11px;padding:6px 6px;line-height:1.25}
+
+  /* Hero */
+  .hero{margin:var(--space-2) var(--space-3) 0;padding:var(--space-5) var(--space-4) 0}
+  .chapter-pill{padding:5px 10px;font-size:10px}
+
+  /* Lesson section */
+  .lesson{padding:var(--space-6) var(--space-4);border-radius:0 0 var(--radius-lg) var(--radius-lg)}
+  .lesson-header{margin-bottom:var(--space-6)}
+  .lesson-desc{font-size:var(--text-sm)}
+
+  /* Quiz images */
+  .quiz-img{max-height:160px}
+
+  /* Option buttons */
+  .option-btn{padding:var(--space-3)}
+  .option-hi{font-size:var(--text-sm)}
+  .option-en{font-size:11px}
+  .option-icon{width:24px;height:24px;font-size:.75rem}
+
+  /* Match game */
+  .match-game{gap:var(--space-2) var(--space-3)}
+  .match-card,.match-drop{padding:var(--space-2) var(--space-3);font-size:var(--text-xs);min-height:40px}
+  .match-drop{min-height:44px}
+
+  /* Fill-in-blank */
+  .fill-blank input{width:100px;font-size:var(--text-sm)}
+
+  /* Knowledge base */
+  .kb{padding:var(--space-6) var(--space-3)}
+  .kb-header{margin-bottom:var(--space-5)}
+
+  /* Modal */
+  .modal-overlay{padding:var(--space-2)}
+  .modal-head{padding:var(--space-4) var(--space-4) var(--space-3)}
+  .modal-body{padding:var(--space-3) var(--space-4) var(--space-5)}
+  .modal-head h2{font-size:var(--text-lg)}
+
+  /* Design studio */
+  .ds{padding:var(--space-4) var(--space-3) var(--space-8)}
+  .ds-insight-grid{grid-template-columns:1fr 1fr}
+  .ds-garment-bar{padding:var(--space-3)}
+  .ds-canvas-wrap,.ds-3d{max-height:280px}
+
+  /* Score card */
+  .score-card{padding:var(--space-8) var(--space-4)}
+
+  /* LP panel */
+  .lp-video-grid{grid-template-columns:1fr}
+  .lp-video-thumb{width:80px}
+}
+
+/* ── Very narrow phones (≤ 360 px) ───────────────────────── */
+@media(max-width:360px){
+  /* Show only the emoji in view-tab buttons to save space */
+  .view-tab .hi-only,.view-tab .en-only{display:none!important}
+
+  /* Stack drag-drop columns on tiny screens */
+  .match-game{grid-template-columns:1fr}
+  .match-col-title span{display:none}
+  .match-col-title{grid-template-columns:1fr;text-align:center}
+
+  /* Reduce hero and section padding further */
+  .hero{margin:var(--space-1) var(--space-2) 0;padding:var(--space-4) var(--space-3) 0}
+  .lesson,.kb,.ds{padding-left:var(--space-3);padding-right:var(--space-3)}
+}
