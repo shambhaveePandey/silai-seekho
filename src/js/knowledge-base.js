@@ -15,6 +15,8 @@ function basePath() {
   return path.endsWith('/') ? path : path.substring(0, path.lastIndexOf('/') + 1);
 }
 function assetUrl(rel) {
+  if (!rel) return rel;
+  if (rel.startsWith('http://') || rel.startsWith('https://')) return rel;
   return basePath() + rel.replace(/^\/+/, '');
 }
 
@@ -175,7 +177,7 @@ function youTubeId(url) {
 // ═══════════════════════════════════════════════════════════
 //  LP — FULL-PAGE LESSON SYSTEM (replaces modal)
 // ═══════════════════════════════════════════════════════════
-const LP = { lesson: null, fabric: 'cotton', animOn: false };
+const LP = { lesson: null, fabric: 'cotton' };
 
 const FABRIC_LABELS = {
   cotton:    { hi: '🌿 सूती',       en: '🌿 Cotton' },
@@ -350,7 +352,7 @@ function openLesson(id) {
   if (!KB.data) return;
   var l = KB.data.lessons.find(function(x){ return x.id === id; });
   if (!l) return;
-  LP.lesson = l; LP.fabric = 'cotton'; LP.animOn = false;
+  LP.lesson = l; LP.fabric = 'cotton';
   renderLessonPage(l);
   switchView('kb-lesson');
 }
@@ -395,16 +397,12 @@ function renderLessonPage(l) {
   }
   html += '</section>';
 
-  // MEDIA
-  html += '<section class="lp-section lp-media-section"><div class="lp-section-hd">' +
-    '<h2>🖼️ <span class="hi-only">दृश्य मार्गदर्शिका</span><span class="en-only">Visual Guide</span></h2>' +
-    '<button class="lp-anim-btn" id="lpAnimBtn" onclick="toggleLPAnim()"><span id="lpAnimLabel"><span class="hi-only">✨ एनिमेशन चालू करें</span><span class="en-only">✨ Enable Animation</span></span></button>' +
-    '</div><div class="lp-media-grid">' +
-    '<div class="lp-illus-box"><img class="lp-illus" src="' + assetUrl(l.illustration) + '" alt="' + l.title.en + '" onerror="this.parentElement.classList.add(\'failed\')">' +
-    '<div class="lp-illus-placeholder"><span>📚</span><p class="hi-only">चित्र अनुपलब्ध</p><p class="en-only">Illustration unavailable</p></div>' +
-    '<div class="lp-anim-overlay" id="lpAnimOverlay" aria-hidden="true"></div></div>' +
-    (topicImg ? '<div class="lp-web-image-box"><img class="lp-web-img" src="' + topicImg.url + '" alt="' + l.title.en + '" loading="lazy" onerror="this.parentElement.style.display=\'none\'"><p class="lp-img-credit">📷 ' + topicImg.credit + '</p></div>' : '') +
-    '</div><p class="lp-img-caption hi-only">' + l.title.hi + ' — ' + t.hi + '</p><p class="lp-img-caption en-only">' + l.title.en + ' — ' + t.en + '</p></section>';
+  // MEDIA — Wikimedia photographs only (Pollinations AI images and SVG animations removed)
+  if (topicImg) {
+    html += '<section class="lp-section lp-media-section">' +
+      '<div class="lp-web-image-box"><img class="lp-web-img" src="' + topicImg.url + '" alt="' + l.title.en + '" loading="lazy" onerror="this.parentElement.style.display=\'none\'"><p class="lp-img-credit">📷 ' + topicImg.credit + '</p></div>' +
+      '<p class="lp-img-caption hi-only">' + l.title.hi + ' — ' + t.hi + '</p><p class="lp-img-caption en-only">' + l.title.en + ' — ' + t.en + '</p></section>';
+  }
 
   // INSTRUCTIONS
   html += '<section class="lp-section lp-instr-section"><div class="lp-section-hd"><h2>📋 <span class="hi-only">चरण-दर-चरण निर्देश</span><span class="en-only">Step-by-Step Instructions</span></h2></div>' +
@@ -478,32 +476,6 @@ function setLPFabric(fabric) {
   if (el && LP.lesson) el.innerHTML = renderLPSteps(LP.lesson);
 }
 
-function toggleLPAnim() {
-  LP.animOn = !LP.animOn;
-  var overlay = document.getElementById('lpAnimOverlay');
-  var btn = document.getElementById('lpAnimBtn');
-  var label = document.getElementById('lpAnimLabel');
-  if (btn) btn.classList.toggle('active', LP.animOn);
-  if (overlay) { overlay.classList.toggle('active', LP.animOn); overlay.innerHTML = LP.animOn ? getLPAnim(LP.lesson && LP.lesson.topic) : ''; }
-  if (label) label.innerHTML = LP.animOn
-    ? '<span class="hi-only">✨ एनिमेशन बंद करें</span><span class="en-only">✨ Disable Animation</span>'
-    : '<span class="hi-only">✨ एनिमेशन चालू करें</span><span class="en-only">✨ Enable Animation</span>';
-}
-
-function getLPAnim(topic) {
-  var st = '@keyframes lpPulse{0%,100%{opacity:.8;transform:scale(1)}50%{opacity:.3;transform:scale(1.4)}}@keyframes lpDash{to{stroke-dashoffset:-30}}';
-  var p = function(cx,cy,r,c,d){ return '<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="'+c+'" stroke-width="3" style="animation:lpPulse 2s ease-in-out '+d+' infinite;transform-origin:'+cx+'px '+cy+'px"/>'; };
-  var dl = function(d,c){ return '<path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="4" stroke-dasharray="20 10" style="animation:lpDash 2s linear infinite"/>'; };
-  var m = {
-    tools: p(80,150,30,'#b35c00','0s')+p(200,80,25,'#016b6f','0.5s')+p(310,190,28,'#9b2424','1s'),
-    stitches: dl('M 20 150 Q 100 80 200 150 Q 300 220 380 150','#b35c00'),
-    machines: '<rect x="193" y="60" width="14" height="80" rx="3" fill="#b35c00" style="animation:lpPulse 1s ease-in-out infinite;transform-origin:200px 100px"/>',
-    saree: dl('M 50 200 C 100 100 200 250 350 100','#9b2424')+dl('M 50 220 C 100 120 200 270 350 120','rgba(155,36,36,0.4)'),
-    measurements: '<line x1="50" y1="150" x2="350" y2="150" stroke="#b35c00" stroke-width="2" stroke-dasharray="10 5" style="animation:lpDash 2s linear infinite"/><line x1="200" y1="50" x2="200" y2="250" stroke="#016b6f" stroke-width="2" stroke-dasharray="10 5" style="animation:lpDash 2.4s linear infinite"/>',
-  };
-  var inner = m[topic] || p(200,150,60,'#b35c00','0s');
-  return '<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><style>' + st + '</style>' + inner + '</svg>';
-}
 
 function playLPVideo(videoId, embedId) {
   var box = document.getElementById(embedId);
