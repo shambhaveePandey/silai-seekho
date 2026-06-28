@@ -370,8 +370,10 @@ button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
 [data-lang="hi"] .en-only{display:none}
 [data-lang="en"] .hi-only{display:none}
 
-/* Quiz option text: .option-hi is always in script, .option-en.hi-only is the
-   English hint. In EN mode swap visibility so English is the primary label. */
+/* Quiz option text: .option-hi is Hindi term, .option-en.hi-only is the
+   English hint below. In Hindi mode hide the English hint (pure Hindi).
+   In EN mode swap: hide Hindi, promote English to primary label. */
+[data-lang="hi"] .option-btn .option-en{display:none}
 [data-lang="en"] .option-btn .option-hi{display:none}
 [data-lang="en"] .option-btn .option-en{display:block!important;
   font-size:var(--text-base);font-weight:500;color:var(--color-text);margin-top:0}
@@ -398,12 +400,14 @@ button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
 [data-lang="bi"] .nav-btn .en-only{
   font-size:.68em;display:block;color:var(--color-text-muted);margin-top:1px;
 }
-/* In Hinglish mode, hide redundant English-subtitle divs (kb-card-title-en,
-   lesson-title-en, lp-en-subtitle) since .en-only content already shows */
+/* Hide redundant English-subtitle divs in all modes — .en-only already handles
+   English text; these divs only duplicate content */
+[data-lang="hi"] .kb-card-title-en,
+[data-lang="hi"] .lesson-title-en,
+[data-lang="hi"] .lp-en-subtitle{ display:none }
 [data-lang="bi"] .kb-card-title-en,
 [data-lang="bi"] .lesson-title-en,
 [data-lang="bi"] .lp-en-subtitle{ display:none }
-/* In English mode, show these subtitle divs so Hindi users get context */
 [data-lang="en"] .kb-card-title-en,
 [data-lang="en"] .lesson-title-en,
 [data-lang="en"] .lp-en-subtitle{ display:none }
