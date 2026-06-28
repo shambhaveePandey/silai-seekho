@@ -55,20 +55,25 @@ html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth;scroll-padding-to
 body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);
   color:var(--color-text);line-height:1.65;
   background-color:var(--color-bg);
+  /* Fallback for browsers without color-mix() */
+  background-image:url('../../assets/bg-gold.jpg');
   background-image:
     linear-gradient(color-mix(in oklab,var(--color-bg) 82%,transparent),color-mix(in oklab,var(--color-bg) 82%,transparent)),
     url('../../assets/bg-gold.jpg');
   background-size:auto,cover;background-position:center center;
   background-attachment:local,fixed;background-repeat:repeat,no-repeat}
-[data-theme="dark"] body{background-image:linear-gradient(color-mix(in oklab,var(--color-bg) 78%,transparent),color-mix(in oklab,var(--color-bg) 78%,transparent)),url('../../assets/bg-gold.jpg')}
+[data-theme="dark"] body{
+  background-image:url('../../assets/bg-gold.jpg');
+  background-image:linear-gradient(color-mix(in oklab,var(--color-bg) 78%,transparent),color-mix(in oklab,var(--color-bg) 78%,transparent)),url('../../assets/bg-gold.jpg')}
 img,svg{display:block;max-width:100%}
 button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
 /* ── NAV ─────────────────────────────────────────────────── */
 .nav{position:sticky;top:0;z-index:100;
+  background:rgba(255,248,245,0.85);
   background:color-mix(in oklab,var(--color-bg) 85%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--color-border);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--color-border);
   padding:var(--space-3) var(--space-5);
   display:flex;align-items:center;gap:var(--space-3)}
 .nav-logo{display:flex;align-items:center;gap:var(--space-3);text-decoration:none;
@@ -881,4 +886,114 @@ button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
   /* Reduce hero and section padding further */
   .hero{margin:var(--space-1) var(--space-2) 0;padding:var(--space-4) var(--space-3) 0}
   .lesson,.kb,.ds{padding-left:var(--space-3);padding-right:var(--space-3)}
+}
+
+/* ── DARK MODE NAV FALLBACK ─────────────────────────────── */
+[data-theme="dark"] .nav{background:rgba(26,15,20,0.85)}
+
+/* ════════════════════════════════════════════════════════════
+   LEARNER DASHBOARD
+════════════════════════════════════════════════════════════ */
+.dash{max-width:900px;margin:0 auto;padding:var(--space-10) var(--space-6) var(--space-16)}
+
+/* Header */
+.dash-header{display:flex;align-items:flex-start;justify-content:space-between;
+  gap:var(--space-4);margin-bottom:var(--space-8);flex-wrap:wrap}
+.dash-title{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;
+  color:var(--color-text);margin-bottom:4px}
+.dash-sub{font-size:var(--text-sm);color:var(--color-text-muted)}
+.dash-reset-btn{padding:8px 16px;border-radius:var(--radius-md);font-size:var(--text-xs);
+  font-weight:600;border:1.5px solid var(--color-error);color:var(--color-error);
+  background:var(--color-error-hi);cursor:pointer;transition:all var(--transition);white-space:nowrap}
+.dash-reset-btn:hover{background:var(--color-error);color:#fff}
+
+/* Big stat row */
+.dash-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4);
+  margin-bottom:var(--space-8)}
+@media(max-width:640px){.dash-stats{grid-template-columns:1fr 1fr}}
+.dash-stat{background:var(--color-surface);border:1px solid var(--color-border);
+  border-radius:var(--radius-lg);padding:var(--space-5);text-align:center;
+  box-shadow:var(--shadow-sm);transition:all var(--transition)}
+.dash-stat:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.dash-stat-icon{font-size:1.6rem;margin-bottom:var(--space-2)}
+.dash-stat-value{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:800;
+  color:var(--color-primary);line-height:1}
+.dash-stat-label{font-size:var(--text-xs);color:var(--color-text-muted);
+  margin-top:var(--space-1);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+.dash-stat.streak .dash-stat-value{color:#e8a020}
+.dash-stat.time .dash-stat-value{color:var(--color-teal)}
+.dash-stat.correct .dash-stat-value{color:var(--color-success)}
+
+/* Section heading */
+.dash-section-title{font-size:var(--text-sm);font-weight:700;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--color-text-muted);margin-bottom:var(--space-4);
+  padding-bottom:var(--space-2);border-bottom:1px solid var(--color-border)}
+
+/* Chapter rows */
+.dash-chapters{display:flex;flex-direction:column;gap:var(--space-3);margin-bottom:var(--space-8)}
+.dash-ch{background:var(--color-surface);border:1px solid var(--color-border);
+  border-radius:var(--radius-lg);padding:var(--space-4) var(--space-5);
+  display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap}
+.dash-ch.done{border-color:var(--color-success);background:var(--color-success-hi)}
+.dash-ch-icon{font-size:1.4rem;flex-shrink:0;width:36px;text-align:center}
+.dash-ch-info{flex:1;min-width:120px}
+.dash-ch-name{font-family:var(--font-display);font-weight:700;font-size:var(--text-base);
+  color:var(--color-text)}
+.dash-ch-sub{font-size:var(--text-xs);color:var(--color-text-muted);margin-top:2px}
+.dash-ch-bar-wrap{flex:2;min-width:120px}
+.dash-ch-bar-track{height:8px;background:var(--color-surface-offset);border-radius:var(--radius-full);
+  overflow:hidden;margin-bottom:4px}
+.dash-ch-bar-fill{height:100%;border-radius:var(--radius-full);
+  background:linear-gradient(90deg,var(--color-primary),var(--color-teal));
+  transition:width 0.6s cubic-bezier(.16,1,.3,1)}
+.dash-ch.done .dash-ch-bar-fill{background:linear-gradient(90deg,var(--color-success),#70c880)}
+.dash-ch-bar-label{font-size:var(--text-xs);color:var(--color-text-muted);
+  display:flex;justify-content:space-between}
+.dash-ch-badge{padding:4px 10px;border-radius:var(--radius-full);font-size:10px;font-weight:700;
+  letter-spacing:.04em;text-transform:uppercase;flex-shrink:0}
+.dash-ch-badge.done-badge{background:var(--color-success);color:#fff}
+.dash-ch-badge.progress-badge{background:var(--color-primary-hi);color:var(--color-primary)}
+.dash-ch-badge.locked-badge{background:var(--color-surface-offset);color:var(--color-text-faint)}
+
+/* Skill distribution */
+.dash-skills{background:var(--color-surface);border:1px solid var(--color-border);
+  border-radius:var(--radius-lg);padding:var(--space-5);margin-bottom:var(--space-8)}
+.dash-skill-row{display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-3)}
+.dash-skill-row:last-child{margin-bottom:0}
+.dash-skill-name{font-size:var(--text-xs);font-weight:700;width:90px;flex-shrink:0;
+  text-transform:uppercase;letter-spacing:.04em}
+.skill-beg{color:var(--color-success)}
+.skill-int{color:var(--color-primary)}
+.skill-adv{color:var(--color-teal)}
+.skill-exp{color:var(--color-gold)}
+.dash-skill-bar-track{flex:1;height:10px;background:var(--color-surface-offset);
+  border-radius:var(--radius-full);overflow:hidden}
+.dash-skill-bar-fill{height:100%;border-radius:var(--radius-full);transition:width 0.7s ease}
+.fill-beg{background:var(--color-success)}
+.fill-int{background:var(--color-primary)}
+.fill-adv{background:var(--color-teal)}
+.fill-exp{background:var(--color-gold)}
+.dash-skill-count{font-size:var(--text-xs);font-weight:700;color:var(--color-text-muted);
+  min-width:44px;text-align:right}
+
+/* Activity / tips */
+.dash-tips{background:var(--color-primary-hi);border:1px solid var(--color-primary);
+  border-radius:var(--radius-lg);padding:var(--space-5);margin-bottom:var(--space-8)}
+.dash-tips h4{font-family:var(--font-display);font-weight:700;font-size:var(--text-base);
+  color:var(--color-primary);margin-bottom:var(--space-3)}
+.dash-tip-list{list-style:none;display:flex;flex-direction:column;gap:var(--space-2)}
+.dash-tip-list li{font-size:var(--text-sm);color:var(--color-text);display:flex;gap:var(--space-2);
+  align-items:flex-start;line-height:1.5}
+.dash-tip-list li::before{content:"→";color:var(--color-primary);font-weight:700;flex-shrink:0}
+
+/* Empty state */
+.dash-empty{text-align:center;padding:var(--space-12) var(--space-6);
+  color:var(--color-text-muted)}
+.dash-empty .dash-empty-icon{font-size:3rem;margin-bottom:var(--space-4)}
+.dash-empty p{font-size:var(--text-base);max-width:40ch;margin:0 auto}
+
+@media(max-width:600px){
+  .dash{padding:var(--space-6) var(--space-3) var(--space-10)}
+  .dash-ch{flex-direction:column;align-items:flex-start}
+  .dash-ch-bar-wrap{width:100%}
 }

@@ -5,6 +5,9 @@ let chapDone = [false,false,false,false,false,false];
 let currentLang = 'hi';
 let dragData = null;
 let matchScore = 0;
+let answersMap = {};      // "ch-q" → "correct"|"wrong"
+let fillAnswered = {};    // ch → true when fill-in-blank solved
+let savedMatchDone = false;
 
 const CHAPTERS = 6;
 
@@ -17,18 +20,21 @@ function setLang(l){
   const placeholders = { hi:'खोजें…', en:'Search…', bi:'खोजें… / Search…' };
   const navInput = document.getElementById('navSearch');
   if (navInput) navInput.placeholder = placeholders[l] || placeholders.bi;
+  ss_save({ lang: l });
 }
 
 // ── THEME ─────────────────────────────────────────────────
 (function(){
   const btn=document.getElementById('themeBtn');
   const html=document.documentElement;
-  let dark = matchMedia('(prefers-color-scheme:dark)').matches;
+  const saved = ss_load();
+  let dark = saved.theme ? saved.theme === 'dark' : matchMedia('(prefers-color-scheme:dark)').matches;
   html.setAttribute('data-theme', dark?'dark':'light');
   btn.textContent = dark ? '☀️' : '🌙';
   btn.addEventListener('click',()=>{
     dark=!dark; html.setAttribute('data-theme',dark?'dark':'light');
     btn.textContent=dark?'☀️':'🌙';
+    ss_save({ theme: dark ? 'dark' : 'light' });
   });
 })();
 
@@ -40,7 +46,9 @@ function goChapter(n){
     p.classList.toggle('active',i===n);
   });
   currentChapter=n;
-  startChapter(n);
+  startChapter(n);       // resets chapter UI to clean state
+  _restoreChapter(n);    // re-applies any saved answers for this chapter
+  ss_save({ chapter: n });
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
@@ -234,6 +242,9 @@ function checkQ(chap, qnum, result, optsId, fbId){
     spawnStar(event.clientX,event.clientY);
     if(!chapDone[chap]){score++;chapDone[chap]=true;updateProgress();markChapterDone(chap);}
   }
+  // persist answer
+  answersMap[chap+'-'+qnum] = result;
+  ss_save({ answers: answersMap, score, chapDone });
   // unlock next question block
   const next=document.getElementById('qblock-'+chap+'-'+(qnum+1));
   if(next){
@@ -256,6 +267,8 @@ function checkFill(inputId, answer, fbId){
     fb.className='feedback show correct-fb'; fb.style.display='';
     spawnStar(inp.getBoundingClientRect().left+60, inp.getBoundingClientRect().top);
     if(!chapDone[2]){score++;chapDone[2]=true;updateProgress();markChapterDone(2);}
+    fillAnswered[2] = true;
+    ss_save({ fillAnswered, score, chapDone });
     // unlock next question in chapter 2
     const next=document.getElementById('qblock-2-1');
     if(next) setTimeout(()=>{next.classList.remove('qblock-locked');next.scrollIntoView({behavior:'smooth',block:'nearest'});},700);
@@ -292,6 +305,8 @@ function drop(e){
       fb.innerHTML=`<span class="feedback-icon">🎊</span><div class="feedback-text"><strong class="hi-only">शाबाश! सभी नाप सही मिलाए!</strong><strong class="en-only">Excellent! All measurements matched!</strong></div>`;
       fb.className='feedback show correct-fb'; fb.style.display='flex';
       if(!chapDone[5]){score++;chapDone[5]=true;updateProgress();markChapterDone(5);}
+      savedMatchDone = true;
+      ss_save({ matchDone: true, score, chapDone });
       // unlock next questions in chapter 5
       const next=document.getElementById('qblock-5-1');
       if(next) setTimeout(()=>{next.classList.remove('qblock-locked');next.scrollIntoView({behavior:'smooth',block:'nearest'});},800);
@@ -354,6 +369,8 @@ function finishLesson(){
 
 function restartAll(){
   score=0; chapDone=[false,false,false,false,false,false];
+  answersMap={}; fillAnswered={}; savedMatchDone=false;
+  ss_clear();
   updateProgress();
   document.querySelectorAll('.chapter-pill').forEach(p=>p.classList.remove('done'));
   document.getElementById('ch-score').classList.remove('show');
@@ -389,6 +406,29 @@ function launchConfetti(){
   draw();
 }
 
+// ── SESSION TIME & VISIT TRACKING ────────────────────────
+(function(){
+  const today = new Date().toISOString().slice(0, 10);
+  const sv = ss_load();
+  const dates = sv.visitDates || [];
+  if (!dates.includes(today)) dates.push(today);
+  if (dates.length > 30) dates.splice(0, dates.length - 30);
+  ss_save({ visitDates: dates, lastVisit: today, firstVisit: sv.firstVisit || today });
+
+  let _t0 = Date.now();
+  function _flushTime() {
+    const elapsed = Date.now() - _t0;
+    if (elapsed < 500) return;
+    const s = ss_load();
+    ss_save({ totalTimeMs: (s.totalTimeMs || 0) + elapsed });
+    _t0 = Date.now();
+  }
+  document.addEventListener('visibilitychange', _flushTime);
+  window.addEventListener('beforeunload', _flushTime);
+  // Flush every 30s while active
+  setInterval(() => { if (!document.hidden) _flushTime(); }, 30000);
+})();
+
 // ── NAV SEARCH ────────────────────────────────────────────
 function navSearchGo(val) {
   if (typeof KB !== 'undefined') KB.filters.q = val.trim();
@@ -404,8 +444,9 @@ function switchView(view){
   const tab=document.getElementById('vtab-'+view);
   if(target) target.classList.add('active');
   if(tab) tab.classList.add('active');
-  if(view==='kb' && typeof loadKnowledgeBase==='function') loadKnowledgeBase();
-  if(view==='studio' && typeof initDesignStudio==='function'){ initDesignStudio(); if(typeof init3D==='function') setTimeout(init3D,60); }
+  if(view==='kb'        && typeof loadKnowledgeBase==='function') loadKnowledgeBase();
+  if(view==='studio'    && typeof initDesignStudio==='function'){ initDesignStudio(); if(typeof init3D==='function') setTimeout(init3D,60); }
+  if(view==='dashboard' && typeof initDashboard==='function') initDashboard();
   if(view==='kb-lesson'){ const kbTab=document.getElementById('vtab-kb'); if(kbTab) kbTab.classList.add('active'); }
   const hero = document.querySelector('.hero');
   if(hero) hero.style.display = view==='lesson' ? '' : 'none';
@@ -416,9 +457,95 @@ function switchView(view){
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
+// ── RESTORE HELPERS ───────────────────────────────────────
+function _restoreQuestionUI(ch, q, result){
+  const optsEl = document.getElementById('opts-'+ch+'-'+q);
+  const fbEl   = document.getElementById('fb-'+ch+'-'+q);
+  if(!optsEl) return;
+  optsEl.querySelectorAll('.option-btn').forEach(btn=>{
+    btn.disabled = true;
+    const oc = btn.getAttribute('onclick') || '';
+    if(oc.includes("'"+result+"'")){
+      btn.classList.add(result);
+      const icon = btn.querySelector('.option-result-icon');
+      if(icon) icon.style.opacity='1';
+    }
+  });
+  const data = feedbackData[ch]?.[q]?.[result];
+  if(fbEl && data){
+    fbEl.innerHTML=`<span class="feedback-icon">${result==='correct'?'✅':'❌'}</span>
+      <div class="feedback-text">
+        <strong class="hi-only">${result==='correct'?'शाबाश!':'दोबारा सोचें!'}</strong>
+        <strong class="en-only">${result==='correct'?'Well done!':'Try again!'}</strong>
+        <p class="hi-only">${data.hi}</p>
+        <p class="en-only">${data.en}</p>
+      </div>`;
+    fbEl.className=`feedback show ${result==='correct'?'correct-fb':'wrong-fb'}`;
+    fbEl.style.display='';
+  }
+  const next = document.getElementById('qblock-'+ch+'-'+(q+1));
+  if(next) next.classList.remove('qblock-locked');
+}
+
+function _restoreFillUI(){
+  ['fill-warp','fill-warp-en','fill-warp-en2'].forEach(id=>{
+    const el=document.getElementById(id);
+    if(el){el.value='ताना';el.classList.add('correct-input');el.disabled=true;}
+  });
+  ['fb-fill-1','fb-fill-2'].forEach(id=>{
+    const el=document.getElementById(id);
+    if(el){
+      el.innerHTML='<span class="feedback-icon">✅</span><div class="feedback-text"><strong>सही!</strong><p>ताना (Warp)</p></div>';
+      el.className='feedback show correct-fb'; el.style.display='';
+    }
+  });
+  const next=document.getElementById('qblock-2-1');
+  if(next) next.classList.remove('qblock-locked');
+}
+
+function _restoreMatchUI(){
+  const fb=document.getElementById('fb-match');
+  if(fb){
+    fb.innerHTML='<span class="feedback-icon">🎊</span><div class="feedback-text"><strong class="hi-only">शाबाश! सभी नाप सही मिलाए!</strong><strong class="en-only">Excellent! All measurements matched!</strong></div>';
+    fb.className='feedback show correct-fb'; fb.style.display='flex';
+  }
+  const next=document.getElementById('qblock-5-1');
+  if(next) next.classList.remove('qblock-locked');
+  const dragCol=document.getElementById('drag-col');
+  if(dragCol) dragCol.querySelectorAll('.match-card').forEach(c=>{
+    c.draggable=false; c.style.opacity='0.3'; c.classList.add('matched');
+  });
+}
+
+function _restoreChapter(n){
+  // Re-apply saved MCQ answers in question order (so unlock chain is correct)
+  Object.entries(answersMap)
+    .filter(([key])=>key.startsWith(n+'-'))
+    .sort((a,b)=>parseInt(a[0].split('-')[1])-parseInt(b[0].split('-')[1]))
+    .forEach(([key,result])=>_restoreQuestionUI(n,parseInt(key.split('-')[1]),result));
+  if(n===2 && fillAnswered[2]) _restoreFillUI();
+  if(n===5 && savedMatchDone) _restoreMatchUI();
+}
+
 // ── INIT ──────────────────────────────────────────────────
 (function init(){
   if(typeof mountAllIllustrations==='function') mountAllIllustrations();
-  goChapter(0);
-  setLang('hi');
+
+  const s = ss_load();
+  // Restore chapDone & score before goChapter so markChapterDone works
+  if(s.chapDone && Array.isArray(s.chapDone)){
+    chapDone = s.chapDone;
+    score = s.score || 0;
+  }
+  answersMap    = s.answers      || {};
+  fillAnswered  = s.fillAnswered || {};
+  savedMatchDone= s.matchDone    || false;
+
+  // updateProgress after state loaded
+  updateProgress();
+  chapDone.forEach((done,i)=>{ if(done) markChapterDone(i); });
+
+  // goChapter calls startChapter (reset) then _restoreChapter (re-apply saved)
+  goChapter(typeof s.chapter==='number' ? s.chapter : 0);
+  setLang(s.lang || 'hi');
 })();

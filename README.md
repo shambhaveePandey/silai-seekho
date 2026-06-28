@@ -73,6 +73,15 @@ Each of the 6 chapters now contains **10 sequentially unlocking questions**, for
 - A **replication insights** panel explains how to make the design on real cloth — estimated repeat size, colours/screens, and a motif-specific step-by-step method (block printing, bandhani tie-dye, aari/zari embroidery, screen printing, weaving)
 - Download your design as a PNG
 
+### Learner Dashboard
+
+- **4 summary stats**: chapters completed, correct answers, day streak (🔥), total time on task (⏱️)
+- **Per-chapter breakdown**: correct/wrong counts, animated progress bar, Done / In progress / Not started badge
+- **Skill level distribution**: Beginner → Expert bars showing answered vs. total across all 58 questions
+- **Smart suggestions**: context-aware next-step tips based on current progress and streak
+- All data read from localStorage — no server, no login, works offline
+- Reset All button clears all progress (with confirmation)
+
 ### Bilingual & PWA
 
 - Hindi/English content displayed side by side with a 3-way language toggle (Hindi only / Hinglish / English only)
@@ -104,9 +113,11 @@ silai-seekho/
 │   ├── css/
 │   │   └── base.css            # Design tokens + all component styles + mobile media queries
 │   ├── js/
+│   │   ├── storage.js          # localStorage wrapper (ss_save/ss_load/ss_clear), session time & streak tracking
 │   │   ├── app.js              # Lesson logic: multi-question quizzes, drag-drop, confetti, view switcher
 │   │   ├── knowledge-base.js   # KB controller: load JSON, filters, search, lesson modal, video embed
 │   │   ├── design-studio.js    # Fabric Design Studio: 2D pattern engine, 3D drape, replication insights
+│   │   ├── dashboard.js        # Learner dashboard: chapter scores, streaks, time-on-task, skill distribution
 │   │   └── media-loader.js     # Mounts external SVG/GIF illustrations with onerror fallbacks
 │   └── data/
 │       └── knowledge-base.json # 21 lessons × 10 topics × 4 levels (bilingual), incl. Saree & Blouse

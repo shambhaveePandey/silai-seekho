@@ -33,6 +33,9 @@
     <button class="view-tab" id="vtab-studio" onclick="switchView('studio')">
       🎨 <span class="hi-only">डिज़ाइन स्टूडियो</span><span class="en-only">Design Studio</span>
     </button>
+    <button class="view-tab" id="vtab-dashboard" onclick="switchView('dashboard')">
+      📊 <span class="hi-only">प्रगति</span><span class="en-only">Dashboard</span>
+    </button>
   </nav>
   <div class="nav-search-wrap">
     <svg class="nav-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
@@ -1333,7 +1336,19 @@
   </div>
 </div><!-- /view-studio -->
 
-<!-- VIEW 4 — KB LESSON DETAIL PAGE -->
+<!-- VIEW 4 — LEARNER DASHBOARD -->
+<div class="view" id="view-dashboard">
+  <div class="dash" id="dashContent">
+    <!-- rendered by dashboard.js initDashboard() -->
+    <div class="dash-empty">
+      <div class="dash-empty-icon">📊</div>
+      <p class="hi-only">प्रगति लोड हो रही है…</p>
+      <p class="en-only">Loading your progress…</p>
+    </div>
+  </div>
+</div><!-- /view-dashboard -->
+
+<!-- VIEW 5 — KB LESSON DETAIL PAGE -->
 <div class="view" id="view-kb-lesson">
   <div class="lp-topbar">
     <button class="lp-back-btn" onclick="backToKB()">
@@ -1385,9 +1400,11 @@
   · MIT License
 </footer>
 
+<script src="src/js/storage.js"></script>
 <script src="src/js/media-loader.js"></script>
 <script src="src/js/knowledge-base.js"></script>
 <script src="src/js/design-studio.js"></script>
+<script src="src/js/dashboard.js"></script>
 <script src="src/js/app.js"></script>
 </body>
 </html>
