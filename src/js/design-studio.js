@@ -44,6 +44,12 @@ const DS_MOTIFS = [
   { id:'checks',  hi:'चेक',        en:'Checks' },
   { id:'dots',    hi:'बिंदी',      en:'Polka Dots' },
   { id:'chevron', hi:'ज़िगज़ैग',   en:'Chevron' },
+  { id:'lotus',   hi:'कमल',        en:'Lotus' },
+  { id:'trellis', hi:'जाली',       en:'Trellis' },
+  { id:'wave',    hi:'लहर',        en:'Wave' },
+  { id:'leaf',    hi:'पत्ती',      en:'Leaf' },
+  { id:'cross',   hi:'क्रॉस',      en:'Cross' },
+  { id:'hex',     hi:'षट्भुज',     en:'Hexagon' },
 ];
 
 /* ============================================================
@@ -216,6 +222,50 @@ function drawMotif(ctx, motif, s, color, r, c){
       ctx.moveTo(-s,s); ctx.lineTo(0,s*0.2); ctx.lineTo(s,s); ctx.stroke();
       break;
     }
+    case 'lotus': {
+      for(let i=0;i<4;i++){ ctx.save(); ctx.rotate(i*Math.PI/2);
+        ctx.beginPath(); ctx.ellipse(0,-s*0.55,s*0.22,s*0.5,0,0,Math.PI*2); ctx.fill(); ctx.restore(); }
+      const pf=ctx.fillStyle; ctx.fillStyle='rgba(255,255,255,.45)';
+      ctx.beginPath(); ctx.arc(0,0,s*0.22,0,Math.PI*2); ctx.fill(); ctx.fillStyle=pf;
+      break;
+    }
+    case 'trellis': {
+      ctx.lineWidth=s*0.09;
+      for(let dx=-1;dx<=1;dx++) for(let dy=-1;dy<=1;dy++){
+        ctx.beginPath();
+        ctx.moveTo(dx*s+s*0.5,dy*s); ctx.lineTo(dx*s,dy*s-s*0.5);
+        ctx.lineTo(dx*s-s*0.5,dy*s); ctx.lineTo(dx*s,dy*s+s*0.5); ctx.closePath(); ctx.stroke();
+      }
+      break;
+    }
+    case 'wave': {
+      ctx.lineWidth=s*0.14;
+      for(let row=-1;row<=1;row++){
+        ctx.beginPath(); ctx.moveTo(-s,row*s*0.55);
+        ctx.bezierCurveTo(-s*0.4,-s*0.3+row*s*0.55, s*0.4,s*0.3+row*s*0.55, s,row*s*0.55);
+        ctx.stroke();
+      }
+      break;
+    }
+    case 'leaf': {
+      ctx.beginPath();
+      ctx.moveTo(0,-s); ctx.bezierCurveTo(s*0.8,-s*0.5, s*0.8,s*0.5, 0,s);
+      ctx.bezierCurveTo(-s*0.8,s*0.5, -s*0.8,-s*0.5, 0,-s); ctx.fill();
+      const sv=ctx.strokeStyle; ctx.strokeStyle='rgba(255,255,255,.4)'; ctx.lineWidth=s*0.07;
+      ctx.beginPath(); ctx.moveTo(0,-s*0.8); ctx.lineTo(0,s*0.8); ctx.stroke(); ctx.strokeStyle=sv;
+      break;
+    }
+    case 'cross': {
+      const arm=s*0.32; ctx.fillRect(-arm,-s,arm*2,s*2); ctx.fillRect(-s,-arm,s*2,arm*2);
+      break;
+    }
+    case 'hex': {
+      ctx.beginPath();
+      for(let i=0;i<6;i++){ const a=i*Math.PI/3-Math.PI/6;
+        i===0?ctx.moveTo(Math.cos(a)*s,Math.sin(a)*s):ctx.lineTo(Math.cos(a)*s,Math.sin(a)*s); }
+      ctx.closePath(); ctx.fill();
+      break;
+    }
   }
 }
 
@@ -225,9 +275,9 @@ function randomiseDS(){
   const motifs=DS_MOTIFS.map(m=>m.id);
   applyDSPalette(pals[Math.floor(Math.random()*pals.length)], false);
   setDSMotif(motifs[Math.floor(Math.random()*motifs.length)]);
-  setDSDensity(3+Math.floor(Math.random()*5));
+  setDSDensity(3+Math.floor(Math.random()*7));
   document.getElementById('dsDensity').value=DS.density;
-  setDSRotation(Math.floor(Math.random()*4)*15);
+  setDSRotation(Math.floor(Math.random()*7)*15);
   document.getElementById('dsRot').value=DS.rotation;
   renderPattern();
 }
@@ -264,20 +314,27 @@ async function init3D(){
   const THREE=window.THREE;
   if(DS.renderer){ resize3D(); return; } // already built
 
+  const dark=document.documentElement.getAttribute('data-theme')==='dark';
   const w=host.clientWidth||400, h=host.clientHeight||340;
   DS.scene=new THREE.Scene();
-  DS.scene.background=new THREE.Color(0xfdf8f2);
-  DS.cam=new THREE.PerspectiveCamera(45, w/h, 0.1, 100);
-  DS.cam.position.set(0,0.3,3.8);
+  DS.scene.background=new THREE.Color(dark?0x18100e:0xd8c8ba);
+  DS.cam=new THREE.PerspectiveCamera(40, w/h, 0.1, 100);
+  DS.cam.position.set(0,0.3,4.5);
+  DS.cam.lookAt(0,0.3,0);
   DS.renderer=new THREE.WebGLRenderer({antialias:true});
   DS.renderer.setPixelRatio(Math.min(devicePixelRatio,2));
   DS.renderer.setSize(w,h);
   host.innerHTML=''; host.appendChild(DS.renderer.domElement);
 
-  // lights
-  DS.scene.add(new THREE.AmbientLight(0xffffff,0.7));
-  const dir=new THREE.DirectionalLight(0xffffff,0.9); dir.position.set(2,3,4); DS.scene.add(dir);
-  const fill=new THREE.DirectionalLight(0xffeedd,0.3); fill.position.set(-2,1,-2); DS.scene.add(fill);
+  // 3-point studio lighting
+  DS.scene.add(new THREE.AmbientLight(0xfff5ea,0.5));
+  const key=new THREE.DirectionalLight(0xfff0e0,1.1); key.position.set(2,4,3); DS.scene.add(key);
+  const fill=new THREE.DirectionalLight(0xddeeff,0.45); fill.position.set(-3,1,1); DS.scene.add(fill);
+  const rim=new THREE.DirectionalLight(0xffddcc,0.5); rim.position.set(0,3,-4); DS.scene.add(rim);
+  // ground disc under the figure
+  const disc=new THREE.Mesh(new THREE.CircleGeometry(0.9,40),
+    new THREE.MeshStandardMaterial({color:dark?0x2a1820:0xc4b0a0,roughness:0.95}));
+  disc.rotation.x=-Math.PI/2; disc.position.y=-1.28; DS.scene.add(disc);
 
   DS.three=THREE;
   buildMannequin();
@@ -420,7 +477,7 @@ const DS_REPLICATION = {
    ============================================================ */
 const DS_GARMENTS = {
   blouse: {
-    hi:'ब्लाउज़', en:'Blouse', icon:'🥻',
+    hi:'ब्लाउज़', en:'Blouse', icon:'🥻', band:{yMin:.55,yMax:.88},
     cols:['Bust','Waist','Length','Sleeve','Fabric Needed'],
     sizes:{
       XS:{bust:30,waist:24,length:13,sleeve:6,fabric:'0.75m'},
@@ -442,7 +499,7 @@ const DS_GARMENTS = {
     tip:{hi:'छाती पर 2–3 सेमी ease ज़रूरी है।',en:'Allow 2–3 cm ease at the bust.'},
   },
   kurta:{
-    hi:'कुर्ता', en:'Kurta', icon:'👘',
+    hi:'कुर्ता', en:'Kurta', icon:'👘', band:{yMin:.26,yMax:.88},
     cols:['Chest','Waist','Length','Sleeve','Fabric Needed'],
     sizes:{
       XS:{chest:34,waist:30,length:38,sleeve:22,fabric:'2.5m'},
@@ -464,7 +521,7 @@ const DS_GARMENTS = {
     tip:{hi:'कुर्ते में chest पर 4–5 सेमी ease रखें।',en:'Allow 4–5 cm ease at the chest for a kurta.'},
   },
   salwar:{
-    hi:'सलवार', en:'Salwar', icon:'👗',
+    hi:'सलवार', en:'Salwar', icon:'👗', band:{yMin:.0,yMax:.52},
     cols:['Waist','Hip','Crotch Depth','Inseam','Fabric Needed'],
     sizes:{
       XS:{waist:24,hip:34,crotch:10,inseam:36,fabric:'2m'},
@@ -486,7 +543,7 @@ const DS_GARMENTS = {
     tip:{hi:'सलवार में crotch पर 2–3 सेमी ease ज़रूरी है।',en:'Allow 2–3 cm ease at the crotch.'},
   },
   shirt:{
-    hi:'शर्ट', en:'Shirt', icon:'👔',
+    hi:'शर्ट', en:'Shirt', icon:'👔', band:{yMin:.40,yMax:.88},
     cols:['Chest','Waist','Length','Sleeve','Fabric Needed'],
     sizes:{
       XS:{chest:34,waist:30,length:27,sleeve:23,fabric:'1.5m'},
@@ -509,7 +566,7 @@ const DS_GARMENTS = {
     tip:{hi:'कॉलर को iron करके ही लगाएं — crisp edge बेहतर दिखता है।',en:'Always press the collar before attaching for crisp edges.'},
   },
   dress:{
-    hi:'ड्रेस', en:'Dress', icon:'👗',
+    hi:'ड्रेस', en:'Dress', icon:'👗', band:{yMin:.20,yMax:.88},
     cols:['Bust','Waist','Hip','Length','Fabric Needed'],
     sizes:{
       XS:{bust:30,waist:24,hip:32,length:38,fabric:'2.5m'},
@@ -531,7 +588,7 @@ const DS_GARMENTS = {
     tip:{hi:'waist seam press करके सिलें — join सटीक रहेगा।',en:'Press the waist seam before joining for a clean join.'},
   },
   tshirt:{
-    hi:'टी-शर्ट', en:'T-Shirt', icon:'👕',
+    hi:'टी-शर्ट', en:'T-Shirt', icon:'👕', band:{yMin:.42,yMax:.88},
     cols:['Chest','Waist','Length','Sleeve','Fabric Needed'],
     sizes:{
       XS:{chest:32,waist:28,length:26,sleeve:7,fabric:'1m'},
@@ -552,7 +609,7 @@ const DS_GARMENTS = {
     tip:{hi:'jersey/knit कपड़े के लिए बॉलपॉइंट सुई और stretch stitch इस्तेमाल करें।',en:'Use a ballpoint needle and stretch stitch for jersey/knit fabrics.'},
   },
   pants:{
-    hi:'पैंट', en:'Pants', icon:'👖',
+    hi:'पैंट', en:'Pants', icon:'👖', band:{yMin:.0,yMax:.52},
     cols:['Waist','Hip','Inseam','Rise','Fabric Needed'],
     sizes:{
       XS:{waist:26,hip:34,inseam:28,rise:10,fabric:'1.75m'},
@@ -574,7 +631,168 @@ const DS_GARMENTS = {
     ],
     tip:{hi:'crotch curve को notch करके ही press करें — नहीं तो twist होगा।',en:'Notch the crotch curve before pressing to prevent twisting.'},
   },
+  kurti:{
+    hi:'कुर्ती', en:'Kurti', icon:'👘', band:{yMin:.28,yMax:.88},
+    cols:['Chest','Waist','Length','Sleeve','Fabric Needed'],
+    sizes:{
+      XS:{chest:32,waist:28,length:34,sleeve:18,fabric:'2m'},
+      S: {chest:34,waist:30,length:36,sleeve:18.5,fabric:'2m'},
+      M: {chest:36,waist:32,length:38,sleeve:19,fabric:'2.25m'},
+      L: {chest:38,waist:34,length:40,sleeve:19.5,fabric:'2.5m'},
+      XL:{chest:40,waist:36,length:42,sleeve:20,fabric:'2.5m'},
+    },
+    pieces:{hi:['फ्रंट × 1 (fold पर)','बैक × 1 (fold पर)','स्लीव × 2','नेकबैंड × 1'],
+            en:['Front × 1 (on fold)','Back × 1 (on fold)','Sleeve × 2','Neckband × 1']},
+    stitching:[
+      {hi:'फ्रंट और बैक के कंधे जोड़ें।',en:'Join front and back at shoulders.'},
+      {hi:'नेकबैंड लगाएं।',en:'Attach the neckband.'},
+      {hi:'स्लीव आर्महोल में set करें।',en:'Set sleeves into armholes.'},
+      {hi:'साइड और स्लीव सीम सिलें।',en:'Sew side and sleeve seams.'},
+      {hi:'नीचे का किनारा हेम करें।',en:'Hem the bottom edge.'},
+    ],
+    tip:{hi:'साइड स्लिट को साफ हेम करें — कुर्ती का लुक निखरता है।',en:'Finish the side slits neatly for a crisp kurti look.'},
+  },
+  lehenga:{
+    hi:'लहंगा', en:'Lehenga', icon:'👗', band:{yMin:.0,yMax:.52},
+    cols:['Waist','Hip','Length','Flare','Fabric Needed'],
+    sizes:{
+      XS:{waist:26,hip:36,length:38,flare:'3m',fabric:'3.5m'},
+      S: {waist:28,hip:38,length:40,flare:'3.2m',fabric:'3.5m'},
+      M: {waist:30,hip:40,length:41,flare:'3.5m',fabric:'4m'},
+      L: {waist:32,hip:42,length:42,flare:'3.8m',fabric:'4m'},
+      XL:{waist:34,hip:44,length:43,flare:'4m',fabric:'4.5m'},
+    },
+    pieces:{hi:['स्कर्ट पैनल × 8','वेस्टबैंड × 1','लाइनिंग × 1'],
+            en:['Skirt panel × 8','Waistband × 1','Lining × 1']},
+    stitching:[
+      {hi:'8 स्कर्ट पैनल जोड़ें।',en:'Join the 8 skirt panels.'},
+      {hi:'कमर पर gather करके वेस्टबैंड लगाएं।',en:'Gather to the waistband.'},
+      {hi:'लाइनिंग लगाएं।',en:'Attach the lining.'},
+      {hi:'साइड ज़िप लगाएं।',en:'Insert the side zip.'},
+      {hi:'horsehair braid से हेम करें।',en:'Hem with horsehair braid for body.'},
+    ],
+    tip:{hi:'flare के लिए कली (gore) पैनल बायस पर काटें।',en:'Cut gore panels on the bias for fuller flare.'},
+  },
+  anarkali:{
+    hi:'अनारकली', en:'Anarkali', icon:'🥻', band:{yMin:.0,yMax:.88},
+    cols:['Bust','Waist','Length','Flare','Fabric Needed'],
+    sizes:{
+      XS:{bust:32,waist:26,length:50,flare:'4m',fabric:'4m'},
+      S: {bust:34,waist:28,length:52,flare:'4.5m',fabric:'4m'},
+      M: {bust:36,waist:30,length:54,flare:'5m',fabric:'4.5m'},
+      L: {bust:38,waist:32,length:55,flare:'5.5m',fabric:'4.5m'},
+      XL:{bust:40,waist:34,length:56,flare:'6m',fabric:'5m'},
+    },
+    pieces:{hi:['बॉडिस फ्रंट × 1 (fold पर)','बॉडिस बैक × 2','फ्लेयर पैनल × 12','स्लीव × 2'],
+            en:['Bodice Front × 1 (on fold)','Bodice Back × 2','Flare panel × 12','Sleeve × 2']},
+    stitching:[
+      {hi:'फिटेड बॉडिस तैयार करें।',en:'Construct the fitted bodice.'},
+      {hi:'12 फ्लेयर पैनल जोड़ें।',en:'Join the 12 flare panels.'},
+      {hi:'फ्लेयर को बॉडिस से gather करके जोड़ें।',en:'Gather flare to the bodice.'},
+      {hi:'स्लीव set करें।',en:'Set the sleeves.'},
+      {hi:'लंबी फ्लेयर हेम करें।',en:'Hem the long flare.'},
+    ],
+    tip:{hi:'बॉडिस–फ्लेयर सीम पर ज़रूर press करें।',en:'Press the bodice-to-flare seam well for a clean fall.'},
+  },
+  skirt:{
+    hi:'स्कर्ट', en:'Skirt', icon:'🩱', band:{yMin:.0,yMax:.52},
+    cols:['Waist','Hip','Length','Fabric Needed'],
+    sizes:{
+      XS:{waist:24,hip:34,length:22,fabric:'1.25m'},
+      S: {waist:26,hip:36,length:23,fabric:'1.25m'},
+      M: {waist:28,hip:38,length:24,fabric:'1.5m'},
+      L: {waist:30,hip:40,length:25,fabric:'1.5m'},
+      XL:{waist:32,hip:42,length:26,fabric:'1.75m'},
+    },
+    pieces:{hi:['फ्रंट पैनल × 1 (fold पर)','बैक पैनल × 2','वेस्टबैंड × 1'],
+            en:['Front panel × 1 (on fold)','Back panel × 2','Waistband × 1']},
+    stitching:[
+      {hi:'साइड सीमें सिलें।',en:'Sew the side seams.'},
+      {hi:'ज़िप लगाएं।',en:'Insert the zip.'},
+      {hi:'वेस्टबैंड लगाएं।',en:'Attach the waistband.'},
+      {hi:'हेम करें।',en:'Hem the bottom.'},
+      {hi:'हुक क्लोज़र लगाएं।',en:'Add the hook closure.'},
+    ],
+    tip:{hi:'darts को waist की तरफ press करें।',en:'Press the darts toward the centre for a smooth waist.'},
+  },
+  sharara:{
+    hi:'शरारा', en:'Sharara', icon:'👗', band:{yMin:.0,yMax:.52},
+    cols:['Waist','Hip','Length','Flare','Fabric Needed'],
+    sizes:{
+      XS:{waist:26,hip:36,length:38,flare:'2.5m',fabric:'3m'},
+      S: {waist:28,hip:38,length:39,flare:'2.7m',fabric:'3m'},
+      M: {waist:30,hip:40,length:40,flare:'3m',fabric:'3.25m'},
+      L: {waist:32,hip:42,length:41,flare:'3.2m',fabric:'3.5m'},
+      XL:{waist:34,hip:44,length:42,flare:'3.5m',fabric:'3.5m'},
+    },
+    pieces:{hi:['टॉप योक × 2','फ्लेयर पैनल × 8','वेस्टबैंड × 1'],
+            en:['Top yoke × 2','Flare panel × 8','Waistband × 1']},
+    stitching:[
+      {hi:'योक के टुकड़े जोड़ें।',en:'Join the yoke pieces.'},
+      {hi:'फ्लेयर पैनल लगाएं।',en:'Attach the flared panels.'},
+      {hi:'कमर पर gather करें।',en:'Gather to the waistband.'},
+      {hi:'साइड ज़िप लगाएं।',en:'Insert the side zip.'},
+      {hi:'चौड़ी फ्लेयर हेम करें।',en:'Hem the wide flare.'},
+    ],
+    tip:{hi:'घुटने पर योक सीम रखें — असली शरारा सिल्हूट यहीं से बनता है।',en:'Place the yoke seam at the knee — that defines the sharara silhouette.'},
+  },
+  jacket:{
+    hi:'जैकेट', en:'Jacket', icon:'🧥', band:{yMin:.52,yMax:.88},
+    cols:['Chest','Waist','Length','Sleeve','Fabric Needed'],
+    sizes:{
+      XS:{chest:36,waist:32,length:25,sleeve:23,fabric:'2m'},
+      S: {chest:38,waist:34,length:26,sleeve:23.5,fabric:'2m'},
+      M: {chest:40,waist:36,length:27,sleeve:24,fabric:'2.25m'},
+      L: {chest:42,waist:38,length:28,sleeve:24.5,fabric:'2.25m'},
+      XL:{chest:44,waist:40,length:29,sleeve:25,fabric:'2.5m'},
+    },
+    pieces:{hi:['फ्रंट × 2','बैक × 1 (fold पर)','स्लीव × 2','कॉलर × 2','लाइनिंग × 3'],
+            en:['Front × 2','Back × 1 (on fold)','Sleeve × 2','Collar × 2','Lining × 3']},
+    stitching:[
+      {hi:'शेल और लाइनिंग तैयार करें।',en:'Construct the shell and lining.'},
+      {hi:'कॉलर लगाएं।',en:'Attach the collar.'},
+      {hi:'स्लीव set करें।',en:'Set the sleeves.'},
+      {hi:'साइड और स्लीव सीम सिलें।',en:'Sew side and sleeve seams.'},
+      {hi:'लाइनिंग bag-out करें।',en:'Bag out the lining.'},
+      {hi:'बटन और टॉपस्टिच लगाएं।',en:'Add buttons and topstitch.'},
+    ],
+    tip:{hi:'कॉलर और lapel को रोल press करें — flat नहीं।',en:'Roll-press the collar and lapel rather than flattening them.'},
+  },
+  saree:{
+    hi:'साड़ी', en:'Saree Drape', icon:'🥻', band:{yMin:.0,yMax:.88},
+    cols:['Length','Width','Pallu','Blouse','Fabric Needed'],
+    sizes:{
+      XS:{length:'5.5m',width:'1.1m',pallu:'0.9m',blouse:'0.8m',fabric:'5.5m'},
+      S: {length:'5.5m',width:'1.1m',pallu:'0.9m',blouse:'0.8m',fabric:'5.5m'},
+      M: {length:'5.5m',width:'1.15m',pallu:'1m',blouse:'0.9m',fabric:'5.5m'},
+      L: {length:'6m',width:'1.15m',pallu:'1m',blouse:'0.9m',fabric:'6m'},
+      XL:{length:'6m',width:'1.2m',pallu:'1.1m',blouse:'1m',fabric:'6m'},
+    },
+    pieces:{hi:['साड़ी बॉडी × 1','पल्लू × 1','बॉर्डर × 2','ब्लाउज़ पीस × 1'],
+            en:['Saree body × 1','Pallu × 1','Border × 2','Blouse piece × 1']},
+    stitching:[
+      {hi:'कच्चे किनारे फिनिश करें।',en:'Finish the raw edges.'},
+      {hi:'हेम पर fall लगाएं।',en:'Attach the fall to the hem.'},
+      {hi:'पल्लू को pico edge करें।',en:'Pico-edge the pallu.'},
+      {hi:'बॉर्डर पक्का करें।',en:'Secure the border.'},
+      {hi:'pleat करके निवी शैली में drape करें।',en:'Pleat and drape in the Nivi style.'},
+    ],
+    tip:{hi:'fall को साड़ी के रंग से मिलाएं — drape भारी और साफ गिरती है।',en:'Match the fall to the saree colour so the drape falls cleanly.'},
+  },
 };
+
+/* Extend every garment with an XXL size (scaled up from XL) so the
+   6-size selector and 3D measurement labels stay consistent. */
+Object.values(DS_GARMENTS).forEach(g=>{
+  if(g.sizes && g.sizes.XL && !g.sizes.XXL){
+    const xl=g.sizes.XL, xxl={};
+    for(const k in xl){
+      const v=xl[k];
+      xxl[k]=(typeof v==='number') ? Math.round((v+2)*10)/10 : v;
+    }
+    g.sizes.XXL=xxl;
+  }
+});
 
 /* ============================================================
    GARMENT SELECTOR — state setters + info renderer
@@ -594,6 +812,7 @@ function setDSSize(size){
   DS.garmentSize=size;
   document.querySelectorAll('[data-size]').forEach(b=>b.classList.toggle('active',b.dataset.size===size));
   updateGarmentInfo();
+  rebuildMannequin();
 }
 
 function updateGarmentInfo(){
@@ -640,68 +859,129 @@ function updateGarmentInfo(){
 }
 
 /* ============================================================
-   3D MANNEQUIN — simple LatheGeometry torso + garment drape
+   3D MANNEQUIN — parametric human figure + garment drape band
+   Per-gender body profiles, 6 sizes, head/hair/arms + measurement
+   label sprites. The selected garment is built only across its own
+   body band ([yMin,yMax]) and textured with the live 2D pattern.
    ============================================================ */
+
+// Body silhouette profiles: [radius, y] points, feet (y=0) → crown (y~1.10)
+const DS_PROFILES = {
+  female:[[.08,0],[.09,.05],[.15,.12],[.18,.22],[.22,.35],[.20,.42],[.16,.52],[.15,.56],[.20,.63],[.22,.70],[.18,.78],[.14,.84],[.07,.88],[.07,.96],[.12,1.0],[.10,1.06],[.04,1.10]],
+  male:  [[.09,0],[.10,.05],[.16,.12],[.18,.22],[.20,.35],[.18,.44],[.17,.52],[.16,.56],[.22,.63],[.25,.70],[.24,.78],[.15,.84],[.07,.88],[.07,.96],[.12,1.0],[.10,1.06],[.04,1.10]],
+  child: [[.06,0],[.07,.05],[.11,.12],[.13,.22],[.16,.35],[.15,.42],[.12,.52],[.11,.56],[.14,.63],[.16,.70],[.14,.78],[.11,.84],[.06,.88],[.06,.96],[.11,1.0],[.09,1.06],[.04,1.10]],
+};
+const DS_SIZE_SCALE = { XS:.88, S:.94, M:1.0, L:1.06, XL:1.12, XXL:1.18 };
+// Body measurements [bust, waist, hip] in inches, per gender + size
+const DS_BODY = {
+  female:{XS:[32,24,34],S:[34,26,36],M:[36,28,38],L:[38,30,40],XL:[40,32,42],XXL:[42,34,44]},
+  male:  {XS:[34,28,34],S:[36,30,36],M:[38,32,38],L:[40,34,40],XL:[42,36,42],XXL:[44,38,44]},
+  child: {XS:[24,22,26],S:[26,23,28],M:[28,24,30],L:[30,25,32],XL:[32,26,34],XXL:[34,27,36]},
+};
+
 function rebuildMannequin(){
   if(!DS.threeLoaded||!DS.scene) return;
-  // Remove old mannequin group if present
-  if(DS.mannequin){ DS.scene.remove(DS.mannequin); DS.mannequin=null; }
+  if(DS.mannequin){ DS.scene.remove(DS.mannequin); DS.mannequin=null; DS.mesh=null; }
   buildMannequin();
 }
 
 function buildMannequin(){
   if(!DS.three||!DS.scene) return;
   const THREE=DS.three;
-  const isFemale=DS.gender==='female';
-  const sz=DS.garmentSize||'S';
-  // Scale factor by size (XS=0.88, S=0.94, M=1.0, L=1.06, XL=1.12)
-  const scaleMap={XS:0.88,S:0.94,M:1.0,L:1.06,XL:1.12};
-  const sc=scaleMap[sz]||1.0;
+  const gender=DS.gender, sz=DS.garmentSize||'S';
+  const prof=DS_PROFILES[gender]||DS_PROFILES.female;
+  const sc=DS_SIZE_SCALE[sz]||1.0, SC=2.2*sc;
 
-  // Lathe profile: [radius, y] pairs bottom to top (head at top)
-  // Female profile
-  const femalePoints=[
-    [0.08,0],[0.09,0.05],[0.15,0.12],[0.18,0.22],  // legs/thighs
-    [0.22,0.35],[0.20,0.42],                         // hip
-    [0.16,0.52],[0.15,0.56],                         // waist
-    [0.20,0.63],[0.22,0.70],                         // bust
-    [0.18,0.78],[0.14,0.84],                         // shoulders/neck
-    [0.07,0.88],[0.07,0.96],                         // neck
-    [0.12,1.00],[0.10,1.06],[0.04,1.10],            // head
-  ];
-  // Male profile (broader shoulders, less waist curve)
-  const malePoints=[
-    [0.09,0],[0.10,0.05],[0.16,0.12],[0.18,0.22],
-    [0.20,0.35],[0.18,0.44],
-    [0.17,0.52],[0.16,0.56],
-    [0.22,0.63],[0.25,0.70],
-    [0.24,0.78],[0.15,0.84],
-    [0.07,0.88],[0.07,0.96],
-    [0.12,1.00],[0.10,1.06],[0.04,1.10],
-  ];
-  const pts=(isFemale?femalePoints:malePoints).map(([r,y])=>new THREE.Vector2(r*sc,(y-0.55)*2.2*sc));
-  const geo=new THREE.LatheGeometry(pts,32);
+  // Skin / hair palette per gender
+  const C={
+    female:{skin:0xd4987a,hair:0x1a0808},
+    male:  {skin:0xb87856,hair:0x100606},
+    child: {skin:0xe0b090,hair:0x3a2010},
+  }[gender]||{skin:0xd4987a,hair:0x1a0808};
+  const sM=new THREE.MeshStandardMaterial({color:C.skin,roughness:.72,metalness:.03});
+  const hM=new THREE.MeshStandardMaterial({color:C.hair,roughness:.88,metalness:0});
 
-  // Skin-tone material for the mannequin base
-  const mat=new THREE.MeshStandardMaterial({color:0xd4a574,roughness:0.8,metalness:0.0,side:THREE.FrontSide});
-  const mesh=new THREE.Mesh(geo,mat);
-  mesh.rotation.x=0;
+  const group=new THREE.Group();
 
-  DS.mannequin=new THREE.Group();
-  DS.mannequin.add(mesh);
+  // Body base (torso + legs) up to the neckline
+  const bPts=prof.filter(([,y])=>y<=.90).map(([r,y])=>new THREE.Vector2(r*sc,(y-.55)*SC));
+  group.add(new THREE.Mesh(new THREE.LatheGeometry(bPts,32),sM));
 
-  // Add a thin garment "shell" slightly inflated
-  const garmentScale=1.04;
-  const garmentPts=pts.map(v=>new THREE.Vector2(v.x*garmentScale,v.y));
-  const gGeo=new THREE.LatheGeometry(garmentPts,32);
-  const tex=new THREE.CanvasTexture(DS.canvas);
-  tex.wrapS=tex.wrapT=THREE.RepeatWrapping; tex.repeat.set(2,3);
-  const gMat=new THREE.MeshStandardMaterial({map:tex,side:THREE.DoubleSide,roughness:0.75,metalness:0.0,transparent:true,opacity:0.92});
-  const gMesh=new THREE.Mesh(gGeo,gMat);
-  DS.mannequin.add(gMesh);
-  DS.mesh=gMesh; // keep DS.mesh pointing to garment for texture updates
+  // Neck
+  const nY=(0.88-.55)*SC, nH=.065*SC, nR=.05*sc;
+  const neck=new THREE.Mesh(new THREE.CylinderGeometry(nR,nR*1.1,nH,12),sM);
+  neck.position.y=nY+nH/2; group.add(neck);
 
-  DS.scene.add(DS.mannequin);
+  // Head
+  const hY=nY+nH+0.115*SC;
+  const hRx=0.105*sc, hRy=0.118*sc, hRz=0.11*sc;
+  const headGeo=new THREE.SphereGeometry(1,22,18); headGeo.scale(hRx,hRy,hRz);
+  const head=new THREE.Mesh(headGeo,sM.clone()); head.position.y=hY; group.add(head);
+
+  // Hair (per gender)
+  if(gender==='female'){
+    const cap=new THREE.SphereGeometry(1,16,12,0,Math.PI*2,0,Math.PI*.62); cap.scale(hRx*1.04,hRy*1.04,hRz*1.04);
+    const capM=new THREE.Mesh(cap,hM); capM.position.y=hY; group.add(capM);
+    const tail=new THREE.Mesh(new THREE.CylinderGeometry(hRx*.38,hRx*.18,.3*SC,10),hM);
+    tail.position.set(0,hY-.19*SC,-hRz*.5); group.add(tail);
+  } else if(gender==='male'){
+    const cap=new THREE.SphereGeometry(1,16,8,0,Math.PI*2,0,Math.PI*.44); cap.scale(hRx*1.03,hRy*1.03,hRz*1.03);
+    const capM=new THREE.Mesh(cap,hM); capM.position.y=hY; group.add(capM);
+  } else {
+    const cap=new THREE.SphereGeometry(1,16,10,0,Math.PI*2,0,Math.PI*.58); cap.scale(hRx*1.05,hRy*1.05,hRz*1.05);
+    const capM=new THREE.Mesh(cap,hM); capM.position.y=hY; group.add(capM);
+  }
+
+  // Eyes
+  const eM=new THREE.MeshStandardMaterial({color:0x100608,roughness:.5});
+  for(const sx of [-1,1]){ const em=new THREE.Mesh(new THREE.SphereGeometry(.016*SC,8,8),eM);
+    em.position.set(sx*hRx*.44,hY+hRy*.08,hRz*.87); group.add(em); }
+
+  // Arms (upper + lower + hand)
+  const shW=(gender==='male'?.22:gender==='female'?.18:.14)*sc;
+  const shY=(0.78-.55)*SC, aR=.038*sc, aL=(gender==='child'?.3:.38)*SC;
+  for(const sx of [-1,1]){
+    const ua=new THREE.Mesh(new THREE.CylinderGeometry(aR,aR*1.1,aL*.52,10),sM); ua.rotation.z=sx*Math.PI*.08; ua.position.set(sx*(shW+aL*.15),shY-aL*.26,0); group.add(ua);
+    const la=new THREE.Mesh(new THREE.CylinderGeometry(aR*.85,aR,aL*.44,10),sM); la.rotation.z=sx*Math.PI*.1; la.position.set(sx*(shW+aL*.3),shY-aL*.73,0); group.add(la);
+    const hd=new THREE.Mesh(new THREE.SphereGeometry(aR*1.05,8,8),sM); hd.position.set(sx*(shW+aL*.4),shY-aL*.99,0); group.add(hd);
+  }
+
+  // Garment — built only across its own body band, textured with the 2D pattern
+  const gDef=DS_GARMENTS[DS.garmentType];
+  const band=(gDef&&gDef.band)||{yMin:.40,yMax:.88};
+  const interp=yT=>{ for(let i=0;i<prof.length-1;i++){ const [r0,y0]=prof[i],[r1,y1]=prof[i+1];
+    if((y0<=yT&&y1>=yT)||(y0>=yT&&y1<=yT)){ const t=(yT-y0)/(y1-y0||1); return [r0+(r1-r0)*t,yT]; } } return null; };
+  let gPts=prof.filter(([,y])=>y>band.yMin&&y<band.yMax);
+  const tb=interp(band.yMax), bb=interp(band.yMin);
+  if(tb)gPts=[...gPts,tb]; if(bb)gPts=[bb,...gPts];
+  gPts.sort((a,b)=>a[1]-b[1]);
+  if(gPts.length>=2){
+    const gV=gPts.map(([r,y])=>new THREE.Vector2(r*sc*1.06,(y-.55)*SC));
+    const tex=new THREE.CanvasTexture(DS.canvas);
+    tex.wrapS=tex.wrapT=THREE.RepeatWrapping; tex.repeat.set(2,3);
+    const gMat=new THREE.MeshStandardMaterial({map:tex,side:THREE.DoubleSide,roughness:.62,metalness:0,transparent:true,opacity:.94});
+    const gMesh=new THREE.Mesh(new THREE.LatheGeometry(gV,32),gMat);
+    group.add(gMesh);
+    DS.mesh=gMesh; // texture-update target
+
+    // Measurement label sprites (Bust / Waist / Hip)
+    const body=DS_BODY[gender]?.[sz]||[36,28,38];
+    [{t:`Bust ${body[0]}"`,y:(0.68-.55)*SC},{t:`Waist ${body[1]}"`,y:0},{t:`Hip ${body[2]}"`,y:(0.38-.55)*SC}].forEach(({t,y})=>{
+      const lc=document.createElement('canvas'); lc.width=140; lc.height=32;
+      const lx=lc.getContext('2d');
+      lx.fillStyle='rgba(200,104,90,.88)';
+      if(lx.roundRect){ lx.beginPath(); lx.roundRect(0,0,140,32,6); lx.fill(); } else lx.fillRect(0,0,140,32);
+      lx.fillStyle='#fff'; lx.font='bold 14px Work Sans,sans-serif'; lx.textBaseline='middle'; lx.fillText(t,10,16);
+      const lt=new THREE.CanvasTexture(lc);
+      const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:lt,transparent:true}));
+      sp.position.set(-.8,y,0); sp.scale.set(.55,.13,1); group.add(sp);
+      const lineGeo=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-.53,y,0),new THREE.Vector3(.05*sc,y,0)]);
+      group.add(new THREE.Line(lineGeo,new THREE.LineBasicMaterial({color:0xc8685a,opacity:.5,transparent:true})));
+    });
+  }
+
+  DS.mannequin=group;
+  DS.scene.add(group);
 }
 
 /* expose for inline handlers */

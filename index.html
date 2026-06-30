@@ -1252,17 +1252,25 @@
       <div class="ds-garment-bar-group">
         <span class="ds-garment-label"><span class="hi-only">परिधान</span><span class="en-only">Garment</span></span>
         <button class="ds-garment-chip active" data-garment="blouse" onclick="setDSGarment('blouse')">🥻 <span class="hi-only">ब्लाउज़</span><span class="en-only">Blouse</span></button>
-        <button class="ds-garment-chip" data-garment="kurta" onclick="setDSGarment('kurta')">👘 <span class="hi-only">कुर्ता</span><span class="en-only">Kurta</span></button>
-        <button class="ds-garment-chip" data-garment="salwar" onclick="setDSGarment('salwar')">👗 <span class="hi-only">सलवार</span><span class="en-only">Salwar</span></button>
+        <button class="ds-garment-chip" data-garment="kurti" onclick="setDSGarment('kurti')">👘 <span class="hi-only">कुर्ती</span><span class="en-only">Kurti</span></button>
+        <button class="ds-garment-chip" data-garment="kurta" onclick="setDSGarment('kurta')">👔 <span class="hi-only">कुर्ता</span><span class="en-only">Kurta</span></button>
+        <button class="ds-garment-chip" data-garment="salwar" onclick="setDSGarment('salwar')">👖 <span class="hi-only">सलवार</span><span class="en-only">Salwar</span></button>
+        <button class="ds-garment-chip" data-garment="lehenga" onclick="setDSGarment('lehenga')">👗 <span class="hi-only">लहंगा</span><span class="en-only">Lehenga</span></button>
+        <button class="ds-garment-chip" data-garment="anarkali" onclick="setDSGarment('anarkali')">🥻 <span class="hi-only">अनारकली</span><span class="en-only">Anarkali</span></button>
+        <button class="ds-garment-chip" data-garment="tshirt" onclick="setDSGarment('tshirt')">👕 <span class="hi-only">टी-शर्ट</span><span class="en-only">T-Shirt</span></button>
         <button class="ds-garment-chip" data-garment="shirt" onclick="setDSGarment('shirt')">👔 <span class="hi-only">शर्ट</span><span class="en-only">Shirt</span></button>
         <button class="ds-garment-chip" data-garment="dress" onclick="setDSGarment('dress')">👗 <span class="hi-only">ड्रेस</span><span class="en-only">Dress</span></button>
-        <button class="ds-garment-chip" data-garment="tshirt" onclick="setDSGarment('tshirt')">👕 <span class="hi-only">टी-शर्ट</span><span class="en-only">T-Shirt</span></button>
-        <button class="ds-garment-chip" data-garment="pants" onclick="setDSGarment('pants')">👖 <span class="hi-only">पैंट</span><span class="en-only">Pants</span></button>
+        <button class="ds-garment-chip" data-garment="skirt" onclick="setDSGarment('skirt')">🩱 <span class="hi-only">स्कर्ट</span><span class="en-only">Skirt</span></button>
+        <button class="ds-garment-chip" data-garment="pants" onclick="setDSGarment('pants')">👖 <span class="hi-only">पैंट</span><span class="en-only">Trousers</span></button>
+        <button class="ds-garment-chip" data-garment="sharara" onclick="setDSGarment('sharara')">👗 <span class="hi-only">शरारा</span><span class="en-only">Sharara</span></button>
+        <button class="ds-garment-chip" data-garment="jacket" onclick="setDSGarment('jacket')">🧥 <span class="hi-only">जैकेट</span><span class="en-only">Jacket</span></button>
+        <button class="ds-garment-chip" data-garment="saree" onclick="setDSGarment('saree')">🥻 <span class="hi-only">साड़ी</span><span class="en-only">Saree</span></button>
       </div>
       <div class="ds-garment-bar-group">
         <span class="ds-garment-label"><span class="hi-only">मानेकिन</span><span class="en-only">Mannequin</span></span>
         <button class="ds-gender-chip active" data-gender="female" onclick="setDSGender('female')">♀ <span class="hi-only">महिला</span><span class="en-only">Female</span></button>
         <button class="ds-gender-chip" data-gender="male" onclick="setDSGender('male')">♂ <span class="hi-only">पुरुष</span><span class="en-only">Male</span></button>
+        <button class="ds-gender-chip" data-gender="child" onclick="setDSGender('child')">🧒 <span class="hi-only">बच्चा</span><span class="en-only">Child</span></button>
       </div>
       <div class="ds-garment-bar-group">
         <span class="ds-garment-label"><span class="hi-only">साइज़</span><span class="en-only">Size</span></span>
@@ -1271,6 +1279,7 @@
         <button class="ds-garment-chip" data-size="M" onclick="setDSSize('M')">M</button>
         <button class="ds-garment-chip" data-size="L" onclick="setDSSize('L')">L</button>
         <button class="ds-garment-chip" data-size="XL" onclick="setDSSize('XL')">XL</button>
+        <button class="ds-garment-chip" data-size="XXL" onclick="setDSSize('XXL')">XXL</button>
       </div>
     </div>
 
@@ -1295,15 +1304,15 @@
         </div>
         <div class="ds-group">
           <label class="ds-label"><span class="hi-only">घनत्व</span><span class="en-only">Density</span> · <b id="dsDensityVal">4</b></label>
-          <input type="range" id="dsDensity" min="2" max="8" step="1" value="4" oninput="setDSDensity(this.value)">
+          <input type="range" id="dsDensity" min="2" max="10" step="1" value="4" oninput="setDSDensity(this.value)">
         </div>
         <div class="ds-group">
           <label class="ds-label"><span class="hi-only">आकार</span><span class="en-only">Motif scale</span> · <b id="dsScaleVal">1.0×</b></label>
-          <input type="range" id="dsScale" min="0.5" max="1.6" step="0.1" value="1" oninput="setDSScale(this.value)">
+          <input type="range" id="dsScale" min="0.2" max="2.0" step="0.1" value="1" oninput="setDSScale(this.value)">
         </div>
         <div class="ds-group">
           <label class="ds-label"><span class="hi-only">घुमाव</span><span class="en-only">Rotation</span> · <b id="dsRotVal">0°</b></label>
-          <input type="range" id="dsRot" min="0" max="90" step="15" value="0" oninput="setDSRotation(this.value)">
+          <input type="range" id="dsRot" min="0" max="180" step="5" value="0" oninput="setDSRotation(this.value)">
         </div>
         <div class="ds-actions">
           <button class="btn-secondary" onclick="randomiseDS()">🎲 <span class="hi-only">यादृच्छिक</span><span class="en-only">Surprise me</span></button>
